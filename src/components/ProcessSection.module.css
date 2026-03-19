@@ -1,0 +1,188 @@
+.processSection {
+    background-image: url('/process-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    overflow: visible;
+}
+
+.stickyContent {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    /* Make the left side fill the screen height for centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    z-index: 10;
+}
+
+.rightCol {
+    width: 530px;
+    padding-left: 20px;
+    padding-top: 25vh;
+    /* Initial offset so left content is centered relative to first card */
+    padding-bottom: 15vh;
+    /* Final offset so left content stays centered relative to last card */
+    margin: 0 auto;
+}
+
+.badge {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    width: 130px;
+}
+
+.heading {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.highlightedText {
+    color: #9dff00;
+    /* Neon green */
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.greenVector {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.stepCard {
+    background: #fff;
+    border-radius: 32px;
+    padding: 35px;
+    margin-bottom: 60px;
+    color: #000;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stepCard:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.stepCard:last-child {
+    margin-bottom: 0;
+}
+
+.stepImage {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.stepImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.stepNumber {
+    font-size: 90px;
+    font-weight: 800;
+    color: #6a55ff;
+    /* Purple */
+    line-height: 1;
+    margin-bottom: 15px;
+    display: block;
+    opacity: 0.9;
+}
+
+.stepTitle {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1.1;
+    /* Tighter line height for two-line headings */
+}
+
+.stepDesc {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 56px;
+    }
+
+    .stepNumber {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .stickyContent {
+        position: relative;
+        top: 0;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .rightCol {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .greenVector {
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .stepCard {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .processSection {
+        padding: 60px 0;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .stepTitle {
+        font-size: 28px;
+    }
+
+    .stepNumber {
+        font-size: 60px;
+    }
+}

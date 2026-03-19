@@ -1,0 +1,166 @@
+.servicesSection {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.backgroundImage {
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.headerArea {
+    margin-bottom: 80px;
+    z-index: 1;
+    position: relative;
+}
+
+.badge {
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    padding: 10px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 30px;
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.heading {
+    position: relative;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.greenVector {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    height: auto;
+    width: 450px;
+}
+
+.sliderWrapper {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.cardsScroll {
+    width: 100%;
+    overflow: hidden;
+}
+
+.serviceCard {
+    background: #F5F5F7;
+    border-radius: 30px;
+    padding: 35px 25px;
+    transition: var(--cubic);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    text-align: left;
+}
+
+.serviceCard:hover {
+    border-radius: 20px 150px 20px 20px;
+    background: var(--primary-color);
+}
+
+.iconBox {
+    margin-bottom: 5px;
+}
+
+.cardTitle {
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cardDescription {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.navBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.prevArrow {
+    transform: scaleX(-1);
+}
+
+.navBtn:hover {
+    opacity: 0.7;
+}
+
+.prevBtn {
+    left: -60px;
+}
+
+.nextBtn {
+    right: -60px;
+}
+
+@media (max-width: 991px) {
+    .navBtn {
+        display: none;
+    }
+
+    .sliderWrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 32px;
+    }
+
+    .greenVector {
+        width: 250px;
+    }
+
+    .serviceCard {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .servicesSection {
+        padding: 80px 0;
+    }
+}

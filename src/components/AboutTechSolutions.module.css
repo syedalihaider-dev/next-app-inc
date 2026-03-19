@@ -1,0 +1,84 @@
+.techSection {
+    padding: 100px 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: contain;
+}
+
+.textContent {
+    padding-left: 20px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+}
+
+.purpleText {
+    color: #6345ED;
+}
+
+.relativeText {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.greenUnderline {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    z-index: -1;
+}
+
+.paragraph {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: 400;
+    max-width: 90%;
+}
+
+.paragraph strong {
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+@media (max-width: 1199px) {
+    .heading { font-size: 45px; }
+    .textContent { padding-left: 0px; }
+}
+
+@media (max-width: 991px) {
+    .heading { font-size: 38px; }
+    .textContent { padding-top: 30px; }
+}
+
+@media (max-width: 767px) {
+    .techSection { padding: 60px 0; }
+    .heading { font-size: 30px; letter-spacing: -1px; }
+    .paragraph { font-size: 16px; margin-bottom: 30px; }
+}

@@ -1,0 +1,104 @@
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './Footer.module.css';
+
+const Footer = () => {
+    return (
+        <footer className={styles.footer}>
+            <Image
+                src="/footer-bg.png"
+                alt="Footer Background"
+                fill
+                priority
+                className={styles.backgroundImage}
+            />
+            <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                <div className="row">
+                    <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className={styles.footerCol}>
+                            <h4 className={styles.footerTitle}>Quick Links</h4>
+                            <ul className={styles.footerLinks}>
+                                <li><Link href="/">HOME</Link></li>
+                                <li><Link href="/about-us">ABOUT US</Link></li>
+                                <li><Link href="/services">OUR SERVICES</Link></li>
+                                <li><Link href="/work">WORK</Link></li>
+                                <li><Link href="/contact">CONTACT US</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className={styles.footerCol}>
+                            <h4 className={styles.footerTitle}>Services</h4>
+                            <ul className={styles.footerLinks}>
+                                <li><Link href="/unity-game-development">UNITY GAME DEVELOPMENT</Link></li>
+                                <li><Link href="/react-native-development">REACT NATIVE DEVELOPMENT</Link></li>
+                                <li><Link href="/flutter-development">FLUTTER DEVELOPMENT</Link></li>
+                                <li><Link href="/full-stack-development">FULL STACK DEVELOPMENT</Link></li>
+                                <li><Link href="/mobile-app-marketing">MOBILE APP MARKETING</Link></li>
+                                <li><Link href="/any-ecommerce">ANY ECOMMERCE</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <div className={styles.footerCol}>
+                            <h4 className={styles.footerTitle}>Contact Us</h4>
+                            <div className={styles.contactInfo}>
+                                <p className={styles.infoLabel}>EMAIL US:</p>
+                                <p><a href="mailto:sales@nextappinc.com">sales@nextappinc.com</a></p>
+                            </div>
+                            <div className={styles.contactInfo}>
+                                <p className={styles.infoLabel}>PHONE:</p>
+                                <p><a href="tel:3472187849">(347) 218-7849</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6">
+                        <div className={styles.footerCol}>
+                            <h4 className={styles.footerTitle}>Locations</h4>
+                            <div className={styles.locationItem}>
+                                <div className={styles.locationIcon}>
+                                    <Image src="/map-icon-01.png" alt="Map Icon" width={24} height={32} />
+                                </div>
+                                <div className={styles.locationText}>
+                                    <p className={styles.infoLabel}>LOCATION 01:</p>
+                                    <p>1234 Piedmont Rd NE,<br />Atlanta, GA 1234</p>
+                                </div>
+                            </div>
+                            <div className={styles.locationItem}>
+                                <div className={styles.locationIcon}>
+                                    <Image src="/map-icon-02.png" alt="Map Icon" width={24} height={32} />
+                                </div>
+                                <div className={styles.locationText}>
+                                    <p className={styles.infoLabel}>LOCATION 02:</p>
+                                    <p>1234 Piedmont Rd NE,<br />Atlanta, GA 1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.bottomBar}>
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                            <p className={styles.copyright}>
+                                &copy; COPYRIGHT 2026 | NEXT APP INC | ALL RIGHTS RESERVED
+                            </p>
+                        </div>
+                        <div className="col-md-6 text-md-end">
+                            <ul className={styles.bottomLinks}>
+                                <li><Link href="/privacy-policy">PRIVACY POLICY</Link></li>
+                                <li><span className={styles.separator}>|</span></li>
+                                <li><Link href="/terms-conditions">TERMS & CONDITIONS</Link></li>
+                                <li><span className={styles.separator}>|</span></li>
+                                <li><Link href="/faq">FAQ</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

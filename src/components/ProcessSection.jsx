@@ -1,0 +1,84 @@
+import React from 'react';
+import Image from 'next/image';
+import styles from './ProcessSection.module.css';
+
+const steps = [
+    {
+        number: '01',
+        title: <>Project <br /> Discussion</>,
+        description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
+        image: '/process-steps/step-01.png'
+    },
+    {
+        number: '02',
+        title: <>Order <br /> Confirmation</>,
+        description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
+        image: '/process-steps/step-02.png'
+    },
+    {
+        number: '03',
+        title: <>Research & <br /> Wireframing</>,
+        description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
+        image: '/process-steps/step-03.png'
+    },
+    {
+        number: '04',
+        title: <>UI/UX <br /> Designing</>,
+        description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
+        image: '/process-steps/step-04.png'
+    },
+    {
+        number: '05',
+        title: <>App <br /> Development</>,
+        description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
+        image: '/process-steps/step-05.png'
+    },
+    {
+        number: '06',
+        title: <>Testing & <br /> Deployment</>,
+        description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
+        image: '/process-steps/step-06.png'
+    }
+];
+
+const ProcessSection = () => {
+    return (
+        <section className={styles.processSection}>
+            <div className="container">
+                <div className="row">
+                    {/* Left Column - Sticky */}
+                    <div className="col-lg-6">
+                        <div className={styles.stickyContent}>
+                            <span className={styles.badge}>Process</span>
+                            <h2 className={styles.heading}>
+                                Our Proven Path to <br />
+                                <span className={styles.highlightedText}>
+                                    Mobile Success
+                                    <img src="/green-vector.png" alt="vector" className={styles.greenVector} />
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
+
+                    {/* Right Column - Scrollable Cards */}
+                    <div className="col-lg-6">
+                        <div className={styles.rightCol}>
+                            {steps.map((step, index) => (
+                                <div key={index} className={styles.stepCard}>
+                                    <div className={styles.stepImage}>
+                                        <img src={step.image} alt={step.title} />
+                                    </div>
+                                    <span className={styles.stepNumber}>{step.number}</span>
+                                    <h3 className={styles.stepTitle}>{step.title}</h3>
+                                    <p className={styles.stepDesc}>{step.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default ProcessSection;

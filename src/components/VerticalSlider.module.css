@@ -1,0 +1,52 @@
+.sliderContainer {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.sliderTrack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.scrollDown {
+    animation: scrollDown 40s linear infinite;
+}
+
+.scrollUp {
+    animation: scrollUp 40s linear infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+/* Adjust speed based on content height or preferences */
+.scrollDown,
+.scrollUp {
+    animation-duration: 60s;
+}

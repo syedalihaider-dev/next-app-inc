@@ -1,0 +1,247 @@
+.contactSection {
+    position: relative;
+    padding: 100px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.gridBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+.badge {
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    padding: 8px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #000;
+}
+
+.heading {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #6a55ff;
+}
+
+.vectorWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.subHeading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.iconBox {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactText {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}
+
+.socialHeading,
+.achievementsHeading {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0 25px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialLink img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.socialLink:hover img {
+    transform: translateY(-5px);
+}
+
+.achievementBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.achievementBadges img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.servicesTitle {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.servicesPills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.pill {
+    background: #f5f5f5;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #000;
+}
+
+.pill:hover {
+    background: #ececec;
+}
+
+.pillActive {
+    background: #9dff00 !important;
+    /* Neon Green */
+    color: #000;
+}
+
+.pillIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.contactForm label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.contactForm label img {
+    width: 14px;
+    height: 14px;
+}
+
+.inputGroup {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 5px 0;
+    color: #000;
+    outline: none;
+}
+
+.contactForm textarea {
+    height: 40px;
+    resize: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #999;
+}
+
+.submitBtn {
+    margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 48px;
+    }
+
+    .contactText {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 991px) {
+    .infoCol {
+        padding-right: 0;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .contactItem {
+        justify-content: center;
+    }
+
+    .socialIcons,
+    .achievementBadges {
+        justify-content: center;
+    }
+
+    .servicesTitle {
+        text-align: center;
+    }
+
+    .servicesPills {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 32px;
+    }
+
+    .contactText {
+        font-size: 20px;
+    }
+}

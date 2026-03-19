@@ -1,0 +1,186 @@
+.bannerSection {
+    background-color: var(--dark-color);
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 180px 0 250px 0;
+}
+
+.absoluteSliderWrapper {
+    position: absolute;
+    left: -1%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 43%;
+    height: 100%;
+    z-index: 1;
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+
+.backgroundImage {
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.contentWrapper {
+    position: relative;
+    z-index: 5;
+}
+
+.vectorWrapper {
+    margin: -10px 0 30px 0;
+}
+
+.greenVector {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+}
+
+.heading {
+    font-size: var(--banner-heading-size);
+    line-height: var(--banner-heading-line-height);
+    color: var(--light-color);
+    font-weight: var(--font-800);
+}
+
+.highlightGreen {
+    color: var(--primary-color);
+}
+
+.highlightPurple {
+    color: var(--secondary-color);
+}
+
+.underlineWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.underlineSvg {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+}
+
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .absoluteSliderWrapper {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .bannerSection {
+        padding: 150px 0;
+    }
+
+    .heading {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .absoluteSliderWrapper {
+        width: 50%;
+        opacity: 0.4;
+    }
+
+    .greenVector {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 991px) {
+    .bannerSection {
+        padding: 100px 0;
+        min-height: calc(100vh - 80px); /* Adjust for header if needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .absoluteSliderWrapper {
+        display: none; /* Hide slider on mobile/tablet to prioritize readability */
+    }
+
+    .contentWrapper {
+        text-align: center;
+        padding: 0;
+    }
+
+    .paragraph {
+        margin: 25px auto;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .heading {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .vectorWrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
+
+    .greenVector {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bannerSection {
+        padding: 80px 0;
+    }
+
+    .heading {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .paragraph {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .bannerSection {
+        padding: 60px 0;
+    }
+
+    .heading {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .greenVector {
+        max-width: 280px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

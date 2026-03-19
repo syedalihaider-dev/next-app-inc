@@ -1,0 +1,100 @@
+.mainHeader {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.headerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.logoImage {
+    max-width: 100%;
+    height: auto;
+    transition: var(--cubic);
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menuToggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    border: none;
+    transition: var(--cubic);
+    flex-shrink: 0;
+}
+
+.menuToggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-color);
+    transition: var(--cubic);
+    border-radius: 10px;
+}
+
+.menuToggle:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1199px) {
+    .headerRight {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mainHeader {
+        top: 20px;
+    }
+
+    .logoPart {
+        max-width: 180px;
+    }
+
+    .menuToggle {
+        width: 50px;
+        height: 50px;
+        gap: 5px;
+    }
+
+    .menuToggle span {
+        width: 20px;
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .mainHeader {
+        top: 15px;
+    }
+
+    .logoPart {
+        max-width: 140px;
+    }
+
+    .chatButton {
+        display: none; /* Hide on small mobile to avoid layout breaking, or we could just scale it */
+    }
+
+    .headerRight {
+        gap: 10px;
+    }
+}

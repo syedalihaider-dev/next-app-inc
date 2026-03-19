@@ -1,0 +1,154 @@
+.appointmentSection {
+    position: relative;
+    padding: 100px 0 0 0;
+    /* No bottom padding */
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.gridBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    /* Increased visibility */
+    pointer-events: none;
+    background-image: url('/grid-bg.png');
+    background-repeat: repeat;
+    background-size: contain;
+    /* Adjusting so pattern repeats naturally */
+}
+
+.contentCol {
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.heading {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #6a55ff;
+    /* Purple color for "App Idea?" */
+}
+
+.vectorWrapper {
+    margin-bottom: 35px;
+    margin-top: -10px;
+}
+
+.description {
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 45px;
+    max-width: 580px;
+}
+
+.visualCol {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* Align to bottom */
+    z-index: 1;
+    height: 100%;
+}
+
+/* Bottom fade overlay */
+.visualCol::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.handImgWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin-right: -100px;
+    margin-bottom: -10px;
+    /* Slight overlap with section bottom */
+    display: flex;
+    align-items: flex-end;
+}
+
+.handImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 56px;
+    }
+
+    .handImgWrapper {
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .appointmentSection {
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .description {
+        margin: 0 auto 40px;
+    }
+
+    .visualCol {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .handImgWrapper {
+        margin-right: 0;
+    }
+
+    .vectorWrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 36px;
+    }
+
+    .badge {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}

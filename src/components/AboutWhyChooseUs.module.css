@@ -1,0 +1,128 @@
+.whyChooseSection {
+    position: relative;
+    padding: 140px 0;
+    background-color: #ffffff;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.bgImage {
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.leftContent {
+    padding-right: 40px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.heading {
+    font-size: 75px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+.highlightText {
+    color: #6345ED;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.brushUnderline {
+    position: absolute;
+    bottom: -15px; 
+    left: 0;
+    width: 380px;
+    height: 25px;
+    z-index: -1;
+}
+
+.paragraph {
+    font-size: 24px;
+    color: #424242;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+
+
+/* Cards */
+.cardWrapper {
+    background-color: #F2F2F2;
+    padding: 40px 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.cardWrapper:hover {
+    background-color: #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.iconBox {
+    margin-bottom: 30px;
+}
+
+.cardHeading {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.cardParagraph {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.offsetColumn {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1199px) {
+    .heading { font-size: 45px; }
+    .leftContent { padding-right: 0; }
+    .cardWrapper { padding: 40px 30px; }
+}
+
+@media (max-width: 991px) {
+    .heading { font-size: 38px; }
+    .offsetColumn { align-items: flex-start; }
+}
+
+@media (max-width: 767px) {
+    .badge { margin-bottom: 20px; font-size: 12px; padding: 8px 18px; }
+    .heading { font-size: 32px; letter-spacing: -1px; }
+    .whyChooseSection { padding: 80px 0; }
+    .offsetColumn { align-items: flex-start; margin-top: 0; }
+    .paragraph { font-size: 16px; }
+    .cardWrapper { padding: 30px 20px; }
+}
