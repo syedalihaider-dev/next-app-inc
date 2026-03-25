@@ -1,0 +1,135 @@
+.whyChooseSection {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.bgBlobs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.blobImg {
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.heading {
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.purpleText {
+    color: #6a55ff;
+}
+
+.underlineWrapper {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.purpleVector {
+    object-fit: contain;
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+.description p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btnRow {
+    display: flex;
+}
+
+.mockupWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 45%;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.mockupImg {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    /* filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.1)); */
+}
+
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 48px;
+    }
+    .description p {
+        font-size: 18px;
+    }
+    .mockupWrapper {
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px) {
+    .whyChooseSection {
+        padding: 80px 0 400px; /* More bottom padding for the mobile view of mockup */
+    }
+    .contentCol {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .underlineWrapper {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btnRow {
+        justify-content: center;
+    }
+    .mockupWrapper {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 35px;
+    }
+}

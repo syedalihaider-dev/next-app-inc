@@ -1,0 +1,110 @@
+.yesTableProject {
+    padding: 156px 0;
+    position: relative;
+    background: linear-gradient(269deg, #fff 18%, #E4FAFF 50%);
+    overflow: hidden;
+    z-index: 6;
+}
+
+.bgOuterShape {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 669px;
+    height: 981px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.shapeImg {
+    object-fit: contain;
+    object-position: left top;
+}
+
+.infoCol {
+    padding-left: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.clientLogo {
+    margin-bottom: 20px;
+}
+
+.logoWrapper {
+    display: inline-block;
+}
+
+.logoImg {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.textContent p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.textContent strong {
+    color: #000;
+    font-weight: 800;
+}
+
+.mockupWrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mockupImg {
+    max-width: 140%; 
+    height: auto;
+    transform: translateX(50px);
+}
+
+@media (max-width: 1400px) {
+    .mockupImg {
+        max-width: 120%;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .bgOuterShape {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .yesTableProject {
+        padding: 100px 0;
+        border-radius: 50px 50px 0 0;
+        margin-top: -50px;
+    }
+
+    .infoCol {
+        padding-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .bgOuterShape {
+        display: none;
+    }
+
+    .mockupImg {
+        max-width: 100%;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 575px) {
+    .textContent p {
+        font-size: 16px;
+    }
+}

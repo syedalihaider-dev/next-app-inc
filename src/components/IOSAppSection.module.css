@@ -1,0 +1,208 @@
+.iosAppSection {
+    padding: 150px 0 100px;
+    position: relative;
+    background: linear-gradient(269deg, #FFFFFF 18%, #D7FCFF 83%);
+    z-index: 20;
+    overflow: hidden;
+    border-radius: 180px 180px 0 0;
+    margin-top: -165px;
+}
+
+.heading {
+    font-size: 85px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.purpleText {
+    color: #6a55ff;
+}
+
+.underlineWrapper {
+    margin-bottom: 40px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.checkIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.statsRow {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Added bottom line */
+    padding: 30px 0;
+    max-width: 600px;
+}
+
+.statValue {
+    font-size: 80px;
+    font-weight: 800;
+    color: #6a55ff;
+}
+
+.vLine {
+    width: 2px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.statLabel {
+    font-size: 22px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.btnRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phoneBtn {
+    padding: 15px 35px;
+    border: 1px solid #1a1a1a;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: .3s linear;
+}
+
+.phoneBtn:hover {
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mockup pinned to right and bottom */
+.mockupWrapper {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.mockupBg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(180deg, #6243FA 0%, #B2FF00 100%);
+    filter: blur(120px);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.3;
+    right: 0;
+    bottom: 10%;
+}
+
+.mockupImg {
+    z-index: 2;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    object-position: right bottom;
+}
+
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 65px;
+    }
+    .mockupImg {
+        width: 110%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 55px;
+    }
+    .mockupWrapper {
+        width: 45%;
+    }
+}
+
+@media (max-width: 991px) {
+    .iosAppSection {
+        padding: 80px 0;
+        min-height: auto;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mockupWrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .mockupImg {
+        width: 100%;
+        object-position: center;
+    }
+
+    .btnRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .statsRow {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 38px;
+    }
+    .statValue {
+        font-size: 55px;
+    }
+    .statLabel {
+        font-size: 16px;
+    }
+}

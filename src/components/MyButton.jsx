@@ -10,8 +10,8 @@ const MyButton = ({ text, link = "#", className = "btn_white", icon = "/arrow-bt
             </div>
             <div className="icon">
                 <div className="icon-wrapper">
-                    <Image src={icon} alt="icon" width={22} height={22} />
-                    <Image src={icon} alt="icon" width={22} height={22} />
+                    <Image src={icon} alt="icon" width={24} height={13} />
+                    <Image src={icon} alt="icon" width={24} height={13} />
                 </div>
             </div>
         </Link>

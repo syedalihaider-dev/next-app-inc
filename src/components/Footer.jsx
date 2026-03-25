@@ -24,6 +24,7 @@ const Footer = () => {
                                 <li><Link href="/services">OUR SERVICES</Link></li>
                                 <li><Link href="/work">WORK</Link></li>
                                 <li><Link href="/contact-us">CONTACT US</Link></li>
+                                <li><Link href="/case-studies">CASE STUDIES</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -31,7 +32,7 @@ const Footer = () => {
                         <div className={styles.footerCol}>
                             <h4 className={styles.footerTitle}>Services</h4>
                             <ul className={styles.footerLinks}>
-                                <li><Link href="/unity-game-development">UNITY GAME DEVELOPMENT</Link></li>
+                                <li><Link href="/services/ios-app-development">IOS App Development</Link></li>
                                 <li><Link href="/react-native-development">REACT NATIVE DEVELOPMENT</Link></li>
                                 <li><Link href="/flutter-development">FLUTTER DEVELOPMENT</Link></li>
                                 <li><Link href="/full-stack-development">FULL STACK DEVELOPMENT</Link></li>

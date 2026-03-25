@@ -1,0 +1,108 @@
+.serviceBanner {
+    position: relative;
+    padding: 220px 0 300px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.bgWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.bgImg {
+    object-fit: cover;
+    opacity: 0.6; /* Slight dark tint */
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.heading {
+    color: #fff;
+    font-size: 85px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.purpleText {
+    color: #6a55ff;
+}
+
+.greenText {
+    color: #9dff00; /* Neon/Bright Green */
+}
+
+.underlineWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.desc {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 991px) {
+    .serviceBanner {
+        padding-top: 180px;
+        min-height: 700px;
+        border-radius: 0 0 50px 50px;
+        margin-bottom: -50px;
+    }
+    
+    .heading {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 38px;
+    }
+    
+    .desc {
+        font-size: 16px;
+    }
+    
+    .underlineWrapper {
+        margin-top: -5px;
+    }
+}

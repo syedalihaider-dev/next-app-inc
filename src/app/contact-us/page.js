@@ -1,6 +1,6 @@
 import ContactBanner from "@/components/ContactBanner";
 import ContactSection from "@/components/ContactSection";
-import CTASection from "@/components/CTASection";
+import LocationSection from "@/components/LocationSection";
 
 export const metadata = {
     title: "Contact Us | Next App Inc",
@@ -11,8 +11,8 @@ export default function ContactUsPage() {
     return (
         <main>
             <ContactBanner />
-            <ContactSection />
-            <CTASection />
+            <ContactSection isNewDesign={true} />
+            <LocationSection />
         </main>
     );
 }
