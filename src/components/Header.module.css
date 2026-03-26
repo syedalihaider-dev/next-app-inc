@@ -54,6 +54,14 @@
     transform: scale(1.05);
 }
 
+
+@media screen and (max-width: 1600px) {
+
+    .headerWrapper {
+        padding-left: 50px;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .headerRight {
         gap: 15px;
@@ -61,6 +69,10 @@
 }
 
 @media screen and (max-width: 991px) {
+    .headerWrapper {
+        padding-left: 0px;
+    }
+
     .mainHeader {
         top: 20px;
     }
@@ -91,7 +103,8 @@
     }
 
     .chatButton {
-        display: none; /* Hide on small mobile to avoid layout breaking, or we could just scale it */
+        display: none;
+        /* Hide on small mobile to avoid layout breaking, or we could just scale it */
     }
 
     .headerRight {

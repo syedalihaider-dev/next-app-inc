@@ -61,8 +61,9 @@ const CaseStudy = () => {
                     slidesPerView={1}
                     loop={false}
                     breakpoints={{
-                        768: { slidesPerView: 2 },
-                        1200: { slidesPerView: 3 },
+                        768: { slidesPerView: 1 },
+                        991: { slidesPerView: 2 },
+                        1200: { slidesPerView: 2 },
                     }}
                     className={styles.casesSwiper}
                 >

@@ -16,7 +16,7 @@ const About = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Top Part */}
-                        <div className="col-lg-9">
+                        <div className="col-lg-9 col-md-8">
                             <div className={styles.headerArea}>
                                 <span className={styles.badge}>WHO WE ARE</span>
                                 <h2 className={styles.heading}>
@@ -25,7 +25,7 @@ const About = () => {
                                 </h2>
                             </div>
                         </div>
-                        <div className="col-lg-3 d-flex justify-content-end align-items-start">
+                        <div className="col-lg-3 col-md-4 d-flex justify-content-end align-items-start">
                             <div className={styles.videoWrapper}>
                                 <video autoPlay loop muted playsInline className={styles.laptopVideo}>
                                     <source src="/video-01.mp4" type="video/mp4" />

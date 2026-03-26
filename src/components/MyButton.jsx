@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from './MyButton.module.css';
 
 const MyButton = ({ text, link = "#", className = "btn_white", icon = "/arrow-btn.png" }) => {
     return (
-        <Link href={link} className={`mybtn ${className}`}>
-            <div className="text">
+        <Link href={link} className={`${styles.mybtn} ${styles[className]}`}>
+            <div className={styles.text}>
                 <span>{text}</span>
                 <span>{text}</span>
             </div>
-            <div className="icon">
-                <div className="icon-wrapper">
+            <div className={styles.icon}>
+                <div className={styles.iconWrapper}>
                     <Image src={icon} alt="icon" width={24} height={13} />
                     <Image src={icon} alt="icon" width={24} height={13} />
                 </div>
@@ -19,3 +20,4 @@ const MyButton = ({ text, link = "#", className = "btn_white", icon = "/arrow-bt
 };
 
 export default MyButton;
+

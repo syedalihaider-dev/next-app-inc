@@ -22,7 +22,6 @@
     opacity: 0.8;
 }
 
-
 .backgroundImage {
     object-fit: cover;
     z-index: -1;
@@ -78,10 +77,30 @@
     max-width: 600px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
+    .bannerSection {
+        min-height: unset;
+        padding: 180px 0 200px;
+    }
+
+    .contentWrapper {
+        padding-left: 50px;
+    }
+
     .heading {
         font-size: 55px;
         line-height: 65px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: unset;
+        max-width: unset;
+    }
+
+    .vectorWrapper {
+        width: 550px;
+        margin: 0px 0 25px;
     }
 
     .absoluteSliderWrapper {
@@ -89,59 +108,35 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
     .bannerSection {
-        padding: 150px 0;
+        padding: 140px 0 160px;
     }
 
     .heading {
-        font-size: 48px;
-        line-height: 58px;
-    }
-
-    .absoluteSliderWrapper {
-        width: 50%;
-        opacity: 0.4;
-    }
-
-    .greenVector {
-        max-width: 450px;
-    }
-}
-
-@media (max-width: 991px) {
-    .bannerSection {
-        padding: 100px 0;
-        min-height: calc(100vh - 80px); /* Adjust for header if needed */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .absoluteSliderWrapper {
-        display: none; /* Hide slider on mobile/tablet to prioritize readability */
-    }
-
-    .contentWrapper {
-        text-align: center;
-        padding: 0;
-    }
-
-    .paragraph {
-        margin: 25px auto;
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .heading {
-        font-size: 42px;
-        line-height: 52px;
+        font-size: 45px;
+        line-height: 50px;
     }
 
     .vectorWrapper {
-        display: flex;
-        justify-content: center;
-        margin: 0 0 20px 0;
+        width: 450px;
+        margin: 0px 0 20px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 1199px) {
+    .bannerSection {
+        padding: 140px 0 160px;
+    }
+
+    .heading {
+        font-size: 35px;
+        line-height: 40px;
     }
 
     .greenVector {
@@ -149,38 +144,34 @@
     }
 }
 
+@media (max-width: 991px) {
+
+    .contentWrapper {
+        padding-left: 0px;
+    }
+
+    .absoluteSliderWrapper {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
-    .bannerSection {
-        padding: 80px 0;
-    }
-
     .heading {
-        font-size: 36px;
-        line-height: 46px;
-    }
-
-    .paragraph {
-        font-size: 15px;
-        line-height: 24px;
+        width: unset;
     }
 }
 
 @media (max-width: 575px) {
     .bannerSection {
-        padding: 60px 0;
+        padding: 120px 0 40px;
     }
 
     .heading {
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 25px;
+        line-height: 30px;
     }
-
-    .greenVector {
-        max-width: 280px;
-    }
-
-    .paragraph {
-        font-size: 14px;
-        line-height: 22px;
+    .vectorWrapper {
+        width: 100%;
+        margin: 0px 0 15px;
     }
 }

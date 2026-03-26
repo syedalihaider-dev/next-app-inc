@@ -7,7 +7,6 @@
 }
 
 .aboutCard {
-    /* background: radial-gradient(circle at top right, #eaddff 0%, #f9f9ff 60%); */
     border-radius: 120px 120px 0 0;
     padding: 120px 0 80px 0;
     position: relative;
@@ -124,25 +123,112 @@
     margin-bottom: 25px;
 }
 
-@media (max-width: 1199px) {
-    .heading {
-        font-size: 50px;
+@media (max-width: 1600px) {
+    .aboutSection {
+        min-height: unset;
+        margin-top: -90px;
     }
 
     .aboutCard {
-        padding: 50px;
-        border-radius: 50px;
+        width: 100%;
+        min-height: unset;
+        border-radius: 100px 100px 0 0;
+        padding: 80px 0;
+    }
+
+    .badge {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        width: 700px;
+    }
+
+    .springElement {
+        opacity: 1;
+        width: 450px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .handWrapper {
-        width: 100%;
-        margin-left: 0;
+        width: 435px;
+        margin: 0 auto -80px;
+    }
+
+    .gifOverlay {
+        width: 274px;
+        height: unset;
+        position: absolute;
+        top: -1px;
+        left: 1px;
+    }
+
+    .paragraphs p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .contentArea {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .aboutSection {
+        margin-top: -75px;
+    }
+
+    .aboutCard {
+        border-radius: 80px 80px 0 0;
+        padding: 60px 0;
+    }
+
+    .heading {
+        width: 630px;
+    }
+
+    .contentArea {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .aboutCard {
+        border-radius: 80px 80px 0 0;
+        padding: 60px 0 20px;
+    }
+
+    .heading {
+        width: 530px;
+    }
+
+    .springElement {
+        width: 350px;
+    }
+
+    .handWrapper {
+        width: 350px;
+        margin: 0 auto -20px;
+    }
+
+    .gifOverlay {
+        width: 220px;
     }
 }
 
 @media (max-width: 991px) {
     .aboutCard {
         min-height: auto;
+        padding: 40px 0 20px;
+    }
+
+    .badge {
+        margin-bottom: 15px;
+        padding: 5px 10px;
     }
 
     .contentArea {
@@ -156,5 +242,79 @@
         justify-content: center;
         display: flex;
         max-width: 100%;
+    }
+
+    .aboutSection :global(.row.align-items-end.mt-5) {
+        flex-direction: column-reverse;
+        margin-top: 30px !important;
+    }
+
+    .contentArea {
+        margin-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .videoWrapper {
+        display: none;
+    }
+
+    .springElement {
+        width: 250px;
+    }
+
+    .handWrapper {
+        width: 300px;
+        margin: 0 auto -20px;
+    }
+
+    .gifOverlay {
+        width: 189px;
+        left: 0px;
+    }
+
+    .heading {
+        width: unset;
+    }
+
+    .paragraphs p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .aboutSection{
+        margin: 0;
+    }
+
+    .aboutCard {
+        border-radius: 0;
+        padding: 40px 0;
+    }
+
+    .badge {
+        font-weight: 300;
+    }
+
+    .vectorWrapper {
+    width: 100%;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+    .heading {
+        width: unset;
+    }
+
+    .handWrapper {
+        margin: 0 auto -40px;
+    }
+
+    .paragraphs p {
+        margin-bottom: 10px;
+        font-size: 14px;
     }
 }

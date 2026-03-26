@@ -171,81 +171,54 @@
     transform: translateY(-10px);
 }
 
-@media (max-width: 1400px) {
-    .cardTitle {
-        font-size: 28px;
-    }
-
-    .cardContent {
-        width: 48%;
-    }
-
-    .greenVector {
-        width: 280px;
-    }
-}
-
-@media (max-width: 1199px) {
-    .caseStudyCard {
-        height: 420px;
-        padding: 30px;
-    }
-
-    .cardTitle {
-        font-size: 24px;
-    }
-
-    .cardContent {
-        width: 50%;
-    }
-
-    .cardIndustry {
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 991px) {
-    .caseStudyCard {
-        height: 450px;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
     .caseStudySection {
         padding: 60px 0;
     }
 
-    .greenVector {
-        width: 200px;
+    .badge {
+        letter-spacing: 0px;
     }
 
-    .cardContent {
-        width: 70%;
-        text-align: left;
-        position: relative;
-        z-index: 2;
+    /* .caseStudyCard {
+        height: 480px;
+        padding: 25px;
+    }
+
+    .cardTitle {
+        font-size: 25px;
+        min-height: unset;
+    } */
+}
+
+@media (max-width: 1399px) {
+    .caseStudySection {
+        padding: 40px 0;
+    }
+
+    .caseStudyCard {
+        height: unset;
+        padding: 30px 20px;
     }
 
     .mockupImg {
-        width: 40%;
-        right: 0;
-        bottom: 0;
-        opacity: 0.6;
+        right: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .teamList {
+        font-size: 14px;
+    }
+
+    .mockupImg {
+        width: 220px;
+    }
+
+    .mockupImg img{
+        object-fit: contain;
     }
 }
 
 @media (max-width: 575px) {
-    .mockupImg {
-        width: 60%;
-        position: relative;
-        right: auto;
-        margin-top: 20px;
-        align-self: flex-end;
-    }
-
-    .caseStudyCard {
-        height: auto;
-        min-height: 500px;
-    }
 }

@@ -2,8 +2,10 @@
 import { useRef } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 import styles from './Services.module.css';
 import MyButton from './MyButton';
 
@@ -13,27 +15,27 @@ const Services = () => {
     const servicesData = [
         {
             icon: "/services-icon-01.png",
-            title: "Mobile Application",
+            title: "Mobile <br /> Application",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
             icon: "/services-icon-02.png",
-            title: "E-commerce Development",
+            title: "E-commerce <br /> Development",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/services-icon-03.png",
-            title: "Game Development",
+            icon: "/service-icon-unity.png",
+            title: "Game <br /> Development",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/services-icon-04.png",
-            title: "Web Development",
+            icon: "/service-icon-fullstack.png",
+            title: "Web <br /> Development",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/services-icon-01.png",
-            title: "Software Solutions",
+            icon: "/service-icon-fullstack.png",
+            title: "Software <br/> Solutions",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         }
     ];
@@ -77,14 +79,19 @@ const Services = () => {
 
                     <div className={styles.cardsScroll}>
                         <Swiper
-                            modules={[Navigation]}
+                            modules={[Navigation, Autoplay]}
                             onBeforeInit={(swiper) => {
                                 swiperRef.current = swiper;
                             }}
                             spaceBetween={30}
                             slidesPerView={1}
                             loop={true}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            }}
                             breakpoints={{
+                                576: { slidesPerView: 1 },
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 3 },
                                 1400: { slidesPerView: 4 },
@@ -97,7 +104,7 @@ const Services = () => {
                                         <div className={styles.iconBox}>
                                             <Image src={service.icon} alt={service.title} width={45} height={45} />
                                         </div>
-                                        <h4 className={styles.cardTitle}>{service.title}</h4>
+                                        <h4 className={styles.cardTitle} dangerouslySetInnerHTML={{ __html: service.title }}></h4>
                                         <p className={styles.cardDescription}>{service.description}</p>
                                     </div>
                                 </SwiperSlide>
