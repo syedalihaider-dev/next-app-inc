@@ -3,7 +3,23 @@ import Image from 'next/image';
 import styles from './WhyChooseAppSection.module.css';
 import MyButton from './MyButton';
 
-const WhyChooseAppSection = () => {
+const WhyChooseAppSection = ({ 
+    title, 
+    desc1, 
+    desc2, 
+    mockupImage = "/services/why-choose-mockup.png",
+    underlineImage = "/blue-vector.png" 
+}) => {
+    // Default content if props are not provided
+    const defaultTitle = (
+        <>
+            Why Choose <span className={styles.purpleText}>Next <br /> App Inc</span> Mobile Apps
+        </>
+    );
+
+    const defaultDesc1 = "We're Trusted By Businesses Worldwide, Turning Their Ideas Into Realities For All To See. Your App Idea Could Be Next.";
+    const defaultDesc2 = "At Next App Inc, We Help Startups, Growing Businesses, And Enterprises Transform Ideas Into Engaging, Scalable Mobile Experiences. From Strategy To Launch, Our Team Delivers High-Performance Apps Tailored To Your Market And Goals.";
+
     return (
         <section className={styles.whyChooseSection}>
             <div className={styles.bgBlobs}>
@@ -20,11 +36,11 @@ const WhyChooseAppSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.contentCol}>
                             <h2 className={styles.heading}>
-                                Why Choose <span className={styles.purpleText}>Next <br /> App Inc</span> Mobile Apps
+                                {title || defaultTitle}
                             </h2>
                             <div className={styles.underlineWrapper}>
                                 <Image 
-                                    src="/blue-vector.png" 
+                                    src={underlineImage} 
                                     alt="underline" 
                                     width={250} 
                                     height={20} 
@@ -34,14 +50,10 @@ const WhyChooseAppSection = () => {
                             
                             <div className={styles.description}>
                                 <p>
-                                    We're Trusted By Businesses Worldwide, Turning Their Ideas 
-                                    Into Realities For All To See. Your App Idea Could Be Next.
+                                    {desc1 || defaultDesc1}
                                 </p>
                                 <p>
-                                    At Next App Inc, We Help Startups, Growing Businesses, And 
-                                    Enterprises Transform Ideas Into Engaging, Scalable Mobile 
-                                    Experiences. From Strategy To Launch, Our Team Delivers 
-                                    High-Performance Apps Tailored To Your Market And Goals.
+                                    {desc2 || defaultDesc2}
                                 </p>
                             </div>
 
@@ -56,7 +68,7 @@ const WhyChooseAppSection = () => {
 
             <div className={styles.mockupWrapper}>
                 <Image 
-                    src="/services/why-choose-mockup.png" 
+                    src={mockupImage} 
                     alt="Mobile App Mockup" 
                     width={800} 
                     height={700} 
@@ -69,3 +81,4 @@ const WhyChooseAppSection = () => {
 };
 
 export default WhyChooseAppSection;
+

@@ -1,0 +1,156 @@
+.featuresSection {
+    position: relative;
+    padding: 120px 0;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.bgImage {
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.heading {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.greenText {
+    color: #a7fb00;
+}
+
+.underlineWrapper {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.greenVector {
+    object-fit: contain;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+}
+
+.mockupWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonesMockup {
+    object-fit: contain;
+    width: 130%; /* Overlap slightly for effect */
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
+}
+
+.accordionList {
+    background: transparent;
+}
+
+.accordionItem {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.accordionHeader {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.itemTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.open svg circle {
+    stroke-opacity: 1;
+}
+
+.accordionContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+}
+
+.contentOpen {
+    max-height: 200px;
+    padding-bottom: 30px;
+    opacity: 1;
+}
+
+.accordionContent p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    padding-right: 40px;
+}
+
+.accordionItem:hover .itemTitle {
+    color: #a7fb00;
+}
+
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 52px;
+    }
+    .phonesMockup {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .featuresSection {
+        padding: 80px 0;
+    }
+    .header {
+        text-align: center;
+    }
+    .description {
+        margin: 0 auto;
+    }
+    .mockupWrapper {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 32px;
+    }
+    .itemTitle {
+        font-size: 18px;
+    }
+}

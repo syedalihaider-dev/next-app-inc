@@ -1,0 +1,100 @@
+.consultationSection {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.bgImage {
+    object-fit: cover;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+}
+
+.contentArea {
+    padding-bottom: 120px;
+}
+
+.heading {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.purpleText {
+    color: #6a55ff;
+}
+
+.underlineWrapper {
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.purpleVector {
+    object-fit: contain;
+}
+
+.subLabel {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777;
+    max-width: 550px;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.womanImg {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.05));
+    display: block;
+}
+
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 991px) {
+    .consultationSection {
+        padding: 80px 0 0;
+    }
+    .contentArea {
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .description {
+        margin: 0 auto;
+    }
+    .imageWrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .heading {
+        font-size: 35px;
+    }
+    .description {
+        font-size: 16px;
+    }
+}
