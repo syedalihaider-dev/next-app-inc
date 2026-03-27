@@ -5,6 +5,12 @@ import MyButton from './MyButton';
 const CTASection = () => {
     return (
         <section className={styles.ctaSection}>
+            <Image
+                src="/about-bg.png"
+                alt="background image"
+                fill
+                className={styles.backgroundImage}
+            />
             <div className="container">
                 <div className={styles.ctaWrapper}>
                     <div className={styles.contentCol}>

@@ -63,7 +63,7 @@ const CaseStudy = () => {
                     breakpoints={{
                         768: { slidesPerView: 1 },
                         991: { slidesPerView: 2 },
-                        1200: { slidesPerView: 2 },
+                        1600: { slidesPerView: 3 },
                     }}
                     className={styles.casesSwiper}
                 >

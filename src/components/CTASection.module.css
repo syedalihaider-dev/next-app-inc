@@ -1,9 +1,13 @@
 .ctaSection {
     padding: 100px 0 0 0;
     overflow: hidden;
-    background: url('/about-bg.png') no-repeat center center;
-    background-size: cover;
     position: relative;
+    z-index: 1;
+}
+
+.backgroundImage {
+    object-fit: cover;
+    z-index: -1;
 }
 
 .ctaWrapper {
@@ -176,82 +180,247 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .heading {
-        font-size: 56px;
+@media (max-width: 1600px) {
+    .ctaSection {
+        padding: 60px 0 0;
     }
 
-    .contentCol {
-        max-width: 500px;
+    /* .heading {
+        font-size: 50px;
+    } */
+
+    .description {
+        max-width: unset;
+        font-size: 18px;
+    }
+
+    .blueVector {
+        bottom: -25px;
+        left: 0px;
     }
 
     .visualCol {
-        height: 600px;
+        height: 650px;
     }
 
     .bgCircleWrapper {
+        width: 450px;
+        height: 450px;
+        margin-top: -220px;
+        margin-left: -230px;
+    }
+
+    .handWrapper {
         width: 500px;
+        margin-left: -170px;
+    }
+
+    .videoContainer {
+        width: 225px;
+        left: 44px;
+    }
+
+    .appStore {
+        top: 25%;
+        left: 11%;
+    }
+
+    .flutter {
+        top: 40%;
+        right: 10%;
+    }
+
+    .android {
+        bottom: 25%;
+        left: 7%;
+    }
+}
+
+@media (max-width: 1399px) {
+
+    .badge {
+        margin-bottom: 20px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .visualCol {
         height: 500px;
+    }
+
+    .bgCircleWrapper {
+        width: 350px;
+        height: 350px;
+        margin-top: -200px;
+        margin-left: -220px;
+    }
+
+    .handWrapper {
+        width: 400px;
+        margin-left: -170px;
+    }
+
+    .videoContainer {
+        width: 180px;
+        left: 37px;
+        top: -1px;
+    }
+
+    .appStore {
+        width: 80px;
+        top: 11%;
+        left: 10%;
+    }
+
+    .appStore img,
+    .flutter img,
+    .android img {
+        object-fit: contain;
+    }
+
+    .flutter {
+        width: 80px;
+        top: 30%;
+        right: 20%;
+    }
+
+    .android {
+        bottom: 27%;
+        left: 2%;
     }
 }
 
 @media (max-width: 991px) {
+    .ctaSection {
+        padding: 40px 0 0;
+    }
+
+    .badge {
+        font-weight: 400;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .visualCol {
+        height: 400px;
+    }
+
+    .bgCircleWrapper {
+        width: 250px;
+        height: 250px;
+        margin-top: -150px;
+        margin-left: -140px;
+    }
+
+    .handWrapper {
+        width: 350px;
+        margin-left: -120px;
+    }
+
+    .videoContainer {
+        width: 158px;
+        top: 0px;
+        left: 32px;
+    }
+
+    .appStore {
+        width: 50px;
+        top: 23%;
+        left: 3%;
+    }
+
+    .appStore img,
+    .flutter img,
+    .android img {
+        object-fit: contain;
+    }
+
+    .flutter {
+        width: 50px;
+        top: 30%;
+        right: 11%;
+    }
+
+    .android {
+        width: 60px;
+        bottom: 27%;
+        left: 2%;
+    }
+}
+
+@media (max-width: 767px) {
     .ctaWrapper {
         flex-direction: column;
-        text-align: center;
-        padding-top: 50px;
+        gap: 20px;
+    }
+
+    .badge {
+        padding: 5px 10px;
     }
 
     .contentCol {
         max-width: 100%;
     }
 
-    .description {
-        margin: 0 auto 40px;
-    }
-
-    .ctaBtn {
-        margin: 0 auto;
-    }
-
     .visualCol {
-        width: 100%;
-        height: auto;
-        padding-top: 50px;
+        height: unset;
+        margin-top: 40px;
+    }
+
+    .bgCircleWrapper {
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+        margin-left: 0;
+        position: unset;
     }
 
     .handWrapper {
-        margin-left: 0;
+        width: 250px;
+        margin-left: -85px;
     }
 
-    .bgCircleWrapper {
-        width: 400px;
-        height: 400px;
+    .videoContainer {
+       width: 115px;
+        top: -2px;
+        left: 23px;
+        border-radius: 20px;
     }
 
-    .floatingIcon img {
+    .videoContainer video{
+        object-fit: contain;
+    }
+    .appStore {
+        width: 50px;
+        top: 3%;
+        left: 3%;
+    }
+
+    .flutter {
+        width: 50px;
+        top: 30%;
+        right: -9%;
+    }
+
+    .android {
         width: 60px;
-        height: auto;
-    }
-}
-
-@media (max-width: 575px) {
-    .heading {
-        font-size: 36px;
-    }
-
-    .blueVector {
-        width: 100%;
-        left: 0;
-    }
-
-    .handImg {
-        width: 100%;
-        height: auto;
-    }
-
-    .bgCircleWrapper {
-        width: 300px;
-        height: 300px;
+        bottom: 3%;
+        left: -6%;
     }
 }

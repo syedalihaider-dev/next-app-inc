@@ -44,10 +44,10 @@ const steps = [
 const ProcessSection = () => {
     return (
         <section className={styles.processSection}>
+            <Image src="/process-bg.png" alt="bg" fill className={styles.bgImage} />
             <div className="container">
                 <div className="row">
-                    {/* Left Column - Sticky */}
-                    <div className="col-lg-6">
+                    <div className="col-md-6 col-lg-6">
                         <div className={styles.stickyContent}>
                             <span className={styles.badge}>Process</span>
                             <h2 className={styles.heading}>
@@ -59,18 +59,18 @@ const ProcessSection = () => {
                             </h2>
                         </div>
                     </div>
-
-                    {/* Right Column - Scrollable Cards */}
-                    <div className="col-lg-6">
+                    <div className="col-md-6 col-lg-6">
                         <div className={styles.rightCol}>
                             {steps.map((step, index) => (
                                 <div key={index} className={styles.stepCard}>
                                     <div className={styles.stepImage}>
                                         <img src={step.image} alt={step.title} />
                                     </div>
-                                    <span className={styles.stepNumber}>{step.number}</span>
-                                    <h3 className={styles.stepTitle}>{step.title}</h3>
-                                    <p className={styles.stepDesc}>{step.description}</p>
+                                    <div className={styles.stepContent}>
+                                        <span className={styles.stepNumber}>{step.number}</span>
+                                        <h3 className={styles.stepTitle}>{step.title}</h3>
+                                        <p className={styles.stepDesc}>{step.description}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>

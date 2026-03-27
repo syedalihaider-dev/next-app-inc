@@ -1,24 +1,20 @@
 .processSection {
-    background-image: url('/process-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 0;
-    color: #fff;
     position: relative;
     overflow: visible;
+    z-index: 1;
+}
+
+.bgImage {
+    z-index: -1;
 }
 
 .stickyContent {
     position: sticky;
     top: 0;
     height: 100vh;
-    /* Make the left side fill the screen height for centering */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 50px;
     z-index: 10;
 }
 
@@ -26,14 +22,13 @@
     width: 530px;
     padding-left: 20px;
     padding-top: 25vh;
-    /* Initial offset so left content is centered relative to first card */
     padding-bottom: 15vh;
-    /* Final offset so left content stays centered relative to last card */
     margin: 0 auto;
 }
 
 .badge {
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid #fff;
+    color: #fff;
     border-radius: 40px;
     padding: 8px 25px;
     font-size: 14px;
@@ -46,7 +41,7 @@
 }
 
 .heading {
-    font-size: 72px;
+    color: #fff;
     font-weight: 800;
     line-height: 1.1;
     margin: 0;
@@ -63,7 +58,7 @@
 
 .greenVector {
     position: absolute;
-    bottom: 5px;
+    bottom: -15px;
     left: 0;
     width: 100%;
     height: auto;
@@ -71,8 +66,8 @@
 
 .stepCard {
     background: #fff;
-    border-radius: 32px;
-    padding: 35px;
+    border-radius: 23px;
+    padding: 5px;
     margin-bottom: 60px;
     color: #000;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
@@ -91,7 +86,6 @@
 .stepImage {
     width: 100%;
     border-radius: 20px;
-    margin-bottom: 35px;
     overflow: hidden;
     background: #f8f9fa;
 }
@@ -101,6 +95,10 @@
     height: auto;
     display: block;
     object-fit: contain;
+}
+
+.stepContent {
+    padding: 30px 30px 20px;
 }
 
 .stepNumber {
@@ -131,58 +129,123 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
-    .heading {
-        font-size: 56px;
+@media (max-width: 1600px) {
+
+    .rightCol {
+        width: 500px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 0;
+    }
+
+    .stepContent {
+        padding: 15px 30px 0px;
     }
 
     .stepNumber {
-        font-size: 70px;
+        font-size: 50px;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+
+    .stepTitle {
+        margin-bottom: 10px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .stepDesc {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .badge {
+        text-align: center;
+        width: 110px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding: 8px 15px;
+    }
+
+    .stepCard {
+        margin-bottom: 40px;
+    }
+
+    .rightCol {
+        width: 450px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .stepTitle {
+        font-size: 30px;
+        line-height: 30px;
     }
 }
 
 @media (max-width: 991px) {
-    .stickyContent {
-        position: relative;
-        top: 0;
-        transform: none;
-        width: 100%;
-        text-align: center;
-        padding-right: 0;
-        margin-bottom: 50px;
+    .greenVector {
+        bottom: 0px;
     }
 
     .rightCol {
-        padding-left: 0;
         width: 100%;
     }
 
-    .greenVector {
-        margin: 0 auto;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80%;
+    .stepContent {
+        padding: 15px 20px 0;
+    }
+
+    .stepNumber {
+        font-size: 30px;
+    }
+
+    .stepDesc {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .stickyContent {
+        height: unset;
+        padding: 40px 0 0;
+    }
+
+    .rightCol {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0;
     }
 
     .stepCard {
-        padding: 30px;
+        width: 48%;
+        margin: 0;
+    }
+
+    .stepTitle {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .stepContent {
+        padding: 15px 5px 0;
     }
 }
 
 @media (max-width: 575px) {
-    .processSection {
-        padding: 60px 0;
+    .badge {
+        width: 100px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
     }
-
-    .heading {
-        font-size: 40px;
-    }
-
-    .stepTitle {
-        font-size: 28px;
-    }
-
-    .stepNumber {
-        font-size: 60px;
+    .stepCard {
+        width: 100%;
     }
 }
