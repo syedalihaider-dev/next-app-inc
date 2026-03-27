@@ -50,7 +50,7 @@ const Blog = () => {
                 {/* Blog Cards Grid */}
                 <div className="row g-4">
                     {blogs.map((blog) => (
-                        <div key={blog.id} className="col-lg-4 col-md-6">
+                        <div key={blog.id} className="col-lg-4 col-md-4">
                             <div className={styles.blogCard}>
                                 <div className={styles.cardThumb}>
                                     <img src={blog.image} alt={blog.title} />
