@@ -2,7 +2,6 @@
     position: relative;
     padding: 120px 0;
     background-color: #f5f3ff;
-    /* Soft light purple base */
     background-image:
         radial-gradient(circle at 5% 10%, rgba(106, 85, 255, 0.15) 0%, transparent 40%),
         radial-gradient(circle at 95% 90%, rgba(122, 59, 255, 0.2) 0%, transparent 50%),
@@ -21,7 +20,6 @@
 }
 
 .heading {
-    font-size: 60px;
     font-weight: 800;
     margin: 0;
     color: #000;
@@ -48,7 +46,6 @@
     grid-template-columns: 1fr 1.25fr 1fr;
     gap: 25px;
     align-items: center;
-    /* Center horizontally relative to center image */
 }
 
 .sideCol {
@@ -111,41 +108,85 @@
     object-fit: cover;
 }
 
-@media (max-width: 1200px) {
-    .heading {
-        font-size: 48px;
+@media (max-width: 1600px) {
+    .testimonialsSection {
+        padding: 60px 0;
     }
 
-    .testimonialsGrid {
-        grid-template-columns: 1fr 1fr;
+    .headerRow {
+        margin-bottom: 40px;
     }
 
-    .centerImageCol {
-        grid-column: span 2;
-        order: -1;
-        height: 500px;
+    .testimonialText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .testimonialsSection {
+        padding: 40px 0;
+    }
+
+    .clientName {
+        font-size: 20px;
+    }
+
+    .testimonialCard {
+        padding: 20px;
+    }
+
+    .cardHeader {
+        margin-bottom: 10px;
+        padding-bottom: 12px;
+    }
+
+    .testimonialText {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .testimonialCard {
+        padding: 20px 15px;
+    }
+
+    .cardHeader {
+        padding-bottom: 10px;
+    }
+
+    .testimonialText {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
 @media (max-width: 991px) {
-    .headerRow {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+    .testimonialsGrid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .sideCol {
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .centerImgWrapper {
+        display: none;
     }
 }
 
-@media (max-width: 768px) {
-    .testimonialsGrid {
-        grid-template-columns: 1fr;
+@media (max-width: 767px) {
+    .sideCol {
+        flex-direction: column;
     }
+}
 
-    .centerImageCol {
-        grid-column: span 1;
-        height: 400px;
-    }
-
-    .heading {
-        font-size: 36px;
+@media screen and (max-width: 575px) {
+    .headerRow {
+        flex-direction: column;
+        align-items: self-start;
+        gap: 10px;
     }
 }

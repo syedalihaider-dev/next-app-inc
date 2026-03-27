@@ -141,13 +141,41 @@
     }
 }
 
-@media (max-width: 575px) {
-    .heading {
-        font-size: 36px;
+@media (max-width: 1199px) {
+    .description {
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .badge {
-        padding: 8px 20px;
-        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .handImgWrapper {
+        margin-bottom: -40px;
+    }
+
+    .vectorWrapper {
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .handImgWrapper {
+        width: 350px;
+        margin-bottom: -20px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .vectorWrapper {
+        width: 260px;
+    }
+
+    .handImgWrapper {
+        width: 300px;
+        margin-top: 40px;
     }
 }
