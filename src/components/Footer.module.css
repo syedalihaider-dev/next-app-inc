@@ -17,27 +17,11 @@
 }
 
 .footerTitle {
-    font-size: 32px;
     font-weight: 700;
     margin-bottom: 30px;
     position: relative;
     display: inline-block;
     color: var(--light-color);
-}
-
-/* Add underline to Quick Links as per image */
-.footerCol:has(ul li:first-child a[href="/"]) .footerTitle::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 8px;
-    background-image: url('/blue-vector.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    filter: brightness(0) invert(1);
-    /* Make it white */
 }
 
 .footerLinks {
@@ -51,10 +35,10 @@
 }
 
 .footerLinks a {
-    color: var(--light-color);
+    color: #b8b8b8;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
     transition: var(--cubic);
     text-transform: uppercase;
 }
@@ -74,7 +58,7 @@
 }
 
 .contactInfo a {
-    color: var(--light-color);
+    color: #b8b8b8;
     text-decoration: none;
     transition: var(--cubic);
 }
@@ -87,7 +71,7 @@
     font-weight: 700;
     margin-bottom: 10px !important;
     text-transform: uppercase;
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 
 .locationItem {
@@ -108,8 +92,9 @@
 }
 
 .locationText p {
+    color: #b8b8b8;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -154,17 +139,56 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1600px) {
     .footer {
-        padding: 60px 0 30px;
+        padding: 40px 0px 20px;
+    }
+
+    .bottomBar {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .footerTitle {
+        margin-bottom: 25px;
+    }
+
+    .footerLinks a,
+    .contactInfo a,
+    .locationText p {
+        font-size: 14px;
+    }
+
+    .infoLabel {
+        font-size: 16px !important;
+    }
+
+    .bottomBar {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bottomLinks {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bottomBar {
+        text-align: center;
     }
 
     .bottomLinks {
-        justify-content: flex-start;
-        margin-top: 20px;
+        align-items: self-start;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .footerTitle {
-        font-size: 26px;
+    .bottomLinks li:nth-child(even){
+        display: none;
     }
 }

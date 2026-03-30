@@ -338,9 +338,9 @@
 
 @media (max-width: 991px) {
     .infoCol {
+        text-align: left;
+        margin-bottom: 40px;
         padding-right: 0;
-        margin-bottom: 60px;
-        text-align: center;
     }
 
     .contactItem {
@@ -357,7 +357,32 @@
     }
 
     .servicesPills {
-        justify-content: center;
+        justify-content: start;
+    }
+
+    .header {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .vectorWrapper,
+    .contactItem,
+    .socialIcons,
+    .achievementBadges {
+        justify-content: start;
+    }
+
+    .achievementsHeading {
+        margin: 30px 0 10px;
+    }
+
+    .servicesTitle {
+        text-align: left;
+    }
+
+    .bottomBar {
+        margin-top: 40px;
+        padding-top: 15px;
     }
 }
 
@@ -376,5 +401,15 @@
 
     .infoCol {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .achievementBadges img {
+        height: 60px;
+    }
+    .submitBtn {
+        margin-top: 0 !important;
+        margin-bottom: 0px !important;
     }
 }

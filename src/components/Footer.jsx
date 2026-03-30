@@ -21,7 +21,7 @@ const Footer = () => {
                             <ul className={styles.footerLinks}>
                                 <li><Link href="/">HOME</Link></li>
                                 <li><Link href="/about-us">ABOUT US</Link></li>
-                                <li><Link href="/services">OUR SERVICES</Link></li>
+                                {/* <li><Link href="/services">OUR SERVICES</Link></li> */}
                                 <li><Link href="/industries/accounting-app-development">INDUSTRIES</Link></li>
                                 <li><Link href="/contact-us">CONTACT US</Link></li>
                                 <li><Link href="/case-studies">CASE STUDIES</Link></li>
@@ -33,11 +33,11 @@ const Footer = () => {
                             <h4 className={styles.footerTitle}>Services</h4>
                             <ul className={styles.footerLinks}>
                                 <li><Link href="/services/ios-app-development">IOS App Development</Link></li>
-                                <li><Link href="/react-native-development">REACT NATIVE DEVELOPMENT</Link></li>
+                                {/* <li><Link href="/react-native-development">REACT NATIVE DEVELOPMENT</Link></li>
                                 <li><Link href="/flutter-development">FLUTTER DEVELOPMENT</Link></li>
                                 <li><Link href="/full-stack-development">FULL STACK DEVELOPMENT</Link></li>
                                 <li><Link href="/mobile-app-marketing">MOBILE APP MARKETING</Link></li>
-                                <li><Link href="/any-ecommerce">ANY ECOMMERCE</Link></li>
+                                <li><Link href="/any-ecommerce">ANY ECOMMERCE</Link></li> */}
                             </ul>
                         </div>
                     </div>
@@ -81,18 +81,18 @@ const Footer = () => {
 
                 <div className={styles.bottomBar}>
                     <div className="row align-items-center">
-                        <div className="col-md-6">
+                        <div className="col-lg-6">
                             <p className={styles.copyright}>
                                 &copy; COPYRIGHT 2026 | NEXT APP INC | ALL RIGHTS RESERVED
                             </p>
                         </div>
-                        <div className="col-md-6 text-md-end">
+                        <div className="col-lg-6 text-md-end">
                             <ul className={styles.bottomLinks}>
-                                <li><Link href="/privacy-policy">PRIVACY POLICY</Link></li>
+                                <li><Link href="#">PRIVACY POLICY</Link></li>
                                 <li><span className={styles.separator}>|</span></li>
-                                <li><Link href="/terms-conditions">TERMS & CONDITIONS</Link></li>
+                                <li><Link href="#">TERMS & CONDITIONS</Link></li>
                                 <li><span className={styles.separator}>|</span></li>
-                                <li><Link href="/faq">FAQ</Link></li>
+                                <li><Link href="#">FAQ</Link></li>
                             </ul>
                         </div>
                     </div>
