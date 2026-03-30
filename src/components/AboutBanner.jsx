@@ -5,25 +5,24 @@ import MyButton from './MyButton';
 const AboutBanner = () => {
     return (
         <section className={styles.aboutBanner}>
-            {/* Background Assets */}
             <div className={styles.videoOverlay}>
                 <video autoPlay loop muted playsInline className={styles.bgVideo}>
                     <source src="/about/about-bg.mp4" type="video/mp4" />
                 </video>
             </div>
             <div className={styles.gradientOverlay}>
-                <Image 
-                    src="/about/about-gradiant.png" 
-                    alt="gradient" 
-                    fill 
+                <Image
+                    src="/about/about-gradiant.png"
+                    alt="gradient"
+                    fill
                     className={styles.gradientImg}
                 />
             </div>
             <div className={styles.dotsOverlay}>
-                <Image 
-                    src="/about/dots.png" 
-                    alt="dots" 
-                    fill 
+                <Image
+                    src="/about/dots.png"
+                    alt="dots"
+                    fill
                     className={styles.dotsImg}
                 />
             </div>
@@ -35,11 +34,11 @@ const AboutBanner = () => {
                             {/* Clients Badge */}
                             <div className={styles.clientsBadge}>
                                 <div className={styles.avatarGroup}>
-                                    <Image 
-                                        src="/about/about-char.png" 
-                                        alt="clients" 
-                                        width={100} 
-                                        height={40} 
+                                    <Image
+                                        src="/about/about-char.png"
+                                        alt="clients"
+                                        width={100}
+                                        height={40}
                                         className={styles.avatarImg}
                                     />
                                 </div>
@@ -53,7 +52,7 @@ const AboutBanner = () => {
                             </div>
 
                             <span className={styles.subTitle}>About Us</span>
-                            
+
                             <h1 className={styles.heading}>
                                 <span className="secondarytxt">We Build</span> Innovative & <span className="primarytxt">Creative</span> <br />
                                 Mobile App Solutions.
