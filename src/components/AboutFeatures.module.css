@@ -84,16 +84,95 @@
     object-fit: cover;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1600px) {
+    .featuresSection {
+        padding: 60px 0;
+    }
+
+    .leftCard {
+        padding-right: 0px;
+    }
+
+    .rightCard {
+        padding-left: 0px;
+    }
+
+    .heading {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .featuresSection {
+        padding: 40px 0;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .imageWrapper1,
+    .rightContentTop {
+        margin-bottom: 25px;
+    }
+
     .image2 {
-        min-height: 400px;
+        min-height: 510px;
     }
-    .leftCard, .rightCard {
-        padding: 0;
-        justify-content: flex-start;
+}
+
+@media (max-width: 1199px) {
+
+    .heading {
+        font-size: 20px;
     }
-    .leftContentBottom, .imageWrapper3 {
-        margin-top: 30px;
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 22px;
     }
-    .heading { font-size: 26px; }
+
+    .image2 {
+        min-height: 435px;
+    }
+}
+
+@media (max-width: 991px) {
+    .image3 {
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .image1,
+    .image2,
+    .image3 {
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .image1,
+    .image2,
+    .image3 {
+        height: 250px;
+    }
 }
