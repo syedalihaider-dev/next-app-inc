@@ -274,6 +274,7 @@
     .aboutBanner {
         padding: 150px 0 150px;
     }
+
     .heading {
         font-size: 40px;
         line-height: 45px;
@@ -286,7 +287,7 @@
 
 @media (max-width: 767px) {
     .aboutBanner {
-        padding: 140px 0 120px;
+        padding: 140px 0 80px;
     }
 
     .heading {
@@ -306,12 +307,13 @@
 
 @media (max-width: 575px) {
     .aboutBanner {
-        padding: 120px 0 80px;
+        padding: 120px 0 60px;
     }
 
     .clientsBadge {
         width: 280px;
     }
+
     .subTitle {
         font-size: 16px;
     }

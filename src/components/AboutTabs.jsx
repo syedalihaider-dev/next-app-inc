@@ -45,26 +45,26 @@ const AboutTabs = () => {
                 <div className="container position-relative z-1">
                     {/* Stats Row */}
                     <div className={`row ${styles.statsRow}`}>
-                        <div className="col-lg-3 col-6 text-center">
+                        <div className="col-6 col-md-3 col-lg-3 text-center">
                             <h3 className={styles.statNumber}>600<span className={styles.plus}>+</span></h3>
                             <p className={styles.statLabel}>Super Happy Clients</p>
                         </div>
-                        <div className="col-lg-3 col-6 text-center">
+                        <div className="col-6 col-md-3 col-lg-3 text-center">
                             <h3 className={styles.statNumber}>900<span className={styles.plus}>+</span></h3>
                             <p className={styles.statLabel}>Successful Projects</p>
                         </div>
-                        <div className="col-lg-3 col-6 text-center">
+                        <div className="col-6 col-md-3 col-lg-3 text-center">
                             <h3 className={styles.statNumber}>200<span className={styles.plus}>+</span></h3>
                             <p className={styles.statLabel}>Adv Awards Winners</p>
                         </div>
-                        <div className="col-lg-3 col-6 text-center">
+                        <div className="col-6 col-md-3 col-lg-3 text-center">
                             <h3 className={styles.statNumber}>900<span className={styles.plus}>+</span></h3>
                             <p className={styles.statLabel}>Super Happy Clients</p>
                         </div>
                     </div>
 
                     <div className="row mt-5 pt-lg-5">
-                        <div className="col-lg-5">
+                        <div className="col-md-5 col-lg-5">
                             <div className={styles.logoWrapper}>
                                 <Image src="/about/purple-logo.png" alt="Nextappinc" width={300} height={100} className={styles.logoImage} />
                             </div>
@@ -80,7 +80,7 @@ const AboutTabs = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="col-lg-7">
+                        <div className="col-md-7 col-lg-7">
                             <div className={styles.contentWrapper}>
                                 <p className={styles.paragraph}>{activeContent.p1}</p>
                                 <p className={styles.paragraph}>{activeContent.p2}</p>

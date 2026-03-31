@@ -116,38 +116,208 @@
     letter-spacing: -2px;
 }
 
-@media (max-width: 1199px) {
-    .aboutTabsCard {
-        padding: 80px 0 120px 0;
-        border-radius: 80px 80px 0 0;
+@media (max-width: 1600px) {
+    .aboutTabsSection {
+        margin-top: -100px;
     }
-    .statNumber { font-size: 60px; }
-    .plus { font-size: 40px; }
-    .tabItem { font-size: 50px; }
-    .watermark { font-size: 180px; bottom: 0px; }
-    .contentWrapper { padding-top: 40px; padding-left: 0; }
+
+    .aboutTabsCard {
+        min-height: unset;
+        border-radius: 100px 100px 0 0;
+        padding: 120px 0 60px;
+    }
+
+    .statsRow {
+        margin-bottom: 40px;
+    }
+
+    .statNumber,
+    .plus {
+        font-size: 65px;
+    }
+
+    .statLabel {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .aboutTabsSection :global(.row.mt-5.pt-lg-5) {
+        margin-top: 0px !important;
+    }
+
+    .logoWrapper {
+        margin-bottom: 20px;
+    }
+
+    .activeTab {
+        font-size: 80px;
+    }
+
+    .tabItem {
+        font-size: 50px;
+    }
+
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .watermark {
+        font-size: 270px;
+        bottom: -45px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .aboutTabsSection {
+        margin-top: -75px;
+    }
+
+    .aboutTabsCard {
+        min-height: unset;
+        border-radius: 80px 80px 0 0;
+        padding: 80px 0 60px;
+    }
+
+    .statsRow {
+        margin-bottom: 10px;
+    }
+
+    .statNumber,
+    .plus {
+        font-size: 45px;
+    }
+
+    .statLabel {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .aboutTabsSection :global(.row.mt-5.pt-lg-5) {
+        margin-top: 0px !important;
+        padding-top: 30px !important;
+    }
+
+    .logoWrapper {
+        margin-bottom: 30px;
+        width: 180px;
+    }
+
+    .activeTab {
+        font-size: 60px;
+    }
+
+    .tabItem {
+        font-size: 40px;
+    }
+
+    .contentWrapper {
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .watermark {
+        font-size: 235px;
+        bottom: -40px;
+    }
 }
 
 @media (max-width: 991px) {
-    .statNumber { font-size: 45px; }
-    .plus { font-size: 30px; }
-    .statLabel { font-size: 14px; }
-    .tabItem { font-size: 40px; margin-bottom: 10px; }
-    .watermark { font-size: 120px; bottom: 20px; }
-    .contentWrapper { padding-top: 30px; }
-    .statsRow > div { margin-bottom: 40px; }
+    .aboutTabsSection {
+        margin-top: -75px;
+    }
+
+    .aboutTabsCard {
+        min-height: unset;
+        border-radius: 80px 80px 0 0;
+        padding: 60px 0 60px;
+    }
+
+    .statsRow {
+        margin-bottom: 10px;
+    }
+
+    .statNumber,
+    .plus {
+        font-size: 40px;
+    }
+
+    .statLabel {
+        font-size: 14px;
+    }
+
+    .logoWrapper {
+        margin-bottom: 25px;
+    }
+
+    .tabsContainer {
+        gap: 20px;
+    }
+
+    .activeTab {
+        font-size: 35px;
+    }
+
+    .tabItem {
+        font-size: 25px;
+    }
+
+    .paragraph {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .watermark {
+        font-size: 135px;
+        bottom: -25px;
+    }
 }
 
 @media (max-width: 767px) {
-    .aboutTabsSection {
-        margin-top: -50px;
-    }
     .aboutTabsCard {
-        border-radius: 50px 50px 0 0;
-        padding: 50px 0 80px;
+        border-radius: 0;
+        padding: 40px 0;
     }
-    .watermark { font-size: 80px; bottom: 30px; opacity: 0.3; }
-    .logoWrapper { margin-bottom: 30px; }
-    .tabItem { font-size: 32px; gap: 10px;}
-    .tabDash { margin-right: 5px; }
+
+    .aboutTabsSection {
+        margin-top: 0;
+    }
+
+    .statsRow {
+        margin-bottom: 0px;
+    }
+
+    .aboutTabsSection :global(.row.mt-5.pt-lg-5) {
+        margin-top: 0 !important;
+        padding-top: 15px !important;
+    }
+
+    .contentWrapper {
+        padding-top: 25px;
+    }
+
+    .watermark {
+        font-size: 110px;
+        bottom: -20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .statNumber,
+    .plus {
+        font-size: 25px;
+    }
+    .statLabel {
+        font-size: 12px;
+    }
+    .watermark {
+        font-size: 60px;
+        bottom: -10px;
+    }
 }
