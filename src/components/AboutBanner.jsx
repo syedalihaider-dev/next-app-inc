@@ -7,12 +7,12 @@ const AboutBanner = () => {
         <section className={styles.aboutBanner}>
             <div className={styles.videoOverlay}>
                 <video autoPlay loop muted playsInline className={styles.bgVideo}>
-                    <source src="/about/about-bg.mp4" type="video/mp4" />
+                    <source src="/video/about-bg.webm" type="video/webm" />
                 </video>
             </div>
             <div className={styles.gradientOverlay}>
                 <Image
-                    src="/about/about-gradiant.png"
+                    src="/about/about-gradiant.webp"
                     alt="gradient"
                     fill
                     className={styles.gradientImg}
@@ -20,7 +20,7 @@ const AboutBanner = () => {
             </div>
             <div className={styles.dotsOverlay}>
                 <Image
-                    src="/about/dots.png"
+                    src="/about/dots.webp"
                     alt="dots"
                     fill
                     className={styles.dotsImg}
@@ -31,11 +31,10 @@ const AboutBanner = () => {
                 <div className="row h-100 align-items-center justify-content-center text-center">
                     <div className="col-lg-10">
                         <div className={styles.contentWrapper}>
-                            {/* Clients Badge */}
                             <div className={styles.clientsBadge}>
                                 <div className={styles.avatarGroup}>
                                     <Image
-                                        src="/about/about-char.png"
+                                        src="/about/about-char.webp"
                                         alt="clients"
                                         width={100}
                                         height={40}
@@ -50,28 +49,14 @@ const AboutBanner = () => {
                                     </div>
                                 </div>
                             </div>
-
                             <span className={styles.subTitle}>About Us</span>
-
                             <h1 className={styles.heading}>
                                 <span className="secondarytxt">We Build</span> Innovative & <span className="primarytxt">Creative</span> <br />
                                 Mobile App Solutions.
                             </h1>
-
-                            <div className={styles.vectorWrapper}>
-                                <Image
-                                    src="/green-vector.png"
-                                    alt="vector"
-                                    width={700}
-                                    height={20}
-                                    className={styles.greenVector}
-                                />
-                            </div>
-
                             <p className={styles.description}>
                                 Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod nulla quis venenatis tellus. Nulla viverra amet suspendisse luctus ele mentum nam morbi sit.
                             </p>
-
                             <div className={styles.btnWrapper}>
                                 <MyButton text="Get Started" className="btn_white" />
                             </div>

@@ -31,13 +31,13 @@ const IndustryFeaturesSection = () => {
 
     return (
         <section className={styles.featuresSection}>
-            <Image 
-                src="/process-bg.png" 
-                alt="Background" 
-                fill 
+            <Image
+                src="/process-bg.webp"
+                alt="Background"
+                fill
                 className={styles.bgImage}
             />
-            
+
             <div className={`container ${styles.container}`}>
                 <div className="row align-items-center mb-5 pb-lg-5">
                     <div className="col-lg-7">
@@ -48,28 +48,28 @@ const IndustryFeaturesSection = () => {
                                 <span className={styles.greenText}>Finance Platforms</span>
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image 
-                                    src="/green-vector.png" 
-                                    alt="underline" 
-                                    width={300} 
-                                    height={20} 
+                                <Image
+                                    src="/green-vector.webp"
+                                    alt="underline"
+                                    width={300}
+                                    height={20}
                                     className={styles.greenVector}
                                 />
                             </div>
                             <p className={styles.description}>
-                                We&apos;ve Received Awards And Recognition For Our Quality-First Approach, 
-                                Delivering Complex Projects Successfully With Our Skilled Team Of 
+                                We&apos;ve Received Awards And Recognition For Our Quality-First Approach,
+                                Delivering Complex Projects Successfully With Our Skilled Team Of
                                 Developers, Designers, And Project Managers.
                             </p>
                         </div>
                     </div>
                     <div className="col-lg-5">
                         <div className={styles.mockupWrapper}>
-                            <Image 
-                                src="/industries/feature-phones.png" 
-                                alt="Feature Phones" 
-                                width={600} 
-                                height={600} 
+                            <Image
+                                src="/industries/feature-phones.webp"
+                                alt="Feature Phones"
+                                width={600}
+                                height={600}
                                 className={styles.phonesMockup}
                             />
                         </div>
@@ -81,7 +81,7 @@ const IndustryFeaturesSection = () => {
                         <div className={styles.accordionList}>
                             {col1Features.map((item) => (
                                 <div key={item.title} className={styles.accordionItem}>
-                                    <div 
+                                    <div
                                         className={styles.accordionHeader}
                                         onClick={() => toggleItem(item.title)}
                                     >
@@ -89,14 +89,14 @@ const IndustryFeaturesSection = () => {
                                         <div className={`${styles.icon} ${openItem === item.title ? styles.open : ''}`}>
                                             {openItem === item.title ? (
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2"/>
-                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2" />
+                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round" />
                                                 </svg>
                                             ) : (
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2" strokeOpacity="0.5"/>
-                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5"/>
-                                                    <path d="M12 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5"/>
+                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2" strokeOpacity="0.5" />
+                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5" />
+                                                    <path d="M12 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5" />
                                                 </svg>
                                             )}
                                         </div>
@@ -112,7 +112,7 @@ const IndustryFeaturesSection = () => {
                         <div className={styles.accordionList}>
                             {col2Features.map((item) => (
                                 <div key={item.title} className={styles.accordionItem}>
-                                    <div 
+                                    <div
                                         className={styles.accordionHeader}
                                         onClick={() => toggleItem(item.title)}
                                     >
@@ -120,14 +120,14 @@ const IndustryFeaturesSection = () => {
                                         <div className={`${styles.icon} ${openItem === item.title ? styles.open : ''}`}>
                                             {openItem === item.title ? (
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2"/>
-                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2" />
+                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round" />
                                                 </svg>
                                             ) : (
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2" strokeOpacity="0.5"/>
-                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5"/>
-                                                    <path d="M12 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5"/>
+                                                    <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="2" strokeOpacity="0.5" />
+                                                    <path d="M7 12H17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5" />
+                                                    <path d="M12 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5" />
                                                 </svg>
                                             )}
                                         </div>

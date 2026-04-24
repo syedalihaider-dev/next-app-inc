@@ -6,7 +6,7 @@ import MyButton from "./MyButton";
 const blogs = [
     {
         id: 1,
-        image: "/blog-01.png",
+        image: "/blog-01.webp",
         title: "Create YouTube Ads Like a Pro in 10 Simple Steps",
         description: "Lorem ipsum dolor sit amet consectetur Tempus sem nulla euismod nulla quis venenatis tellus.",
         date: "November 29, 2025",
@@ -14,7 +14,7 @@ const blogs = [
     },
     {
         id: 2,
-        image: "/blog-02.png",
+        image: "/blog-02.webp",
         title: "Create YouTube Ads Like a Pro in 10 Simple Steps",
         description: "Lorem ipsum dolor sit amet consectetur Tempus sem nulla euismod nulla quis venenatis tellus.",
         date: "November 29, 2025",
@@ -22,7 +22,7 @@ const blogs = [
     },
     {
         id: 3,
-        image: "/blog-03.png",
+        image: "/blog-03.webp",
         title: "Create YouTube Ads Like a Pro in 10 Simple Steps",
         description: "Lorem ipsum dolor sit amet consectetur Tempus sem nulla euismod nulla quis venenatis tellus.",
         date: "November 29, 2025",
@@ -34,20 +34,17 @@ const Blog = () => {
     return (
         <section className={styles.blogSection}>
             <div className="container">
-                {/* Header Section */}
                 <div className={styles.headerRow}>
                     <h2 className={styles.heading}>
                         Our <span className={styles.underlinedText}>
                             <span className={styles.highlight}>Blog</span>
                         </span>
-                        <img src="/green-vector.png" alt="vector" className={styles.greenVector} />
                     </h2>
                     <div className={styles.viewMoreBtn}>
                         <MyButton text="View More" className="btn_white" />
                     </div>
                 </div>
 
-                {/* Blog Cards Grid */}
                 <div className="row g-4">
                     {blogs.map((blog) => (
                         <div key={blog.id} className="col-lg-4 col-md-4">

@@ -11,7 +11,7 @@ const AboutFeatures = () => {
                         <div className={styles.leftCard}>
                             <div className={styles.imageWrapper1}>
                                 <Image
-                                    src="/about/feature-1.png"
+                                    src="/about/feature-1.webp"
                                     alt="Award Winning"
                                     width={500}
                                     height={500}
@@ -32,7 +32,7 @@ const AboutFeatures = () => {
                     <div className="col-lg-6 col-md-6 mb-5 mb-lg-0">
                         <div className={styles.middleCard}>
                             <Image
-                                src="/about/feature-2.png"
+                                src="/about/feature-2.webp"
                                 alt="Office Team"
                                 width={600}
                                 height={800}
@@ -53,7 +53,7 @@ const AboutFeatures = () => {
                             </div>
                             <div className={styles.imageWrapper3}>
                                 <Image
-                                    src="/about/feature-3.png"
+                                    src="/about/feature-3.webp"
                                     alt="Wireframes Design"
                                     width={500}
                                     height={400}

@@ -49,7 +49,7 @@ const IndustryServicesSection = () => {
                             </h2>
                             <div className={styles.underlineWrapper}>
                                 <Image
-                                    src="/green-vector.png"
+                                    src="/green-vector.webp"
                                     alt="underline"
                                     width={300}
                                     height={20}
@@ -67,7 +67,7 @@ const IndustryServicesSection = () => {
                     <div className="col-lg-5 text-center">
                         <div className={styles.mockupWrapper}>
                             <Image
-                                src="/industries/accounting-app-development/services-mockup.png"
+                                src="/industries/accounting-app-development/services-mockup.webp"
                                 alt="Services Mockup"
                                 width={600}
                                 height={500}

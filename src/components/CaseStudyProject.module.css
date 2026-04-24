@@ -38,7 +38,7 @@
 }
 
 .purpleText {
-    color: #6a55ff;
+    color: var(--primary-color);
 }
 
 .underlineWrapper {

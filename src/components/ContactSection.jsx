@@ -8,12 +8,12 @@ const ContactSection = ({ isNewDesign = false }) => {
     const [selectedServices, setSelectedServices] = useState(['Unity Game Development']);
 
     const services = [
-        { id: 'unity', name: 'Unity Game Development', icon: '/Vector.png' },
-        { id: 'react', name: 'React Native Development', icon: '/Vector (1).png' },
-        { id: 'flutter', name: 'Flutter Development', icon: '/Vector (2).png' },
-        { id: 'fullstack', name: 'Full Stack Development', icon: '/service-icon-fullstack.png' },
-        { id: 'marketing', name: 'Mobile App Marketing', icon: '/service-icon-marketing.png' },
-        { id: 'ecommerce', name: 'Any Ecommerce', icon: '/service-icon-ecommerce.png' },
+        { id: 'unity', name: 'Unity Game Development', icon: '/service-icon-unity.webp' },
+        { id: 'react', name: 'React Native Development', icon: '/service-icon-react.webp' },
+        { id: 'flutter', name: 'Flutter Development', icon: '/service-icon-flutter.webp' },
+        { id: 'fullstack', name: 'Full Stack Development', icon: '/service-icon-fullstack.webp' },
+        { id: 'marketing', name: 'Mobile App Marketing', icon: '/service-icon-marketing.webp' },
+        { id: 'ecommerce', name: 'Any Ecommerce', icon: '/service-icon-ecommerce.webp' },
     ];
 
     const toggleService = (name) => {
@@ -29,12 +29,12 @@ const ContactSection = ({ isNewDesign = false }) => {
             {/* Background */}
             {!isNewDesign ? (
                 <div className={styles.gridBg}>
-                    <Image src="/services-bg.png" alt="Grid Background" layout="fill" objectFit="cover" />
+                    <Image src="/services-bg.webp" alt="Grid Background" layout="fill" objectFit="cover" />
                 </div>
             ) : (
                 <div className={styles.bgWrapper}>
                     <Image
-                        src="/contact/contact-form-bg.png"
+                        src="/contact/contact-form-bg.webp"
                         alt="Background"
                         fill
                         className={styles.bgImg}
@@ -52,9 +52,6 @@ const ContactSection = ({ isNewDesign = false }) => {
                                 Your Partner in <span className={styles.highlight}>Mobile Strategy,</span><br />
                                 <span className={styles.highlight}>Design</span>, and Development.
                             </h2>
-                            <div className={styles.vectorWrapper}>
-                                <Image src="/green-vector.png" alt="Vector" width={400} height={15} />
-                            </div>
                         </>
                     ) : (
                         <>
@@ -63,7 +60,7 @@ const ContactSection = ({ isNewDesign = false }) => {
                                 Through <span className={styles.blueText}>Collaboration.</span>
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image src="/green-vector.png" alt="underline" width={250} height={20} />
+                                <Image src="/green-vector.webp" alt="underline" width={250} height={20} />
                             </div>
                         </>
                     )}
@@ -79,14 +76,14 @@ const ContactSection = ({ isNewDesign = false }) => {
                                 <>
                                     <a href="mailto:sales@nextappinc.com" className={`${styles.contactItem} ${styles.contactLink}`}>
                                         <div className={styles.iconBox}>
-                                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6a55ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         </div>
                                         <span className={`${styles.contactText} ${styles.contactTextNew}`}>sales@nextappinc.com</span>
                                     </a>
 
                                     <a href="tel:3472187849" className={`${styles.contactItem} ${styles.contactLink}`}>
                                         <div className={styles.iconBox}>
-                                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6a55ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                         </div>
                                         <span className={`${styles.contactText} ${styles.contactTextNew}`}>(347) 218-7849</span>
                                     </a>
@@ -95,13 +92,13 @@ const ContactSection = ({ isNewDesign = false }) => {
                                 <>
                                     <div className={styles.contactItem}>
                                         <div className={styles.iconBox}>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6a55ff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         </div>
                                         <span className={styles.contactText}>info@example.com</span>
                                     </div>
                                     <div className={styles.contactItem}>
                                         <div className={styles.iconBox}>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6a55ff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                         </div>
                                         <span className={styles.contactText}>+123 456 7890</span>
                                     </div>
@@ -110,18 +107,18 @@ const ContactSection = ({ isNewDesign = false }) => {
 
                             <h4 className={styles.socialHeading}>Follow Us</h4>
                             <div className={styles.socialIcons}>
-                                <a href="#" className={styles.socialLink}><img src="/social-fb.png" alt="Facebook" /></a>
-                                <a href="#" className={styles.socialLink}><img src="/social-linkedin.png" alt="LinkedIn" /></a>
-                                <a href="#" className={styles.socialLink}><img src="/social-insta.png" alt="Instagram" /></a>
-                                <a href="#" className={styles.socialLink}><img src="/social-x.png" alt="X" /></a>
+                                <a href="#" className={styles.socialLink}><img src="/social-fb.webp" alt="Facebook" /></a>
+                                <a href="#" className={styles.socialLink}><img src="/social-linkedin.webp" alt="LinkedIn" /></a>
+                                <a href="#" className={styles.socialLink}><img src="/social-insta.webp" alt="Instagram" /></a>
+                                <a href="#" className={styles.socialLink}><img src="/social-x.webp" alt="X" /></a>
                             </div>
 
                             <h4 className={styles.achievementsHeading}>Our Achievements</h4>
                             <div className={styles.achievementBadges}>
-                                <img src="/badge-brand-of-year.png" alt="Brand of year" />
-                                <img src="/badge-expertise.png" alt="Expertise" />
-                                <img src="/badge-goodfirms.png" alt="GoodFirms" />
-                                <img src="/badge-clutch.png" alt="Clutch" />
+                                <img src="/badge-brand-of-year.webp" alt="Brand of year" />
+                                <img src="/badge-expertise.webp" alt="Expertise" />
+                                <img src="/badge-goodfirms.webp" alt="GoodFirms" />
+                                <img src="/badge-clutch.webp" alt="Clutch" />
                             </div>
                         </div>
                     </div>

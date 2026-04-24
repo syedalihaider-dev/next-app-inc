@@ -1,16 +1,12 @@
 .aboutTabsSection {
-    position: relative;
-    z-index: 1;
-    margin-top: -100px;
-}
-
-.aboutTabsCard {
+    background-color: #ffeae7;
     border-radius: 120px 120px 0 0;
     padding: 120px 0 160px 0;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
     min-height: calc(100vh - 40px);
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .backgroundImage {
@@ -34,7 +30,7 @@
 }
 
 .plus {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 70px;
     font-weight: 300;
     line-height: 1;
@@ -42,7 +38,7 @@
 
 .statLabel {
     font-size: 16px;
-    color: #000;
+    color: var(--dark-color);
     font-weight: 600;
     margin-top: 15px;
 }
@@ -66,7 +62,7 @@
 .tabItem {
     font-size: 70px;
     font-weight: 800;
-    color: #9A90CA;
+    color: #ff9a88;
     cursor: pointer;
     transition: all 0.3s ease;
     line-height: 1.1;
@@ -76,12 +72,12 @@
 
 .activeTab {
     font-size: 100px;
-    color: #6345ED;
+    color: var(--primary-color);
     opacity: 1;
 }
 
 .tabDash {
-    color: #6345ED;
+    color: var(--primary-color);
     margin-right: 15px;
     font-weight: 400;
 }
@@ -95,7 +91,7 @@
 
 .paragraph {
     font-size: 18px;
-    color: #444;
+    color: var(--dark-color);
     line-height: 1.8;
     margin-bottom: 25px;
     font-weight: 600;
@@ -108,7 +104,8 @@
     transform: translateX(-50%);
     font-size: 330px;
     font-weight: 800;
-    color: #6243fa24;
+    color: var(--primary-color);
+    opacity: .085;
     white-space: nowrap;
     z-index: -1;
     pointer-events: none;
@@ -119,9 +116,6 @@
 @media (max-width: 1600px) {
     .aboutTabsSection {
         margin-top: -100px;
-    }
-
-    .aboutTabsCard {
         min-height: unset;
         border-radius: 100px 100px 0 0;
         padding: 120px 0 60px;
@@ -171,9 +165,6 @@
 @media (max-width: 1399px) {
     .aboutTabsSection {
         margin-top: -75px;
-    }
-
-    .aboutTabsCard {
         min-height: unset;
         border-radius: 80px 80px 0 0;
         padding: 80px 0 60px;
@@ -230,9 +221,6 @@
 @media (max-width: 991px) {
     .aboutTabsSection {
         margin-top: -75px;
-    }
-
-    .aboutTabsCard {
         min-height: unset;
         border-radius: 80px 80px 0 0;
         padding: 60px 0 60px;
@@ -280,13 +268,10 @@
 }
 
 @media (max-width: 767px) {
-    .aboutTabsCard {
-        border-radius: 0;
-        padding: 40px 0;
-    }
-
     .aboutTabsSection {
         margin-top: 0;
+        border-radius: 0;
+        padding: 40px 0;
     }
 
     .statsRow {
@@ -309,13 +294,16 @@
 }
 
 @media (max-width: 575px) {
+
     .statNumber,
     .plus {
         font-size: 25px;
     }
+
     .statLabel {
         font-size: 12px;
     }
+
     .watermark {
         font-size: 60px;
         bottom: -10px;

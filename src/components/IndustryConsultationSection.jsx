@@ -6,10 +6,10 @@ import MyButton from './MyButton';
 const IndustryConsultationSection = () => {
     return (
         <section className={styles.consultationSection}>
-            <Image 
-                src="/industries/industry-consultation-bg.png" 
-                alt="Background" 
-                fill 
+            <Image
+                src="/industries/industry-consultation-bg.webp"
+                alt="Background"
+                fill
                 className={styles.bgImage}
             />
             <div className={`container ${styles.container}`}>
@@ -22,20 +22,20 @@ const IndustryConsultationSection = () => {
                                 with Powerful Apps!
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image 
-                                    src="/blue-vector.png" 
-                                    alt="underline" 
-                                    width={350} 
-                                    height={25} 
+                                <Image
+                                    src="/blue-vector.webp"
+                                    alt="underline"
+                                    width={350}
+                                    height={25}
                                     className={styles.purpleVector}
                                 />
                             </div>
-                            
+
                             <p className={styles.subLabel}>Our Accounting App Development Services</p>
                             <p className={styles.description}>
-                                Our Accounting App Development Services provide integrated tools and 
-                                resources for smooth management—from initial ideation and concept 
-                                development to final delivery. We specialize in creating high-performance 
+                                Our Accounting App Development Services provide integrated tools and
+                                resources for smooth management—from initial ideation and concept
+                                development to final delivery. We specialize in creating high-performance
                                 finance apps tailored to meet your specific business goals.
                             </p>
 
@@ -46,11 +46,11 @@ const IndustryConsultationSection = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className={styles.imageWrapper}>
-                            <Image 
-                                src="/industries/consultation-woman.png" 
-                                alt="Consultation" 
-                                width={800} 
-                                height={750} 
+                            <Image
+                                src="/industries/consultation-woman.webp"
+                                alt="Consultation"
+                                width={800}
+                                height={750}
                                 className={styles.womanImg}
                             />
                         </div>

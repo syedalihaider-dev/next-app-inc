@@ -40,10 +40,10 @@ const AboutFAQ = () => {
 
     return (
         <section className={styles.faqSection}>
-            <Image 
-                src="/process-bg.png" 
-                alt="background" 
-                fill 
+            <Image
+                src="/process-bg.webp"
+                alt="background"
+                fill
                 className={styles.bgImage}
                 priority
             />
@@ -53,7 +53,7 @@ const AboutFAQ = () => {
                     <h2 className={styles.heading}>
                         Frequently Ask Questions
                         <div className={styles.greenUnderline}>
-                            <Image src="/green-vector.png" alt="underline" fill style={{ objectFit: 'contain' }} />
+                            <Image src="/green-vector.webp" alt="underline" fill style={{ objectFit: 'contain' }} />
                         </div>
                     </h2>
                 </div>
@@ -61,11 +61,11 @@ const AboutFAQ = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 mb-5 mb-lg-0">
                         <div className={styles.imageWrapper}>
-                            <Image 
-                                src="/about/faq-mobile.png" 
-                                alt="FAQ Mobiles" 
-                                width={800} 
-                                height={800} 
+                            <Image
+                                src="/about/faq-mobile.webp"
+                                alt="FAQ Mobiles"
+                                width={800}
+                                height={800}
                                 className={styles.faqImage}
                             />
                         </div>
@@ -74,8 +74,8 @@ const AboutFAQ = () => {
                     <div className="col-lg-6">
                         <div className={styles.accordionList}>
                             {FAQ_DATA.map((faq, index) => (
-                                <div 
-                                    key={index} 
+                                <div
+                                    key={index}
                                     className={`${styles.accordionItem} ${activeIndex === index ? styles.active : ''}`}
                                     onClick={() => toggleAccordion(index)}
                                 >
@@ -83,7 +83,7 @@ const AboutFAQ = () => {
                                         <h3 className={styles.question}>{faq.question}</h3>
                                         <div className={styles.iconWrapper}>
                                             <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1 1.5L9 9.5L17 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M1 1.5L9 9.5L17 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </div>
                                     </div>

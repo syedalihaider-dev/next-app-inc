@@ -8,7 +8,7 @@ const YesTableProject = () => {
             {/* Background Shape stuck to the left edge of the section */}
             <div className={styles.bgOuterShape}>
                 <Image
-                    src="/case-study/yestable-bg-shape.png"
+                    src="/case-study/yestable-bg-shape.webp"
                     alt="Background Shape"
                     fill
                     className={styles.shapeImg}
@@ -21,7 +21,7 @@ const YesTableProject = () => {
                     <div className="col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
                         <div className={styles.mockupWrapper}>
                             <Image
-                                src="/case-study/yestable-mockup.png"
+                                src="/case-study/yestable-mockup.webp"
                                 alt="YesTable Mockups"
                                 width={684}
                                 height={669}
@@ -37,7 +37,7 @@ const YesTableProject = () => {
                             <div className={styles.clientLogo}>
                                 <div className={styles.logoWrapper}>
                                     <Image
-                                        src="/case-study/yestable-logo.png"
+                                        src="/case-study/yestable-logo.webp"
                                         alt="YesTable Logo"
                                         width={226}
                                         height={226}

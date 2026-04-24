@@ -13,25 +13,25 @@ const CaseStudy = () => {
             title: "Yes Table",
             industry: "Food",
             team: "BA | QA | Design | Frontend | Backend | App Developers",
-            bg: "/case-study-bg-01.png",
-            icon: "/case-study-icon-01.png",
-            mockup: "/case-study-01.png",
+            bg: "/case-study-bg-01.webp",
+            icon: "/case-study-icon-01.webp",
+            mockup: "/case-study-01.webp",
         },
         {
             title: "Love On Life",
             industry: "Event",
             team: "BA | QA | Design | Frontend | Backend | App Developers",
-            bg: "/case-study-bg-02.png",
-            icon: "/case-study-icon-02.png",
-            mockup: "/case-study-02.png",
+            bg: "/case-study-bg-02.webp",
+            icon: "/case-study-icon-02.webp",
+            mockup: "/case-study-02.webp",
         },
         {
             title: "Marhofer Renewables",
             industry: "Field Service",
             team: "BA | QA | Design | Frontend | Backend | App Developers",
-            bg: "/case-study-bg-03.png",
-            icon: "/case-study-icon-03.png",
-            mockup: "/case-study-03.png",
+            bg: "/case-study-bg-03.webp",
+            icon: "/case-study-icon-03.webp",
+            mockup: "/case-study-03.webp",
         }
     ];
 
@@ -43,13 +43,6 @@ const CaseStudy = () => {
                     <h2 className={styles.heading}>
                         <span className={styles.underlinedText}>
                             Problems We've
-                            <Image
-                                src="/green-vector.png"
-                                alt="underline"
-                                width={350}
-                                height={20}
-                                className={styles.greenVector}
-                            />
                         </span> <span className="secondarytxt">Solved</span>
                     </h2>
                 </div>

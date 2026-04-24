@@ -25,7 +25,7 @@ const AccountingAppPage = () => {
                 mainTitle="Leading Accounting App Development for Seamless Finance"
                 highlightedPart="Accounting App Development"
                 description="iOS app development automates tasks, improves data management, and boosts efficiency with seamless workflows and tailored solutions."
-                bgImage="/industries/accounting-app-development/banner-bg.png"
+                bgImage="/industries/accounting-app-development/banner-bg.webp"
             />
             
             <IndustryServicesSection />
@@ -34,7 +34,7 @@ const AccountingAppPage = () => {
             <IndustryFeaturesSection />
             <IndustrySolutionsSlider />
             <WhyChooseAppSection 
-                // mockupImage="/industries/accounting-app-development/services-mockup.png"
+                // mockupImage="/industries/accounting-app-development/services-mockup.webp"
             />
             <CaseStudy />
             <TechStackSection />

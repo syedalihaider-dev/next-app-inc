@@ -6,7 +6,7 @@ const AboutWhyChooseUs = () => {
     return (
         <section className={styles.whyChooseSection}>
             <Image
-                src="/services-bg.png"
+                src="/services-bg.webp"
                 fill
                 style={{ objectFit: 'cover' }}
                 alt="bg"
@@ -23,9 +23,6 @@ const AboutWhyChooseUs = () => {
                                 Proven Process.<br />
                                 <span className={styles.highlightText}>
                                     Powerful Results.
-                                    <div className={styles.brushUnderline}>
-                                        <Image src="/green-vector.png" alt="underline" fill style={{ objectFit: 'contain' }} />
-                                    </div>
                                 </span>
                             </h2>
                             <p className={styles.paragraph}>
@@ -45,7 +42,7 @@ const AboutWhyChooseUs = () => {
                             <div className="col-md-6">
                                 <div className={styles.cardWrapper}>
                                     <div className={styles.iconBox}>
-                                        <Image src="/about/development-icon.png" alt="Development" width={46} height={46} />
+                                        <Image src="/about/development-icon.webp" alt="Development" width={46} height={46} />
                                     </div>
                                     <h4 className={styles.cardHeading}>End-To-End Development</h4>
                                     <p className={styles.cardParagraph}>
@@ -54,7 +51,7 @@ const AboutWhyChooseUs = () => {
                                 </div>
                                 <div className={styles.cardWrapper}>
                                     <div className={styles.iconBox}>
-                                        <Image src="/about/custom-icon.png" alt="Custom" width={46} height={46} />
+                                        <Image src="/about/custom-icon.webp" alt="Custom" width={46} height={46} />
                                     </div>
                                     <h4 className={styles.cardHeading}>Custom-Built Solutions</h4>
                                     <p className={styles.cardParagraph}>
@@ -67,7 +64,7 @@ const AboutWhyChooseUs = () => {
                             <div className={`col-md-6 ${styles.offsetColumn}`}>
                                 <div className={styles.cardWrapper}>
                                     <div className={styles.iconBox}>
-                                        <Image src="/about/quality-icon.png" alt="Quality" width={41} height={51} />
+                                        <Image src="/about/quality-icon.webp" alt="Quality" width={41} height={51} />
                                     </div>
                                     <h4 className={styles.cardHeading}>Quality You Can Trust</h4>
                                     <p className={styles.cardParagraph}>

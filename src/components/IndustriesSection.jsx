@@ -12,27 +12,27 @@ const industries = [
     {
         title: 'E-Commerce',
         description: 'We create apps for retail businesses that are great at engaging',
-        image: '/services/ios-app-development/industry-01.png'
+        image: '/services/ios-app-development/industry-01.webp'
     },
     {
         title: 'Real Estate',
         description: 'Premium mobile solutions for real estate management and listing',
-        image: '/services/ios-app-development/industry-02.png'
+        image: '/services/ios-app-development/industry-02.webp'
     },
     {
         title: 'Fintech',
         description: 'Secure and scalable financial technology applications for all',
-        image: '/services/ios-app-development/industry-03.png'
+        image: '/services/ios-app-development/industry-03.webp'
     },
     {
         title: 'Healthcare',
         description: 'Intuitive and HIPAA-compliant healthcare solutions for patients',
-        image: '/services/ios-app-development/industry-04.png'
+        image: '/services/ios-app-development/industry-04.webp'
     },
     {
         title: 'Education',
         description: 'Engaging learning platforms for the modern student and teacher',
-        image: '/services/ios-app-development/industry-05.png'
+        image: '/services/ios-app-development/industry-05.webp'
     }
 ];
 
@@ -40,7 +40,7 @@ const IndustriesSection = () => {
     return (
         <section className={styles.industriesSection}>
             <Image
-                src="/services/industries-bg.png"
+                src="/services/industries-bg.webp"
                 alt="Industries background"
                 fill
                 className={styles.bgImage}
@@ -51,7 +51,7 @@ const IndustriesSection = () => {
                     <h2 className={styles.heading}>Industries We Have Served</h2>
                     <div className={styles.underlineWrapper}>
                         <Image
-                            src="/blue-vector.png"
+                            src="/blue-vector.webp"
                             alt="underline"
                             width={250}
                             height={25}

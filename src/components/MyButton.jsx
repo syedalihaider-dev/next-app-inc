@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './MyButton.module.css';
 
-const MyButton = ({ text, link = "#", className = "btn_white", icon = "/arrow-btn.png" }) => {
+const MyButton = ({ text, link = "#", className = "btn_white", icon = "/arrow-btn.webp" }) => {
     return (
         <Link href={link} className={`${styles.mybtn} ${styles[className]}`}>
             <div className={styles.text}>

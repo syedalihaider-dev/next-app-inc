@@ -14,27 +14,27 @@ const Services = () => {
 
     const servicesData = [
         {
-            icon: "/services-icon-01.png",
+            icon: "/services-icon-01.webp",
             title: "Mobile <br /> Application",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/services-icon-02.png",
+            icon: "/services-icon-02.webp",
             title: "E-commerce <br /> Development",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/service-icon-unity.png",
+            icon: "/service-icon-03.webp",
             title: "Game <br /> Development",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/service-icon-fullstack.png",
+            icon: "/service-icon-fullstack.webp",
             title: "Web <br /> Development",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         },
         {
-            icon: "/service-icon-fullstack.png",
+            icon: "/service-icon-fullstack.webp",
             title: "Software <br/> Solutions",
             description: "Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse. Lorem ipsum dolor sit amet nsec tetur. Tempus sem nulla euismod lla quis venenatis tellus. Nullavive Rramet suspendisse."
         }
@@ -43,7 +43,7 @@ const Services = () => {
     return (
         <section className={styles.servicesSection}>
             <Image
-                src="/services-bg.png"
+                src="/services-bg.webp"
                 alt="services Background"
                 fill
                 priority
@@ -57,13 +57,6 @@ const Services = () => {
                             <h2 className={styles.heading}>
                                 Your Partner in <span className="secondarytxt">Mobile Strategy,</span><br />
                                 <span className="secondarytxt">Design</span>, and Development.
-                                <Image
-                                    src="/green-vector.png"
-                                    alt="underline"
-                                    width={450}
-                                    height={20}
-                                    className={styles.greenVector}
-                                />
                             </h2>
                         </div>
                     </div>
@@ -74,7 +67,7 @@ const Services = () => {
                         className={`${styles.navBtn} ${styles.prevBtn}`}
                         onClick={() => swiperRef.current?.slidePrev()}
                     >
-                        <Image src="/arrow-icon.png" alt="prev" width={40} height={40} className={styles.prevArrow} />
+                        <Image src="/arrow-icon.webp" alt="prev" width={40} height={40} className={styles.prevArrow} />
                     </button>
 
                     <div className={styles.cardsScroll}>
@@ -116,7 +109,7 @@ const Services = () => {
                         className={`${styles.navBtn} ${styles.nextBtn}`}
                         onClick={() => swiperRef.current?.slideNext()}
                     >
-                        <Image src="/arrow-icon.png" alt="next" width={40} height={40} />
+                        <Image src="/arrow-icon.webp" alt="next" width={40} height={40} />
                     </button>
                 </div>
 

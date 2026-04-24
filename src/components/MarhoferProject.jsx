@@ -8,7 +8,7 @@ const MarhoferProject = () => {
             {/* Background Shape stuck to the bottom right of the section */}
             <div className={styles.bgOuterShape}>
                 <Image
-                    src="/case-study/marhofer-mockup.png"
+                    src="/case-study/marhofer-mockup.webp"
                     alt="Background Shape"
                     fill
                     className={styles.shapeImg}
@@ -23,7 +23,7 @@ const MarhoferProject = () => {
                             <div className={styles.clientLogo}>
                                 <div className={styles.logoWrapper}>
                                     <Image
-                                        src="/case-study/marhofer-logo.png"
+                                        src="/case-study/marhofer-logo.webp"
                                         alt="Marhofer Logo"
                                         width={240}
                                         height={60}
@@ -53,7 +53,7 @@ const MarhoferProject = () => {
                     <div className="col-lg-6 position-relative">
                         <div className={styles.phones}>
                             <Image
-                                src="/case-study/marhofer-bg-shape.png"
+                                src="/case-study/marhofer-bg-shape.webp"
                                 alt="Marhofer Mockup"
                                 width={684}
                                 height={669}

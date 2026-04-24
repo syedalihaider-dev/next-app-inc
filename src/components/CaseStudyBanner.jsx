@@ -8,10 +8,10 @@ const CaseStudyBanner = () => {
         <section className={styles.caseStudyBanner}>
             {/* Background Image */}
             <div className={styles.bgWrapper}>
-                <Image 
-                    src="/case-study/case-study-bg.png" 
-                    alt="Case Study Background" 
-                    fill 
+                <Image
+                    src="/case-study/case-study-bg.webp"
+                    alt="Case Study Background"
+                    fill
                     className={styles.bgImg}
                     priority
                 />
@@ -28,7 +28,7 @@ const CaseStudyBanner = () => {
                                 <span className={styles.greenText}>Quality Work.</span>
                             </h1>
                             <div className={styles.underlineWrapper}>
-                                <Image src="/green-vector.png" alt="underline" width={400} height={20} />
+                                <Image src="/green-vector.webp" alt="underline" width={400} height={20} />
                             </div>
                             <p className={styles.desc}>
                                 Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod <br className="d-none d-md-block" />

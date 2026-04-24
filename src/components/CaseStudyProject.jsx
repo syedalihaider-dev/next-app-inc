@@ -8,7 +8,7 @@ const CaseStudyProject = () => {
             {/* Background Shape stuck to the right edge of the DOM */}
             <div className={styles.bgOuterShape}>
                 <Image
-                    src="/case-study/project-mockup.png"
+                    src="/case-study/project-mockup.webp"
                     alt="Mockup Background"
                     fill
                     className={styles.shapeImg}
@@ -23,7 +23,7 @@ const CaseStudyProject = () => {
                                 We Create Apps <span className={styles.purpleText}>That Users Love!</span>
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image src="/blue-vector.png" alt="underline" width={280} height={15} className={styles.purpleUnderline} />
+                                <Image src="/blue-vector.webp" alt="underline" width={280} height={15} className={styles.purpleUnderline} />
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const CaseStudyProject = () => {
                             <div className={styles.clientLogo}>
                                 <div className={styles.logoWrapper}>
                                     <Image
-                                        src="/case-study/project-logo.png"
+                                        src="/case-study/project-logo.webp"
                                         alt="Client Logo"
                                         width={226}
                                         height={226}
@@ -66,7 +66,7 @@ const CaseStudyProject = () => {
                     <div className="col-lg-6 position-relative">
                         <div className={styles.phones}>
                             <Image
-                                src="/case-study/project-shape.png"
+                                src="/case-study/project-shape.webp"
                                 alt="Phones Mockup"
                                 width={684}
                                 height={669}

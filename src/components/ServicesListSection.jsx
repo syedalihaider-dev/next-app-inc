@@ -48,10 +48,10 @@ const ServicesListSection = () => {
         <section className={styles.servicesSection}>
             {/* Dark background asset */}
             <div className={styles.bgWrapper}>
-                <Image 
-                    src="/services/services-list-bg.png" 
-                    alt="section background" 
-                    fill 
+                <Image
+                    src="/services/services-list-bg.webp"
+                    alt="section background"
+                    fill
                     className={styles.bgImg}
                 />
             </div>
@@ -64,11 +64,11 @@ const ServicesListSection = () => {
                         Maximum <span className={styles.neonGreen}>Business Impact!</span>
                     </h2>
                     <div className={styles.underlineWrapper}>
-                        <Image src="/green-vector.png" alt="underline" width={300} height={15} className={styles.underlineImg} />
+                        <Image src="/green-vector.webp" alt="underline" width={300} height={15} className={styles.underlineImg} />
                     </div>
                     <p className={styles.headerDesc}>
-                        We've Received Awards And Recognition For Our Quality-First 
-                        Approach, Delivering Complex Projects Successfully With Our Skilled 
+                        We've Received Awards And Recognition For Our Quality-First
+                        Approach, Delivering Complex Projects Successfully With Our Skilled
                         Team Of Developers, Designers, And Project Managers.
                     </p>
                 </div>
@@ -85,7 +85,7 @@ const ServicesListSection = () => {
                                         <div className={styles.dot}></div>
                                     </div>
                                 </div>
-                                
+
                                 <div className={styles.titleCol}>
                                     <h4 className={styles.serviceTitle}>{service.title}</h4>
                                     <div className={styles.hoverButton}>

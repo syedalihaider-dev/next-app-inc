@@ -12,31 +12,31 @@ const solutions = [
     {
         title: 'Content Authoring Tools',
         description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-        image: '/industries/accounting-app-development/solution-1.png',
+        image: '/industries/accounting-app-development/solution-1.webp',
         active: false
     },
     {
         title: 'Employee Engagement Apps',
         description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-        image: '/industries/accounting-app-development/solution-2.png',
+        image: '/industries/accounting-app-development/solution-2.webp',
         active: false
     },
     {
         title: 'Skill Boosting Apps',
         description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-        image: '/industries/accounting-app-development/solution-3.png',
+        image: '/industries/accounting-app-development/solution-3.webp',
         active: false
     },
     {
         title: 'ELearning Apps',
         description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-        image: '/industries/accounting-app-development/solution-4.png',
+        image: '/industries/accounting-app-development/solution-4.webp',
         active: false
     },
     {
         title: 'Corporate Training',
         description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-        image: '/industries/accounting-app-development/solution-1.png',
+        image: '/industries/accounting-app-development/solution-1.webp',
         active: false
     }
 ];
@@ -51,7 +51,7 @@ const IndustrySolutionsSlider = () => {
                         For <span className={styles.highlightWrapper}>
                             <span className={styles.highlightText}>Modern Education</span>
                             <Image
-                                src="/green-vector.png"
+                                src="/green-vector.webp"
                                 alt="underline"
                                 width={300}
                                 height={25}

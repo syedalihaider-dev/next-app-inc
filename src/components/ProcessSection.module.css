@@ -49,19 +49,10 @@
 }
 
 .highlightedText {
-    color: #9dff00;
-    /* Neon green */
+    color: var(--primary-color);
     display: inline-block;
     position: relative;
     padding-bottom: 20px;
-}
-
-.greenVector {
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: 100%;
-    height: auto;
 }
 
 .stepCard {
@@ -104,8 +95,7 @@
 .stepNumber {
     font-size: 90px;
     font-weight: 800;
-    color: #6a55ff;
-    /* Purple */
+    color: var(--primary-color);
     line-height: 1;
     margin-bottom: 15px;
     display: block;
@@ -116,9 +106,8 @@
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #000;
+    color: var(--dark-color);
     line-height: 1.1;
-    /* Tighter line height for two-line headings */
 }
 
 .stepDesc {
@@ -186,10 +175,6 @@
 }
 
 @media (max-width: 991px) {
-    .greenVector {
-        bottom: 0px;
-    }
-
     .rightCol {
         width: 100%;
     }

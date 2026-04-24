@@ -7,44 +7,44 @@ const steps = [
         number: '01',
         title: <>Project <br /> Discussion</>,
         description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
-        image: '/process-steps/step-01.png'
+        image: '/process-steps/step-01.webp'
     },
     {
         number: '02',
         title: <>Order <br /> Confirmation</>,
         description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
-        image: '/process-steps/step-02.png'
+        image: '/process-steps/step-02.webp'
     },
     {
         number: '03',
         title: <>Research & <br /> Wireframing</>,
         description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
-        image: '/process-steps/step-03.png'
+        image: '/process-steps/step-03.webp'
     },
     {
         number: '04',
         title: <>UI/UX <br /> Designing</>,
         description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
-        image: '/process-steps/step-04.png'
+        image: '/process-steps/step-04.webp'
     },
     {
         number: '05',
         title: <>App <br /> Development</>,
         description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
-        image: '/process-steps/step-05.png'
+        image: '/process-steps/step-05.webp'
     },
     {
         number: '06',
         title: <>Testing & <br /> Deployment</>,
         description: 'Delivered over 100 successful projects, showcasing a proven track record of quality, reliability, and client satisfaction.',
-        image: '/process-steps/step-06.png'
+        image: '/process-steps/step-06.webp'
     }
 ];
 
 const ProcessSection = () => {
     return (
         <section className={styles.processSection}>
-            <Image src="/process-bg.png" alt="bg" fill className={styles.bgImage} />
+            <Image src="/process-bg.webp" alt="bg" fill className={styles.bgImage} />
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-lg-6">
@@ -54,7 +54,6 @@ const ProcessSection = () => {
                                 Our Proven Path to <br />
                                 <span className={styles.highlightedText}>
                                     Mobile Success
-                                    <img src="/green-vector.png" alt="vector" className={styles.greenVector} />
                                 </span>
                             </h2>
                         </div>

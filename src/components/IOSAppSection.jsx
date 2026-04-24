@@ -15,26 +15,26 @@ const IOSAppSection = () => {
                                 <span className={styles.purpleText}>Built for Apple</span>
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image src="/blue-vector.png" alt="underline" width={280} height={15} />
+                                <Image src="/blue-vector.webp" alt="underline" width={280} height={15} />
                             </div>
                             <p className={styles.description}>
-                                At Nextapp Inc., We Know Every Business Is Unique, So Our Custom 
-                                IOS App Development Approach Ensures Your App Reflects Your 
-                                Goals And Values. Our Expert Developers And Designers Create Apps 
+                                At Nextapp Inc., We Know Every Business Is Unique, So Our Custom
+                                IOS App Development Approach Ensures Your App Reflects Your
+                                Goals And Values. Our Expert Developers And Designers Create Apps
                                 That Are Both Visually Appealing And Highly Functional.
                             </p>
-                            
+
                             <ul className={styles.features}>
                                 <li>
-                                    <Image src="/services/ios-check-icon.png" alt="check" width={18} height={18} className={styles.checkIcon} />
+                                    <Image src="/services/ios-check-icon.webp" alt="check" width={18} height={18} className={styles.checkIcon} />
                                     Apple-Certified Developers
                                 </li>
                                 <li>
-                                    <Image src="/services/ios-check-icon.png" alt="check" width={18} height={18} className={styles.checkIcon} />
+                                    <Image src="/services/ios-check-icon.webp" alt="check" width={18} height={18} className={styles.checkIcon} />
                                     100% Client Satisfaction
                                 </li>
                                 <li>
-                                    <Image src="/services/ios-check-icon.png" alt="check" width={18} height={18} className={styles.checkIcon} />
+                                    <Image src="/services/ios-check-icon.webp" alt="check" width={18} height={18} className={styles.checkIcon} />
                                     NDA-Protected Projects
                                 </li>
                             </ul>
@@ -61,9 +61,9 @@ const IOSAppSection = () => {
             {/* Hand mockup positioned absolutely to the right/bottom */}
             <div className={styles.mockupWrapper}>
                 <div className={styles.mockupBg}></div>
-                <Image 
-                    src="/services/ios-app-development/ios-hand-mockup.png" 
-                    alt="iPhone Hand Mockup" 
+                <Image
+                    src="/services/ios-app-development/ios-hand-mockup.webp"
+                    alt="iPhone Hand Mockup"
                     width={800}
                     height={800}
                     className={styles.mockupImg}

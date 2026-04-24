@@ -16,7 +16,7 @@ const DevelopmentSolutionsSection = () => {
         <section className={styles.solutionsSection}>
             <div className={styles.bgWrapper}>
                 <Image
-                    src="/about-bg.png"
+                    src="/about-bg.webp"
                     alt="background"
                     fill
                     className={styles.bgImg}
@@ -35,7 +35,7 @@ const DevelopmentSolutionsSection = () => {
                             </h2>
                             <div className={styles.underlineWrapper}>
                                 <Image
-                                    src="/blue-vector.png"
+                                    src="/blue-vector.webp"
                                     alt="underline"
                                     width={400}
                                     height={40}
@@ -48,7 +48,7 @@ const DevelopmentSolutionsSection = () => {
                                     <li key={index} className={styles.featureItem}>
                                         <div className={styles.iconWrapper}>
                                             <Image
-                                                src="/services/ios-check-icon.png"
+                                                src="/services/ios-check-icon.webp"
                                                 alt="check"
                                                 width={22}
                                                 height={20}
@@ -68,7 +68,7 @@ const DevelopmentSolutionsSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.mockupCol}>
                             <Image
-                                src="/services/development-solutions-mockup.png"
+                                src="/services/development-solutions-mockup.webp"
                                 alt="Next App Inc Mockup"
                                 width={800}
                                 height={800}

@@ -8,22 +8,22 @@ const CompanyChoiceSection = () => {
         {
             title: 'End-To-End Development',
             description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-            icon: '/about/development-icon.png'
+            icon: '/about/development-icon.webp'
         },
         {
             title: '100% Transparency',
             description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-            icon: '/about/development-icon.png'
+            icon: '/about/development-icon.webp'
         },
         {
             title: 'High Retention Rate',
             description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-            icon: '/about/development-icon.png'
+            icon: '/about/development-icon.webp'
         },
         {
             title: '4.5/5 Average Rating',
             description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
-            icon: '/about/development-icon.png'
+            icon: '/about/development-icon.webp'
         }
     ];
 
@@ -41,7 +41,7 @@ const CompanyChoiceSection = () => {
                             </h2>
                             <div className={styles.underlineWrapper}>
                                 <Image
-                                    src="/green-vector.png"
+                                    src="/green-vector.webp"
                                     alt="underline"
                                     width={250}
                                     height={20}

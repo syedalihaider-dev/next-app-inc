@@ -3,12 +3,12 @@ import Image from 'next/image';
 import styles from './WhyChooseAppSection.module.css';
 import MyButton from './MyButton';
 
-const WhyChooseAppSection = ({ 
-    title, 
-    desc1, 
-    desc2, 
-    mockupImage = "/services/why-choose-mockup.png",
-    underlineImage = "/blue-vector.png" 
+const WhyChooseAppSection = ({
+    title,
+    desc1,
+    desc2,
+    mockupImage = "/services/why-choose-mockup.webp",
+    underlineImage = "/blue-vector.webp"
 }) => {
     // Default content if props are not provided
     const defaultTitle = (
@@ -23,14 +23,14 @@ const WhyChooseAppSection = ({
     return (
         <section className={styles.whyChooseSection}>
             <div className={styles.bgBlobs}>
-                <Image 
-                    src="/services/why-choose-bg-blobs.png" 
-                    alt="background blobs" 
-                    fill 
+                <Image
+                    src="/services/why-choose-bg-blobs.webp"
+                    alt="background blobs"
+                    fill
                     className={styles.blobImg}
                 />
             </div>
-            
+
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
@@ -39,15 +39,15 @@ const WhyChooseAppSection = ({
                                 {title || defaultTitle}
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image 
-                                    src={underlineImage} 
-                                    alt="underline" 
-                                    width={250} 
-                                    height={20} 
+                                <Image
+                                    src={underlineImage}
+                                    alt="underline"
+                                    width={250}
+                                    height={20}
                                     className={styles.purpleVector}
                                 />
                             </div>
-                            
+
                             <div className={styles.description}>
                                 <p>
                                     {desc1 || defaultDesc1}
@@ -67,11 +67,11 @@ const WhyChooseAppSection = ({
             </div>
 
             <div className={styles.mockupWrapper}>
-                <Image 
-                    src={mockupImage} 
-                    alt="Mobile App Mockup" 
-                    width={800} 
-                    height={700} 
+                <Image
+                    src={mockupImage}
+                    alt="Mobile App Mockup"
+                    width={800}
+                    height={700}
                     className={styles.mockupImg}
                     priority
                 />

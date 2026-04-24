@@ -4,22 +4,22 @@ import styles from './AwardsSection.module.css';
 
 const awards = [
     {
-        icon: '/services/award-clutch.png',
+        icon: '/services/award-clutch.webp',
         year: '2023',
         title: 'Top App Performers Award'
     },
     {
-        icon: '/services/award-appfutura.png',
+        icon: '/services/award-appfutura.webp',
         year: '2023',
         title: 'Top App Performers Award'
     },
     {
-        icon: '/services/award-upcity.png',
+        icon: '/services/award-upcity.webp',
         year: '2023',
         title: 'Top App Performers Award'
     },
     {
-        icon: '/services/award-expertise.png',
+        icon: '/services/award-expertise.webp',
         year: '2023',
         title: 'Top App Performers Award'
     }
@@ -31,7 +31,7 @@ const AwardsSection = () => {
             {/* Background trophy image */}
             <div className={styles.bgWrapper}>
                 <Image
-                    src="/services/awards-section-bg.png"
+                    src="/services/awards-section-bg.webp"
                     alt="awards background"
                     fill
                     className={styles.bgImg}
@@ -49,7 +49,7 @@ const AwardsSection = () => {
                             </h2>
                             <div className={styles.underlineWrapper}>
                                 <Image
-                                    src="/blue-vector.png"
+                                    src="/blue-vector.webp"
                                     alt="underline"
                                     width={400}
                                     height={40}

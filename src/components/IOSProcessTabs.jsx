@@ -10,42 +10,42 @@ const tabs = [
         label: 'Project Planning',
         title: 'Project Planning',
         description: 'In Project Planning, Our Business Analysts Work With Clients To Turn Their App Ideas And Business Needs Into A Clear Project Scope. We Allocate The Right Resources, Provide Accurate Cost And Time Estimates, And Explore Cost Optimization Options For Efficient Execution.',
-        image: '/process-steps/step-01.png'
+        image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
         description: 'Once the planning is complete, we move to wireframing. This phase involves creating a visual guide that represents the skeletal framework of your app, ensuring a seamless user experience and intuitive interface design.',
-        image: '/process-steps/step-02.png'
+        image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
         description: 'Before full-scale development, we build an interactive prototype. This allows you to experience the flow and functionality of your app firsthand, giving you the opportunity to provide feedback and refine the user journey early on.',
-        image: '/process-steps/step-03.png'
+        image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
         description: 'Our expert developers bring your app to life using the latest coding standards and frameworks. We follow an agile development process, ensuring frequent updates and the flexibility to adapt to changing requirements.',
-        image: '/process-steps/step-04.png'
+        image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
         description: 'We conduct rigorous testing to ensure your app is bug-free, secure, and performs flawlessly across all devices and platforms. Our QA team runs multiple performance and security audits to guarantee excellence.',
-        image: '/process-steps/step-05.png'
+        image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
         description: 'Finally, we handle the launch of your app on the App Store or Google Play. We manage the entire submission process, ensuring compliance with all guidelines and a smooth transition to a successful live environment.',
-        image: '/process-steps/step-06.png'
+        image: '/process-steps/step-06.webp'
     }
 ];
 
@@ -65,11 +65,11 @@ const IOSProcessTabs = () => {
                                 Makes It <span className={styles.purpleText}>Simple, Easy,</span> & Efficient
                             </h2>
                             <div className={styles.underlineWrapper}>
-                                <Image 
-                                    src="/green-vector.png" 
-                                    alt="underline" 
-                                    width={300} 
-                                    height={20} 
+                                <Image
+                                    src="/green-vector.webp"
+                                    alt="underline"
+                                    width={300}
+                                    height={20}
                                     className={styles.greenVector}
                                 />
                             </div>
@@ -92,17 +92,17 @@ const IOSProcessTabs = () => {
                             ))}
                         </div>
                     </div>
-                    
+
                     <div className="col-lg-8">
                         <div className={styles.contentCard}>
                             <div className="row g-0 align-items-center">
                                 <div className="col-lg-12">
                                     <div className={styles.imageWrapper}>
-                                        <Image 
-                                            src={activeContent.image} 
-                                            alt={activeContent.title} 
-                                            width={800} 
-                                            height={500} 
+                                        <Image
+                                            src={activeContent.image}
+                                            alt={activeContent.title}
+                                            width={800}
+                                            height={500}
                                             className={styles.contentImage}
                                         />
                                     </div>

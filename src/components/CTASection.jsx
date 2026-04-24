@@ -5,29 +5,50 @@ import MyButton from './MyButton';
 const CTASection = () => {
     return (
         <section className={styles.ctaSection}>
-            <Image
-                src="/about-bg.png"
+            {/* <Image
+                src="/about-bg.webp"
                 alt="background image"
                 fill
                 className={styles.backgroundImage}
-            />
+            /> */}
+            <div style={{ position: "absolute", inset: 0, zIndex: -1, overflow: "hidden" }}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1920"
+                    height="1086"
+                    viewBox="0 0 1920 1086"
+                    fill="none"
+                    style={{ width: "100%", height: "100%" }}
+                >
+                    <g filter="url(#blur)">
+                        <path
+                            d="M1410.67 586.078C1640 462.849 1728.67 225.782 1758.67 135.3L1805.33 -75.3901C1706.22 37.9577 1600.67 287.682 1513.33 361.669C1238.61 594.407 942.718 576.456 661.333 657.614C379.333 738.95 263.226 817.291 170 934.451C82.6667 1044.21 48.8889 1322.02 44 1461.67C161.333 1067.33 390 911.502 496 865.854C752 755.609 1190 704.652 1410.67 586.078Z"
+                            fill="#ffafa1ff"
+                            fillOpacity="1"
+                        />
+                    </g>
+
+                    <defs>
+                        <filter
+                            id="blur"
+                            x="-200"
+                            y="-200"
+                            width="2400"
+                            height="1800"
+                            filterUnits="userSpaceOnUse"
+                        >
+                            <feGaussianBlur stdDeviation="62.6667" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
             <div className="container">
                 <div className={styles.ctaWrapper}>
                     <div className={styles.contentCol}>
                         <span className={styles.badge}>GET STARTED</span>
                         <h2 className={styles.heading}>
                             Build An Innovative <br />
-                            <span className={styles.purpleTxt}>Unity Game</span> With <br />
-                            <span className={styles.purpleTxt}>
-                                Next App Inc!
-                                <Image
-                                    src="/blue-vector.png"
-                                    alt="underline"
-                                    width={350}
-                                    height={20}
-                                    className={styles.blueVector}
-                                />
-                            </span>
+                            <span className="primarytxt">Unity Game With <br />Next App Inc!</span>
                         </h2>
                         <p className={styles.description}>
                             Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod nulla quis venenatis tellus. Nulla viverra amet suspendisse luctus elementum nam morbi sit. Risus tempus nisl nec faucibus.
@@ -44,7 +65,7 @@ const CTASection = () => {
                         {/* Rotating Background */}
                         <div className={styles.bgCircleWrapper}>
                             <img
-                                src="/cta-right-bg.png"
+                                src="/cta-right-bg.webp"
                                 alt="bg"
                                 className={styles.rotatingBg}
                             />
@@ -53,7 +74,7 @@ const CTASection = () => {
                         {/* Hand and Phone Mockup */}
                         <div className={styles.handWrapper}>
                             <Image
-                                src="/cta-mobile-casing.png"
+                                src="/cta-mobile-casing.webp"
                                 alt="hand holding phone"
                                 width={550}
                                 height={668}
@@ -69,20 +90,20 @@ const CTASection = () => {
                                     playsInline
                                     className={styles.mobileVideo}
                                 >
-                                    <source src="/cta-mobile.mp4" type="video/mp4" />
+                                    <source src="/video/cta-mobile.webm" type="video/webm" />
                                 </video>
                             </div>
                         </div>
 
                         {/* Floating Icons */}
                         <div className={`${styles.floatingIcon} ${styles.appStore}`}>
-                            <Image src="/app-store-logo-icon.png" alt="app store" width={100} height={100} />
+                            <Image src="/app-store-logo-icon.webp" alt="app store" width={100} height={100} />
                         </div>
                         <div className={`${styles.floatingIcon} ${styles.flutter}`}>
-                            <Image src="/flutter-logo-icon.png" alt="flutter" width={100} height={100} />
+                            <Image src="/flutter-logo-icon.webp" alt="flutter" width={100} height={100} />
                         </div>
                         <div className={`${styles.floatingIcon} ${styles.android}`}>
-                            <Image src="/android-logo-icon.png" alt="android" width={100} height={100} />
+                            <Image src="/android-logo-icon.webp" alt="android" width={100} height={100} />
                         </div>
                     </div>
                 </div>

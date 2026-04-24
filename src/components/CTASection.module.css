@@ -1,5 +1,6 @@
 .ctaSection {
     padding: 100px 0 0 0;
+    background-color: #ffeae7;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -42,21 +43,6 @@
     line-height: 1;
     color: #000;
     margin-bottom: 35px;
-}
-
-.purpleTxt {
-    color: #6a55ff;
-    position: relative;
-    display: inline-block;
-}
-
-.blueVector {
-    position: absolute;
-    bottom: -30px;
-    left: -10px;
-    width: 105%;
-    height: auto;
-    z-index: -1;
 }
 
 .description {
@@ -192,11 +178,6 @@
     .description {
         max-width: unset;
         font-size: 18px;
-    }
-
-    .blueVector {
-        bottom: -25px;
-        left: 0px;
     }
 
     .visualCol {

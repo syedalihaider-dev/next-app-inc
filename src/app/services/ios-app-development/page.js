@@ -30,9 +30,9 @@ const IOSAppDevelopmentPage = () => {
                         <span className={styles.greenText}>Actually Love.</span>
                     </>
                 }
-                underlineImage="/green-vector.png"
+                underlineImage="/green-vector.webp"
                 description="iOS app development automates tasks, improves data management, and boosts efficiency with seamless workflows and tailored solutions."
-                bgImage="/services/ios-app-development/banner-bg.png"
+                bgImage="/services/ios-app-development/banner-bg.webp"
             />
             <IOSAppSection />
             <AwardsSection />

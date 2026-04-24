@@ -52,11 +52,11 @@
 }
 
 .purpleText {
-    color: #6a55ff;
+    color: var(--primary-color);
 }
 
 .greenText {
-    color: #9dff00; /* Neon/Bright Green */
+    color: var(--primary-color);
 }
 
 .underlineWrapper {

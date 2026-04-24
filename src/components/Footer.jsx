@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Image
-                src="/footer-bg.png"
+                src="/footer-bg.webp"
                 alt="Footer Background"
                 fill
                 priority
@@ -59,7 +59,7 @@ const Footer = () => {
                             <h4 className={styles.footerTitle}>Locations</h4>
                             <div className={styles.locationItem}>
                                 <div className={styles.locationIcon}>
-                                    <Image src="/map-icon-01.png" alt="Map Icon" width={24} height={32} />
+                                    <Image src="/map-icon-01.webp" alt="Map Icon" width={24} height={32} />
                                 </div>
                                 <div className={styles.locationText}>
                                     <p className={styles.infoLabel}>LOCATION 01:</p>
@@ -68,7 +68,7 @@ const Footer = () => {
                             </div>
                             <div className={styles.locationItem}>
                                 <div className={styles.locationIcon}>
-                                    <Image src="/map-icon-02.png" alt="Map Icon" width={24} height={32} />
+                                    <Image src="/map-icon-02.webp" alt="Map Icon" width={24} height={32} />
                                 </div>
                                 <div className={styles.locationText}>
                                     <p className={styles.infoLabel}>LOCATION 02:</p>

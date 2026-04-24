@@ -7,16 +7,16 @@ const Header = () => {
         <header className={styles.mainHeader}>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-lg-7 offset-lg-5">
+                    <div className="col-12 col-lg-12">
                         <div className={styles.headerWrapper}>
                             <div className={styles.logoPart}>
-                                <Image 
-                                    src="/logo.png" 
-                                    alt="Logo" 
-                                    width={220} 
-                                    height={40} 
-                                    priority 
-                                    className={styles.logoImage} 
+                                <Image
+                                    src="/logo.webp"
+                                    alt="Logo"
+                                    width={286}
+                                    height={86}
+                                    priority
+                                    className={styles.logoImage}
                                 />
                             </div>
                             <div className={styles.headerRight}>

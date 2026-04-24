@@ -16,9 +16,6 @@ const Appointment = () => {
                                 Have an <span className={styles.highlight}>App Idea?</span><br />
                                 Let’s Make It Happen
                             </h2>
-                            <div className={styles.vectorWrapper}>
-                                <Image src="/green-vector.png" alt="vector" width={400} height={20} />
-                            </div>
                             <p className={styles.description}>
                                 Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod nulla quis venenatis tellus. Nulla viverra amet suspendisse luctus elementum nam morbi sit. Risus tempus nisl nec faucibus.
                             </p>
@@ -31,7 +28,7 @@ const Appointment = () => {
                         <div className={styles.visualCol}>
                             <div className={styles.handImgWrapper}>
                                 <Image
-                                    src="/appointment-mobile-hand.png"
+                                    src="/appointment-mobile-hand.webp"
                                     alt="Mobile App Idea"
                                     width={700}
                                     height={700}

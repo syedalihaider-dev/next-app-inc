@@ -32,7 +32,7 @@ const IndustryBanner = ({
 
                         <div className={styles.underlineWrapper}>
                             <Image
-                                src="/green-vector.png"
+                                src="/green-vector.webp"
                                 alt="underline"
                                 width={800}
                                 height={40}

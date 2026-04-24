@@ -41,16 +41,6 @@
     margin-bottom: 0;
 }
 
-.greenVector {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    height: auto;
-    width: 450px;
-}
-
 .sliderWrapper {
     position: relative;
     z-index: 1;
@@ -73,15 +63,26 @@
     gap: 15px;
     border: 1px solid rgba(0, 0, 0, 0.03);
     text-align: left;
+    cursor: pointer;
 }
 
 .serviceCard:hover {
     border-radius: 20px 150px 20px 20px;
     background: var(--primary-color);
+    color: var(--light-color);
+}
+
+.serviceCard:hover .cardTitle,
+.serviceCard:hover .cardDescription {
+    color: var(--light-color);
 }
 
 .iconBox {
     margin-bottom: 5px;
+}
+
+.serviceCard:hover .iconBox img {
+    filter: brightness(0) invert(1);
 }
 
 .cardTitle {
@@ -153,11 +154,6 @@
 
     .headerArea {
         margin-bottom: 40px;
-    }
-
-    .greenVector {
-        width: 450px;
-        bottom: -35px;
     }
 
     /* .prevBtn {
