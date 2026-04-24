@@ -49,7 +49,7 @@ const IndustriesSection = () => {
             <div className="container position-relative z-2">
                 <div className={styles.headerArea}>
                     <h2 className={styles.heading}>Industries We Have Served</h2>
-                    <div className={styles.underlineWrapper}>
+                    {/* <div className={styles.underlineWrapper}>
                         <Image
                             src="/blue-vector.webp"
                             alt="underline"
@@ -57,7 +57,7 @@ const IndustriesSection = () => {
                             height={25}
                             className={styles.purpleVector}
                         />
-                    </div>
+                    </div> */}
                     <p className={styles.description}>
                         We Specialize In Developing Industry-Specific Applications For Our Clients.
                     </p>
@@ -69,7 +69,7 @@ const IndustriesSection = () => {
                     spaceBetween={20}
                     slidesPerView={1}
                     loop={true}
-                    speed={5000} /* Slow speed for smooth continuous movement */
+                    speed={5000}
                     autoplay={{
                         delay: 0,
                         disableOnInteraction: false,

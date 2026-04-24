@@ -10,7 +10,6 @@ const WhyChooseAppSection = ({
     mockupImage = "/services/why-choose-mockup.webp",
     underlineImage = "/blue-vector.webp"
 }) => {
-    // Default content if props are not provided
     const defaultTitle = (
         <>
             Why Choose <span className={styles.purpleText}>Next <br /> App Inc</span> Mobile Apps
@@ -38,15 +37,6 @@ const WhyChooseAppSection = ({
                             <h2 className={styles.heading}>
                                 {title || defaultTitle}
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src={underlineImage}
-                                    alt="underline"
-                                    width={250}
-                                    height={20}
-                                    className={styles.purpleVector}
-                                />
-                            </div>
 
                             <div className={styles.description}>
                                 <p>

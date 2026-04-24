@@ -20,16 +20,7 @@
 }
 
 .purpleText {
-    color: #6a55ff;
-}
-
-.underlineWrapper {
-    margin-bottom: 35px;
-    display: inline-block;
-}
-
-.greenVector {
-    object-fit: contain;
+    color: var(--primary-color);
 }
 
 .description {
@@ -67,9 +58,9 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center all content */
+    justify-content: center;
     align-items: flex-start;
-    min-height: 380px; /* Ensure uniform size */
+    min-height: 380px;
 }
 
 .cardTitle {
@@ -85,7 +76,7 @@
     font-size: 16px;
     line-height: 1.7;
     color: #666;
-    margin-bottom: 0; /* Changed to 0 as it's centered */
+    margin-bottom: 0;
     transition: all 0.4s ease;
 }
 
@@ -98,7 +89,7 @@
 }
 
 .activeCard, .serviceCard:hover {
-    background: #6a55ff;
+    background: var(--primary-color);
     transform: translateY(-5px);
     box-shadow: 0 20px 50px rgba(106, 85, 255, 0.2);
 }

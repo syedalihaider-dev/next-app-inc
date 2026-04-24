@@ -21,15 +21,6 @@ const IndustryConsultationSection = () => {
                                 <span className={styles.purpleText}>Financial Management</span> <br />
                                 with Powerful Apps!
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src="/blue-vector.webp"
-                                    alt="underline"
-                                    width={350}
-                                    height={25}
-                                    className={styles.purpleVector}
-                                />
-                            </div>
 
                             <p className={styles.subLabel}>Our Accounting App Development Services</p>
                             <p className={styles.description}>

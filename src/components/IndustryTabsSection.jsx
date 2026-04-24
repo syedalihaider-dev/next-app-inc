@@ -50,15 +50,6 @@ const IndustryTabsSection = () => {
                         Empowering the Future of <span className={styles.purpleText}>Accounting</span> <br />
                         with <span className={styles.purpleText}>Modern App</span> Development
                     </h2>
-                    <div className={styles.underlineWrapper}>
-                        <Image
-                            src="/blue-vector.webp"
-                            alt="underline"
-                            width={350}
-                            height={25}
-                            className={styles.purpleVector}
-                        />
-                    </div>
                     <p className={styles.headerDescription}>
                         We Create Transformative Accounting Apps That Make Financial Management Accessible,
                         Personalized, And Engaging. Designed For Firms, CPAs, And Finance Teams,

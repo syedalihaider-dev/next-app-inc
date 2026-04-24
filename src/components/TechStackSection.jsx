@@ -28,7 +28,7 @@ const techStacks = {
         { name: 'HTML5', icon: '/tech-stack/html.webp' },
         { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
     ],
-    // Placeholders for other categories as requested
+
     'DESIGN': [
         { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
         { name: 'React Native', icon: '/tech-stack/react-native.webp' },
@@ -103,15 +103,6 @@ const TechStackSection = () => {
                         Our Tech Stack For <br />
                         <span className={styles.purpleText}>Mobile App Development</span>
                     </h2>
-                    <div className={styles.underlineWrapper}>
-                        <Image
-                            src="/green-vector.webp"
-                            alt="underline"
-                            width={400}
-                            height={25}
-                            className={styles.greenVector}
-                        />
-                    </div>
                 </div>
 
                 <div className={styles.tabsWrapper}>

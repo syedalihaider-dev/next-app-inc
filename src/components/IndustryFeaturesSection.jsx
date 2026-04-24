@@ -47,15 +47,6 @@ const IndustryFeaturesSection = () => {
                                 Features to Build Successful <br />
                                 <span className={styles.greenText}>Finance Platforms</span>
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src="/green-vector.webp"
-                                    alt="underline"
-                                    width={300}
-                                    height={20}
-                                    className={styles.greenVector}
-                                />
-                            </div>
                             <p className={styles.description}>
                                 We&apos;ve Received Awards And Recognition For Our Quality-First Approach,
                                 Delivering Complex Projects Successfully With Our Skilled Team Of

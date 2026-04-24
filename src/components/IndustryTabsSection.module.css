@@ -1,7 +1,6 @@
 .tabsSection {
     position: relative;
     padding: 120px 0;
-    /* User: linear-gradient(10deg, #d7fcff 80%, #fff 100%) */
     background: linear-gradient(10deg, #d7fcff 80%, #fff 100%);
     overflow: hidden;
 }
@@ -25,7 +24,7 @@
 }
 
 .purpleText {
-    color: #6a55ff;
+    color: var(--primary-color);
 }
 
 .underlineWrapper {
@@ -70,13 +69,13 @@
 }
 
 .tabBtn:hover {
-    border-color: #6a55ff;
+    border-color: var(--primary-color);
 }
 
 .activeTab {
-    background: #000;
+    background: var(--primary-color);
     color: #fff;
-    border-color: #000;
+    border-color: var(--primary-color);
 }
 
 .contentWrapper {

@@ -23,17 +23,6 @@
     margin-bottom: 5px;
 }
 
-.underlineWrapper {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.purpleVector {
-    object-fit: contain;
-}
-
 .description {
     font-size: 20px;
     color: #666;
@@ -94,8 +83,6 @@
     margin-bottom: 0;
 }
 
-/* Smooth continuous slider CSS */
-/* We target the swiper-wrapper to apply linear transition */
 .industriesSwiper :global(.swiper-wrapper) {
     transition-timing-function: linear !important;
 }

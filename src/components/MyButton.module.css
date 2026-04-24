@@ -74,6 +74,10 @@
   transform: translateY(0);
 }
 
+.mybtn:hover .text span{
+  color: var(--light-color);
+}
+
 .icon {
   width: 55px;
   height: 55px;

@@ -30,16 +30,6 @@ const IndustryBanner = ({
                             {mainTitle.split(highlightedPart)[1]}
                         </h1>
 
-                        <div className={styles.underlineWrapper}>
-                            <Image
-                                src="/green-vector.webp"
-                                alt="underline"
-                                width={800}
-                                height={40}
-                                className={styles.greenVector}
-                            />
-                        </div>
-
                         <p className={styles.description}>
                             {description}
                         </p>

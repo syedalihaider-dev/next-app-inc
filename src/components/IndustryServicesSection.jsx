@@ -47,15 +47,6 @@ const IndustryServicesSection = () => {
                                 Our <span className={styles.purpleText}>Accounting App</span> <br />
                                 Development Services
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src="/green-vector.webp"
-                                    alt="underline"
-                                    width={300}
-                                    height={20}
-                                    className={styles.greenVector}
-                                />
-                            </div>
                             <p className={styles.description}>
                                 Our Accounting App Development Services provide integrated tools and
                                 resources for smooth management—from initial ideation and concept

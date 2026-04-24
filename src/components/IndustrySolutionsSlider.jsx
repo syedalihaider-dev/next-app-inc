@@ -50,13 +50,6 @@ const IndustrySolutionsSlider = () => {
                         Next-Gen eLearning App Solutions <br />
                         For <span className={styles.highlightWrapper}>
                             <span className={styles.highlightText}>Modern Education</span>
-                            <Image
-                                src="/green-vector.webp"
-                                alt="underline"
-                                width={300}
-                                height={25}
-                                className={styles.greenVector}
-                            />
                         </span> Needs
                     </h2>
                 </div>

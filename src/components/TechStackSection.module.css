@@ -18,15 +18,7 @@
 }
 
 .purpleText {
-    color: #6a55ff;
-}
-
-.underlineWrapper {
-    display: inline-block;
-}
-
-.greenVector {
-    object-fit: contain;
+    color: var(--primary-color);
 }
 
 .tabsWrapper {
@@ -50,15 +42,15 @@
 }
 
 .activeTab {
-    background-color: #6a55ff;
-    border-color: #6a55ff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
     color: #fff;
 }
 
 .tabBtn:hover:not(.activeTab) {
     background-color: rgba(106, 85, 255, 0.1);
-    border-color: #6a55ff;
-    color: #6a55ff;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .techGrid {
@@ -79,7 +71,6 @@
     margin-bottom: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.02);
-    /* min-height: 150px; */
 }
 
 .iconBox:hover {
