@@ -49,13 +49,12 @@ const AboutBanner = () => {
                                     </div>
                                 </div>
                             </div>
-                            <span className={styles.subTitle}>About Us</span>
+                            <span className={styles.subTitle}>ABOUT US</span>
                             <h1 className={styles.heading}>
-                                <span className="secondarytxt">We Build</span> Innovative & <span className="primarytxt">Creative</span> <br />
-                                Mobile App Solutions.
+                                We Started With a Question <span className="secondarytxt">Most</span> Agencies Are <span className="primarytxt">Afraid to Ask.</span>
                             </h1>
                             <p className={styles.description}>
-                                Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod nulla quis venenatis tellus. Nulla viverra amet suspendisse luctus ele mentum nam morbi sit.
+                                We are Next App. A digital product studio that builds mobile apps, games, e-commerce platforms, web solutions, and custom software for businesses that refuse to settle for average. This is our story and the reason behind every product we build.
                             </p>
                             <div className={styles.btnWrapper}>
                                 <MyButton text="Get Started" className="btn_white" />

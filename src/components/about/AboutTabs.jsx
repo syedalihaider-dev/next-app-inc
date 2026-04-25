@@ -67,23 +67,22 @@ const AboutTabs = () => {
                     </svg>
                 </div>
                 <div className="container position-relative z-1">
-                    {/* Stats Row */}
                     <div className={`row ${styles.statsRow}`}>
                         <div className="col-6 col-md-3 col-lg-3 text-center">
-                            <h3 className={styles.statNumber}>600<span className={styles.plus}>+</span></h3>
-                            <p className={styles.statLabel}>Super Happy Clients</p>
-                        </div>
-                        <div className="col-6 col-md-3 col-lg-3 text-center">
-                            <h3 className={styles.statNumber}>900<span className={styles.plus}>+</span></h3>
-                            <p className={styles.statLabel}>Successful Projects</p>
+                            <h3 className={styles.statNumber}>15<span className={styles.plus}>+</span></h3>
+                            <p className={styles.statLabel}>Years of Experience</p>
                         </div>
                         <div className="col-6 col-md-3 col-lg-3 text-center">
                             <h3 className={styles.statNumber}>200<span className={styles.plus}>+</span></h3>
-                            <p className={styles.statLabel}>Adv Awards Winners</p>
+                            <p className={styles.statLabel}>Projects Delivered</p>
                         </div>
                         <div className="col-6 col-md-3 col-lg-3 text-center">
-                            <h3 className={styles.statNumber}>900<span className={styles.plus}>+</span></h3>
-                            <p className={styles.statLabel}>Super Happy Clients</p>
+                            <h3 className={styles.statNumber}>98<span className={styles.plus}>%</span></h3>
+                            <p className={styles.statLabel}>Client Retention Rate</p>
+                        </div>
+                        <div className="col-6 col-md-3 col-lg-3 text-center">
+                            <h3 className={styles.statNumber}>50<span className={styles.plus}>+</span></h3>
+                            <p className={styles.statLabel}>Full-Time Specialists</p>
                         </div>
                     </div>
 

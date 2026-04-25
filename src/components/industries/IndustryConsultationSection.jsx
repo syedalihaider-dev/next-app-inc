@@ -3,7 +3,12 @@ import Image from 'next/image';
 import styles from './IndustryConsultationSection.module.css';
 import MyButton from '@/components/layout/MyButton';
 
-const IndustryConsultationSection = () => {
+const IndustryConsultationSection = ({
+    title = <>Create Seamless <br /> <span className={styles.purpleText}>Financial Management</span> <br /> with Powerful Apps!</>,
+    subLabel = "Our Accounting App Development Services",
+    description = "Our Accounting App Development Services provide integrated tools and resources for smooth management—from initial ideation and concept development to final delivery. We specialize in creating high-performance finance apps tailored to meet your specific business goals.",
+    image = "/industries/consultation-woman.webp"
+}) => {
     return (
         <section className={styles.consultationSection}>
             <Image
@@ -17,17 +22,12 @@ const IndustryConsultationSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.contentArea}>
                             <h2 className={styles.heading}>
-                                Create Seamless <br />
-                                <span className={styles.purpleText}>Financial Management</span> <br />
-                                with Powerful Apps!
+                                {title}
                             </h2>
 
-                            <p className={styles.subLabel}>Our Accounting App Development Services</p>
+                            <p className={styles.subLabel}>{subLabel}</p>
                             <p className={styles.description}>
-                                Our Accounting App Development Services provide integrated tools and
-                                resources for smooth management—from initial ideation and concept
-                                development to final delivery. We specialize in creating high-performance
-                                finance apps tailored to meet your specific business goals.
+                                {description}
                             </p>
 
                             <div className="mt-5">
@@ -38,7 +38,7 @@ const IndustryConsultationSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.imageWrapper}>
                             <Image
-                                src="/industries/consultation-woman.webp"
+                                src={image}
                                 alt="Consultation"
                                 width={800}
                                 height={750}

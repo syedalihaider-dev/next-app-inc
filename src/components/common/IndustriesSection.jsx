@@ -2,37 +2,42 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import styles from './IndustriesSection.module.css';
 
 const industries = [
     {
         title: 'E-Commerce',
         description: 'We create apps for retail businesses that are great at engaging',
-        image: '/services/ios-app-development/industry-01.webp'
-    },
-    {
-        title: 'Real Estate',
-        description: 'Premium mobile solutions for real estate management and listing',
-        image: '/services/ios-app-development/industry-02.webp'
+        image: '/services/ios-app-development/industry-01.webp',
+        link: '/industries/ecommerce-app-development'
     },
     {
         title: 'Fintech',
         description: 'Secure and scalable financial technology applications for all',
-        image: '/services/ios-app-development/industry-03.webp'
+        image: '/services/ios-app-development/industry-03.webp',
+        link: '/industries/finance-app-development'
     },
     {
         title: 'Healthcare',
         description: 'Intuitive and HIPAA-compliant healthcare solutions for patients',
-        image: '/services/ios-app-development/industry-04.webp'
+        image: '/services/ios-app-development/industry-04.webp',
+        link: '/industries/healthcare-app-development'
     },
     {
         title: 'Education',
         description: 'Engaging learning platforms for the modern student and teacher',
-        image: '/services/ios-app-development/industry-05.webp'
+        image: '/services/ios-app-development/industry-05.webp',
+        link: '/industries/education-app-development'
+    },
+    {
+        title: 'Accounting',
+        description: 'Advanced accounting and financial management solutions',
+        image: '/services/ios-app-development/industry-02.webp',
+        link: '/industries/accounting-app-development'
     }
 ];
 
@@ -49,15 +54,6 @@ const IndustriesSection = () => {
             <div className="container position-relative z-2">
                 <div className={styles.headerArea}>
                     <h2 className={styles.heading}>Industries We Have Served</h2>
-                    {/* <div className={styles.underlineWrapper}>
-                        <Image
-                            src="/blue-vector.webp"
-                            alt="underline"
-                            width={250}
-                            height={25}
-                            className={styles.purpleVector}
-                        />
-                    </div> */}
                     <p className={styles.description}>
                         We Specialize In Developing Industry-Specific Applications For Our Clients.
                     </p>
@@ -84,20 +80,22 @@ const IndustriesSection = () => {
                 >
                     {industries.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className={styles.industryCard}>
-                                <div className={styles.imageBox}>
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        fill
-                                        className={styles.industryImg}
-                                    />
+                            <Link href={item.link}>
+                                <div className={styles.industryCard}>
+                                    <div className={styles.imageBox}>
+                                        <Image
+                                            src={item.image}
+                                            alt={item.title}
+                                            fill
+                                            className={styles.industryImg}
+                                        />
+                                    </div>
+                                    <div className={styles.overlay}>
+                                        <h4 className={styles.cardTitle}>{item.title}</h4>
+                                        <p className={styles.cardDesc}>{item.description}</p>
+                                    </div>
                                 </div>
-                                <div className={styles.overlay}>
-                                    <h4 className={styles.cardTitle}>{item.title}</h4>
-                                    <p className={styles.cardDesc}>{item.description}</p>
-                                </div>
-                            </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>

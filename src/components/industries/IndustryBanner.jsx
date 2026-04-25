@@ -25,9 +25,10 @@ const IndustryBanner = ({
                     <div className="col-lg-10 text-center">
                         <span className={styles.industryLabel}>{industryLabel}</span>
                         <h1 className={styles.mainTitle}>
-                            {mainTitle.split(highlightedPart)[0]}
-                            <span className={styles.highlight}>{highlightedPart}</span>
-                            {mainTitle.split(highlightedPart)[1]}
+                            {mainTitle}
+                            {highlightedPart && (
+                                <> <span className={styles.highlight}>{highlightedPart}</span></>
+                            )}
                         </h1>
 
                         <p className={styles.description}>
