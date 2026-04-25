@@ -1,0 +1,48 @@
+import React from 'react';
+import Image from 'next/image';
+import styles from './IndustryBanner.module.css';
+import MyButton from '@/components/layout/MyButton';
+
+const IndustryBanner = ({
+    industryLabel,
+    mainTitle,
+    highlightedPart,
+    description,
+    bgImage
+}) => {
+    return (
+        <section className={styles.industryBanner}>
+            <Image
+                src={bgImage}
+                alt="banner background"
+                fill
+                priority
+                className={styles.bgImage}
+            />
+
+            <div className={`container ${styles.container}`}>
+                <div className="row justify-content-center">
+                    <div className="col-lg-10 text-center">
+                        <span className={styles.industryLabel}>{industryLabel}</span>
+                        <h1 className={styles.mainTitle}>
+                            {mainTitle.split(highlightedPart)[0]}
+                            <span className={styles.highlight}>{highlightedPart}</span>
+                            {mainTitle.split(highlightedPart)[1]}
+                        </h1>
+
+                        <p className={styles.description}>
+                            {description}
+                        </p>
+
+                        <div className="d-flex justify-content-center mt-4">
+                            <MyButton text="Get Started" className="btn_white" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    );
+};
+
+export default IndustryBanner;

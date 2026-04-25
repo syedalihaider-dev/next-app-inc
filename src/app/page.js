@@ -1,13 +1,18 @@
-import Banner from "@/components/Banner";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import CaseStudy from "@/components/CaseStudy";
-import ProcessSection from "@/components/ProcessSection";
-import Blog from "@/components/Blog";
-import Appointment from "@/components/Appointment";
-import Testimonials from "@/components/Testimonials";
-import ContactSection from "@/components/ContactSection";
-import CTASection from "@/components/CTASection";
+import Banner from "@/components/home/Banner";
+import About from "@/components/home/About";
+import Services from "@/components/home/Services";
+import CaseStudy from "@/components/common/CaseStudy";
+import ProcessSection from "@/components/home/ProcessSection";
+import Blog from "@/components/home/Blog";
+import Appointment from "@/components/common/Appointment";
+import Testimonials from "@/components/common/Testimonials";
+import ContactSection from "@/components/common/ContactSection";
+import CTASection from "@/components/common/CTASection";
+
+export const metadata = {
+    title: "Next App | Mobile Apps, Web & Software Development Company",
+    description: "Next App builds mobile apps, e-commerce platforms, web solutions, custom software, and games that solve real problems. Get a free consultation today.",
+};
 
 export default function Home() {
   return (

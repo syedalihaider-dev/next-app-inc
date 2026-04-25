@@ -1,16 +1,16 @@
-import IndustryBanner from '@/components/IndustryBanner';
-import IndustryServicesSection from '@/components/IndustryServicesSection';
-import IndustryConsultationSection from '@/components/IndustryConsultationSection';
-import IndustryTabsSection from '@/components/IndustryTabsSection';
-import IndustryFeaturesSection from '@/components/IndustryFeaturesSection';
-import WhyChooseAppSection from '@/components/WhyChooseAppSection';
-import IndustrySolutionsSlider from '@/components/IndustrySolutionsSlider';
-import CaseStudy from "@/components/CaseStudy";
-import TechStackSection from '@/components/TechStackSection';
-import IndustriesSection from '@/components/IndustriesSection';
-import Appointment from "@/components/Appointment";
-import Testimonials from "@/components/Testimonials";
-import ContactSection from "@/components/ContactSection";
+import IndustryBanner from '@/components/industries/IndustryBanner';
+import IndustryServicesSection from '@/components/industries/IndustryServicesSection';
+import IndustryConsultationSection from '@/components/industries/IndustryConsultationSection';
+import IndustryTabsSection from '@/components/industries/IndustryTabsSection';
+import IndustryFeaturesSection from '@/components/industries/IndustryFeaturesSection';
+import WhyChooseAppSection from '@/components/common/WhyChooseAppSection';
+import IndustrySolutionsSlider from '@/components/industries/IndustrySolutionsSlider';
+import CaseStudy from "@/components/common/CaseStudy";
+import TechStackSection from '@/components/common/TechStackSection';
+import IndustriesSection from '@/components/common/IndustriesSection';
+import Appointment from "@/components/common/Appointment";
+import Testimonials from "@/components/common/Testimonials";
+import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
     title: "Accounting App Development | Next App Inc",

@@ -1,6 +1,6 @@
-import ContactBanner from "@/components/ContactBanner";
-import ContactSection from "@/components/ContactSection";
-import LocationSection from "@/components/LocationSection";
+import ContactBanner from "@/components/contact/ContactBanner";
+import ContactSection from "@/components/common/ContactSection";
+import LocationSection from "@/components/contact/LocationSection";
 
 export const metadata = {
     title: "Contact Us | Next App Inc",

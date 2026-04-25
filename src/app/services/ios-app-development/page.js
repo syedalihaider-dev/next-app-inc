@@ -1,18 +1,18 @@
-import ServiceInnerBanner from '@/components/ServiceInnerBanner';
-import styles from '@/components/ServiceInnerBanner.module.css';
-import IOSAppSection from '@/components/IOSAppSection';
-import AwardsSection from '@/components/AwardsSection';
-import ServicesListSection from '@/components/ServicesListSection';
-import DevelopmentSolutionsSection from '@/components/DevelopmentSolutionsSection';
-import CompanyChoiceSection from '@/components/CompanyChoiceSection';
-import IOSProcessTabs from '@/components/IOSProcessTabs';
-import WhyChooseAppSection from '@/components/WhyChooseAppSection';
-import CaseStudy from "@/components/CaseStudy";
-import TechStackSection from '@/components/TechStackSection';
-import IndustriesSection from '@/components/IndustriesSection';
-import Appointment from "@/components/Appointment";
-import Testimonials from "@/components/Testimonials";
-import ContactSection from "@/components/ContactSection";
+import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
+import styles from '@/components/services/ServiceInnerBanner.module.css';
+import IOSAppSection from '@/components/services/IOSAppSection';
+import AwardsSection from '@/components/common/AwardsSection';
+import ServicesListSection from '@/components/services/ServicesListSection';
+import DevelopmentSolutionsSection from '@/components/services/DevelopmentSolutionsSection';
+import CompanyChoiceSection from '@/components/services/CompanyChoiceSection';
+import IOSProcessTabs from '@/components/services/IOSProcessTabs';
+import WhyChooseAppSection from '@/components/common/WhyChooseAppSection';
+import CaseStudy from "@/components/common/CaseStudy";
+import TechStackSection from '@/components/common/TechStackSection';
+import IndustriesSection from '@/components/common/IndustriesSection';
+import Appointment from "@/components/common/Appointment";
+import Testimonials from "@/components/common/Testimonials";
+import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
     title: "iOS App Development | Next App Inc",

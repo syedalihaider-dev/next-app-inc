@@ -1,10 +1,10 @@
-import CaseStudyBanner from '@/components/CaseStudyBanner';
-import CaseStudyProject from '@/components/CaseStudyProject';
-import YesTableProject from '@/components/YesTableProject';
-import MarhoferProject from '@/components/MarhoferProject';
-import Appointment from "@/components/Appointment";
-import Testimonials from "@/components/Testimonials";
-import ContactSection from "@/components/ContactSection";
+import CaseStudyBanner from '@/components/case-studies/CaseStudyBanner';
+import CaseStudyProject from '@/components/case-studies/CaseStudyProject';
+import YesTableProject from '@/components/case-studies/YesTableProject';
+import MarhoferProject from '@/components/case-studies/MarhoferProject';
+import Appointment from "@/components/common/Appointment";
+import Testimonials from "@/components/common/Testimonials";
+import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
     title: "Case Studies | Next App Inc",

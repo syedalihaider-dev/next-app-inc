@@ -1,14 +1,14 @@
-import AboutBanner from "@/components/AboutBanner";
-import AboutTabs from "@/components/AboutTabs";
-import AboutFeatures from "@/components/AboutFeatures";
-import AboutWhyChooseUs from "@/components/AboutWhyChooseUs";
-import CaseStudy from "@/components/CaseStudy";
-import CTASection from "@/components/CTASection";
-import AboutTechSolutions from "@/components/AboutTechSolutions";
-import AboutFAQ from "@/components/AboutFAQ";
-import Appointment from "@/components/Appointment";
-import Testimonials from "@/components/Testimonials";
-import ContactSection from "@/components/ContactSection";
+import AboutBanner from "@/components/about/AboutBanner";
+import AboutTabs from "@/components/about/AboutTabs";
+import AboutFeatures from "@/components/about/AboutFeatures";
+import AboutWhyChooseUs from "@/components/about/AboutWhyChooseUs";
+import CaseStudy from "@/components/common/CaseStudy";
+import CTASection from "@/components/common/CTASection";
+import AboutTechSolutions from "@/components/about/AboutTechSolutions";
+import AboutFAQ from "@/components/about/AboutFAQ";
+import Appointment from "@/components/common/Appointment";
+import Testimonials from "@/components/common/Testimonials";
+import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
     title: "About Us | Next App Inc",
