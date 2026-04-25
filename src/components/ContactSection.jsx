@@ -26,24 +26,42 @@ const ContactSection = ({ isNewDesign = false }) => {
 
     return (
         <section className={`${styles.contactSection} ${isNewDesign ? styles.contactSectionNew : ''}`}>
-            {/* Background */}
-            {!isNewDesign ? (
-                <div className={styles.gridBg}>
-                    <Image src="/services-bg.webp" alt="Grid Background" layout="fill" objectFit="cover" />
-                </div>
-            ) : (
-                <div className={styles.bgWrapper}>
-                    <Image
-                        src="/contact/contact-form-bg.webp"
-                        alt="Background"
-                        fill
-                        className={styles.bgImg}
-                    />
-                </div>
-            )}
+            <div style={{ position: "absolute", inset: 0, zIndex: -1, overflow: "hidden" }}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1920"
+                    height="1086"
+                    viewBox="0 0 1920 1086"
+                    fill="none"
+                    style={{ width: "100%", height: "100%" }}
+                >
+                    <g filter="url(#blur)">
+                        <path
+                            d="M1410.67 586.078C1640 462.849 1728.67 225.782 1758.67 135.3L1805.33 -75.3901C1706.22 37.9577 1600.67 287.682 1513.33 361.669C1238.61 594.407 942.718 576.456 661.333 657.614C379.333 738.95 263.226 817.291 170 934.451C82.6667 1044.21 48.8889 1322.02 44 1461.67C161.333 1067.33 390 911.502 496 865.854C752 755.609 1190 704.652 1410.67 586.078Z"
+                            fill="#ffafa1ff"
+                            fillOpacity="1"
+                        />
+                    </g>
+
+                    <defs>
+                        <filter
+                            id="blur"
+                            x="-200"
+                            y="-200"
+                            width="2400"
+                            height="1800"
+                            filterUnits="userSpaceOnUse"
+                        >
+                            <feGaussianBlur stdDeviation="62.6667" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div className={styles.gridBg}>
+                <Image src="/services-bg.webp" alt="Grid Background" layout="fill" objectFit="cover" />
+            </div>
 
             <div className="container">
-                {/* Header Section */}
                 <div className={styles.header}>
                     {!isNewDesign ? (
                         <>
@@ -59,15 +77,11 @@ const ContactSection = ({ isNewDesign = false }) => {
                                 Fueling <span className={styles.blueText}>Innovation</span> <br />
                                 Through <span className={styles.blueText}>Collaboration.</span>
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image src="/green-vector.webp" alt="underline" width={250} height={20} />
-                            </div>
                         </>
                     )}
                 </div>
 
                 <div className="row align-items-center mt-5">
-                    {/* Left Column: Info & Socials */}
                     <div className="col-lg-5">
                         <div className={styles.infoCol}>
                             <h3 className={styles.subHeading}>Contact Us</h3>
@@ -123,7 +137,6 @@ const ContactSection = ({ isNewDesign = false }) => {
                         </div>
                     </div>
 
-                    {/* Right Column: Form */}
                     <div className="col-lg-7">
                         <div className={styles.formCol}>
                             <h3 className={styles.servicesTitle}>Services</h3>

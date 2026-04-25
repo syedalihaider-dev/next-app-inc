@@ -14,9 +14,6 @@ const IOSAppSection = () => {
                                 High Performance <br />
                                 <span className={styles.purpleText}>Built for Apple</span>
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image src="/blue-vector.webp" alt="underline" width={280} height={15} />
-                            </div>
                             <p className={styles.description}>
                                 At Nextapp Inc., We Know Every Business Is Unique, So Our Custom
                                 IOS App Development Approach Ensures Your App Reflects Your
@@ -26,7 +23,7 @@ const IOSAppSection = () => {
 
                             <ul className={styles.features}>
                                 <li>
-                                    <Image src="/services/ios-check-icon.webp" alt="check" width={18} height={18} className={styles.checkIcon} />
+                                    <Image src="/services/ios-check-icon.webp" alt="check" width={22} height={20} className={styles.checkIcon} />
                                     Apple-Certified Developers
                                 </li>
                                 <li>
@@ -58,7 +55,6 @@ const IOSAppSection = () => {
                 </div>
             </div>
 
-            {/* Hand mockup positioned absolutely to the right/bottom */}
             <div className={styles.mockupWrapper}>
                 <div className={styles.mockupBg}></div>
                 <Image

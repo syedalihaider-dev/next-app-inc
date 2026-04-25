@@ -5,7 +5,6 @@ import styles from './CaseStudyProject.module.css';
 const CaseStudyProject = () => {
     return (
         <section className={styles.caseStudyProject}>
-            {/* Background Shape stuck to the right edge of the DOM */}
             <div className={styles.bgOuterShape}>
                 <Image
                     src="/case-study/project-mockup.webp"
@@ -22,9 +21,6 @@ const CaseStudyProject = () => {
                             <h2 className={styles.heading}>
                                 We Create Apps <span className={styles.purpleText}>That Users Love!</span>
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image src="/blue-vector.webp" alt="underline" width={280} height={15} className={styles.purpleUnderline} />
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,6 @@
 
 .bgImg {
     object-fit: cover;
-    opacity: 0.6; /* Slight dark tint */
 }
 
 .content {
@@ -45,18 +44,11 @@
 }
 
 .purpleText {
-    color: #6a55ff;
+    color: var(--primary-color);
 }
 
 .greenText {
-    color: #9dff00; /* Neon/Bright Green */
-}
-
-.underlineWrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    margin-bottom: 30px;
+    color: var(--primary-color);
 }
 
 .desc {
@@ -100,9 +92,5 @@
     
     .desc {
         font-size: 16px;
-    }
-    
-    .underlineWrapper {
-        margin-top: -5px;
     }
 }

@@ -25,30 +25,18 @@
 }
 
 .heading {
-    font-weight: 800;
-    line-height: 1.1;
-    color: #000;
-    margin-bottom: 5px;
+    color: var(--dark-color);
+    margin-bottom: 25px;
 }
 
 .purpleText {
     color: var(--primary-color);
 }
 
-.underlineWrapper {
-    margin-bottom: 30px;
-    display: inline-block;
-}
-
-.greenVector {
-    object-fit: contain;
-}
-
 .description {
     font-size: 20px;
     line-height: 1.6;
-    color: #333;
-    max-width: 480px;
+    color: var(--dark-color);
     margin-bottom: 40px;
     font-weight: 500;
 }
@@ -105,15 +93,9 @@
 }
 
 @media (max-width: 1400px) {
-    .heading {
-        font-size: 55px;
-    }
 }
 
 @media (max-width: 1200px) {
-    .heading {
-        font-size: 45px;
-    }
 }
 
 @media (max-width: 991px) {
@@ -125,7 +107,4 @@
 }
 
 @media (max-width: 575px) {
-    .heading {
-        font-size: 35px;
-    }
 }

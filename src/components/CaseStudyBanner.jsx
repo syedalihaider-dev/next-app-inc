@@ -6,7 +6,6 @@ import MyButton from './MyButton';
 const CaseStudyBanner = () => {
     return (
         <section className={styles.caseStudyBanner}>
-            {/* Background Image */}
             <div className={styles.bgWrapper}>
                 <Image
                     src="/case-study/case-study-bg.webp"
@@ -27,9 +26,6 @@ const CaseStudyBanner = () => {
                                 Building <span className={styles.purpleText}>Trust</span> Through <br />
                                 <span className={styles.greenText}>Quality Work.</span>
                             </h1>
-                            <div className={styles.underlineWrapper}>
-                                <Image src="/green-vector.webp" alt="underline" width={400} height={20} />
-                            </div>
                             <p className={styles.desc}>
                                 Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod <br className="d-none d-md-block" />
                                 nulla quis venenatis tellus. Nulla viverra amet suspendisse luctus ele <br className="d-none d-md-block" />

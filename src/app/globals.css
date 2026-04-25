@@ -7,7 +7,7 @@
   --danger-color: #05FDFC;
   --warning-color: #F9FB02;
   --light-color: #fff;
-  --dark-color: #000;
+  --dark-color: #1a1a1a;
   --blue-color: #0B65DB;
   --light-gray-color: #F8F8F8;
   --bg-color: #E9E9E9;
@@ -142,7 +142,7 @@ h1 {
 }
 
 h2 {
-  font-size: 75px;
+  font-size: 65px;
   letter-spacing: -3.1px;
   font-weight: var(--font-800);
 }

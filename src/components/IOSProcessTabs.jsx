@@ -64,20 +64,11 @@ const IOSProcessTabs = () => {
                                 Our <span className={styles.purpleText}>App Development</span> Approach <br />
                                 Makes It <span className={styles.purpleText}>Simple, Easy,</span> & Efficient
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src="/green-vector.webp"
-                                    alt="underline"
-                                    width={300}
-                                    height={20}
-                                    className={styles.greenVector}
-                                />
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="row mt-5 pt-lg-4">
+                <div className="row mt-5">
                     <div className="col-lg-4">
                         <div className={styles.tabsContainer}>
                             {tabs.map((tab) => (

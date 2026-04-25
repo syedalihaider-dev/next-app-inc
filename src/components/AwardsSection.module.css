@@ -29,17 +29,12 @@
 .heading {
     font-weight: 800;
     line-height: 1.2;
-    color: #000;
-    margin-bottom: 5px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
 }
 
 .purpleText {
     color: var(--primary-color);
-}
-
-.underlineWrapper {
-    margin-bottom: 25px;
-    display: inline-block;
 }
 
 .purpleVector {

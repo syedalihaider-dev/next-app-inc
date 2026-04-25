@@ -36,15 +36,7 @@
 }
 
 .neonGreen {
-    color: #b2ff00; /* Neon Green */
-}
-
-.underlineWrapper {
-    margin-bottom: 30px;
-}
-
-.underlineImg {
-    object-fit: contain;
+    color: var(--primary-color);
 }
 
 .headerDesc {

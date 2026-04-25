@@ -1,13 +1,10 @@
 .contactBanner {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    min-height: 800px;
     display: flex;
     align-items: center;
     background-color: #000;
     overflow: hidden;
-    padding-top: 100px;
+    padding: 250px 0;
 }
 
 .bgWrapper {
@@ -29,7 +26,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100%); */
     z-index: 2;
 }
 
@@ -54,18 +50,7 @@
     color: #fff;
     font-weight: 800;
     position: relative;
-    margin-bottom: 80px;
     display: block;
-}
-
-.vectorWrapper {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 50px;
-    z-index: -1;
 }
 
 .description {
@@ -85,60 +70,22 @@
     width: 100%;
 }
 
-.contactCard {
-    background: #fff;
-    padding: 10px 10px 10px 15px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    min-width: 320px;
-}
-
-.contactCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.iconBox {
-    background: #1a1a1a;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.cardText {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    flex-grow: 1;
-    text-align: left;
-}
-
-.arrowCircle {
-    background: #000;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-}
-
-.contactCard:hover .arrowCircle {
-    transform: translateX(5px);
-}
-
 /* Responsiveness */
+@media (max-width: 1399px) {
+    .contactBanner {
+        padding: 150px 0 200px;
+    }
+
+    .heading {
+        font-size: 60px;
+    }
+}
+
 @media (max-width: 1199px) {
+    .contactBanner {
+        padding: 200px 0;
+    }
+
     .heading {
         font-size: 60px;
     }
@@ -148,7 +95,7 @@
     .heading {
         font-size: 45px;
     }
-    
+
     .description {
         font-size: 16px;
     }
@@ -158,19 +105,10 @@
     .heading {
         font-size: 35px;
     }
-    
+
     .vectorWrapper {
         width: 300px;
         bottom: -40px;
-    }
-    
-    .contactCard {
-        min-width: 100%;
-        padding: 8px 10px 8px 15px;
-    }
-    
-    .cardText {
-        font-size: 16px;
     }
 }
 

@@ -27,11 +27,8 @@
 }
 
 .heading {
-    font-size: 75px;
-    font-weight: 800;
-    line-height: 1.1;
-    color: #000;
-    margin-bottom: 5px;
+    color: var(--dark-color);
+    margin-bottom: 25px;
 }
 
 .purpleText {

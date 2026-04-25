@@ -46,7 +46,6 @@ const services = [
 const ServicesListSection = () => {
     return (
         <section className={styles.servicesSection}>
-            {/* Dark background asset */}
             <div className={styles.bgWrapper}>
                 <Image
                     src="/services/services-list-bg.webp"
@@ -63,9 +62,7 @@ const ServicesListSection = () => {
                         Services Designed for <br />
                         Maximum <span className={styles.neonGreen}>Business Impact!</span>
                     </h2>
-                    <div className={styles.underlineWrapper}>
-                        <Image src="/green-vector.webp" alt="underline" width={300} height={15} className={styles.underlineImg} />
-                    </div>
+
                     <p className={styles.headerDesc}>
                         We've Received Awards And Recognition For Our Quality-First
                         Approach, Delivering Complex Projects Successfully With Our Skilled

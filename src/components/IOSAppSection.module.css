@@ -9,21 +9,12 @@
 }
 
 .heading {
-    font-size: 85px;
-    font-weight: 800;
-    color: #1a1a1a;
-    line-height: 1;
+    color: var(--dark-color);
     margin-bottom: 20px;
 }
 
 .purpleText {
-    color: #6a55ff;
-}
-
-.underlineWrapper {
-    margin-bottom: 40px;
-    margin-top: -10px;
-    margin-left: 10px;
+    color: var(--primary-color);
 }
 
 .description {
@@ -48,7 +39,7 @@
     gap: 10px;
     font-size: 18px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: var(--dark-color);
 }
 
 .checkIcon {
@@ -62,7 +53,7 @@
     gap: 35px;
     margin-bottom: 50px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Added bottom line */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 30px 0;
     max-width: 600px;
 }
@@ -70,7 +61,7 @@
 .statValue {
     font-size: 80px;
     font-weight: 800;
-    color: #6a55ff;
+    color: var(--primary-color);
 }
 
 .vLine {
@@ -107,7 +98,6 @@
     text-decoration: none;
 }
 
-/* Mockup pinned to right and bottom */
 .mockupWrapper {
     position: absolute;
     right: 100px;

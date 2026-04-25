@@ -39,15 +39,6 @@ const CompanyChoiceSection = () => {
                                 Company Of <br />
                                 Choice
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src="/green-vector.webp"
-                                    alt="underline"
-                                    width={250}
-                                    height={20}
-                                    className={styles.greenVector}
-                                />
-                            </div>
                             <p className={styles.description}>
                                 Lorem Ipsum Dolor Sit Amet Consect Etur. Donec Mattis Habitant
                                 Frin Gilla Interdum Lectus Nisi Sit Vestibulumel Eifend. Etiam

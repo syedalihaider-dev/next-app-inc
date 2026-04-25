@@ -43,9 +43,8 @@ const IndustryFeaturesSection = () => {
                     <div className="col-lg-7">
                         <div className={styles.header}>
                             <h2 className={styles.heading}>
-                                Accounting <span className={styles.greenText}>Mobile App</span> <br />
-                                Features to Build Successful <br />
-                                <span className={styles.greenText}>Finance Platforms</span>
+                                Accounting <span className={styles.greenText}>Mobile App </span>
+                                Features to Build Successful <span className={styles.greenText}>Finance Platforms</span>
                             </h2>
                             <p className={styles.description}>
                                 We&apos;ve Received Awards And Recognition For Our Quality-First Approach,

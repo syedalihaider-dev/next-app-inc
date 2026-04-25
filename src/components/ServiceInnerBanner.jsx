@@ -24,9 +24,6 @@ const ServiceInnerBanner = ({ badge, title, description, bgImage, underlineImage
                             <h1 className={styles.heading}>
                                 {title}
                             </h1>
-                            <div className={styles.underlineWrapper}>
-                                <Image src={underlineImage} alt="underline" width={400} height={20} />
-                            </div>
                             <p className={styles.desc}>
                                 {description}
                             </p>

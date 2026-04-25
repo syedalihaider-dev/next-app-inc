@@ -29,9 +29,6 @@ const LocationSection = () => {
                             <h2 className={styles.heading}>
                                 Where Are We <span className={styles.purpleText}>Located</span>
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image src="/green-vector.webp" alt="underline" width={250} height={20} />
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -31,19 +31,12 @@
 }
 
 .heading {
-    font-size: 65px;
-    font-weight: 800;
     color: #1a1a1a;
     margin-bottom: 10px;
 }
 
 .purpleText {
     color: var(--primary-color);
-}
-
-.underlineWrapper {
-    display: flex;
-    justify-content: center;
 }
 
 .infoCol {
@@ -87,9 +80,9 @@
 }
 
 .phonesImg {
-    max-width: 140%; /* Allow it to overflow the column slightly if needed to match design */
+    max-width: 140%;
     height: auto;
-    transform: translateX(-50px); /* Adjust to overlap with the shape correctly */
+    transform: translateX(-50px);
 }
 
 @media (max-width: 1400px) {
@@ -100,9 +93,6 @@
 }
 
 @media (max-width: 1200px) {
-    .heading {
-        font-size: 48px;
-    }
     
     .bgOuterShape {
         width: 50%;
@@ -123,7 +113,7 @@
     }
 
     .bgOuterShape {
-        display: none; /* Hide shape on tablets/mobile or adjust its position */
+        display: none;
     }
 
     .phonesImg {
@@ -132,12 +122,4 @@
     }
 }
 
-@media (max-width: 575px) {
-    .heading {
-        font-size: 32px;
-    }
-    
-    .underlineWrapper {
-        margin-top: -15px;
-    }
-}
+@media (max-width: 575px) {}

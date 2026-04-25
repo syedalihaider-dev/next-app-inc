@@ -1,17 +1,17 @@
 .contactSection {
     position: relative;
     padding: 100px 0;
-    background-color: #fff;
+    background-color: #ffeae7;
     overflow: hidden;
 }
 
 .contactSectionNew {
-    border-top-left-radius: 160px;
-    border-top-right-radius: 160px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
     margin-top: -120px;
     z-index: 5;
     box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.05);
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .bgWrapper {
@@ -70,15 +70,6 @@
 
 .blueText {
     color: var(--primary-color);
-}
-
-.underlineWrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: -35px;
-    position: relative;
-    z-index: 10;
-    padding-left: 100px;
 }
 
 .infoCol,

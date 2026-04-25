@@ -28,7 +28,6 @@ const awards = [
 const AwardsSection = () => {
     return (
         <section className={styles.awardsSection}>
-            {/* Background trophy image */}
             <div className={styles.bgWrapper}>
                 <Image
                     src="/services/awards-section-bg.webp"
@@ -47,15 +46,6 @@ const AwardsSection = () => {
                                 Awards That Validate <br />
                                 Our Impactful <span className={styles.purpleText}>App Solutions</span>
                             </h2>
-                            <div className={styles.underlineWrapper}>
-                                <Image
-                                    src="/blue-vector.webp"
-                                    alt="underline"
-                                    width={400}
-                                    height={40}
-                                    className={styles.purpleVector}
-                                />
-                            </div>
                             <p className={styles.desc}>
                                 We've Received Awards And Recognition For Our Quality-First
                                 Approach, Delivering Complex Projects Successfully With Our Skilled
