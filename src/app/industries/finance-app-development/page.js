@@ -13,40 +13,40 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Finance App Development | Next App Inc",
-    description: "Next App builds secure fintech solutions, digital wallets, and banking apps. We specialize in secure financial software development for modern markets.",
+    title: "Finance App Development | Next App",
+    description: "Next App builds powerful finance digital solutions — from mobile apps and web platforms to e-commerce and custom software. Serving businesses globally.",
 };
 
 const FinanceAppPage = () => {
     const services = [
         {
-            title: 'Digital Wallet <br/> Development',
-            description: 'Create secure, user-friendly digital wallets that support instant peer-to-peer transfers, contactless payments, and multi-currency management.',
+            title: 'Digital Banking & <br/>Neobank Platforms',
+            description: 'Full-stack digital banking solutions with account management, transfers, cards, and personalized financial insights built for the modern consumer.',
             active: false
         },
         {
-            title: 'Digital Banking <br/> Platforms',
-            description: 'Modernize traditional banking with robust mobile platforms featuring real-time transaction tracking, bill payments, and investment tools.',
+            title: ' Investment & Portfolio <br/>Management Apps',
+            description: 'Intuitive investment platforms with real-time market data, portfolio tracking, automated rebalancing, and personalized financial planning tools.',
             active: false
         },
         {
-            title: 'Trading & <br/> Investment Apps',
-            description: 'Develop high-performance trading platforms that offer real-time market data, automated trading algorithms, and secure asset management.',
+            title: 'Payment Gateway & <br/>Wallet Integration',
+            description: 'Secure, multi-currency payment systems with support for cards, bank transfers, crypto, and digital wallets — built for global transactions.',
             active: false
         },
         {
-            title: 'Payment Gateway <br/> Integration',
-            description: 'Seamlessly integrate secure payment processing systems that support global currencies, credit cards, and alternative payment methods.',
+            title: 'Accounting & Financial <br/>Management Software',
+            description: 'Custom accounting platforms with invoicing, payroll, expense tracking, tax automation, and real-time financial reporting capabilities.',
             active: false
         },
         {
-            title: 'Crypto & <br/> Blockchain Solutions',
-            description: 'Build decentralized financial applications (DeFi) and crypto-asset management tools using the latest blockchain technology.',
+            title: 'Lending & Credit <br/>Management Systems',
+            description: 'End-to-end loan origination, credit scoring, and repayment management platforms with automated KYC/AML compliance workflows.',
             active: false
         },
         {
-            title: 'Security & <br/> Compliance',
-            description: 'We build high-security financial applications that protect user data and ensure adherence to international fintech regulations.',
+            title: 'RegTech & Compliance <br/>Monitoring Tools',
+            description: 'Automated regulatory compliance monitoring, audit trail tracking, and risk management dashboards tailored to financial industry standards.',
             active: false
         }
     ];
@@ -54,33 +54,33 @@ const FinanceAppPage = () => {
     const tabs = [
         {
             id: 'security',
-            title: 'Secure Transactions',
-            contentTitle: 'Bank-Grade Security Architectures',
-            contentDesc: 'Our finance solutions prioritize security with multi-factor authentication, biometric verification, and end-to-end encryption for every transaction. We ensure your financial data remains impenetrable to cyber threats.',
+            title: 'Bank-Grade Data Encryption',
+            contentTitle: 'Bank-Grade Data Encryption',
+            contentDesc: 'AES-256 encryption, secure APIs, and zero-trust architecture to protect every transaction and user record at rest and in transit.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp', 
             image: '/industries/accounting-app-development/tab-mockup-01.webp' 
         },
         {
             id: 'real-time',
-            title: 'Instant Tracking',
-            contentTitle: 'Real-time Financial Intelligence',
-            contentDesc: 'Provide users with instant visibility into their financial health. Our apps offer real-time spending alerts, automated budget tracking, and predictive cash flow analysis for better financial control.',
+            title: 'Real-Time Transaction Processing',
+            contentTitle: 'Real-Time Transaction Processing',
+            contentDesc: 'High-performance payment processing engines capable of handling millions of daily transactions with sub-second response times.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         },
         {
             id: 'automation',
-            title: 'Smart Automation',
-            contentTitle: 'Automated Financial Workflows',
-            contentDesc: 'Streamline repetitive financial tasks with AI-driven automation. From automated bill payments to recurring investment plans, we build systems that save time and reduce manual errors.',
+            title: 'KYC/AML Compliance Integration',
+            contentTitle: 'KYC/AML Compliance Integration',
+            contentDesc: 'Automated Know Your Customer and Anti-Money Laundering workflows with identity verification, document scanning, and risk scoring.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         },
         {
             id: 'analytics',
-            title: 'Fintech Analytics',
-            contentTitle: 'Advanced Market & User Insights',
-            contentDesc: 'Unlock the power of financial data with custom analytics dashboards. We provide market trend forecasting, user behavior analysis, and portfolio performance metrics for strategic growth.',
+            title: 'Multi-Currency & Cross-Border Support',
+            contentTitle: 'Multi-Currency & Cross-Border Support',
+            contentDesc: 'Global financial platforms with real-time FX rates, multi-currency wallets, and international payment routing built in from day one.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         }
@@ -117,28 +117,28 @@ const FinanceAppPage = () => {
         <main>
             <IndustryBanner 
                 industryLabel="Finance Industry"
-                mainTitle="Building the Future of Fintech with Secure Apps"
-                highlightedPart="Finance App Development"
-                description="We develop secure, scalable, and high-performance financial applications that redefine how users manage, invest, and transfer money."
+                mainTitle={<>The Future of Finance Is <span style={{ color: 'var(--primary-color)' }}>Digital</span>. We'll <span style={{ color: 'var(--primary-color)' }}>Help</span> You Lead <span style={{ color: 'var(--primary-color)' }}>It.</span></>}
+                // highlightedPart={<> </>}
+                description="From fintech startups to established financial institutions, we build secure, scalable, and regulation-ready digital platforms that redefine how money moves, how data is analyzed, and how customers engage with financial services."
                 bgImage="/industries/accounting-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
-                title="Our <span style='color: var(--primary-color)'>Finance App</span> <br /> Development Services"
-                description="Our Fintech App Development Services provide integrated tools and resources for modern financial management—from digital wallets to decentralized finance."
+                title="<span style='color: var(--primary-color)'>Finance App Development</span> Solutions Built for <span style='color: var(--primary-color)'>Security</span>, <span style='color: var(--primary-color)'>Scale</span>, and <span style='color: var(--primary-color)'>Compliance</span>"
+                description="Financial software can't afford bugs, downtime, or security gaps. Our fintech development team builds banking platforms, investment tools, payment systems, and accounting applications with enterprise-grade security and the agility of a modern digital product."
                 servicesData={services}
                 mockupImage="/industries/accounting-app-development/services-mockup.webp" 
             />
 
             <IndustryConsultationSection 
-                title={<>Empower Your <br /> <span style={{ color: 'var(--primary-color)' }}>Financial Growth</span> <br /> with Secure Apps!</>}
-                subLabel="Our Finance App Development Services"
-                description="We specialize in creating high-performance fintech apps tailored to meet your business goals, ensuring maximum security and regulatory compliance."
+                title={<><span style={{ color: 'var(--primary-color)' }}>Financial Technology</span> That Earns <span style={{ color: 'var(--primary-color)' }}>Trust</span> and Keeps It</>}
+                subLabel="Finance is built on trust."
+                description="Every app we build is engineered with a security-first architecture, regulatory compliance, and the reliability your customers and regulators demand. We're not just developers — we're your long-term fintech partner."
             />
 
             <IndustryTabsSection 
-                title={<>Innovating the Future of <span style={{ color: 'var(--primary-color)' }}>Fintech</span> <br /> with <span style={{ color: 'var(--primary-color)' }}>Secure Tech</span></>}
-                description="We Create Transformative Finance Apps That Make Banking Services Accessible, Personalized, And Highly Secure."
+                title={<><span style={{ color: 'var(--primary-color)' }}>Finance App</span> Features That Protect <span style={{ color: 'var(--primary-color)' }}>Assets</span>, Accelerate Transactions, and <span style={{ color: 'var(--primary-color)' }}>Delight Customers</span></>}
+                description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results."
                 tabsData={tabs}
             />
 
