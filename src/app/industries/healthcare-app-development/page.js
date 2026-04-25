@@ -117,7 +117,7 @@ const HealthcareAppPage = () => {
         <main>
             <IndustryBanner 
                 industryLabel="Healthcare Industry"
-                mainTitle={<> <span style={{ color: 'var(--primary-color)' }}>Technology</span> That Helps <span style={{ color: 'var(--primary-color)' }}>People</span></>}
+                mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Technology</span> That Helps <span style={{ color: 'var(--primary-color)' }}>People</span></>}
                 highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="Healthcare moves fast. Your digital tools should too. We build HIPAA-compliant healthcare apps, patient portals, and clinical platforms that improve outcomes, reduce friction, and put people first."
                 bgImage="/industries/accounting-app-development/banner-bg.webp" 

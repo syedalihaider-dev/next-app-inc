@@ -13,74 +13,74 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Education App Development | Next App Inc",
-    description: "Empower learners and educators with custom EdTech mobile applications. From LMS to language learning apps, we build engaging educational solutions.",
+    title: "Education App Development | Next App",
+    description: "Next App builds powerful digital education solutions, from mobile apps and web platforms to e-commerce and custom software. Serving businesses globally.",
 };
 
 const EducationAppPage = () => {
     const services = [
         {
-            title: 'LMS <br/> Development',
-            description: 'Develop robust Learning Management Systems that offer structured course delivery, progress tracking, and interactive assessment tools.',
+            title: 'Learning Management <br/> Systems (LMS)',
+            description: 'Custom LMS platforms with course creation tools, student progress tracking, assessments, certifications, and multi-instructor management.',
             active: false
         },
         {
-            title: 'Virtual Classroom <br/> Platforms',
-            description: 'Create engaging virtual classrooms with real-time video interaction, collaborative whiteboards, and instant file sharing capabilities.',
+            title: 'Virtual Classroom & Live <br/> Learning Platforms',
+            description: 'Real-time virtual classrooms with video conferencing, interactive whiteboards, breakout rooms, and session recording capabilities.',
             active: false
         },
         {
-            title: 'Language Learning <br/> Apps',
-            description: 'Build interactive language learning applications featuring speech recognition, gamified lessons, and personalized practice paths.',
+            title: 'Mobile Learning <br/>Apps',
+            description: 'Native iOS and Android learning apps with offline content access, microlearning modules, and gamified progress systems for on-the-go education.',
             active: false
         },
         {
-            title: 'Education <br/> Game Development',
-            description: 'Develop educational games that make learning fun and engaging for students of all ages through interactive storytelling and challenges.',
+            title: 'Corporate Training & <br/> Upskilling Platforms',
+            description: 'Enterprise learning platforms for employee onboarding, compliance training, skills development, and performance tracking across distributed teams.',
             active: false
         },
         {
-            title: 'Student & Parent <br/> Portals',
-            description: 'Improve communication with secure portals that provide instant updates on attendance, grades, and school announcements.',
+            title: 'EdTech Marketplace & <br/> Course Platforms',
+            description: 'Udemy-style course marketplaces with instructor dashboards, video hosting, payment processing, and student review systems.',
             active: false
         },
         {
-            title: 'Custom eLearning <br/> Solutions',
-            description: 'We build high-performance educational applications tailored to meet specific learning objectives and institutional goals.',
+            title: 'Educational Game <br/> Development',
+            description: 'Gamified learning experiences and serious games that make complex subjects engaging for students of all ages — from K-12 to adult learners.',
             active: false
         }
     ];
 
     const tabs = [
         {
-            id: 'gamification',
-            title: 'Gamified Learning',
-            contentTitle: 'Engaging Educational Experiences',
-            contentDesc: 'We integrate gamification elements like points, badges, and leaderboards to boost student motivation and retention. Our solutions transform traditional lessons into interactive and fun learning journeys.',
+            id: 'adaptive-learning-paths',
+            title: 'Adaptive Learning Paths',
+            contentTitle: 'Adaptive Learning Paths',
+            contentDesc: "AI-powered learning journeys that adapt to each student's pace, strengths, and gaps — delivering truly personalized education at scale.",
             icon: '/industries/accounting-app-development/tab-icon-01.webp', 
             image: '/industries/accounting-app-development/tab-mockup-01.webp' 
         },
         {
-            id: 'real-time',
-            title: 'Interactive Tools',
-            contentTitle: 'Real-time Collaboration Platforms',
-            contentDesc: 'Our EdTech solutions offer interactive whiteboards, shared document editing, and real-time polling to create a truly collaborative learning environment for students and teachers.',
+            id: 'interactive-tools',
+            title: 'Interactive Video & Content Authoring',
+            contentTitle: 'Interactive Video & Content Authoring',
+            contentDesc: 'Rich multimedia course creation with interactive quizzes, branching scenarios, SCORM compatibility, and drag-and-drop authoring tools.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         },
         {
-            id: 'tracking',
-            title: 'Progress Tracking',
-            contentTitle: 'Data-Driven Student Performance',
-            contentDesc: 'Provide educators with instant insights into student progress. Our apps offer automated grading, detailed performance reports, and personalized feedback tools for better learning outcomes.',
+            id: 'progress-tracking-analytics',
+            title: 'Progress Tracking & Analytics',
+            contentTitle: 'Progress Tracking & Analytics',
+            contentDesc: 'Comprehensive dashboards for instructors and administrators showing learner progress, completion rates, assessment scores, and engagement metrics.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         },
         {
-            id: 'analytics',
-            title: 'Education Analytics',
-            contentTitle: 'Advanced Institutional Insights',
-            contentDesc: 'Unlock the power of educational data with custom analytics dashboards. We provide student engagement trends, course effectiveness reports, and operational performance metrics.',
+            id: 'live-asynchronous-learning-support',
+            title: ' Live & Asynchronous Learning Support',
+            contentTitle: ' Live & Asynchronous Learning Support',
+            contentDesc: 'Flexible platforms that support both real-time instruction and self-paced learning — with discussion forums, assignments, and peer collaboration tools.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         }
@@ -117,28 +117,29 @@ const EducationAppPage = () => {
         <main>
             <IndustryBanner 
                 industryLabel="Education Industry"
-                mainTitle="Empowering the Future of Learning with Smart Apps"
-                highlightedPart="Education App Development"
-                description="We build engaging, scalable, and high-performance EdTech applications that redefine how students learn and educators teach in the digital age."
+                mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Learning</span> Has Changed. Your <span style={{ color: 'var(--primary-color)' }}>EdTech Platform</span> Should Too.</>}
+                // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
+                description="The classroom is no longer a room, it's everywhere. We build e-learning platforms, LMS systems, and educational mobile apps that make knowledge accessible, engaging, and measurable for students, teachers, and institutions worldwide."
                 bgImage="/industries/accounting-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
-                title="Our <span style='color: var(--primary-color)'>Education App</span> <br /> Development Services"
-                description="Our EdTech App Development Services provide integrated tools and resources for modern educational management—from LMS to language learning apps."
+                title="<span style='color: var(--primary-color)'>Education App </span> Development Solutions <br/> Built for <span style='color: var(--primary-color)'>Engagement</span>, <span style='color: var(--primary-color)'>Access</span>, and <span style='color: var(--primary-color)'>Outcomes</span>"
+                description="Education technology should do one thing above all else: help people learn more effectively. Our EdTech development team builds learning management systems, virtual classrooms, skills training apps, and educational games that combine pedagogical best practices with modern UX."
                 servicesData={services}
                 mockupImage="/industries/accounting-app-development/services-mockup.webp" 
             />
 
             <IndustryConsultationSection 
-                title={<>Transform the <br /> <span style={{ color: 'var(--primary-color)' }}>Learning Experience</span> <br /> with Engaging Apps!</>}
-                subLabel="Our Education App Development Services"
-                description="We specialize in creating high-performance educational apps tailored to meet your learning goals, ensuring student engagement and success."
+                title={<>
+                <span style={{ color: 'var(--primary-color)' }}>Education Technology</span> That <span style={{ color: 'var(--primary-color)' }}>Opens Doors</span> and Keeps <span style={{ color: 'var(--primary-color)' }}>Learners Coming Back</span></>}
+                subLabel="We believe everyone deserves access to great learning experiences."
+                description="Our EdTech solutions are designed to be inclusive, engaging, and scalable, from a single classroom to a global platform serving millions of learners."
             />
 
             <IndustryTabsSection 
-                title={<>Innovating the Future of <span style={{ color: 'var(--primary-color)' }}>EdTech</span> <br /> with <span style={{ color: 'var(--primary-color)' }}>Interactive Tech</span></>}
-                description="We Create Transformative Education Apps That Make Learning Services Accessible, Personalized, And Highly Engaging."
+                title={<><span style={{ color: 'var(--primary-color)' }}>Education App Features</span> That Drive <span style={{ color: 'var(--primary-color)' }}>Learning, Engagement,</span> and <span style={{ color: 'var(--primary-color)' }}>Measurable Outcomes</span></>}
+                description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education,  powered by technology that drives real results."
                 tabsData={tabs}
             />
 
