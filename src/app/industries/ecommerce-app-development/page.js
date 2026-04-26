@@ -13,74 +13,74 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Ecommerce App Development | Next App Inc",
-    description: "Grow your online business with custom ecommerce mobile applications. From shopping apps to B2B platforms, we build high-converting retail solutions.",
+    title: "E-commerce App Development | Next App",
+    description: "Next App builds powerful e-commerce digital solutions — from mobile apps and web platforms to e-commerce and custom software. Serving businesses globally.",
 };
 
 const EcommerceAppPage = () => {
     const services = [
         {
-            title: 'Custom Shopping <br/> Apps',
-            description: 'Develop high-performance mobile shopping applications that offer seamless product browsing, secure checkout, and personalized recommendations.',
+            title: 'Custom E-Commerce Web <br/>& App Development',
+            description: 'Bespoke online stores built from scratch or on Shopify, WooCommerce, and Magento — designed to convert browsers into buyers at every step.',
             active: false
         },
         {
-            title: 'B2B Marketplace <br/> Development',
-            description: 'Create robust B2B platforms featuring bulk ordering, vendor management, and complex pricing structures for seamless business operations.',
+            title: 'Mobile Shopping <br/>App Development',
+            description: 'Native iOS and Android shopping apps with seamless checkout, push notification campaigns, and personalized product recommendations.',
             active: false
         },
         {
-            title: 'Inventory & Order <br/> Management',
-            description: 'Streamline your retail operations with integrated systems that provide real-time tracking of stock levels, orders, and delivery statuses.',
+            title: 'Headless Commerce <br/> Architecture',
+            description: 'Decouple your frontend from your backend for unlimited flexibility — deliver shopping experiences across web, mobile, kiosks, and voice assistants.',
             active: false
         },
         {
-            title: 'Multi-Vendor <br/> Platforms',
-            description: 'Build scalable multi-vendor marketplaces that allow multiple sellers to manage their own storefronts and products on a single platform.',
+            title: 'Multi-Vendor <br/>Marketplace Development',
+            description: 'Scalable marketplace platforms connecting buyers and sellers — with vendor dashboards, commission engines, and dispute management systems.',
             active: false
         },
         {
-            title: 'Loyalty & Reward <br/> Systems',
-            description: 'Increase customer retention with custom loyalty programs, digital coupons, and personalized reward systems integrated into your app.',
+            title: 'E-Commerce ERP & <br/>Inventory Integration',
+            description: 'Connect your store to your warehouse, ERP, and logistics systems for real-time inventory management and automated order fulfillment.',
             active: false
         },
         {
-            title: 'Ecommerce <br/> Security',
-            description: 'We build high-security ecommerce applications that protect user data and ensure secure transaction processing across all channels.',
+            title: 'Subscription & <br/>Recurring Commerce',
+            description: 'Membership models, subscription boxes, and recurring billing systems with smart dunning, pause/resume, and churn prevention features.',
             active: false
         }
     ];
 
     const tabs = [
         {
-            id: 'checkout',
-            title: 'Seamless Checkout',
-            contentTitle: 'High-Converting Shopping Experiences',
-            contentDesc: 'We prioritize a frictionless checkout process with multiple payment options, guest checkout features, and one-click purchasing to maximize your conversion rates and reduce cart abandonment.',
+            id: 'frictionless-checkout-process',
+            title: 'One-Click & Guest Checkout',
+            contentTitle: 'One-Click & Guest Checkout',
+            contentDesc: 'Frictionless checkout flows that reduce cart abandonment and increase purchase completion rates across all devices.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp', 
             image: '/industries/accounting-app-development/tab-mockup-01.webp' 
         },
         {
-            id: 'personalization',
-            title: 'AI Personalization',
-            contentTitle: 'Smart Product Recommendations',
-            contentDesc: 'Our ecommerce solutions use AI to analyze user behavior and provide personalized product suggestions, tailored promotions, and relevant content to boost average order value.',
+            id: 'ai-powered-product-recommendations',
+            title: 'AI-Powered Product Recommendations',
+            contentTitle: 'AI-Powered Product Recommendations',
+            contentDesc: 'Personalized recommendation engines that surface the right products to the right users at exactly the right moment.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         },
         {
-            id: 'omnichannel',
-            title: 'Omnichannel Retail',
-            contentTitle: 'Unified Retail Management',
-            contentDesc: 'Bridge the gap between online and offline shopping with omnichannel features like "buy online, pick up in-store" (BOPIS), real-time inventory sync, and unified customer profiles.',
+            id: 'advanced-search-and-filtering',
+            title: 'Advanced Search & Filtering',
+            contentTitle: 'Advanced Search & Filtering',
+            contentDesc: 'Fast, faceted search with smart filters, autocomplete, and visual search capabilities that help customers find what they need instantly.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         },
         {
-            id: 'analytics',
-            title: 'Retail Analytics',
-            contentTitle: 'Data-Driven Ecommerce Insights',
-            contentDesc: 'Unlock the power of retail data with custom analytics dashboards. We provide sales trends, customer lifetime value reports, and marketing performance metrics for strategic growth.',
+            id: 'multi-payment-gateway-support',
+            title: 'Multi-Payment Gateway Support',
+            contentTitle: 'Multi-Payment Gateway Support',
+            contentDesc: 'Accept credit cards, PayPal, Apple Pay, Google Pay, BNPL, and local payment methods — globally, with one integration.',
             icon: '/industries/accounting-app-development/tab-icon-01.webp',
             image: '/industries/accounting-app-development/tab-mockup-01.webp'
         }
@@ -117,28 +117,29 @@ const EcommerceAppPage = () => {
         <main>
             <IndustryBanner 
                 industryLabel="Ecommerce Industry"
-                mainTitle="Scaling Your Online Business with High-Performance Apps"
-                highlightedPart="Ecommerce App Development"
-                description="We build engaging, scalable, and high-converting ecommerce applications that redefine the digital shopping experience for modern consumers."
+                mainTitle={<>
+                <span style={{ color: 'var(--primary-color)' }}>Sell More</span>. <span style={{ color: 'var(--primary-color)' }}>Cart Less</span>. Build an <span style={{ color: 'var(--primary-color)' }}> Online Store</span> That Actually <span style={{ color: 'var(--primary-color)' }}>Converts</span>.</>}
+                // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
+                description="E-commerce isn't just about having a store online — it's about building an experience that makes people want to buy. We design and develop high-converting e-commerce platforms that turn visitors into customers and customers into loyal fans."
                 bgImage="/industries/accounting-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
-                title="Our <span style='color: var(--primary-color)'>Ecommerce App</span> <br /> Development Services"
-                description="Our Ecommerce App Development Services provide integrated tools and resources for modern retail management—from custom shopping apps to B2B marketplaces."
+                title="<span style='color: var(--primary-color)'>E-Commerce Development</span> Solutions Built for <span style='color: var(--primary-color)'>Conversion</span>, <span style='color: var(--primary-color)'>Speed</span>, and <span style='color: var(--primary-color)'>Scale</span>"
+                description="Your store needs to be fast, beautiful, and trusted. We build custom e-commerce platforms, mobile shopping apps, and headless commerce solutions that are engineered for performance and designed for conversion. "
                 servicesData={services}
                 mockupImage="/industries/accounting-app-development/services-mockup.webp" 
             />
 
             <IndustryConsultationSection 
-                title={<>Grow Your <br /> <span style={{ color: 'var(--primary-color)' }}>Online Store</span> <br /> with High-Converting Apps!</>}
-                subLabel="Our Ecommerce App Development Services"
-                description="We specialize in creating high-performance retail apps tailored to meet your business goals, ensuring customer satisfaction and sales growth."
+                title={<>Your <span style={{ color: 'var(--primary-color)' }}>E-Commerce Platform</span> Should <span style={{ color: 'var(--primary-color)' }}>Work</span> As <span style={{ color: 'var(--primary-color)' }}>Hard</span> As You Do</>}
+                subLabel="High-Converting E-Commerce Solutions"
+                description="We've helped brands across fashion, electronics, food, and B2B grow their online revenue with platforms built for real-world traffic, real customers, and real business goals. Every store we build is a conversion machine."
             />
 
             <IndustryTabsSection 
-                title={<>Innovating the Future of <span style={{ color: 'var(--primary-color)' }}>Retail</span> <br /> with <span style={{ color: 'var(--primary-color)' }}>Modern Tech</span></>}
-                description="We Create Transformative Ecommerce Apps That Make Shopping Services Accessible, Personalized, And Highly Rewarding."
+                title={<><span style={{ color: 'var(--primary-color)' }}>E-Commerce</span> Features That Drive <span style={{ color: 'var(--primary-color)' }}>Sales</span>, <span style={{ color: 'var(--primary-color)' }}>Reduce Drop-Off</span>, and <span style={{ color: 'var(--primary-color)' }}>Grow Revenue</span></>}
+                description="We build robust, scalable solutions backed by years of experience serving businesses in Healthcare, Finance, E-Commerce, and Education — with technology that drives real results."
                 tabsData={tabs}
             />
 
