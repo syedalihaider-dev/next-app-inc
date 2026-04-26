@@ -15,51 +15,51 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "AR/VR App Development | Next App Inc",
-    description: "Experience the future with immersive AR/VR applications. Next App Inc delivers cutting-edge augmented and virtual reality solutions for businesses.",
+    title: "AR/VR App Development | Next App",
+    description: "Next App delivers expert AR/VR app development alongside web development, e-commerce, game development, and custom software.",
 };
 
 const tabs = [
     {
         id: 'planning',
-        label: 'Concept & Planning',
-        title: 'Concept & Planning',
-        description: 'We define the AR/VR experience, identifying the core mechanics and immersion levels required to meet your business goals.',
+        label: 'Project Planning',
+        title: 'Project Planning',
+        description: 'AR and VR projects require careful planning; early wrong technical choices can ruin the experience. Our team defines your use case, hardware, tracking needs, and content strategy, then scopes the project with honest estimates for development, 3D assets, and testing timelines.',
         image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
-        label: '3D Modeling',
-        title: '3D Modeling',
-        description: 'Creating the visual assets and 3D environments that will form the backbone of your immersive experience.',
+        label: 'Wireframes',
+        title: 'Wireframes',
+        description: 'Immersive experience design differs from flat-screen apps by creating spatial wireframes and storyboards that guide user movement, object placement, interaction triggers, and flow. This phase clarifies concepts and aligns your team before 3D work begins.',
         image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
-        label: 'Prototype',
-        title: 'Prototype',
-        description: 'Building a functional prototype to test spatial interactions and user comfort in the virtual or augmented space.',
+        label: 'Prototype Demo',
+        title: 'Prototype Demo',
+        description: 'We create a functional AR or VR prototype that can be worn or used with a phone. This proof-of-concept showcases core spatial interactions, allowing you to validate the experience aligned with your goals before full production.',
         image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
-        label: 'Core Development',
-        title: 'Core Development',
-        description: 'Developing the application using Unity or Unreal Engine, integrating sensors, and optimizing performance for target hardware.',
+        label: 'Development',
+        title: 'Development',
+        description: 'Our developers build your AR or VR application using Unity or Unreal Engine, integrating ARKit, ARCore, or WebXR based on your target platforms. 3D modelers, animators, and engineers work in parallel sprints, delivering iterative builds for testing throughout, not just at the end.',
         image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
-        label: 'Testing',
-        title: 'Testing',
-        description: 'Rigorous testing for motion sickness, latency, and interaction accuracy to ensure a high-quality user experience.',
+        label: 'Quality Control',
+        title: 'Quality Control',
+        description: "AR and VR QA tests dimensions standard app testing doesn't cover, such as tracking stability, latency, motion sickness risk, spatial accuracy, and rendering performance on various devices. We test on all supported headsets and mobiles, optimize frame rates, and ensure comfort during extended use.",
         image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
-        label: 'Launch',
-        title: 'Launch',
-        description: 'Deploying to platforms like Meta Quest, HTC Vive, or mobile AR platforms (ARKit/ARCore).',
+        label: 'Deployment and Launch',
+        title: 'Deployment and Launch',
+        description: 'We handle app store submissions for iOS, Android AR, Meta Quest, SteamVR, and other platform VR deployments. Post-launch, we monitor performance, gather user feedback, and iterate, as immersive tech evolves fast and your product should too.',
         image: '/process-steps/step-06.webp'
     }
 ];
@@ -71,18 +71,17 @@ const ARVRAppDevelopmentPage = () => {
                 badge="AR/VR App Development"
                 title={
                     <>
-                        Immersive <span className={styles.purpleText}>AR/VR</span> <br className="d-none d-md-block" />
-                        <span className={styles.greenText}>Experiences.</span>
+                        Step <span className={styles.purpleText}>Inside</span> the <span className={styles.purpleText}>Experience.</span> Your <span className={styles.purpleText}>Users</span> Will <span className={styles.purpleText}>Never</span> Look Back.
                     </>
                 }
                 underlineImage="/green-vector.webp"
-                description="Transform your business with immersive AR/VR solutions that engage users in entirely new ways through augmented and virtual reality."
+                description="Augmented and virtual reality are rewriting how people shop, learn, train, and explore. We build AR/VR applications that don't just impress, they change the way your users interact with your brand."
                 bgImage="/services/ar-vr-app-development/banner-bg.webp"
             />
             <ServiceSection 
-                heading="Immersive Solutions"
-                purpleText="Built for Reality"
-                description="We create groundbreaking AR and VR applications that push the boundaries of technology. From training simulations to interactive marketing, our solutions are designed for maximum impact."
+                heading="The Real Business Case for "
+                purpleText="AR/VR — and How We Build It"
+                description="AR and VR are no longer futuristic novelties. Retailers use AR for virtual try-ons. Manufacturers use VR for safety training. The AR/VR team has built immersive experiences across industries, using Unity, ARKit, ARCore, and Unreal Engine. We start with your business goal, not the technology."
                 features={[
                     "Expert Unity/Unreal Developers",
                     "Custom 3D Asset Creation",
@@ -96,8 +95,7 @@ const ARVRAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading="Our AR/VR Development Approach"
-                purpleText="Makes It Immersive & Efficient"
+                heading={<>Our <span className={styles.purpleText}>AR/VR App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />

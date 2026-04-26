@@ -88,7 +88,7 @@ const AndroidAppDevelopmentPage = () => {
                     "Scalable Architecture",
                     "Seamless Integration"
                 ]}
-                mockupImage="/services/ios-app-development/ios-hand-mockup.webp" // Need to update with android mockup
+                mockupImage="/services/ios-app-development/ios-hand-mockup.webp"
             />
             <AwardsSection />
             <ServicesListSection />

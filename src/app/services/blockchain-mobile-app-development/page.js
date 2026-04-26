@@ -15,51 +15,51 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Blockchain Mobile App Development | Next App Inc",
-    description: "Secure and decentralized mobile applications powered by Blockchain technology. Next App Inc offers expert blockchain development services.",
+    title: "Blockchain Mobile App Development | Next App",
+    description: "Next App delivers expert blockchain mobile app development alongside web development, e-commerce, game development, and custom software.",
 };
 
 const tabs = [
     {
         id: 'planning',
-        label: 'Concept & Whitepaper',
-        title: 'Concept & Whitepaper',
-        description: 'We define the blockchain architecture, consensus mechanisms, and tokenomics that will drive your decentralized application.',
+        label: 'Project Planning',
+        title: 'Project Planning',
+        description: 'Blockchain projects need more upfront clarity. Our analysts help define the right blockchain protocol, consensus, tokenomics, and regulations. We scope smart contract architecture, mobile interface, and backend, then provide a detailed plan with cost and timeline estimates.',
         image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
-        label: 'Smart Contracts',
-        title: 'Smart Contracts',
-        description: 'Developing secure and efficient smart contracts that handle the core logic of your blockchain application.',
+        label: 'Wireframes',
+        title: 'Wireframes',
+        description: 'Blockchain UX is tough, with wallets, gas fees, transaction confirmations, and key management confusing users. Our wireframing maps user flows to make blockchain interactions simple, providing a visual guide users can navigate easily.',
         image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
-        label: 'Alpha Testing',
-        title: 'Alpha Testing',
-        description: 'Deploying to a testnet to verify the integrity of smart contracts and the user interface in a real-world scenario.',
+        label: 'Prototype Demo',
+        title: 'Prototype Demo',
+        description: 'We create an interactive front-end prototype of your blockchain app, linked to a test network for simulation without stakes. This clarifies the user journey before smart contract development, minimizing costly later changes.',
         image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
-        label: 'App Integration',
-        title: 'App Integration',
-        description: 'Building the mobile front-end and integrating it with the blockchain back-end via Web3 libraries.',
+        label: 'Development',
+        title: 'Development',
+        description: 'Our engineers develop secure smart contracts in Solidity, Rust, or Move, and build the mobile app simultaneously, integrating wallet connectivity (MetaMask, WalletConnect), token management, and on-chain data feeds. Agile sprints ensure you receive working builds throughout.',
         image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
-        label: 'Security Audit',
-        title: 'Security Audit',
-        description: 'Conducting comprehensive security audits to ensure your application is resistant to common blockchain vulnerabilities.',
+        label: 'Quality Control',
+        title: 'Quality Control',
+        description: 'Blockchain QA extends beyond typical app testing by auditing smart contracts for issues like reentrancy, overflow, and access flaws. The mobile app undergoes testing across devices, wallets, and network scenarios. Security penetration tests are performed prior to deploying code on a live blockchain.',
         image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
-        label: 'Mainnet Launch',
-        title: 'Mainnet Launch',
-        description: 'Deploying the final product to the mainnet and providing ongoing maintenance and scaling support.',
+        label: 'Deployment and Launch',
+        title: 'Deployment and Launch',
+        description: 'We handle mainnet smart contract deployment, app store submissions, and Web3 setup like nodes, IPFS pinning, and indexers. Post-launch, we monitor on-chain activity, contract health, and app performance to address issues early.',
         image: '/process-steps/step-06.webp'
     }
 ];
@@ -71,18 +71,17 @@ const BlockchainMobileAppDevelopmentPage = () => {
                 badge="Blockchain Mobile App Development"
                 title={
                     <>
-                        Secure <span className={styles.purpleText}>Blockchain</span> <br className="d-none d-md-block" />
-                        <span className={styles.greenText}>Mobile Solutions.</span>
+                        Build on <span className={styles.purpleText}>Trust.</span> Code the Future of <span className={styles.greenText}>Decentralized</span> Business.
                     </>
                 }
                 underlineImage="/green-vector.webp"
-                description="Leverage the power of decentralized technology with our secure and transparent blockchain mobile application development services."
+                description="Blockchain isn't just for crypto. It's a new paradigm for trust, transparency, and ownership. We build blockchain-powered mobile apps that bring real-world utility to decentralized technology."
                 bgImage="/services/blockchain-mobile-app-development/banner-bg.webp"
             />
             <ServiceSection 
-                heading="Decentralized Future"
-                purpleText="Built on Trust"
-                description="Our blockchain experts build secure, decentralized applications that provide transparency and security for your business operations."
+                heading="Why Blockchain Mobile Apps Require More Than "
+                purpleText="Just Smart Contracts"
+                description="Building a blockchain app means solving hard problems at the intersection of cryptography, UX, and business logic. Our blockchain engineers have built crypto wallets, NFT marketplaces, DeFi platforms, and supply chain tracking apps — all with security and usability at their core. "
                 features={[
                     "Smart Contract Development",
                     "DApp Architecture Design",
@@ -96,8 +95,7 @@ const BlockchainMobileAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading="Our Blockchain Development Approach"
-                purpleText="Makes It Secure & Efficient"
+                heading={<>Our <span className={styles.purpleText}>Blockchain App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />

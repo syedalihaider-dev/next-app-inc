@@ -15,8 +15,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Cross Platform App Development | Next App Inc",
-    description: "Reach a wider audience with high-quality cross-platform mobile apps. Next App Inc uses Flutter and React Native for seamless performance.",
+    title: "Cross-Platform App Development | Next App",
+    description: "Next App delivers expert cross-platform app development alongside web development, e-commerce, game development, and custom software. Get a free consultation today.",
 };
 
 const tabs = [
