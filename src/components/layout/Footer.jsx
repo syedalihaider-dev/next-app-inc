@@ -32,12 +32,13 @@ const Footer = () => {
                         <div className={styles.footerCol}>
                             <h4 className={styles.footerTitle}>Services</h4>
                             <ul className={styles.footerLinks}>
-                                <li><Link href="/services/ios-app-development">IOS App Development</Link></li>
-                                {/* <li><Link href="/react-native-development">REACT NATIVE DEVELOPMENT</Link></li>
-                                <li><Link href="/flutter-development">FLUTTER DEVELOPMENT</Link></li>
-                                <li><Link href="/full-stack-development">FULL STACK DEVELOPMENT</Link></li>
-                                <li><Link href="/mobile-app-marketing">MOBILE APP MARKETING</Link></li>
-                                <li><Link href="/any-ecommerce">ANY ECOMMERCE</Link></li> */}
+                                <li><Link href="/services/android-app-development">ANDROID APP DEVELOPMENT</Link></li>
+                                <li><Link href="/services/ar-vr-app-development">AR/VR APP DEVELOPMENT</Link></li>
+                                <li><Link href="/services/blockchain-mobile-app-development">BLOCKCHAIN MOBILE APP DEVELOPMENT</Link></li>
+                                <li><Link href="/services/cross-platform-app-development">CROSS PLATFORM APP DEVELOPMENT</Link></li>
+                                <li><Link href="/services/custom-ios-app-development">CUSTOM IOS APP DEVELOPMENT</Link></li>
+                                <li><Link href="/services/mobile-game-development">MOBILE GAME DEVELOPMENT</Link></li>
+                                <li><Link href="/services/mobile-web-app-development">MOBILE WEB APP DEVELOPMENT</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -6,22 +6,22 @@ const awards = [
     {
         icon: '/services/award-clutch.webp',
         year: '2023',
-        title: 'Top App Performers Award'
+        title: 'Top App Performers Excellence Award'
     },
     {
         icon: '/services/award-appfutura.webp',
         year: '2023',
-        title: 'Top App Performers Award'
+        title: 'Top Developer Expertise - Best Firm'
     },
     {
         icon: '/services/award-upcity.webp',
         year: '2023',
-        title: 'Top App Performers Award'
+        title: 'Top App Performers UpCity Award'
     },
     {
         icon: '/services/award-expertise.webp',
         year: '2023',
-        title: 'Top App Performers Award'
+        title: 'Top App Performers Expertise Award'
     }
 ];
 
@@ -43,13 +43,11 @@ const AwardsSection = () => {
                     <div className="col-lg-10">
                         <div className={styles.contentHeader}>
                             <h2 className={styles.heading}>
-                                Awards That Validate <br />
-                                Our Impactful <span className={styles.purpleText}>App Solutions</span>
+                                Results That Speak <br />
+                                <span className={styles.purpleText}>Louder</span> Than <span className={styles.purpleText}>Promises</span>
                             </h2>
                             <p className={styles.desc}>
-                                We've Received Awards And Recognition For Our Quality-First
-                                Approach, Delivering Complex Projects Successfully With Our Skilled
-                                Team Of Developers, Designers, And Project Managers.
+                                We've earned recognition for our quality-first approach and successful delivery of complex digital projects across mobile, web, e-commerce, game, and software domains — with skilled developers, designers, and project managers working as one team.
                             </p>
                         </div>
 

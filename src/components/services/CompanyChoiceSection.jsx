@@ -6,23 +6,23 @@ import MyButton from '@/components/layout/MyButton';
 const CompanyChoiceSection = () => {
     const cards = [
         {
-            title: 'End-To-End Development',
-            description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
+            title: 'Discovery & Strategy',
+            description: 'We get under the hood of your business — understanding your goals, users, and competition before a single line of code is written.',
             icon: '/about/development-icon.webp'
         },
         {
-            title: '100% Transparency',
-            description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
+            title: 'UX/UI Design',
+            description: "Our designers craft intuitive, beautiful interfaces that guide users naturally and reflect your brand's personality at every touchpoint.",
             icon: '/about/development-icon.webp'
         },
         {
-            title: 'High Retention Rate',
-            description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
+            title: 'Development',
+            description: 'Our engineers build clean, scalable code using modern frameworks — delivering both performance and flexibility for future growth.',
             icon: '/about/development-icon.webp'
         },
         {
-            title: '4.5/5 Average Rating',
-            description: 'Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.',
+            title: 'Launch & Deployment',
+            description: 'We handle app store submissions, server deployments, and go-live checklists so your launch is smooth and stress-free.',
             icon: '/about/development-icon.webp'
         }
     ];
@@ -35,14 +35,10 @@ const CompanyChoiceSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.contentCol}>
                             <h2 className={styles.heading}>
-                                <span className={styles.purpleText}>App Development</span> <br />
-                                Company Of <br />
-                                Choice
+                                A Process Built for <span className={styles.purpleText}>Clarity</span>, <span className={styles.purpleText}>Speed</span>, and <span className={styles.purpleText}>Zero Surprises</span>
                             </h2>
                             <p className={styles.description}>
-                                Lorem Ipsum Dolor Sit Amet Consect Etur. Donec Mattis Habitant
-                                Frin Gilla Interdum Lectus Nisi Sit Vestibulumel Eifend. Etiam
-                                Enim Phar Etra Arcu.
+                                From initial planning to final launch and beyond, our app development process is designed to keep you informed, in control, and confident every step of the way.
                             </p>
                             <div className={styles.btnRow}>
                                 <MyButton text="Explore More" className="btn_black" />

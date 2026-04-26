@@ -4,11 +4,11 @@ import styles from './DevelopmentSolutionsSection.module.css';
 import MyButton from '@/components/layout/MyButton';
 
 const features = [
-    'Custom App Designs That Showcase Your Brand',
-    'Cross-Platform Development To Reach More Users',
-    'Smooth Integration With Your Existing Systems',
-    'Thorough QA And Testing For A Perfect Launch',
-    'Continuous Support For Hassle-Free Updates'
+    'Custom designs that reflect your brand identity across every digital touchpoint',
+    'Cross-platform and multi-service delivery — web, app, e-commerce, game, and software',
+    'Smooth integration with your existing tools, APIs, and business systemsSmooth Integration With Your Existing Systems',
+    'Thorough QA and testing to ensure a perfect, bug-free launch every time',
+    'Ongoing post-launch support for hassle-free updates and growth'
 ];
 
 const DevelopmentSolutionsSection = () => {
@@ -53,8 +53,7 @@ const DevelopmentSolutionsSection = () => {
                                 GET STARTED
                             </div>
                             <h2 className={styles.heading}>
-                                Next App Inc <br />
-                                <span className={styles.purpleText}>Development Solutions</span>
+                                More Than an App Agency — Your <span className={styles.purpleText}>Full-Stack Digital Partner</span>
                             </h2>
 
                             <ul className={styles.featureList}>
