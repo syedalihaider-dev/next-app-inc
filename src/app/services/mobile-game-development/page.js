@@ -15,51 +15,51 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Mobile Game Development | Next App Inc",
-    description: "Create engaging and high-performance mobile games. Next App Inc offers full-cycle mobile game development for iOS and Android.",
+    title: "Mobile Game Development | Next App",
+    description: "Next App delivers expert mobile game development, web development, e-commerce, and custom software. Get a free consultation today.",
 };
 
 const tabs = [
     {
         id: 'planning',
-        label: 'Game Concept',
-        title: 'Game Concept',
-        description: 'Developing the game mechanics, story, and characters that will engage your players and keep them coming back.',
+        label: 'Project Planning',
+        title: 'Project Planning',
+        description: 'Great games start with a clear vision and a realistic plan. Our game producers work with you to define genre, core mechanics, target audience, monetization model, and platform targets. We allocate artists, developers, and QA specialists, then provide a detailed production schedule and cost estimate.',
         image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
-        label: 'Game Design',
-        title: 'Game Design',
-        description: 'Creating the level designs, UI elements, and overall aesthetic of the game.',
+        label: 'Wireframes',
+        title: 'Wireframes',
+        description: "Before art and code, we wireframe the game's core UX, menus, onboarding flows, HUD layout, and key screens. This ensures the non-gameplay experience is as polished as the game itself. Alongside wireframes, our game designers document core mechanics and level design concepts for team alignment.",
         image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
-        label: 'Playable Demo',
-        title: 'Playable Demo',
-        description: 'Building a prototype to test the core gameplay loop and gather feedback on the fun factor.',
+        label: 'Prototype Demo',
+        title: 'Prototype Demo',
+        description: "We build a playable prototype of your core gameplay loop, stripped of final art but fully functional. You get to play it, feel the mechanics, and decide if the moment-to-moment experience is right before the full production budget is committed. Feedback at this stage is cheap; feedback post-launch isn't.",
         image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
-        label: 'Full Development',
-        title: 'Full Development',
-        description: 'Coding the game using industry-standard engines like Unity or Unreal, integrating assets and sound.',
+        label: 'Development',
+        title: 'Development',
+        description: "Our Unity or Unreal Engine developers build your game in production sprints, delivering playable builds throughout. Art, animation, audio, and engineering work in parallel. You receive regular build drops to test, so you're never waiting until the end to see what you're getting.",
         image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
-        label: 'Beta Testing',
-        title: 'Beta Testing',
-        description: 'Extensive testing for bugs, performance issues, and balancing the difficulty levels.',
+        label: 'Quality Control',
+        title: 'Quality Control',
+        description: 'Games require a different kind of QA. We test for bugs, frame rate consistency, input responsiveness, crash scenarios, device compatibility, and store compliance, across iOS and Android. We also conduct gameplay balance testing to ensure the experience is fun and fair from the first session.',
         image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
-        label: 'Global Launch',
-        title: 'Global Launch',
-        description: 'Launching your game on the App Store and Google Play, managing updates and monetization features.',
+        label: 'Deployment and Launch',
+        title: 'Deployment and Launch',
+        description: 'We manage full App Store and Google Play submissions, including age ratings, content descriptions, trailer assets, and store listing optimization. Post-launch, we monitor crash reports, user reviews, and retention metrics so we can act fast on anything that needs improvement.',
         image: '/process-steps/step-06.webp'
     }
 ];
@@ -71,18 +71,17 @@ const MobileGameDevelopmentPage = () => {
                 badge="Mobile Game Development"
                 title={
                     <>
-                        Engaging <span className={styles.purpleText}>Mobile Game</span> <br className="d-none d-md-block" />
-                        <span className={styles.greenText}>Development.</span>
+                        We Don’t Just Build <span className={styles.purpleText}>Games</span>. We Build <span className={styles.purpleText}>Worlds</span> People Come <span className={styles.purpleText}> Back</span> To.
                     </>
                 }
                 underlineImage="/green-vector.webp"
-                description="Bring your game ideas to life with our expert mobile game development services, creating immersive and addictive gaming experiences."
+                description="Engaging mechanics, beautiful art, smooth performance, our game development team builds mobile games that players love and publishers trust. From casual titles to full immersive experiences."
                 bgImage="/services/mobile-game-development/banner-bg.webp"
             />
             <ServiceSection 
-                heading="Gaming Excellence"
-                purpleText="Built for Engagement"
-                description="Our game development team combines creativity with technical expertise to build stunning 2D and 3D games that captivate audiences across the globe."
+                heading="What It Takes to Build a Mobile Game That "
+                purpleText="Actually Gets Played"
+                description="Most games never make it past the first session. Ours do. Our game development team combines game design expertise, strong engineering, and a deep understanding of player psychology to build experiences with real retention. Whether it's a 2D casual game or a 3D multiplayer adventure, we handle the full lifecycle — concept, art, development, testing, and store submission."
                 features={[
                     "2D/3D Game Development",
                     "Unity & Unreal Engine Experts",
@@ -96,8 +95,7 @@ const MobileGameDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading="Our Mobile Game Development Approach"
-                purpleText="Makes It Fun & Efficient"
+                heading={<>Our <span className={styles.purpleText}>Mobile Game Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />

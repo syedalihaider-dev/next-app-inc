@@ -22,44 +22,44 @@ export const metadata = {
 const tabs = [
     {
         id: 'planning',
-        label: 'Unified Planning',
-        title: 'Unified Planning',
-        description: 'We plan for a single codebase that serves multiple platforms, ensuring feature parity and consistent design.',
+        label: 'Project Planning',
+        title: 'Project Planning',
+        description: 'We begin by assessing whether Flutter or React Native is the right fit for your product, audience, and business goals. Our analysts define the project scope, create a shared feature roadmap for both platforms, and produce cost and timeline estimates that reflect the true efficiency of cross-platform development.',
         image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
-        label: 'Shared UI/UX',
-        title: 'Shared UI/UX',
-        description: 'Designing a user interface that feels native on both iOS and Android while maintaining brand consistency.',
+        label: 'Wireframes',
+        title: 'Wireframes',
+        description: 'We design a unified wireframe that works beautifully across iOS and Android, accounting for platform-specific conventions while maintaining a consistent experience. This shared visual blueprint speeds up the design process and ensures both platforms feel intentional, not compromised.',
         image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
-        label: 'Hybrid Prototype',
-        title: 'Hybrid Prototype',
-        description: 'Creating a prototype to test the application\'s performance and feel on different operating systems simultaneously.',
+        label: 'Prototype Demo',
+        title: 'Prototype Demo',
+        description: 'You get an interactive prototype that works on both iOS and Android simultaneously, letting you experience the cross-platform result firsthand. Feedback gathered here shapes the final product before development begins, reducing costly revisions and keeping the project on track.',
         image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
-        label: 'Framework Coding',
-        title: 'Framework Coding',
-        description: 'Developing the app using Flutter or React Native to leverage cross-platform efficiencies and performance.',
+        label: 'Development',
+        title: 'Development',
+        description: 'Our engineers build your app using Flutter or React Native, writing shared business logic while handling platform-specific nuances where needed. Agile sprints keep you involved throughout, with regular builds delivered to both iOS and Android for testing and review at every stage.',
         image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
-        label: 'Dual Testing',
-        title: 'Dual Testing',
-        description: 'Rigorous testing on both iOS and Android devices to ensure flawless performance and responsiveness.',
+        label: 'Quality Control',
+        title: 'Quality Control',
+        description: "Cross-platform doesn't mean half-tested. We run full QA cycles on both iOS and Android, checking for platform-specific rendering issues, performance parity, and native integration accuracy. Every device type, screen size, and OS version is covered before we call it done.",
         image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
-        label: 'Multi-Store Launch',
-        title: 'Multi-Store Launch',
-        description: 'Simultaneous deployment to the Apple App Store and Google Play Store for maximum reach.',
+        label: 'Deployment and Launch',
+        title: 'Deployment and Launch',
+        description: 'We manage simultaneous submission to both the App Store and Google Play, coordinating review cycles, preparing store assets for both platforms, and ensuring a synchronized launch. Your app goes live on iOS and Android at the same time, with no delays and no shortcuts.',
         image: '/process-steps/step-06.webp'
     }
 ];
@@ -71,18 +71,17 @@ const CrossPlatformAppDevelopmentPage = () => {
                 badge="Cross Platform App Development"
                 title={
                     <>
-                        Dynamic <span className={styles.purpleText}>Cross-Platform</span> <br className="d-none d-md-block" />
-                        <span className={styles.greenText}>App Development.</span>
+                    One <span className={styles.purpleText}> App.</span> Every <span className={styles.purpleText}>Device.</span> Zero Compromise on <span className={styles.purpleText}>Experience.</span>
                     </>
                 }
                 underlineImage="/green-vector.webp"
-                description="Deliver a consistent user experience across multiple platforms with our high-performance cross-platform mobile application development."
+                description="Why build twice when you can build once and reach everyone? Our cross-platform apps deliver native-quality experiences on iOS and Android from a single, maintainable codebase."
                 bgImage="/services/cross-platform-app-development/banner-bg.webp"
             />
             <ServiceSection 
-                heading="Multi-Platform Efficiency"
-                purpleText="Built for Everyone"
-                description="Our cross-platform development approach saves time and budget without compromising on quality or performance. Reach all your users with a single codebase."
+                heading="Cross-Platform Done Right : "
+                purpleText="Speed Without Sacrificing Quality"
+                description="Many teams treat cross-platform as a shortcut. We treat it as a strategy. Using Flutter and React Native, we build apps that look, feel, and perform like native apps — while dramatically reducing development time and cost. This means you reach both iOS and Android audiences simultaneously, without the overhead of two separate teams. "
                 features={[
                     "Flutter & React Native Experts",
                     "Single Codebase Efficiency",
@@ -96,8 +95,7 @@ const CrossPlatformAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading="Our Cross-Platform Development Approach"
-                purpleText="Makes It Simple & Efficient"
+                heading={<>Our <span className={styles.purpleText}>Cross Platform App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />

@@ -15,51 +15,51 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Mobile Web App Development | Next App Inc",
-    description: "High-performance mobile web applications for a seamless browsing experience. Next App Inc builds responsive and fast mobile web apps.",
+    title: "Mobile Web App Development | Next App",
+    description: "Next App delivers expert mobile web app development alongside web development, e-commerce, game development, and custom software. Get a free consultation today.",
 };
 
 const tabs = [
     {
         id: 'planning',
-        label: 'Web Strategy',
-        title: 'Web Strategy',
-        description: 'Defining the tech stack and architecture for a high-performance web application that works flawlessly on mobile browsers.',
+        label: 'Project Planning',
+        title: 'Project Planning',
+        description: 'We evaluate your business case for a PWA versus a native app, then define the full project scope, core features, offline capabilities, integration requirements, and hosting strategy. You receive a clear plan with accurate cost estimates and a realistic launch timeline from day one.',
         image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
-        label: 'Responsive Design',
-        title: 'Responsive Design',
-        description: 'Creating mobile-first designs that adapt perfectly to any screen size and orientation.',
+        label: 'Wireframes',
+        title: 'Wireframes',
+        description: "Mobile web apps demand a different design discipline — every screen must work perfectly in a browser while feeling like a native app. Our wireframing phase maps out every user flow with this in mind, producing a visual guide that balances mobile UX best practices with your brand's identity.",
         image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
-        label: 'Web Demo',
-        title: 'Web Demo',
-        description: 'Developing a prototype to test the application\'s performance and accessibility on various mobile devices.',
+        label: 'Prototype Demo',
+        title: 'Prototype Demo',
+        description: 'We build a working prototype of your PWA that you can open in any mobile browser and interact with directly. This gives you a true preview of load speed, offline behavior, and overall feel — allowing for real feedback before full development investment is made.',
         image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
-        label: 'Front-End Coding',
-        title: 'Front-End Coding',
-        description: 'Building the app using modern frameworks like React or Next.js, ensuring fast load times and smooth interactions.',
+        label: 'Development',
+        title: 'Development',
+        description: 'Our engineers build your PWA using modern frameworks like React, Vue, or Next.js with full-service worker implementation, web app manifests, and API integration. Agile delivery means you receive working builds throughout — testable in any browser, on any device, at every sprint.',
         image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
-        label: 'Performance Audit',
-        title: 'Performance Audit',
-        description: 'Rigorous testing for speed, security, and cross-browser compatibility to ensure a premium user experience.',
+        label: 'Quality Control',
+        title: 'Quality Control',
+        description: 'We test your mobile web app across every major browser, device type, and network condition — including offline and slow-connection scenarios. Performance audits using Lighthouse ensure your PWA meets the highest standards for speed, accessibility, and SEO before going live.',
         image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
-        label: 'Cloud Launch',
-        title: 'Cloud Launch',
-        description: 'Deploying your mobile web application to the cloud with robust scaling and monitoring features.',
+        label: 'Deployment and Launch',
+        title: 'Deployment and Launch',
+        description: "There's no App Store review for a PWA — which means faster deployment and simpler updates. We handle server configuration, CDN setup, HTTPS certification, and go-live monitoring, ensuring your mobile web app launches cleanly and performs reliably from the moment users arrive.",
         image: '/process-steps/step-06.webp'
     }
 ];
@@ -71,18 +71,17 @@ const MobileWebAppDevelopmentPage = () => {
                 badge="Mobile Web App Development"
                 title={
                     <>
-                        Seamless <span className={styles.purpleText}>Mobile Web</span> <br className="d-none d-md-block" />
-                        <span className={styles.greenText}>Applications.</span>
+                    Your <span className={styles.purpleText}>Website</span> Shouldn't <span className={styles.purpleText}>Feel Like</span> a Website. It Should Feel Like an <span className={styles.purpleText}>App.</span>
                     </>
                 }
                 underlineImage="/green-vector.webp"
-                description="We develop responsive and high-speed mobile web applications that provide a native-like experience on any mobile browser."
+                description="Progressive web apps blur the line between browser and native experience. We build mobile web apps that load instantly, work offline, and behave like the real thing, no App Store required."
                 bgImage="/services/mobile-web-app-development/banner-bg.webp"
             />
             <ServiceSection 
-                heading="Modern Web Solutions"
-                purpleText="Built for Performance"
-                description="Our mobile web apps are designed to be fast, responsive, and highly accessible, providing your users with a seamless experience without the need for an app store download."
+                heading="Why Progressive Web Apps Are the Smart "
+                purpleText="Choice for Growing Businesses"
+                description="Not every product needs to be in the App Store. Progressive web apps (PWAs) give your users an app-like experience directly from their browser, with offline access, push notifications, and home screen installation. They're faster to build, easier to update, and more accessible than native apps. "
                 features={[
                     "Progressive Web Apps (PWA)",
                     "Responsive Web Design",
@@ -96,8 +95,7 @@ const MobileWebAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading="Our Mobile Web Development Approach"
-                purpleText="Makes It Fast & Efficient"
+                heading={<>Our <span className={styles.purpleText}>Mobile Web App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />

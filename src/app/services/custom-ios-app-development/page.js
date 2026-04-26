@@ -15,8 +15,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Custom iOS App Development | Next App Inc",
-    description: "Get a tailored iOS application designed for your unique business needs. Next App Inc provides end-to-end custom iOS development services.",
+    title: "Custom iOS App Development | Next App",
+    description: "Next App delivers expert custom iOS app development alongside web development, e-commerce, game development, and custom software. Get a free consultation today.",
 };
 
 const tabs = [
@@ -24,42 +24,42 @@ const tabs = [
         id: 'planning',
         label: 'Project Planning',
         title: 'Project Planning',
-        description: 'In Project Planning, Our Business Analysts Work With Clients To Turn Their App Ideas And Business Needs Into A Clear Project Scope. We Allocate The Right Resources, Provide Accurate Cost And Time Estimates, And Explore Cost Optimization Options For Efficient Execution.',
+        description: 'Our business analysts collaborate with you to define the full scope of your iOS app, translating your vision into a structured plan with clear milestones, resource allocation, realistic timelines, and a cost estimate that accounts for both quality and efficiency.',
         image: '/process-steps/step-01.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
-        description: 'Once the planning is complete, we move to wireframing. This phase involves creating a visual guide that represents the skeletal framework of your app, ensuring a seamless user experience and intuitive interface design.',
+        description: 'We create detailed wireframes that map every screen, gesture, and interaction of your iOS app. This visual skeleton ensures the user experience is logical and elegant before we invest in high-fidelity design or development, keeping revisions fast and low-cost.',
         image: '/process-steps/step-02.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
-        description: 'Before full-scale development, we build an interactive prototype. This allows you to experience the flow and functionality of your app firsthand, giving you the opportunity to provide feedback and refine the user journey early on.',
+        description: 'You get a fully interactive iOS prototype to tap through before development begins. This hands-on preview lets you validate the user journey, refine navigation, and sign off on the experience, so what gets built matches exactly what you envisioned.',
         image: '/process-steps/step-03.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
-        description: 'Our expert developers bring your app to life using the latest coding standards and frameworks. We follow an agile development process, ensuring frequent updates and the flexibility to adapt to changing requirements.',
+        description: "Our iOS engineers build your app using Swift and SwiftUI with Apple's latest frameworks. We follow an agile sprint model, delivering working builds regularly so you can track progress, test features, and provide feedback throughout the development cycle.",
         image: '/process-steps/step-04.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
-        description: 'We conduct rigorous testing to ensure your app is bug-free, secure, and performs flawlessly across all devices and platforms. Our QA team runs multiple performance and security audits to guarantee excellence.',
+        description: 'We put your iOS app through exhaustive testing across every supported iPhone and iPad model, iOS version, and use case. Our QA team checks for crashes, performance bottlenecks, security vulnerabilities, and App Store compliance before a single build is submitted.',
         image: '/process-steps/step-05.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
-        description: 'Finally, we handle the launch of your app on the App Store or Google Play. We manage the entire submission process, ensuring compliance with all guidelines and a smooth transition to a successful live environment.',
+        description: 'From TestFlight beta distribution to final App Store submission, we handle every step of the iOS launch process. We prepare your metadata, screenshots, and compliance documentation, ensuring a smooth review and a successful, high-visibility launch day.',
         image: '/process-steps/step-06.webp'
     }
 ];
@@ -71,18 +71,17 @@ const CustomIOSAppDevelopmentPage = () => {
                 badge="Custom iOS App Development"
                 title={
                     <>
-                        Tailored <span className={styles.purpleText}>Custom iOS</span> <br className="d-none d-md-block" />
-                        <span className={styles.greenText}>Applications.</span>
+                    Apps Built for <span className={styles.purpleText}>Apple.</span> Designed for <span className={styles.greenText}>Humans.</span> Engineered to <span className={styles.purpleText}>Win.</span>
                     </>
                 }
                 underlineImage="/green-vector.webp"
-                description="Our custom iOS app development services are designed to meet your specific business requirements with innovative and scalable solutions."
+                description="We craft iOS applications that feel at home on every Apple device — from the first tap to the hundredth session. Your users deserve a premium experience, and that's exactly what we deliver."
                 bgImage="/services/custom-ios-app-development/banner-bg.webp"
             />
             <ServiceSection 
-                heading="Bespoke Experiences"
-                purpleText="Tailored for iOS"
-                description="We provide high-end custom iOS app development that caters to the unique needs of your business, ensuring a premium feel and flawless execution on all Apple devices."
+                heading="What Sets an Exceptional "
+                purpleText="iOS App Apart From the Rest"
+                description="iOS users have high standards and so do we. Our Apple-certified developers build apps that respect Apple's Human Interface Guidelines while pushing the boundaries of what's possible on iOS. Whether it's a consumer app on the App Store or an enterprise tool for your team, we design every interaction with purpose."
                 features={[
                     "Bespoke UI/UX Design",
                     "Advanced Swift Development",
@@ -96,8 +95,7 @@ const CustomIOSAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading="Our Custom iOS Development Approach"
-                purpleText="Makes It Simple & Efficient"
+                heading={<>Our <span className={styles.purpleText}>Custom iOS Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />
