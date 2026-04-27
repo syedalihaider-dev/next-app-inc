@@ -13,11 +13,10 @@ const Appointment = () => {
                         <div className={styles.contentCol}>
                             <span className={styles.badge}>Book An Appointment</span>
                             <h2 className={styles.heading}>
-                                Have an <span className={styles.highlight}>Idea? </span><br />
-                                Let’s Define What Comes Next.
+                                You Have the <span className={styles.highlight}>Problem</span>. We Build the Solution. <br /> <span className={styles.highlight}>Let's Talk.</span>
                             </h2>
                             <p className={styles.description}>
-                                Most great apps start with a conversation, not a contract. Tell us what you are building, who it is for, and the problem it solves. We will take it from there.
+                                It does not matter whether you need a mobile app, a game, an e-commerce store, a web platform, or custom software that your industry has never seen before. Bring us the problem. We will bring the plan, the team, and the track record to solve it right.
                             </p>
                             <div className={styles.btnWrapper}>
                                 <MyButton text="Get Started" className="btn_black" />

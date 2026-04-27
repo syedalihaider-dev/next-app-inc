@@ -7,7 +7,7 @@ const AboutTechSolutions = () => {
         <section className={styles.techSection}>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
+                    <div className="col-lg-6 mb-3 mb-lg-0">
                         <div className={styles.imageWrapper}>
                             <Image
                                 src="/about/tech-experts.webp"
@@ -22,14 +22,14 @@ const AboutTechSolutions = () => {
                     <div className="col-lg-6">
                         <div className={styles.textContent}>
                             <h2 className={styles.heading}>
-                                <span className="primarytxt">Next App Inc!</span><br />
+                                <span className="primarytxt">Next App </span>
                                 Presents Revolutionary<br />
                                 <span className={styles.relativeText}>
                                     Trending Tech Solutions
                                 </span>
                             </h2>
                             <p className={styles.paragraph}>
-                                Lorem Ipsum Dolor Sit Amet Consectetur. Donec Mattis Habitant Frin Gilla Interdum Lectus Eifend. Etiam Enimperdiet <strong>Diam. Sapien Sit Pulvinar Auctor A Nunc Nunc Faucibus Facilisis Facilisi Ultrices Pellentesque Imperdiet.</strong>
+                                At Next App, we build innovative and high-performance mobile and web applications that help businesses grow in a fast-changing digital world. From idea to execution, our team focuses on delivering modern, scalable, and user-friendly solutions tailored to your business needs.
                             </p>
 
                             <div className="mt-4">

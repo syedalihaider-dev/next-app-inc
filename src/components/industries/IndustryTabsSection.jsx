@@ -95,14 +95,14 @@ const IndustryTabsSection = ({
                         </div>
                         <div className="col-lg-6">
                             <div className={styles.contentText}>
-                                <div className={styles.iconBox}>
+                                {/* <div className={styles.iconBox}>
                                     <Image
                                         src={activeTab.icon}
                                         alt="Tab Icon"
                                         width={45}
                                         height={45}
                                     />
-                                </div>
+                                </div> */}
                                 <h3 className={styles.contentTitle}>{activeTab.contentTitle}</h3>
                                 <p className={styles.contentDesc}>
                                     {activeTab.contentDesc}

@@ -157,7 +157,7 @@
     }
 
     .watermark {
-        font-size: 270px;
+        font-size: 260px;
         bottom: -45px;
     }
 }
@@ -213,7 +213,7 @@
     }
 
     .watermark {
-        font-size: 235px;
+        font-size: 190px;
         bottom: -40px;
     }
 }
@@ -262,7 +262,7 @@
     }
 
     .watermark {
-        font-size: 135px;
+        font-size: 145px;
         bottom: -25px;
     }
 }

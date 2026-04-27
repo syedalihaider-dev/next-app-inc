@@ -29,10 +29,9 @@
 }
 
 .mainTitle {
-    font-size: 85px;
+    font-size: 75px;
     font-weight: 800;
     color: #fff;
-    line-height: 1.1;
     margin-bottom: 20px;
 }
 
@@ -60,31 +59,98 @@
     z-index: 15;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
+    .industryBanner {
+        padding: 180px 0 280px;
+    }
+
+    .industryLabel {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
     .mainTitle {
-        font-size: 65px;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 18px;
+        max-width: unset;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .industryBanner {
+        padding: 150px 0 250px;
+    }
+
+    .industryLabel {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .mainTitle {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .industryBanner {
+        padding: 130px 0 250px;
+    }
+
+    .industryLabel {
+        font-size: 18px;
+    }
+
+    .mainTitle {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .description {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 991px) {
     .industryBanner {
-        padding: 160px 0 120px;
+        padding: 130px 0 250px;
     }
-    .mainTitle {
-        font-size: 52px;
-    }
+
     .industryLabel {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .mainTitle {
+        font-size: 28px;
+        line-height: 35px;
     }
 }
 
 @media (max-width: 575px) {
-    .mainTitle {
-        font-size: 38px;
+    .industryBanner {
+        padding: 130px 0 250px;
     }
-    .description {
+
+    .industryLabel {
         font-size: 16px;
     }
+
+    .mainTitle {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
     .bottomCurve {
         height: 60px;
         border-radius: 40px 40px 0 0;

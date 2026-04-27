@@ -52,18 +52,30 @@ const Testimonials = () => {
                         <div className={styles.testimonialCard}>
                             <div className={styles.cardHeader}>
                                 <h3 className={styles.clientName}>Ethan Armstrong</h3>
-                                <img src="/trustpilot-logo.webp" alt="Trustpilot" className={styles.platformLogo} />
+                                <Image
+                                    src="/trustpilot-logo.webp"
+                                    width={116}
+                                    height={36}
+                                    alt="Trustpilot"
+                                    className={styles.platformLogo}
+                                />
                             </div>
-                            <p className={styles.testimonialText}>
+                            <p className={`${styles.testimonialText} scroll_block`}>
                                 “I came to Next App with a concept and a deadline that most teams would have pushed back on. Not only did they deliver on time, they delivered something better than what I had sketched out. The communication was consistent, the team was honest when something needed to change, and the final product is one I am genuinely proud to put my name on.”
                             </p>
                         </div>
                         <div className={styles.testimonialCard}>
                             <div className={styles.cardHeader}>
                                 <h3 className={styles.clientName}>Dean Warner</h3>
-                                <img src="/clutch-logo.webp" alt="Clutch" className={styles.platformLogo} />
+                                <Image
+                                    src="/clutch-logo.webp"
+                                    width={116}
+                                    height={36}
+                                    alt="Clutch"
+                                    className={styles.platformLogo}
+                                />
                             </div>
-                            <p className={styles.testimonialText}>
+                            <p className={`${styles.testimonialText} scroll_block`}>
                                 “I have worked with a lot of development agencies over the years, and the difference with Next App is that they actually care whether the product works, not just whether the project closes. Every milestone was delivered on time. Every change request was handled professionally. I have already brought them back for a second project.”
                             </p>
                         </div>
@@ -71,7 +83,13 @@ const Testimonials = () => {
 
                     <div className={styles.centerImageCol}>
                         <div className={styles.centerImgWrapper}>
-                            <img src="/testimonial-center.webp" alt="Client" className={styles.centerImg} />
+                            <Image
+                                src="/testimonial-center.webp"
+                                width={418}
+                                height={492}
+                                alt="Client"
+                                className={styles.centerImg}
+                            />
                         </div>
                     </div>
 
@@ -79,18 +97,30 @@ const Testimonials = () => {
                         <div className={styles.testimonialCard}>
                             <div className={styles.cardHeader}>
                                 <h3 className={styles.clientName}>Jennifer Angela</h3>
-                                <img src="/trustpilot-logo.webp" alt="Trustpilot" className={styles.platformLogo} />
+                                <Image
+                                    src="/trustpilot-logo.webp"
+                                    width={116}
+                                    height={36}
+                                    alt="Trustpilot"
+                                    className={styles.platformLogo}
+                                />
                             </div>
-                            <p className={styles.testimonialText}>
+                            <p className={`${styles.testimonialText} scroll_block`}>
                                 “I was nervous about the whole process because I had never built an app before. The team at Next App walked me through every stage, explained every decision, and made sure the monetization strategy was built into the product from day one. The result exceeded what I thought was possible at this budget.”
                             </p>
                         </div>
                         <div className={styles.testimonialCard}>
                             <div className={styles.cardHeader}>
                                 <h3 className={styles.clientName}>Brian Staab</h3>
-                                <img src="/clutch-logo.webp" alt="Clutch" className={styles.platformLogo} />
+                                <Image
+                                    src="/clutch-logo.webp"
+                                    width={116}
+                                    height={36}
+                                    alt="Trustpilot"
+                                    className={styles.platformLogo}
+                                />
                             </div>
-                            <p className={styles.testimonialText}>
+                            <p className={`${styles.testimonialText} scroll_block`}>
                                 “We came to Next App for game development and they understood the genre, the audience, and the kind of experience we wanted to create without us having to over-explain. The development was clean, the testing was thorough, and the team was easy to work with from start to finish.”
                             </p>
                         </div>

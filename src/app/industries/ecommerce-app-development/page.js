@@ -20,32 +20,32 @@ export const metadata = {
 const EcommerceAppPage = () => {
     const services = [
         {
-            title: 'Custom E-Commerce Web <br/>& App Development',
+            title: 'Custom E-Commerce Web & App Development',
             description: 'Bespoke online stores built from scratch or on Shopify, WooCommerce, and Magento — designed to convert browsers into buyers at every step.',
             active: false
         },
         {
-            title: 'Mobile Shopping <br/>App Development',
+            title: 'Mobile Shopping App Development',
             description: 'Native iOS and Android shopping apps with seamless checkout, push notification campaigns, and personalized product recommendations.',
             active: false
         },
         {
-            title: 'Headless Commerce <br/> Architecture',
+            title: 'Headless Commerce  Architecture',
             description: 'Decouple your frontend from your backend for unlimited flexibility — deliver shopping experiences across web, mobile, kiosks, and voice assistants.',
             active: false
         },
         {
-            title: 'Multi-Vendor <br/>Marketplace Development',
+            title: 'Multi-Vendor Marketplace Development',
             description: 'Scalable marketplace platforms connecting buyers and sellers — with vendor dashboards, commission engines, and dispute management systems.',
             active: false
         },
         {
-            title: 'E-Commerce ERP & <br/>Inventory Integration',
+            title: 'E-Commerce ERP & Inventory Integration',
             description: 'Connect your store to your warehouse, ERP, and logistics systems for real-time inventory management and automated order fulfillment.',
             active: false
         },
         {
-            title: 'Subscription & <br/>Recurring Commerce',
+            title: 'Subscription & Recurring Commerce',
             description: 'Membership models, subscription boxes, and recurring billing systems with smart dunning, pause/resume, and churn prevention features.',
             active: false
         }
@@ -119,7 +119,6 @@ const EcommerceAppPage = () => {
                 industryLabel="Ecommerce Industry"
                 mainTitle={<>
                 <span style={{ color: 'var(--primary-color)' }}>Sell More</span>. <span style={{ color: 'var(--primary-color)' }}>Cart Less</span>. Build an <span style={{ color: 'var(--primary-color)' }}> Online Store</span> That Actually <span style={{ color: 'var(--primary-color)' }}>Converts</span>.</>}
-                // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="E-commerce isn't just about having a store online — it's about building an experience that makes people want to buy. We design and develop high-converting e-commerce platforms that turn visitors into customers and customers into loyal fans."
                 bgImage="/industries/ecommerce-app-development/banner-bg.webp" 
             />

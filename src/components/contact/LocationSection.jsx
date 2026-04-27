@@ -1,24 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import styles from './LocationSection.module.css';
+import { SITE_CONFIG } from '@/configs/site-config';
 
 const LocationSection = () => {
-    const locations = [
-        {
-            id: 'nyc',
-            name: 'New York',
-            address: '1585 grand ave, baldwin, ny 11510, united states',
-            phone: '(347) 218-7849',
-            image: '/contact/nyc.webp'
-        },
-        {
-            id: 'karachi',
-            name: 'Karachi, Pakistan',
-            address: '299 south main street salt lake city, utah 84111',
-            phone: '+1 (833) 442 2711',
-            image: '/contact/karachi.webp'
-        }
-    ];
+    // const locations = [
+    //     {
+    //         id: 'nyc',
+    //         name: 'New York',
+    //         address: SITE_CONFIG.contact.address1,
+    //         phone: SITE_CONFIG.contact.phone,
+    //         image: '/contact/nyc.webp'
+    //     },
+    //     {
+    //         id: 'la',
+    //         name: 'Los Angeles',
+    //         address: SITE_CONFIG.contact.address2,
+    //         phone: SITE_CONFIG.contact.phone,
+    //         image: '/contact/karachi.webp'
+    //     }
+    // ];
 
     return (
         <section className={styles.locationSection}>
@@ -33,7 +34,7 @@ const LocationSection = () => {
                     </div>
                 </div>
 
-                <div className="row mt-5">
+                {/* <div className="row mt-5">
                     {locations.map((loc) => (
                         <div className="col-lg-6 mb-4" key={loc.id}>
                             <div className={styles.locationCard}>
@@ -75,6 +76,35 @@ const LocationSection = () => {
                             </div>
                         </div>
                     ))}
+                </div> */}
+
+                <div className="row mt-5">
+                    <div className="col-lg-6 mb-4">
+                        <div className={styles.mapWrapper}>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.6715654519!2d-73.611116624237!3d40.6657930714002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2760775d5e5e1%3A0x6b4c10642f4c3300!2s1595%20Grand%20Ave%2C%20Baldwin%2C%20NY%2011510%2C%20USA!5e0!3m2!1sen!2s!4v1714246800000!5m2!1sen!2s"
+                                width="100%"
+                                height="450"
+                                style={{ border: 0, borderRadius: '12px' }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 mb-4">
+                        <div className={styles.mapWrapper}>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.73324838612!2d-118.2612260242!3d34.050699073156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b13486c47b%3A0xc3f587784687d60!2s1001%20Wilshire%20Blvd%20%231176%2C%20Los%20Angeles%2C%20CA%2090017%2C%20USA!5e0!3m2!1sen!2s!4v1714246800000!5m2!1sen!2s"
+                                width="100%"
+                                height="450"
+                                style={{ border: 0, borderRadius: '12px' }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

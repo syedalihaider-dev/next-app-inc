@@ -8,22 +8,22 @@ const tabs = [
         id: 'mission',
         label: 'Mission',
         title: 'Mission',
-        p1: 'At Next App Inc., We Transform Ideas Into High-Performing Mobile Applications. Our Team Of Experts Specializes In Custom App Development, UI/UX Design, Wearable App Solutions, And Scalable Mobile Strategies For Companies.',
-        p2: 'We Have Proudly Worked With A Diverse Range Of Industries, Delivering Seamless Digital Experiences That Drive Engagement And Growth. With Innovation At Our Core, We Ensure Your Business Stays Ahead In The Mobile-First World.'
+        p1: 'At Next App, our mission is to design and develop powerful mobile and web applications that solve real business challenges. We focus on understanding each client’s goals, users, and market needs before building solutions that are reliable, scalable, and performance-driven.',
+        p2: 'Our team works closely with businesses across multiple industries to create digital products that improve efficiency, enhance user experience, and support long-term growth. We don’t just build apps — we build solutions that deliver measurable results.'
     },
     {
         id: 'vision',
         label: 'Vision',
         title: 'Vision',
-        p1: 'Our Vision is to be the leading digital transformation partner for businesses worldwide, empowering them with innovative technology solutions that drive sustainable growth.',
-        p2: 'We envision a future where every business, regardless of size, can leverage the power of advanced mobile applications and digital platforms to reach their full potential and create lasting impact.'
+        p1: 'Our vision is to become a globally trusted technology partner known for delivering innovative and high-quality mobile and web applications. We aim to help businesses transform their ideas into impactful digital products that stand out in competitive markets.',
+        p2: 'We envision a future where businesses of all sizes can leverage modern technology to scale faster, reach wider audiences, and deliver seamless digital experiences that drive success and long-term value.'
     },
     {
         id: 'values',
         label: 'Values',
         title: 'Values',
-        p1: 'Integrity, Innovation, and Excellence are at the core of everything we do. We believe in building transparent relationships with our clients and delivering solutions that exceed expectations.',
-        p2: 'Our commitment to continuous learning and adaptation ensures that we stay at the forefront of technological advancements, providing our clients with robust, scalable, and future-proof solutions.'
+        p1: 'At Next App, our values are built on transparency, accountability, and a commitment to quality. We believe in maintaining clear communication with our clients and delivering every project with honesty, reliability, and attention to detail.',
+        p2: 'Innovation, teamwork, and continuous improvement guide our daily work. We focus on building scalable, secure, and user-friendly applications that not only meet today’s requirements but also support future growth and evolving business needs.'
     }
 ];
 

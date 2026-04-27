@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './ContactSection.module.css';
 import MyButton from '@/components/layout/MyButton';
+import { SITE_CONFIG } from '@/configs/site-config';
 
 const ContactSection = ({ isNewDesign = false }) => {
     const [selectedServices, setSelectedServices] = useState(['Unity Game Development']);
@@ -88,18 +89,18 @@ const ContactSection = ({ isNewDesign = false }) => {
 
                             {isNewDesign ? (
                                 <>
-                                    <a href="mailto:sales@nextappinc.com" className={`${styles.contactItem} ${styles.contactLink}`}>
+                                    <a href={`mailto:${SITE_CONFIG.contact.email}`} className={`${styles.contactItem} ${styles.contactLink}`}>
                                         <div className={styles.iconBox}>
                                             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         </div>
-                                        <span className={`${styles.contactText} ${styles.contactTextNew}`}>sales@nextappinc.com</span>
+                                        <span className={`${styles.contactText} ${styles.contactTextNew}`}>{SITE_CONFIG.contact.email}</span>
                                     </a>
 
-                                    <a href="tel:3472187849" className={`${styles.contactItem} ${styles.contactLink}`}>
+                                    <a href={`tel:${SITE_CONFIG.contact.phone.replace(/[^0-9+]/g, '')}`} className={`${styles.contactItem} ${styles.contactLink}`}>
                                         <div className={styles.iconBox}>
                                             <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                         </div>
-                                        <span className={`${styles.contactText} ${styles.contactTextNew}`}>(347) 218-7849</span>
+                                        <span className={`${styles.contactText} ${styles.contactTextNew}`}>{SITE_CONFIG.contact.phone}</span>
                                     </a>
                                 </>
                             ) : (
@@ -108,23 +109,24 @@ const ContactSection = ({ isNewDesign = false }) => {
                                         <div className={styles.iconBox}>
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         </div>
-                                        <span className={styles.contactText}>info@example.com</span>
+                                        <span className={styles.contactText}>{SITE_CONFIG.contact.email}</span>
                                     </div>
                                     <div className={styles.contactItem}>
                                         <div className={styles.iconBox}>
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                         </div>
-                                        <span className={styles.contactText}>+123 456 7890</span>
+                                        <span className={styles.contactText}>{SITE_CONFIG.contact.phone}</span>
                                     </div>
                                 </>
                             )}
 
                             <h4 className={styles.socialHeading}>Follow Us</h4>
                             <div className={styles.socialIcons}>
-                                <a href="#" className={styles.socialLink}><img src="/social-fb.webp" alt="Facebook" /></a>
-                                <a href="#" className={styles.socialLink}><img src="/social-linkedin.webp" alt="LinkedIn" /></a>
-                                <a href="#" className={styles.socialLink}><img src="/social-insta.webp" alt="Instagram" /></a>
-                                <a href="#" className={styles.socialLink}><img src="/social-x.webp" alt="X" /></a>
+                                <a href={SITE_CONFIG.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className={styles.socialLink}><img src="/social-fb.webp" alt="Facebook" /></a>
+                                <a href={SITE_CONFIG.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className={styles.socialLink}><img src="/social-linkedin.webp" alt="LinkedIn" /></a>
+                                <a href={SITE_CONFIG.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className={styles.socialLink}><img src="/social-insta.webp" alt="Instagram" /></a>
+                                <a href={SITE_CONFIG.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className={styles.socialLink}><img src="/social-x.webp" alt="X" /></a>
+                                <a href={SITE_CONFIG.socialLinks.pinterest} target="_blank" rel="noopener noreferrer" className={styles.socialLink}><img src="/social-pinterest.webp" alt="Pinterest" /></a>
                             </div>
 
                             <h4 className={styles.achievementsHeading}>Our Achievements</h4>

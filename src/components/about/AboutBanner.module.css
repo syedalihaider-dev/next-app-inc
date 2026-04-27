@@ -38,22 +38,6 @@
     opacity: 0.5;
 }
 
-.gradientOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.gradientImg {
-    object-fit: cover;
-    mix-blend-mode: screen;
-}
-
 .dotsOverlay {
     position: absolute;
     top: 0;
@@ -175,10 +159,6 @@
     .subTitle {
         margin-bottom: 5px;
         font-size: 20px;
-    }
-
-    .heading {
-        font-size: 55px;
     }
 
     .description {

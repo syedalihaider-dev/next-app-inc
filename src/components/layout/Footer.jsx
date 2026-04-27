@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
+import { SITE_CONFIG } from '@/configs/site-config';
 
 const Footer = () => {
     return (
@@ -47,11 +48,11 @@ const Footer = () => {
                             <h4 className={styles.footerTitle}>Contact Us</h4>
                             <div className={styles.contactInfo}>
                                 <p className={styles.infoLabel}>EMAIL US:</p>
-                                <p><a href="mailto:sales@nextappinc.com">sales@nextappinc.com</a></p>
+                                <p><a href={`mailto:${SITE_CONFIG.contact.email}`}>{SITE_CONFIG.contact.email}</a></p>
                             </div>
                             <div className={styles.contactInfo}>
                                 <p className={styles.infoLabel}>PHONE:</p>
-                                <p><a href="tel:3472187849">(347) 218-7849</a></p>
+                                <p><a href={`tel:${SITE_CONFIG.contact.phone.replace(/[^0-9+]/g, '')}`}>{SITE_CONFIG.contact.phone}</a></p>
                             </div>
                         </div>
                     </div>
@@ -63,8 +64,8 @@ const Footer = () => {
                                     <Image src="/map-icon-01.webp" alt="Map Icon" width={24} height={32} />
                                 </div>
                                 <div className={styles.locationText}>
-                                    <p className={styles.infoLabel}>LOCATION 01:</p>
-                                    <p>1234 Piedmont Rd NE,<br />Atlanta, GA 1234</p>
+                                    <p className={styles.infoLabel}>NEW YORK:</p>
+                                    <p>{SITE_CONFIG.contact.address1}</p>
                                 </div>
                             </div>
                             <div className={styles.locationItem}>
@@ -72,8 +73,8 @@ const Footer = () => {
                                     <Image src="/map-icon-02.webp" alt="Map Icon" width={24} height={32} />
                                 </div>
                                 <div className={styles.locationText}>
-                                    <p className={styles.infoLabel}>LOCATION 02:</p>
-                                    <p>1234 Piedmont Rd NE,<br />Atlanta, GA 1234</p>
+                                    <p className={styles.infoLabel}>LOS ANGELES:</p>
+                                    <p>{SITE_CONFIG.contact.address2}</p>
                                 </div>
                             </div>
                         </div>

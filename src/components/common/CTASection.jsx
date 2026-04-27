@@ -41,11 +41,10 @@ const CTASection = () => {
                     <div className={styles.contentCol}>
                         <span className={styles.badge}>GET STARTED</span>
                         <h2 className={styles.heading}>
-                            Ready to <span className="primarytxt"> Build Something </span> That Actually
-                            <span className="primarytxt"> Moves the Needle?</span>
+                            <span className="primarytxt">Stop Settling</span> For A Team That Only <span className="primarytxt"> Builds Half </span> Of What You Need.
                         </h2>
                         <p className={styles.description}>
-                            Whether you are launching your first app or scaling a product that already has users, Next App has the team to take you further. We work across iOS, Android, Flutter, React Native, and Unity, delivering solutions that are production-ready, not just prototype-ready.
+                            Whether you need a mobile app, a game, an e-commerce store, a web platform, or custom software built from scratch, Next App is the one team that handles all of it. iOS, Android, Flutter, react native, Unity, full-stack. One conversation. One partner. One product that actually ships.
                         </p>
                         <div className={styles.btnWrapper}>
                             <MyButton

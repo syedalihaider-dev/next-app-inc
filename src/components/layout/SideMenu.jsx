@@ -20,6 +20,8 @@ const industries = [
     { name: 'HEALTHCARE APP DEVELOPMENT', href: '/industries/healthcare-app-development' },
 ];
 
+import { SITE_CONFIG } from '@/configs/site-config';
+
 const SideMenu = ({ isOpen, onClose }) => {
     const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -104,10 +106,10 @@ const SideMenu = ({ isOpen, onClose }) => {
                     </ul>
 
                     <div className={styles.socialLinks}>
-                        <a href="#" className={styles.socialIcon} aria-label="Facebook">FB</a>
-                        <a href="#" className={styles.socialIcon} aria-label="Twitter">TW</a>
-                        <a href="#" className={styles.socialIcon} aria-label="LinkedIn">LN</a>
-                        <a href="#" className={styles.socialIcon} aria-label="Instagram">IG</a>
+                        <a href={SITE_CONFIG.socialLinks.facebook} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Facebook">FB</a>
+                        <a href={SITE_CONFIG.socialLinks.twitter} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Twitter">TW</a>
+                        <a href={SITE_CONFIG.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LinkedIn">LN</a>
+                        <a href={SITE_CONFIG.socialLinks.instagram} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">IG</a>
                     </div>
                 </div>
             </div>

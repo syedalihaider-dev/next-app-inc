@@ -170,16 +170,6 @@
     .badge {
         letter-spacing: 0px;
     }
-
-    /* .caseStudyCard {
-        height: 480px;
-        padding: 25px;
-    }
-
-    .cardTitle {
-        font-size: 25px;
-        min-height: unset;
-    } */
 }
 
 @media (max-width: 1399px) {
@@ -188,7 +178,6 @@
     }
 
     .caseStudyCard {
-        height: unset;
         padding: 30px 20px;
     }
 
@@ -206,12 +195,17 @@
         width: 220px;
     }
 
+    .cardIndustry span {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
     .mockupImg img {
         object-fit: contain;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .mockupImg {
         width: 290px;
     }
@@ -230,6 +224,7 @@
 
     .caseStudyCard {
         flex-direction: column;
+        height: unset;
     }
 
     .cardContent {

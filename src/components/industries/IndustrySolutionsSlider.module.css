@@ -11,10 +11,7 @@
 }
 
 .heading {
-    font-size: 65px;
-    font-weight: 800;
-    color: #000;
-    line-height: 1.1;
+    color: var(--dark-color);
     margin-bottom: 0;
 }
 
@@ -37,20 +34,6 @@
 .solutionsSwiper {
     overflow: visible !important;
     width: 100%;
-}
-
-@media screen and (max-width: 1480px) {
-    .sliderWrapper {
-        margin-left: 20px;
-        width: calc(100vw - 20px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sliderWrapper {
-        margin-left: 15px;
-        width: calc(100vw - 15px);
-    }
 }
 
 .solutionCard {
@@ -120,20 +103,64 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1200px) {
-    .heading {
-        font-size: 45px;
+@media screen and (max-width: 1600px) {
+    .headerArea {
+        margin-bottom: 30px;
     }
+
+    .sliderWrapper {
+        margin-left: 20px;
+        width: calc(100vw - 20px);
+    }
+
+    .contentBox {
+        padding: 20px;
+    }
+
+    .solutionCard {
+        margin-top: 15px;
+    }
+
+    .cardTitle {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .cardDesc {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .solutionsSliderSection {
+        padding: 60px 0;
+    }
+
+    .sliderWrapper {
+        margin-top: 30px;
+    }
+
     .imageBox {
         height: 220px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .heading {
-        font-size: 32px;
-    }
+@media screen and (max-width: 1199px) {
     .solutionsSliderSection {
-        padding: 60px 0;
+        padding: 40px 0;
+    }
+
+    .cardDesc {
+        font-size: 14px;
+    }
+
+    .imageBox {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cardTitle {
+        font-size: 20px;
     }
 }

@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import styles from './IndustrySolutionsSlider.module.css';
 
 const IndustrySolutionsSlider = ({
-    title = <>Next-Gen eLearning App Solutions <br /> For <span className={styles.highlightWrapper}><span className={styles.highlightText}>Modern Education</span></span> Needs</>,
+    title = <>Next-Gen eLearning App Solutions For <span className="primarytxt">Modern Education</span> Needs</>,
     solutionsData = []
 }) => {
     const defaultSolutions = [

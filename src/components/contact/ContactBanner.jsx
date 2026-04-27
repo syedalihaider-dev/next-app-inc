@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import MyButton from '@/components/layout/MyButton';
 import styles from './ContactBanner.module.css';
+import { SITE_CONFIG } from '@/configs/site-config';
 
 const ContactBanner = () => {
     return (
@@ -35,7 +36,7 @@ const ContactBanner = () => {
                             <div className={styles.contactLinks}>
                                 <MyButton
                                     text="Call Us Now"
-                                    link="tel:3472187849"
+                                    link={`tel:${SITE_CONFIG.contact.phone.replace(/[^0-9+]/g, '')}`}
                                     className="btn_white"
                                     // icon="/contact-phone-icon.webp"
                                     iconWidth={20}
@@ -44,7 +45,7 @@ const ContactBanner = () => {
 
                                 <MyButton
                                     text="Email Us Now"
-                                    link="mailto:sales@nextappinc.com"
+                                    link={`mailto:${SITE_CONFIG.contact.email}`}
                                     className="btn_white"
                                     // icon="/contact-email-icon.webp"
                                     iconWidth={20}

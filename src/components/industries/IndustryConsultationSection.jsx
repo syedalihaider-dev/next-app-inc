@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './IndustryConsultationSection.module.css';
 import MyButton from '@/components/layout/MyButton';
+import styles from './IndustryConsultationSection.module.css';
 
 const IndustryConsultationSection = ({
     title = <>Create Seamless <br /> <span className={styles.purpleText}>Financial Management</span> <br /> with Powerful Apps!</>,
@@ -31,7 +31,7 @@ const IndustryConsultationSection = ({
                             </p>
 
                             <div className="mt-5">
-                                <MyButton text="Free Consultation" className="btn_black" />
+                                <MyButton text="Get Started" className="btn_black" />
                             </div>
                         </div>
                     </div>

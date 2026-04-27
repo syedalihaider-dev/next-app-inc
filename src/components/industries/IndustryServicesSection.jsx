@@ -11,32 +11,32 @@ const IndustryServicesSection = ({
 }) => {
     const defaultServices = [
         {
-            title: 'Corporate Tax <br/> & Audit Solutions',
+            title: 'Corporate Tax & Audit Solutions',
             description: 'Comprehensive accounting app development services providing integrated tools and resources for smooth corporate tax management and auditing.',
             active: false
         },
         {
-            title: 'Real-time Billing <br/> & Invoicing',
+            title: 'Real-time Billing & Invoicing',
             description: 'Automate your financial cycles with robust invoicing and billing systems tailored to your specific business requirements and workflows.',
             active: false
         },
         {
-            title: 'Financial Data <br/> Analytics',
+            title: 'Financial Data Analytics',
             description: 'Unlock insights with advanced data analytics features, allowing for real-time tracking of financial health and informed decision-making.',
             active: false
         },
         {
-            title: 'Expense & Payroll <br/> Management',
+            title: 'Expense & Payroll Management',
             description: 'Streamline employee salaries and company expenses with an intuitive mobile application that ensures accuracy and compliance.',
             active: false
         },
         {
-            title: 'Security & Compliance <br/> Monitoring',
+            title: 'Security & Compliance Monitoring',
             description: 'We build high-security accounting applications that protect sensitive financial data and ensure adherence to international financial standards.',
             active: false
         },
         {
-            title: 'Cloud Accounting <br/> Solutions',
+            title: 'Cloud Accounting Solutions',
             description: 'Specializing in secure, cloud-based accounting apps that offer seamless access to financial data anytime and anywhere.',
             active: false
         }
@@ -47,7 +47,7 @@ const IndustryServicesSection = ({
     return (
         <section className={styles.servicesSection}>
             <div className={`container ${styles.container}`}>
-                <div className="row align-items-center mb-5 pb-lg-5">
+                <div className="row align-items-center mb-5">
                     <div className="col-lg-7">
                         <div className={styles.header}>
                             <h2 className={styles.heading} dangerouslySetInnerHTML={{ __html: title }}></h2>

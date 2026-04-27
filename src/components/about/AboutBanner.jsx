@@ -10,14 +10,14 @@ const AboutBanner = () => {
                     <source src="/video/about-bg.webm" type="video/webm" />
                 </video>
             </div>
-            <div className={styles.gradientOverlay}>
+            {/* <div className={styles.gradientOverlay}>
                 <Image
                     src="/about/about-gradiant.webp"
                     alt="gradient"
                     fill
                     className={styles.gradientImg}
                 />
-            </div>
+            </div> */}
             <div className={styles.dotsOverlay}>
                 <Image
                     src="/about/dots.webp"

@@ -48,18 +48,15 @@ const AboutFAQ = () => {
                 priority
             />
             <div className={`container ${styles.contentWrapper}`}>
-                <div className={`${styles.headerContent} text-center mb-5`}>
+                <div className={`${styles.headerContent} text-center mb-3`}>
                     <span className={styles.badge}>FAQ'S</span>
                     <h2 className={styles.heading}>
-                        Frequently Ask Questions
-                        <div className={styles.greenUnderline}>
-                            <Image src="/green-vector.webp" alt="underline" fill style={{ objectFit: 'contain' }} />
-                        </div>
+                        Frequently Ask <span className="primarytxt">Questions</span>
                     </h2>
                 </div>
 
                 <div className="row align-items-center">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
+                    <div className="col-lg-6 mb-3 mb-lg-0">
                         <div className={styles.imageWrapper}>
                             <Image
                                 src="/about/faq-mobile.webp"
@@ -94,7 +91,7 @@ const AboutFAQ = () => {
                             ))}
                         </div>
 
-                        <div className="mt-5">
+                        <div className="mt-3">
                             <MyButton text="Ask Questions" className="btn_white" />
                         </div>
                     </div>

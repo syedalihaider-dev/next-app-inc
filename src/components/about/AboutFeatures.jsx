@@ -19,10 +19,9 @@ const AboutFeatures = () => {
                                 />
                             </div>
                             <div className={styles.leftContentBottom}>
-                                <h3 className={styles.heading}>02. Award Winning</h3>
+                                <h3 className={styles.heading}>One Team Across Every Discipline</h3>
                                 <p className={styles.paragraph}>
-                                    We Have Proudly Worked With A Diverse Range Of Industries,
-                                    Delivering Seamless Digital Experiences That Drive Engagement And Growth.
+                                    Mobile, game, web, e-commerce, blockchain, AR/VR, and custom software. One team, one communication channel, one quality standard across everything. No handoffs between agencies. No gaps in accountability.
                                 </p>
                             </div>
                         </div>
@@ -45,10 +44,9 @@ const AboutFeatures = () => {
                     <div className="col-lg-3 col-md-12">
                         <div className={styles.rightCard}>
                             <div className={styles.rightContentTop}>
-                                <h3 className={styles.heading}>02. Customer Centric Approach</h3>
+                                <h3 className={styles.heading}>100% Transparency on Every Project</h3>
                                 <p className={styles.paragraph}>
-                                    We Have Proudly Worked With A Diverse Range Of Industries,
-                                    Delivering Seamless Digital Experiences That Drive Engagement And Growth.
+                                    You see everything. Milestone reviews, sprint updates, testing reports, and deployment plans are shared with you in real time. Nothing happens behind closed doors.
                                 </p>
                             </div>
                             <div className={styles.imageWrapper3}>

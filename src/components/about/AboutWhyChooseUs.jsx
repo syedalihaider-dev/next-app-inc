@@ -19,14 +19,10 @@ const AboutWhyChooseUs = () => {
                         <div className={styles.leftContent}>
                             <span className={styles.badge}>WHY CHOOSE US</span>
                             <h2 className={styles.heading}>
-                                Expert Team.<br />
-                                Proven Process.<br />
-                                <span className={styles.highlightText}>
-                                    Powerful Results.
-                                </span>
+                                The <span className={styles.highlightText}>Philosophy</span> Behind Every <span className={styles.highlightText}>Product</span> We Have Ever <span className={styles.highlightText}>Shipped.</span>
                             </h2>
                             <p className={styles.paragraph}>
-                                Lorem Ipsum Dolor Sit Amet Consect Etur. Donec Mattis Habitant Frin Gilla Interdum Lectus Nisi Sit Vestibulumel Eifend. Etiam Enim Phar Etra Arcu.
+                                Most agencies claim to be different. We focus on doing the work differently. These three principles guide every project we take on.
                             </p>
 
                             <div className="mt-4">
@@ -44,18 +40,18 @@ const AboutWhyChooseUs = () => {
                                     <div className={styles.iconBox}>
                                         <Image src="/about/development-icon.webp" alt="Development" width={46} height={46} />
                                     </div>
-                                    <h4 className={styles.cardHeading}>End-To-End Development</h4>
+                                    <h4 className={styles.cardHeading}>Understand Before You Build</h4>
                                     <p className={styles.cardParagraph}>
-                                        Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.
+                                        We start by identifying the real problem, not just the request. This keeps rework low and ensures we build what actually matters.
                                     </p>
                                 </div>
                                 <div className={styles.cardWrapper}>
                                     <div className={styles.iconBox}>
                                         <Image src="/about/custom-icon.webp" alt="Custom" width={46} height={46} />
                                     </div>
-                                    <h4 className={styles.cardHeading}>Custom-Built Solutions</h4>
+                                    <h4 className={styles.cardHeading}>Build for Real Users</h4>
                                     <p className={styles.cardParagraph}>
-                                        Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.
+                                        A product is only successful if people can use it easily. We design for everyday use, not just presentations.
                                     </p>
                                 </div>
                             </div>
@@ -66,9 +62,9 @@ const AboutWhyChooseUs = () => {
                                     <div className={styles.iconBox}>
                                         <Image src="/about/quality-icon.webp" alt="Quality" width={41} height={51} />
                                     </div>
-                                    <h4 className={styles.cardHeading}>Quality You Can Trust</h4>
+                                    <h4 className={styles.cardHeading}>Think Beyond the Launch</h4>
                                     <p className={styles.cardParagraph}>
-                                        Lorem Ipsum Dolor Sit Amet Consectetur. Aliquam Cras Nunc In Ridiculus Nunc Nunc Facilisis Pellentesque Imperdiet. Pharetra Tristique.
+                                        We build products that last. Scalable, maintainable, and ready to grow with your business.
                                     </p>
                                 </div>
                             </div>

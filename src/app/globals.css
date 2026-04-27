@@ -247,6 +247,10 @@ p {
     font-size: 50px;
   }
 
+  h3 {
+    font-size: 35px;
+  }
+
   h4 {
     font-size: 25px;
   }
@@ -254,15 +258,6 @@ p {
   h5 {
     font-size: 20px;
   }
-
-  h3 {
-    font-size: 35px;
-  }
-
-  h5 {
-    font-size: 25px;
-  }
-
 }
 
 @media screen and (max-width:1399px) {
@@ -277,7 +272,11 @@ p {
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 
   h4 {
@@ -304,14 +303,15 @@ p {
 
   h2 {
     font-size: 40px;
+    letter-spacing: -1px;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   h4 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   h5 {

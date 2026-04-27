@@ -47,7 +47,7 @@ const IndustryFeaturesSection = ({
             />
 
             <div className={`container ${styles.container}`}>
-                <div className="row align-items-center mb-5 pb-lg-5">
+                <div className="row align-items-center mb-5">
                     <div className="col-lg-7">
                         <div className={styles.header}>
                             <h2 className={styles.heading}>
@@ -71,7 +71,7 @@ const IndustryFeaturesSection = ({
                     </div>
                 </div>
 
-                <div className="row g-5">
+                <div className="row">
                     <div className="col-lg-6">
                         <div className={styles.accordionList}>
                             {displayFeatures1.map((item) => (

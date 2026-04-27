@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './IOSAppSection.module.css'; // Reusing the same styling
 import MyButton from '@/components/layout/MyButton';
+import { SITE_CONFIG } from '@/configs/site-config';
 
 const ServiceSection = ({
     heading,
@@ -35,7 +36,7 @@ const ServiceSection = ({
                             </ul>
 
                             <div className={styles.statsRow}>
-                                <div className={styles.statValue}>15 +</div>
+                                <div className={styles.statValue}>15+</div>
                                 <div className={styles.vLine}></div>
                                 <div className={styles.statLabel}>
                                     Years Of Working Experience <br /> In This Company
@@ -44,8 +45,8 @@ const ServiceSection = ({
 
                             <div className={styles.btnRow}>
                                 <MyButton text="Get Started" className="btn_black" />
-                                <a href="tel:+13473845097" className={styles.phoneBtn}>
-                                    +1-347-384-5097
+                                <a href={`tel:${SITE_CONFIG.contact.phone.replace(/[^0-9+]/g, '')}`} className={styles.phoneBtn}>
+                                    {SITE_CONFIG.contact.phone}
                                 </a>
                             </div>
                         </div>
