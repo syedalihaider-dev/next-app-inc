@@ -68,50 +68,86 @@
     height: auto;
 }
 
-@media (max-width: 1400px) {
-    .heading {
-        font-size: 60px;
+@media (max-width: 1600px) {
+    .whyChooseSection {
+        padding: 80px 0;
+    }
+
+    .description p {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .mockupWrapper {
+        width: 50%;
     }
 }
 
-@media (max-width: 1200px) {
-    .heading {
-        font-size: 48px;
+@media (max-width: 1399px) {
+    .whyChooseSection {
+        padding: 60px 0;
     }
+
     .description p {
-        font-size: 18px;
+        font-size: 16px;
     }
+
+    .mockupWrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .whyChooseSection {
+        padding: 40px 0;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .mockupWrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .description p {
+        width: 400px;
+        font-size: 14px;
+    }
+
     .mockupWrapper {
         width: 40%;
     }
 }
 
-@media (max-width: 991px) {
-    .whyChooseSection {
-        padding: 80px 0 400px;
-    }
-    .contentCol {
-        text-align: center;
-        margin-bottom: 60px;
-    }
+@media (max-width: 767px) {
     .description p {
-        margin-left: auto;
-        margin-right: auto;
+        width: 400px;
+        font-size: 14px;
     }
-    .btnRow {
-        justify-content: center;
-    }
+
     .mockupWrapper {
-        width: 100%;
-        position: relative;
-        bottom: 0;
-        margin-top: 40px;
-        justify-content: center;
+        width: 40%;
+        z-index: -1;
     }
 }
 
 @media (max-width: 575px) {
-    .heading {
-        font-size: 35px;
+.whyChooseSection {
+        padding: 40px 0 0;
+    }
+
+    .description p {
+        width: 100%;
+    }
+
+    .mockupWrapper {
+        margin-top: 30px;
+        position: unset;
+        width: 100%;
+        z-index: -1;
     }
 }

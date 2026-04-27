@@ -8,13 +8,13 @@ import 'swiper/css';
 import styles from './TechStackSection.module.css';
 
 const categories = [
-    'DESIGN',
-    'FRONT-END',
-    'BACK-END',
-    'DATABASE',
-    'CLOUD',
-    'FRAMEWORK',
-    'PROJECT MANAGEMENT'
+    // 'DESIGN',
+    // 'FRONT-END',
+    // 'BACK-END',
+    // 'DATABASE',
+    // 'CLOUD',
+    // 'FRAMEWORK',
+    // 'PROJECT MANAGEMENT'
 ];
 
 const techStacks = {
@@ -29,66 +29,66 @@ const techStacks = {
         { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
     ],
 
-    'DESIGN': [
-        { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
-        { name: 'React Native', icon: '/tech-stack/react-native.webp' },
-        { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
-        { name: 'Swift', icon: '/tech-stack/swift.webp' },
-        { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
-        { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
-        { name: 'HTML5', icon: '/tech-stack/html.webp' },
-        { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
-    ],
-    'BACK-END': [
-        { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
-        { name: 'React Native', icon: '/tech-stack/react-native.webp' },
-        { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
-        { name: 'Swift', icon: '/tech-stack/swift.webp' },
-        { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
-        { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
-        { name: 'HTML5', icon: '/tech-stack/html.webp' },
-        { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
-    ],
-    'DATABASE': [
-        { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
-        { name: 'React Native', icon: '/tech-stack/react-native.webp' },
-        { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
-        { name: 'Swift', icon: '/tech-stack/swift.webp' },
-        { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
-        { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
-        { name: 'HTML5', icon: '/tech-stack/html.webp' },
-        { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
-    ],
-    'CLOUD': [
-        { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
-        { name: 'React Native', icon: '/tech-stack/react-native.webp' },
-        { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
-        { name: 'Swift', icon: '/tech-stack/swift.webp' },
-        { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
-        { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
-        { name: 'HTML5', icon: '/tech-stack/html.webp' },
-        { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
-    ],
-    'FRAMEWORK': [
-        { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
-        { name: 'React Native', icon: '/tech-stack/react-native.webp' },
-        { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
-        { name: 'Swift', icon: '/tech-stack/swift.webp' },
-        { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
-        { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
-        { name: 'HTML5', icon: '/tech-stack/html.webp' },
-        { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
-    ],
-    'PROJECT MANAGEMENT': [
-        { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
-        { name: 'React Native', icon: '/tech-stack/react-native.webp' },
-        { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
-        { name: 'Swift', icon: '/tech-stack/swift.webp' },
-        { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
-        { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
-        { name: 'HTML5', icon: '/tech-stack/html.webp' },
-        { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
-    ]
+    // 'DESIGN': [
+    //     { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
+    //     { name: 'React Native', icon: '/tech-stack/react-native.webp' },
+    //     { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
+    //     { name: 'Swift', icon: '/tech-stack/swift.webp' },
+    //     { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
+    //     { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
+    //     { name: 'HTML5', icon: '/tech-stack/html.webp' },
+    //     { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
+    // ],
+    // 'BACK-END': [
+    //     { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
+    //     { name: 'React Native', icon: '/tech-stack/react-native.webp' },
+    //     { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
+    //     { name: 'Swift', icon: '/tech-stack/swift.webp' },
+    //     { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
+    //     { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
+    //     { name: 'HTML5', icon: '/tech-stack/html.webp' },
+    //     { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
+    // ],
+    // 'DATABASE': [
+    //     { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
+    //     { name: 'React Native', icon: '/tech-stack/react-native.webp' },
+    //     { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
+    //     { name: 'Swift', icon: '/tech-stack/swift.webp' },
+    //     { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
+    //     { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
+    //     { name: 'HTML5', icon: '/tech-stack/html.webp' },
+    //     { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
+    // ],
+    // 'CLOUD': [
+    //     { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
+    //     { name: 'React Native', icon: '/tech-stack/react-native.webp' },
+    //     { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
+    //     { name: 'Swift', icon: '/tech-stack/swift.webp' },
+    //     { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
+    //     { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
+    //     { name: 'HTML5', icon: '/tech-stack/html.webp' },
+    //     { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
+    // ],
+    // 'FRAMEWORK': [
+    //     { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
+    //     { name: 'React Native', icon: '/tech-stack/react-native.webp' },
+    //     { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
+    //     { name: 'Swift', icon: '/tech-stack/swift.webp' },
+    //     { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
+    //     { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
+    //     { name: 'HTML5', icon: '/tech-stack/html.webp' },
+    //     { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
+    // ],
+    // 'PROJECT MANAGEMENT': [
+    //     { name: 'Flutter', icon: '/tech-stack/flutter.webp' },
+    //     { name: 'React Native', icon: '/tech-stack/react-native.webp' },
+    //     { name: 'Ionic', icon: '/tech-stack/ionic.webp' },
+    //     { name: 'Swift', icon: '/tech-stack/swift.webp' },
+    //     { name: 'TypeScript', icon: '/tech-stack/typescript.webp' },
+    //     { name: 'Xamarin', icon: '/tech-stack/xamarin.webp' },
+    //     { name: 'HTML5', icon: '/tech-stack/html.webp' },
+    //     { name: 'Kotlin', icon: '/tech-stack/kotlin.webp' }
+    // ]
 };
 
 const TechStackSection = () => {
