@@ -83,12 +83,12 @@ const Footer = () => {
 
                 <div className={styles.bottomBar}>
                     <div className="row align-items-center">
-                        <div className="col-lg-6">
+                        <div className="col-lg-12 text-center">
                             <p className={styles.copyright}>
-                                &copy; COPYRIGHT 2026 | NEXT APP INC | ALL RIGHTS RESERVED
+                                &copy; COPYRIGHT 2026 | Next App | ALL RIGHTS RESERVED
                             </p>
                         </div>
-                        <div className="col-lg-6 text-md-end">
+                        {/* <div className="col-lg-6 text-md-end">
                             <ul className={styles.bottomLinks}>
                                 <li><Link href="#">PRIVACY POLICY</Link></li>
                                 <li><span className={styles.separator}>|</span></li>
@@ -96,7 +96,7 @@ const Footer = () => {
                                 <li><span className={styles.separator}>|</span></li>
                                 <li><Link href="#">FAQ</Link></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -15,8 +15,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "iOS App Development | Next App Inc",
-    description: "Build high-performance, secure, and user-friendly iOS applications with Next App Inc. We offer end-to-end development services for all Apple devices.",
+    title: "iOS App Development | Next App",
+    description: "Build high-performance, secure, and user-friendly iOS applications with Next App. We offer end-to-end development services for all Apple devices.",
 };
 
 const IOSAppDevelopmentPage = () => {

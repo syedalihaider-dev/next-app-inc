@@ -10,7 +10,7 @@ const FAQ_DATA = [
         answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque. Vitae A Volutpat Sed Enim. Nulla Consectetur."
     },
     {
-        question: "Can Next App Inc handle custom app development?",
+        question: "Can Next App handle custom app development?",
         answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque."
     },
     {

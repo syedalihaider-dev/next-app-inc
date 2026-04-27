@@ -16,7 +16,7 @@ const IOSAppSection = () => {
                                 <span className={styles.purpleText}>Built for Apple</span>
                             </h2>
                             <p className={styles.description}>
-                                At Nextapp Inc., We Know Every Business Is Unique, So Our Custom
+                                At Next App., We Know Every Business Is Unique, So Our Custom
                                 IOS App Development Approach Ensures Your App Reflects Your
                                 Goals And Values. Our Expert Developers And Designers Create Apps
                                 That Are Both Visually Appealing And Highly Functional.

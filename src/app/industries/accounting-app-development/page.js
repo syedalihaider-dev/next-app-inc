@@ -13,7 +13,7 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Accounting App Development | Next App Inc",
+    title: "Accounting App Development | Next App",
     description: "Build custom accounting app development solutions that automate tasks, improve data management and boost efficiency.",
 };
 

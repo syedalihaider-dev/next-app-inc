@@ -82,7 +82,7 @@ const DevelopmentSolutionsSection = () => {
                         <div className={styles.mockupCol}>
                             <Image
                                 src="/services/development-solutions-mockup.webp"
-                                alt="Next App Inc Mockup"
+                                alt="Next App Mockup"
                                 width={800}
                                 height={800}
                                 className={styles.mockupImg}
