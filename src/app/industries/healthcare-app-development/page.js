@@ -57,32 +57,32 @@ const HealthcareAppPage = () => {
             title: 'HIPAA-Compliant Data Architecture',
             contentTitle: 'HIPAA-Compliant Data Architecture',
             contentDesc: 'Every data flow, storage layer, and API endpoint is built to meet HIPAA standards without compromising speed or usability.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
+            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         },
         {
             id: 'patient-monitoring',
             title: 'Secure Video Consultations',
             contentTitle: 'Secure Video Consultations',
             contentDesc: 'Low-latency, encrypted telehealth video sessions with waiting rooms, session recording, and multi-party support.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
+            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         },
         {
             id: 'billing',
             title: 'Appointment Scheduling & Reminders',
             contentTitle: 'Appointment Scheduling & Reminders',
             contentDesc: 'Smart scheduling systems with automated SMS/email reminders that reduce no-shows and optimize provider calendars.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
+            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         },
         {
             id: 'analytics',
             title: 'Electronic Health Records Integration',
             contentTitle: 'Electronic Health Records Integration',
             contentDesc: 'Deep integration with major EHR systems including Epic, Cerner, and HL7 FHIR APIs for seamless data exchange.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
+            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         }
     ];
 
@@ -90,25 +90,25 @@ const HealthcareAppPage = () => {
         {
             title: 'Doctor Consultation Apps',
             description: 'Custom apps that allow patients to book appointments, consult with specialists, and receive care from the comfort of their homes.',
-            image: '/industries/accounting-app-development/solution-1.webp',
+            image: '/industries/healthcare-app-development/solution-1.webp',
             active: false
         },
         {
             title: 'Health Tracking Wearables',
             description: 'Integrate mobile apps with IoT-enabled medical devices for real-time health monitoring and emergency alert systems.',
-            image: '/industries/accounting-app-development/solution-2.webp',
+            image: '/industries/healthcare-app-development/solution-2.webp',
             active: false
         },
         {
             title: 'Medical Training Apps',
             description: 'Interactive VR/AR and mobile learning platforms for medical students and professionals to enhance their clinical skills.',
-            image: '/industries/accounting-app-development/solution-3.webp',
+            image: '/industries/healthcare-app-development/solution-3.webp',
             active: false
         },
         {
             title: 'Wellness & Nutrition',
             description: 'Engaging apps that provide personalized meal plans, exercise routines, and wellness coaching for a healthier lifestyle.',
-            image: '/industries/accounting-app-development/solution-4.webp',
+            image: '/industries/healthcare-app-development/solution-4.webp',
             active: false
         }
     ];
@@ -120,14 +120,14 @@ const HealthcareAppPage = () => {
                 mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Technology</span> That Helps <span style={{ color: 'var(--primary-color)' }}>People</span></>}
                 highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="Healthcare moves fast. Your digital tools should too. We build HIPAA-compliant healthcare apps, patient portals, and clinical platforms that improve outcomes, reduce friction, and put people first."
-                bgImage="/industries/accounting-app-development/banner-bg.webp" 
+                bgImage="/industries/healthcare-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>Healthcare App Development</span> Solutions <br/> Built for Real <span style='color: var(--primary-color)'>Clinical Environments</span>"
                 description="We don't just build healthcare apps — we build tools that clinicians trust, patients rely on, and administrators can actually manage. From telemedicine platforms to EHR integrations, our healthcare solutions are designed with compliance, security, and user experience as non-negotiable foundations. Whether it's a mobile app, web platform, or custom software solution, Next App delivers complete digital products for the modern healthcare organization."
                 servicesData={services}
-                mockupImage="/industries/accounting-app-development/services-mockup.webp" // Placeholder
+                mockupImage="/industries/healthcare-app-development/services-mockup.webp" // Placeholder
             />
 
             <IndustryConsultationSection 

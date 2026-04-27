@@ -57,32 +57,32 @@ const EcommerceAppPage = () => {
             title: 'One-Click & Guest Checkout',
             contentTitle: 'One-Click & Guest Checkout',
             contentDesc: 'Frictionless checkout flows that reduce cart abandonment and increase purchase completion rates across all devices.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp', 
-            image: '/industries/accounting-app-development/tab-mockup-01.webp' 
+            icon: '/industries/ecommerce-app-development/tab-icon-01.webp', 
+            image: '/industries/ecommerce-app-development/tab-mockup-01.webp'
         },
         {
             id: 'ai-powered-product-recommendations',
             title: 'AI-Powered Product Recommendations',
             contentTitle: 'AI-Powered Product Recommendations',
             contentDesc: 'Personalized recommendation engines that surface the right products to the right users at exactly the right moment.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/ecommerce-app-development/tab-icon-02.webp',
+            image: '/industries/ecommerce-app-development/tab-mockup-02.webp'
         },
         {
             id: 'advanced-search-and-filtering',
             title: 'Advanced Search & Filtering',
             contentTitle: 'Advanced Search & Filtering',
             contentDesc: 'Fast, faceted search with smart filters, autocomplete, and visual search capabilities that help customers find what they need instantly.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/ecommerce-app-development/tab-icon-3.webp',
+            image: '/industries/ecommerce-app-development/tab-mockup-03.webp'
         },
         {
             id: 'multi-payment-gateway-support',
             title: 'Multi-Payment Gateway Support',
             contentTitle: 'Multi-Payment Gateway Support',
             contentDesc: 'Accept credit cards, PayPal, Apple Pay, Google Pay, BNPL, and local payment methods — globally, with one integration.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/ecommerce-app-development/tab-icon-04.webp',
+            image: '/industries/ecommerce-app-development/tab-mockup-04.webp'
         }
     ];
 
@@ -90,25 +90,25 @@ const EcommerceAppPage = () => {
         {
             title: 'Grocery Delivery Apps',
             description: 'High-performance apps featuring real-time inventory, route optimization for drivers, and seamless scheduled deliveries for local groceries.',
-            image: '/industries/accounting-app-development/solution-1.webp',
+            image: '/industries/ecommerce-app-development/solution-1.webp',
             active: false
         },
         {
             title: 'Fashion & Beauty Apps',
             description: 'Engaging apps featuring virtual try-ons, high-quality product visuals, and personalized style recommendations for fashion brands.',
-            image: '/industries/accounting-app-development/solution-2.webp',
+            image: '/industries/ecommerce-app-development/solution-2.webp',
             active: false
         },
         {
             title: 'Electronics & Gadgets',
             description: 'Robust platforms featuring detailed product specifications, comparison tools, and secure tech support integration for electronics retailers.',
-            image: '/industries/accounting-app-development/solution-3.webp',
+            image: '/industries/ecommerce-app-development/solution-3.webp',
             active: false
         },
         {
             title: 'Subscription Box Apps',
             description: 'Recurring billing and subscription management platforms for brands offering curated monthly boxes and membership-based services.',
-            image: '/industries/accounting-app-development/solution-4.webp',
+            image: '/industries/ecommerce-app-development/solution-4.webp',
             active: false
         }
     ];
@@ -121,14 +121,14 @@ const EcommerceAppPage = () => {
                 <span style={{ color: 'var(--primary-color)' }}>Sell More</span>. <span style={{ color: 'var(--primary-color)' }}>Cart Less</span>. Build an <span style={{ color: 'var(--primary-color)' }}> Online Store</span> That Actually <span style={{ color: 'var(--primary-color)' }}>Converts</span>.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="E-commerce isn't just about having a store online — it's about building an experience that makes people want to buy. We design and develop high-converting e-commerce platforms that turn visitors into customers and customers into loyal fans."
-                bgImage="/industries/accounting-app-development/banner-bg.webp" 
+                bgImage="/industries/ecommerce-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>E-Commerce Development</span> Solutions Built for <span style='color: var(--primary-color)'>Conversion</span>, <span style='color: var(--primary-color)'>Speed</span>, and <span style='color: var(--primary-color)'>Scale</span>"
                 description="Your store needs to be fast, beautiful, and trusted. We build custom e-commerce platforms, mobile shopping apps, and headless commerce solutions that are engineered for performance and designed for conversion. "
                 servicesData={services}
-                mockupImage="/industries/accounting-app-development/services-mockup.webp" 
+                mockupImage="/industries/ecommerce-app-development/services-mockup.webp" 
             />
 
             <IndustryConsultationSection 

@@ -57,32 +57,32 @@ const EducationAppPage = () => {
             title: 'Adaptive Learning Paths',
             contentTitle: 'Adaptive Learning Paths',
             contentDesc: "AI-powered learning journeys that adapt to each student's pace, strengths, and gaps — delivering truly personalized education at scale.",
-            icon: '/industries/accounting-app-development/tab-icon-01.webp', 
-            image: '/industries/accounting-app-development/tab-mockup-01.webp' 
+            icon: '/industries/education-app-development/tab-icon-01.webp', 
+            image: '/industries/education-app-development/tab-mockup-01.webp' 
         },
         {
             id: 'interactive-tools',
             title: 'Interactive Video & Content Authoring',
             contentTitle: 'Interactive Video & Content Authoring',
             contentDesc: 'Rich multimedia course creation with interactive quizzes, branching scenarios, SCORM compatibility, and drag-and-drop authoring tools.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/education-app-development/tab-icon-02.webp',
+            image: '/industries/education-app-development/tab-mockup-02.webp'
         },
         {
             id: 'progress-tracking-analytics',
             title: 'Progress Tracking & Analytics',
             contentTitle: 'Progress Tracking & Analytics',
             contentDesc: 'Comprehensive dashboards for instructors and administrators showing learner progress, completion rates, assessment scores, and engagement metrics.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/education-app-development/tab-icon-03.webp',
+            image: '/industries/education-app-development/tab-mockup-01.webp'
         },
         {
             id: 'live-asynchronous-learning-support',
             title: ' Live & Asynchronous Learning Support',
             contentTitle: ' Live & Asynchronous Learning Support',
             contentDesc: 'Flexible platforms that support both real-time instruction and self-paced learning — with discussion forums, assignments, and peer collaboration tools.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/education-app-development/tab-icon-04.webp',
+            image: '/industries/education-app-development/tab-mockup-04.webp'
         }
     ];
 
@@ -90,25 +90,25 @@ const EducationAppPage = () => {
         {
             title: 'Skill Boosting Apps',
             description: 'Interactive platforms that provide professional development courses, certification training, and skill-based learning for career growth.',
-            image: '/industries/accounting-app-development/solution-1.webp',
+            image: '/industries/education-app-development/solution-1.webp',
             active: false
         },
         {
             title: 'Early Childhood Learning',
             description: 'Engaging and colorful apps designed for young children to develop foundational skills in reading, math, and creative arts.',
-            image: '/industries/accounting-app-development/solution-2.webp',
+            image: '/industries/education-app-development/solution-2.webp',
             active: false
         },
         {
             title: 'STEM Education Apps',
             description: 'Specialized apps that provide interactive simulations, experiments, and lessons in Science, Technology, Engineering, and Math.',
-            image: '/industries/accounting-app-development/solution-3.webp',
+            image: '/industries/education-app-development/solution-3.webp',
             active: false
         },
         {
             title: 'Test Prep Platforms',
             description: 'Comprehensive platforms that offer practice exams, study materials, and personalized study plans for standardized tests and certifications.',
-            image: '/industries/accounting-app-development/solution-4.webp',
+            image: '/industries/education-app-development/solution-4.webp',
             active: false
         }
     ];
@@ -120,14 +120,14 @@ const EducationAppPage = () => {
                 mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Learning</span> Has Changed. Your <span style={{ color: 'var(--primary-color)' }}>EdTech Platform</span> Should Too.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="The classroom is no longer a room, it's everywhere. We build e-learning platforms, LMS systems, and educational mobile apps that make knowledge accessible, engaging, and measurable for students, teachers, and institutions worldwide."
-                bgImage="/industries/accounting-app-development/banner-bg.webp" 
+                bgImage="/industries/education-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>Education App </span> Development Solutions <br/> Built for <span style='color: var(--primary-color)'>Engagement</span>, <span style='color: var(--primary-color)'>Access</span>, and <span style='color: var(--primary-color)'>Outcomes</span>"
                 description="Education technology should do one thing above all else: help people learn more effectively. Our EdTech development team builds learning management systems, virtual classrooms, skills training apps, and educational games that combine pedagogical best practices with modern UX."
                 servicesData={services}
-                mockupImage="/industries/accounting-app-development/services-mockup.webp" 
+                mockupImage="/industries/education-app-development/services-mockup.webp" 
             />
 
             <IndustryConsultationSection 

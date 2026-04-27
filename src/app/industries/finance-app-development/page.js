@@ -57,32 +57,32 @@ const FinanceAppPage = () => {
             title: 'Bank-Grade Data Encryption',
             contentTitle: 'Bank-Grade Data Encryption',
             contentDesc: 'AES-256 encryption, secure APIs, and zero-trust architecture to protect every transaction and user record at rest and in transit.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp', 
-            image: '/industries/accounting-app-development/tab-mockup-01.webp' 
+            icon: '/industries/finance-app-development/tab-icon-01.webp', 
+            image: '/industries/finance-app-development/tab-mockup-01.webp' 
         },
         {
             id: 'real-time',
             title: 'Real-Time Transaction Processing',
             contentTitle: 'Real-Time Transaction Processing',
             contentDesc: 'High-performance payment processing engines capable of handling millions of daily transactions with sub-second response times.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/finance-app-development/tab-icon-02.webp',
+            image: '/industries/finance-app-development/tab-mockup-02.webp'
         },
         {
             id: 'automation',
             title: 'KYC/AML Compliance Integration',
             contentTitle: 'KYC/AML Compliance Integration',
             contentDesc: 'Automated Know Your Customer and Anti-Money Laundering workflows with identity verification, document scanning, and risk scoring.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/finance-app-development/tab-icon-03.webp',
+            image: '/industries/finance-app-development/tab-mockup-03.webp'
         },
         {
             id: 'analytics',
             title: 'Multi-Currency & Cross-Border Support',
             contentTitle: 'Multi-Currency & Cross-Border Support',
             contentDesc: 'Global financial platforms with real-time FX rates, multi-currency wallets, and international payment routing built in from day one.',
-            icon: '/industries/accounting-app-development/tab-icon-01.webp',
-            image: '/industries/accounting-app-development/tab-mockup-01.webp'
+            icon: '/industries/finance-app-development/tab-icon-04.webp',
+            image: '/industries/finance-app-development/tab-mockup-04.webp'
         }
     ];
 
@@ -90,25 +90,25 @@ const FinanceAppPage = () => {
         {
             title: 'Personal Finance Manager',
             description: 'Engaging apps that help users manage their personal wealth, set saving goals, and track expenses across multiple accounts.',
-            image: '/industries/accounting-app-development/solution-1.webp',
+            image: '/industries/finance-app-development/solution-1.webp',
             active: false
         },
         {
             title: 'Corporate Expense Tools',
             description: 'Custom platforms for businesses to manage employee expenses, corporate credit cards, and real-time financial reporting.',
-            image: '/industries/accounting-app-development/solution-2.webp',
+            image: '/industries/finance-app-development/solution-2.webp',
             active: false
         },
         {
             title: 'Insurance Tech (InsurTech)',
             description: 'Digital solutions for insurance companies to automate policy management, claim processing, and customer support.',
-            image: '/industries/accounting-app-development/solution-3.webp',
+            image: '/industries/finance-app-development/solution-3.webp',
             active: false
         },
         {
             title: 'Crowdfunding Platforms',
             description: 'Secure, scalable platforms that connect startups with investors, featuring transparent fund tracking and legal compliance.',
-            image: '/industries/accounting-app-development/solution-4.webp',
+            image: '/industries/finance-app-development/solution-4.webp',
             active: false
         }
     ];
@@ -120,14 +120,14 @@ const FinanceAppPage = () => {
                 mainTitle={<>The Future of Finance Is <span style={{ color: 'var(--primary-color)' }}>Digital</span>. We'll <span style={{ color: 'var(--primary-color)' }}>Help</span> You Lead <span style={{ color: 'var(--primary-color)' }}>It.</span></>}
                 // highlightedPart={<> </>}
                 description="From fintech startups to established financial institutions, we build secure, scalable, and regulation-ready digital platforms that redefine how money moves, how data is analyzed, and how customers engage with financial services."
-                bgImage="/industries/accounting-app-development/banner-bg.webp" 
+                bgImage="/industries/finance-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>Finance App Development</span> Solutions Built for <span style='color: var(--primary-color)'>Security</span>, <span style='color: var(--primary-color)'>Scale</span>, and <span style='color: var(--primary-color)'>Compliance</span>"
                 description="Financial software can't afford bugs, downtime, or security gaps. Our fintech development team builds banking platforms, investment tools, payment systems, and accounting applications with enterprise-grade security and the agility of a modern digital product."
                 servicesData={services}
-                mockupImage="/industries/accounting-app-development/services-mockup.webp" 
+                mockupImage="/industries/finance-app-development/services-mockup.webp" 
             />
 
             <IndustryConsultationSection 
