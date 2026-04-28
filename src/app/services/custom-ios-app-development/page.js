@@ -25,42 +25,42 @@ const tabs = [
         label: 'Project Planning',
         title: 'Project Planning',
         description: 'Our business analysts collaborate with you to define the full scope of your iOS app, translating your vision into a structured plan with clear milestones, resource allocation, realistic timelines, and a cost estimate that accounts for both quality and efficiency.',
-        image: '/process-steps/step-01.webp'
+        image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
         description: 'We create detailed wireframes that map every screen, gesture, and interaction of your iOS app. This visual skeleton ensures the user experience is logical and elegant before we invest in high-fidelity design or development, keeping revisions fast and low-cost.',
-        image: '/process-steps/step-02.webp'
+        image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
         description: 'You get a fully interactive iOS prototype to tap through before development begins. This hands-on preview lets you validate the user journey, refine navigation, and sign off on the experience, so what gets built matches exactly what you envisioned.',
-        image: '/process-steps/step-03.webp'
+        image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
         description: "Our iOS engineers build your app using Swift and SwiftUI with Apple's latest frameworks. We follow an agile sprint model, delivering working builds regularly so you can track progress, test features, and provide feedback throughout the development cycle.",
-        image: '/process-steps/step-04.webp'
+        image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
         description: 'We put your iOS app through exhaustive testing across every supported iPhone and iPad model, iOS version, and use case. Our QA team checks for crashes, performance bottlenecks, security vulnerabilities, and App Store compliance before a single build is submitted.',
-        image: '/process-steps/step-05.webp'
+        image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
         description: 'From TestFlight beta distribution to final App Store submission, we handle every step of the iOS launch process. We prepare your metadata, screenshots, and compliance documentation, ensuring a smooth review and a successful, high-visibility launch day.',
-        image: '/process-steps/step-06.webp'
+        image: '/services/deployment-and-launch.webp'
     }
 ];
 
@@ -74,9 +74,8 @@ const CustomIOSAppDevelopmentPage = () => {
                     Apps Built for <span className={styles.purpleText}>Apple.</span> Designed for <span className={styles.greenText}>Humans.</span> Engineered to <span className={styles.purpleText}>Win.</span>
                     </>
                 }
-                underlineImage="/green-vector.webp"
                 description="We craft iOS applications that feel at home on every Apple device — from the first tap to the hundredth session. Your users deserve a premium experience, and that's exactly what we deliver."
-                bgImage="/services/custom-ios-app-development/banner-bg.webp"
+                bgImage="/services/ios-banner-bg.webp"
             />
             <ServiceSection 
                 heading="What Sets an Exceptional "
@@ -88,7 +87,7 @@ const CustomIOSAppDevelopmentPage = () => {
                     "Exclusive Apple Features Integration",
                     "Scalable Enterprise Solutions"
                 ]}
-                mockupImage="/services/ios-app-development/ios-hand-mockup.webp"
+                mockupImage="/services/ios-hand-mockup.webp"
             />
             <AwardsSection />
             <ServicesListSection />

@@ -5,7 +5,7 @@ import styles from './AwardsSection.module.css';
 const awards = [
     {
         icon: '/services/award-clutch.webp',
-        year: '2023',
+        year: '2018',
         title: 'Top App Performers Excellence Award'
     },
     {
@@ -14,14 +14,14 @@ const awards = [
         title: 'Top Developer Expertise - Best Firm'
     },
     {
-        icon: '/services/award-upcity.webp',
-        year: '2023',
-        title: 'Top App Performers UpCity Award'
+        icon: '/services/award-expertise.webp',
+        year: '2024',
+        title: 'Top App Performers Expertise Award'
     },
     {
-        icon: '/services/award-expertise.webp',
-        year: '2023',
-        title: 'Top App Performers Expertise Award'
+        icon: '/services/award-upcity.webp',
+        year: '2025',
+        title: 'Top App Performers UpCity Award'
     }
 ];
 
@@ -60,8 +60,8 @@ const AwardsSection = () => {
                                                 <Image
                                                     src={award.icon}
                                                     alt="award icon"
-                                                    width={130}
-                                                    height={130}
+                                                    width={164}
+                                                    height={166}
                                                     className={styles.awardLogo}
                                                 />
                                             </div>

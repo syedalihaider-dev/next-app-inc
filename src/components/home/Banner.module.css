@@ -54,16 +54,6 @@
     z-index: 5;
 }
 
-.vectorWrapper {
-    margin: -10px 0 30px 0;
-}
-
-.greenVector {
-    width: 100%;
-    max-width: 650px;
-    height: auto;
-}
-
 .heading {
     font-size: var(--banner-heading-size);
     line-height: var(--banner-heading-line-height);
@@ -119,11 +109,6 @@
         max-width: unset;
     }
 
-    .vectorWrapper {
-        width: 550px;
-        margin: 0px 0 25px;
-    }
-
     .absoluteSliderWrapper {
         width: 45%;
     }
@@ -137,11 +122,6 @@
     .heading {
         font-size: 45px;
         line-height: 50px;
-    }
-
-    .vectorWrapper {
-        width: 450px;
-        margin: 0px 0 20px;
     }
 
     .paragraph {
@@ -158,10 +138,6 @@
     .heading {
         font-size: 35px;
         line-height: 40px;
-    }
-
-    .greenVector {
-        max-width: 350px;
     }
 }
 
@@ -190,9 +166,5 @@
     .heading {
         font-size: 25px;
         line-height: 30px;
-    }
-    .vectorWrapper {
-        width: 100%;
-        margin: 0px 0 15px;
     }
 }

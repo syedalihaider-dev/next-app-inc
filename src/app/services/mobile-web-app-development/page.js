@@ -25,42 +25,42 @@ const tabs = [
         label: 'Project Planning',
         title: 'Project Planning',
         description: 'We evaluate your business case for a PWA versus a native app, then define the full project scope, core features, offline capabilities, integration requirements, and hosting strategy. You receive a clear plan with accurate cost estimates and a realistic launch timeline from day one.',
-        image: '/process-steps/step-01.webp'
+        image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
         description: "Mobile web apps demand a different design discipline — every screen must work perfectly in a browser while feeling like a native app. Our wireframing phase maps out every user flow with this in mind, producing a visual guide that balances mobile UX best practices with your brand's identity.",
-        image: '/process-steps/step-02.webp'
+        image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
         description: 'We build a working prototype of your PWA that you can open in any mobile browser and interact with directly. This gives you a true preview of load speed, offline behavior, and overall feel — allowing for real feedback before full development investment is made.',
-        image: '/process-steps/step-03.webp'
+        image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
         description: 'Our engineers build your PWA using modern frameworks like React, Vue, or Next.js with full-service worker implementation, web app manifests, and API integration. Agile delivery means you receive working builds throughout — testable in any browser, on any device, at every sprint.',
-        image: '/process-steps/step-04.webp'
+        image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
         description: 'We test your mobile web app across every major browser, device type, and network condition — including offline and slow-connection scenarios. Performance audits using Lighthouse ensure your PWA meets the highest standards for speed, accessibility, and SEO before going live.',
-        image: '/process-steps/step-05.webp'
+        image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
         description: "There's no App Store review for a PWA — which means faster deployment and simpler updates. We handle server configuration, CDN setup, HTTPS certification, and go-live monitoring, ensuring your mobile web app launches cleanly and performs reliably from the moment users arrive.",
-        image: '/process-steps/step-06.webp'
+        image: '/services/deployment-and-launch.webp'
     }
 ];
 
@@ -74,9 +74,8 @@ const MobileWebAppDevelopmentPage = () => {
                     Your <span className={styles.purpleText}>Website</span> Shouldn't <span className={styles.purpleText}>Feel Like</span> a Website. It Should Feel Like an <span className={styles.purpleText}>App.</span>
                     </>
                 }
-                underlineImage="/green-vector.webp"
                 description="Progressive web apps blur the line between browser and native experience. We build mobile web apps that load instantly, work offline, and behave like the real thing, no App Store required."
-                bgImage="/services/mobile-web-app-development/banner-bg.webp"
+                bgImage="/services/mobile-web-banner-bg.webp"
             />
             <ServiceSection 
                 heading="Why Progressive Web Apps Are the Smart "
@@ -88,7 +87,7 @@ const MobileWebAppDevelopmentPage = () => {
                     "High-Speed Performance",
                     "SEO Optimized Solutions"
                 ]}
-                mockupImage="/services/ios-app-development/ios-hand-mockup.webp"
+                mockupImage="/services/ios-hand-mockup.webp"
             />
             <AwardsSection />
             <ServicesListSection />

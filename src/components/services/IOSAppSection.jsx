@@ -59,7 +59,7 @@ const IOSAppSection = () => {
             <div className={styles.mockupWrapper}>
                 <div className={styles.mockupBg}></div>
                 <Image
-                    src="/services/ios-app-development/ios-hand-mockup.webp"
+                    src="/services/ios-hand-mockup.webp"
                     alt="iPhone Hand Mockup"
                     width={800}
                     height={800}

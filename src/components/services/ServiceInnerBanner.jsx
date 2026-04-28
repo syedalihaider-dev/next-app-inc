@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './ServiceInnerBanner.module.css';
 import MyButton from '@/components/layout/MyButton';
 
-const ServiceInnerBanner = ({ badge, title, description, bgImage, underlineImage = "/green-vector.webp" }) => {
+const ServiceInnerBanner = ({ badge, title, description, bgImage }) => {
     return (
         <section className={styles.serviceBanner}>
             <div className={styles.bgWrapper}>

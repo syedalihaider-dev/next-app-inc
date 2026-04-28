@@ -7,37 +7,37 @@ const steps = [
         number: '01',
         title: <>Project <br /> Discussion</>,
         description: 'We start by listening. You walk us through your idea, your goals, and your users. We ask the questions that shape a better product brief, not just a quote.',
-        image: '/process-steps/step-01.webp'
+        image: '/services/project-planning.webp'
     },
     {
         number: '02',
         title: <>Order <br /> Confirmation</>,
         description: 'Once we align on scope, timeline, and budget, we confirm the engagement with full transparency. No hidden fees, no scope surprises. You know exactly what you are getting before we begin.',
-        image: '/process-steps/step-02.webp'
+        image: '/services/wireframes.webp'
     },
     {
         number: '03',
         title: <>Research & <br /> Wireframing</>,
         description: 'Our business analysts and UX leads map the user journey and validate the architecture before design begins. Wireframes align the team on structure before a single pixel is placed.',
-        image: '/process-steps/step-03.webp'
+        image: '/services/prototype-demo.webp'
     },
     {
         number: '04',
         title: <>UI/UX <br /> Designing</>,
         description: 'Our designers build a visual experience that reflects your brand and serves your users. Every screen is reviewed against usability standards and your business goals before development begins.',
-        image: '/process-steps/step-04.webp'
+        image: '/services/development.webp'
     },
     {
         number: '05',
         title: <>App <br /> Development</>,
         description: 'Engineering takes over with a clear brief, a tested design, and a structured sprint plan. Agile sprints keep the build on schedule with milestone reviews you can see and respond to.',
-        image: '/process-steps/step-05.webp'
+        image: '/services/development.webp'
     },
     {
         number: '06',
         title: <>Testing & <br /> Deployment</>,
         description: 'Every build goes through QA testing across devices, operating systems, and usage scenarios before it reaches your users. We deploy to your target platforms and stay on standby for the first 30 days post-launch.',
-        image: '/process-steps/step-06.webp'
+        image: '/services/deployment-and-launch.webp'
     }
 ];
 

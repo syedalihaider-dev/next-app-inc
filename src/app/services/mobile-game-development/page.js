@@ -25,42 +25,42 @@ const tabs = [
         label: 'Project Planning',
         title: 'Project Planning',
         description: 'Great games start with a clear vision and a realistic plan. Our game producers work with you to define genre, core mechanics, target audience, monetization model, and platform targets. We allocate artists, developers, and QA specialists, then provide a detailed production schedule and cost estimate.',
-        image: '/process-steps/step-01.webp'
+        image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
         description: "Before art and code, we wireframe the game's core UX, menus, onboarding flows, HUD layout, and key screens. This ensures the non-gameplay experience is as polished as the game itself. Alongside wireframes, our game designers document core mechanics and level design concepts for team alignment.",
-        image: '/process-steps/step-02.webp'
+        image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
         description: "We build a playable prototype of your core gameplay loop, stripped of final art but fully functional. You get to play it, feel the mechanics, and decide if the moment-to-moment experience is right before the full production budget is committed. Feedback at this stage is cheap; feedback post-launch isn't.",
-        image: '/process-steps/step-03.webp'
+        image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
         description: "Our Unity or Unreal Engine developers build your game in production sprints, delivering playable builds throughout. Art, animation, audio, and engineering work in parallel. You receive regular build drops to test, so you're never waiting until the end to see what you're getting.",
-        image: '/process-steps/step-04.webp'
+        image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
         description: 'Games require a different kind of QA. We test for bugs, frame rate consistency, input responsiveness, crash scenarios, device compatibility, and store compliance, across iOS and Android. We also conduct gameplay balance testing to ensure the experience is fun and fair from the first session.',
-        image: '/process-steps/step-05.webp'
+        image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
         description: 'We manage full App Store and Google Play submissions, including age ratings, content descriptions, trailer assets, and store listing optimization. Post-launch, we monitor crash reports, user reviews, and retention metrics so we can act fast on anything that needs improvement.',
-        image: '/process-steps/step-06.webp'
+        image: '/services/deployment-and-launch.webp'
     }
 ];
 
@@ -74,9 +74,8 @@ const MobileGameDevelopmentPage = () => {
                         We Don’t Just Build <span className={styles.purpleText}>Games</span>. We Build <span className={styles.purpleText}>Worlds</span> People Come <span className={styles.purpleText}> Back</span> To.
                     </>
                 }
-                underlineImage="/green-vector.webp"
                 description="Engaging mechanics, beautiful art, smooth performance, our game development team builds mobile games that players love and publishers trust. From casual titles to full immersive experiences."
-                bgImage="/services/mobile-game-development/banner-bg.webp"
+                bgImage="/services/mobile-game-banner-bg.webp"
             />
             <ServiceSection 
                 heading="What It Takes to Build a Mobile Game That "
@@ -88,7 +87,7 @@ const MobileGameDevelopmentPage = () => {
                     "Monetization Strategy",
                     "Cross-Platform Gameplay"
                 ]}
-                mockupImage="/services/ios-app-development/ios-hand-mockup.webp"
+                mockupImage="/services/ios-hand-mockup.webp"
             />
             <AwardsSection />
             <ServicesListSection />

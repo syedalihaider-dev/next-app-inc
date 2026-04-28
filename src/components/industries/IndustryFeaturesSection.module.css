@@ -29,15 +29,6 @@
     color: var(--primary-color);
 }
 
-.underlineWrapper {
-    margin-bottom: 40px;
-    display: inline-block;
-}
-
-.greenVector {
-    object-fit: contain;
-}
-
 .description {
     font-size: 18px;
     line-height: 1.7;

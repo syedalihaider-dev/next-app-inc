@@ -25,42 +25,42 @@ const tabs = [
         label: 'Project Planning',
         title: 'Project Planning',
         description: 'AR and VR projects require careful planning; early wrong technical choices can ruin the experience. Our team defines your use case, hardware, tracking needs, and content strategy, then scopes the project with honest estimates for development, 3D assets, and testing timelines.',
-        image: '/process-steps/step-01.webp'
+        image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
         description: 'Immersive experience design differs from flat-screen apps by creating spatial wireframes and storyboards that guide user movement, object placement, interaction triggers, and flow. This phase clarifies concepts and aligns your team before 3D work begins.',
-        image: '/process-steps/step-02.webp'
+        image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
         description: 'We create a functional AR or VR prototype that can be worn or used with a phone. This proof-of-concept showcases core spatial interactions, allowing you to validate the experience aligned with your goals before full production.',
-        image: '/process-steps/step-03.webp'
+        image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
         description: 'Our developers build your AR or VR application using Unity or Unreal Engine, integrating ARKit, ARCore, or WebXR based on your target platforms. 3D modelers, animators, and engineers work in parallel sprints, delivering iterative builds for testing throughout, not just at the end.',
-        image: '/process-steps/step-04.webp'
+        image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
         description: "AR and VR QA tests dimensions standard app testing doesn't cover, such as tracking stability, latency, motion sickness risk, spatial accuracy, and rendering performance on various devices. We test on all supported headsets and mobiles, optimize frame rates, and ensure comfort during extended use.",
-        image: '/process-steps/step-05.webp'
+        image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
         description: 'We handle app store submissions for iOS, Android AR, Meta Quest, SteamVR, and other platform VR deployments. Post-launch, we monitor performance, gather user feedback, and iterate, as immersive tech evolves fast and your product should too.',
-        image: '/process-steps/step-06.webp'
+        image: '/services/deployment-and-launch.webp'
     }
 ];
 
@@ -74,9 +74,8 @@ const ARVRAppDevelopmentPage = () => {
                         Step <span className={styles.purpleText}>Inside</span> the <span className={styles.purpleText}>Experience.</span> Your <span className={styles.purpleText}>Users</span> Will <span className={styles.purpleText}>Never</span> Look Back.
                     </>
                 }
-                underlineImage="/green-vector.webp"
                 description="Augmented and virtual reality are rewriting how people shop, learn, train, and explore. We build AR/VR applications that don't just impress, they change the way your users interact with your brand."
-                bgImage="/services/ar-vr-app-development/banner-bg.webp"
+                bgImage="/services/ar-vr-banner-bg.webp"
             />
             <ServiceSection 
                 heading="The Real Business Case for "
@@ -88,7 +87,7 @@ const ARVRAppDevelopmentPage = () => {
                     "Spatial Interaction Design",
                     "Multi-Platform Support"
                 ]}
-                mockupImage="/services/ios-app-development/ios-hand-mockup.webp"
+                mockupImage="/services/ios-hand-mockup.webp"
             />
             <AwardsSection />
             <ServicesListSection />

@@ -25,42 +25,42 @@ const tabs = [
         label: 'Project Planning',
         title: 'Project Planning',
         description: 'We begin by assessing whether Flutter or React Native is the right fit for your product, audience, and business goals. Our analysts define the project scope, create a shared feature roadmap for both platforms, and produce cost and timeline estimates that reflect the true efficiency of cross-platform development.',
-        image: '/process-steps/step-01.webp'
+        image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
         description: 'We design a unified wireframe that works beautifully across iOS and Android, accounting for platform-specific conventions while maintaining a consistent experience. This shared visual blueprint speeds up the design process and ensures both platforms feel intentional, not compromised.',
-        image: '/process-steps/step-02.webp'
+        image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
         description: 'You get an interactive prototype that works on both iOS and Android simultaneously, letting you experience the cross-platform result firsthand. Feedback gathered here shapes the final product before development begins, reducing costly revisions and keeping the project on track.',
-        image: '/process-steps/step-03.webp'
+        image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
         description: 'Our engineers build your app using Flutter or React Native, writing shared business logic while handling platform-specific nuances where needed. Agile sprints keep you involved throughout, with regular builds delivered to both iOS and Android for testing and review at every stage.',
-        image: '/process-steps/step-04.webp'
+        image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
         description: "Cross-platform doesn't mean half-tested. We run full QA cycles on both iOS and Android, checking for platform-specific rendering issues, performance parity, and native integration accuracy. Every device type, screen size, and OS version is covered before we call it done.",
-        image: '/process-steps/step-05.webp'
+        image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
         description: 'We manage simultaneous submission to both the App Store and Google Play, coordinating review cycles, preparing store assets for both platforms, and ensuring a synchronized launch. Your app goes live on iOS and Android at the same time, with no delays and no shortcuts.',
-        image: '/process-steps/step-06.webp'
+        image: '/services/deployment-and-launch.webp'
     }
 ];
 
@@ -74,9 +74,8 @@ const CrossPlatformAppDevelopmentPage = () => {
                     One <span className={styles.purpleText}> App.</span> Every <span className={styles.purpleText}>Device.</span> Zero Compromise on <span className={styles.purpleText}>Experience.</span>
                     </>
                 }
-                underlineImage="/green-vector.webp"
                 description="Why build twice when you can build once and reach everyone? Our cross-platform apps deliver native-quality experiences on iOS and Android from a single, maintainable codebase."
-                bgImage="/services/cross-platform-app-development/banner-bg.webp"
+                bgImage="/services/cross-platform-banner-bg.webp"
             />
             <ServiceSection 
                 heading="Cross-Platform Done Right : "
@@ -88,7 +87,7 @@ const CrossPlatformAppDevelopmentPage = () => {
                     "Native-Like Performance",
                     "Rapid Market Entry"
                 ]}
-                mockupImage="/services/ios-app-development/ios-hand-mockup.webp"
+                mockupImage="/services/ios-hand-mockup.webp"
             />
             <AwardsSection />
             <ServicesListSection />

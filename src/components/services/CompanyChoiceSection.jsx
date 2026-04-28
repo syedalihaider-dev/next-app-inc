@@ -8,22 +8,22 @@ const CompanyChoiceSection = () => {
         {
             title: 'Discovery & Strategy',
             description: 'We get under the hood of your business — understanding your goals, users, and competition before a single line of code is written.',
-            icon: '/about/development-icon.webp'
+            icon: '/services/icon-discovery-and-strategy.webp'
         },
         {
             title: 'UX/UI Design',
             description: "Our designers craft intuitive, beautiful interfaces that guide users naturally and reflect your brand's personality at every touchpoint.",
-            icon: '/about/development-icon.webp'
+            icon: '/services/icon-ux-ui-design.webp'
         },
         {
             title: 'Development',
             description: 'Our engineers build clean, scalable code using modern frameworks — delivering both performance and flexibility for future growth.',
-            icon: '/about/development-icon.webp'
+            icon: '/services/icon-development.webp'
         },
         {
             title: 'Launch & Deployment',
             description: 'We handle app store submissions, server deployments, and go-live checklists so your launch is smooth and stress-free.',
-            icon: '/about/development-icon.webp'
+            icon: '/services/icon-launch-and-deployment.webp'
         }
     ];
 
@@ -53,14 +53,14 @@ const CompanyChoiceSection = () => {
                                     <div className={styles.col1}>
                                         <div className={styles.card}>
                                             <div className={styles.iconBox}>
-                                                <Image src={cards[0].icon} alt="icon" width={40} height={40} />
+                                                <Image src={cards[0].icon} alt="icon" width={62} height={62} />
                                             </div>
                                             <h4 className={styles.cardTitle}>{cards[0].title}</h4>
                                             <p className={styles.cardDesc}>{cards[0].description}</p>
                                         </div>
                                         <div className={styles.card}>
                                             <div className={styles.iconBox}>
-                                                <Image src={cards[1].icon} alt="icon" width={40} height={40} />
+                                                <Image src={cards[1].icon} alt="icon" width={62} height={62} />
                                             </div>
                                             <h4 className={styles.cardTitle}>{cards[1].title}</h4>
                                             <p className={styles.cardDesc}>{cards[1].description}</p>
@@ -71,14 +71,14 @@ const CompanyChoiceSection = () => {
                                     <div className={styles.col2}>
                                         <div className={styles.card}>
                                             <div className={styles.iconBox}>
-                                                <Image src={cards[2].icon} alt="icon" width={40} height={40} />
+                                                <Image src={cards[2].icon} alt="icon" width={62} height={62} />
                                             </div>
                                             <h4 className={styles.cardTitle}>{cards[2].title}</h4>
                                             <p className={styles.cardDesc}>{cards[2].description}</p>
                                         </div>
                                         <div className={styles.card}>
                                             <div className={styles.iconBox}>
-                                                <Image src={cards[3].icon} alt="icon" width={40} height={40} />
+                                                <Image src={cards[3].icon} alt="icon" width={62} height={62} />
                                             </div>
                                             <h4 className={styles.cardTitle}>{cards[3].title}</h4>
                                             <p className={styles.cardDesc}>{cards[3].description}</p>
