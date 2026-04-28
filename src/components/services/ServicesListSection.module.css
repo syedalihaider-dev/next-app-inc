@@ -28,9 +28,6 @@
 }
 
 .heading {
-    font-size: 65px;
-    font-weight: 800;
-    line-height: 1.1;
     color: #fff;
     margin-bottom: 15px;
 }
@@ -144,41 +141,229 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
-    .heading {
-        font-size: 50px;
+@media (max-width: 1600px) {
+    .servicesSection {
+        padding: 80px 0;
     }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+    }
+
+    .headerDesc {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .serviceItem {
+        margin-top: 15px;
+    }
+
+    .itemInner {
+        padding: 20px;
+    }
+
+    .idCol {
+        gap: 15px;
+        width: 6%;
+    }
+
+    .idText {
+        font-size: 22px;
+    }
+
+    .titleCol {
+        width: 40%;
+        gap: 15px;
+    }
+
     .serviceTitle {
-        font-size: 24px;
+        font-size: 25px;
+    }
+
+    .descCol {
+        width: 54%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .servicesSection {
+        padding: 60px 0;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .headerDesc {
+        font-size: 16px;
+    }
+
+    .serviceItem {
+        margin-top: 10px;
+    }
+
+    .itemInner {
+        padding: 15px;
+    }
+
+    .idCol {
+        gap: 15px;
+        width: 6%;
+    }
+
+    .idText {
+        font-size: 20px;
+    }
+
+    .titleCol {
+        width: 40%;
+        gap: 10px;
+    }
+
+    .serviceTitle {
+        font-size: 22px;
+    }
+
+    .serviceItem:hover .hoverButton {
+        height: 50px;
+    }
+
+    .descCol {
+        width: 54%;
+    }
+
+    .serviceDesc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .servicesSection {
+        padding: 40px 0;
+    }
+
+    .header {
+        margin-bottom: 0px;
+    }
+
+    .headerDesc {
+        font-size: 14px;
+    }
+
+    .idText {
+        font-size: 18px;
+    }
+
+    .serviceTitle {
+        font-size: 18px;
+    }
+
+    .serviceDesc {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 991px) {
     .itemInner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
     }
-    .idCol, .titleCol, .descCol {
+
+    .idCol {
+        gap: 15px;
+        width: 10%;
+    }
+
+    .idText {
+        font-size: 20px;
+    }
+
+    .titleCol {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .serviceTitle {
+        font-size: 22px;
+    }
+
+    .hoverButton {
+        display: none !important;
+    }
+
+    .descCol {
         width: 100%;
     }
+
+    .serviceDesc {
+        font-size: 16px;
+        padding-left: 65px;
+    }
+}
+
+@media (max-width: 767px) {
     .idCol {
-        margin-bottom: 10px;
+        gap: 15px;
+        width: 15%;
     }
-    .separator {
-        display: none;
+
+    .titleCol {
+        width: 85%;
+        gap: 0px;
     }
-    .serviceItem:hover .hoverButton {
-        height: auto;
-        margin-top: 15px;
+
+    .descCol {
+        width: 100%;
+    }
+
+    .serviceDesc {
+        font-size: 14px;
+        padding-left: 70px;
+    }
+
+    .headerDesc {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 575px) {
-    .heading {
-        font-size: 35px;
+
+    .heading br,
+    .idCol {
+        display: none !important;
     }
+
+    .titleCol {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .serviceTitle {
+        font-size: 18px;
+    }
+
+    .descCol {
+        width: 100%;
+    }
+
+    .serviceDesc {
+        font-size: 14px;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .itemInner {
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+
     .headerDesc {
-        font-size: 16px;
+        max-width: 100%;
     }
 }
