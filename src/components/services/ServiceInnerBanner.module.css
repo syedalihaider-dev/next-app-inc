@@ -39,7 +39,6 @@
     color: #fff;
     font-size: 85px;
     font-weight: 800;
-    line-height: 1.1;
     margin-bottom: 20px;
 }
 
@@ -66,31 +65,107 @@
     justify-content: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
+    .serviceBanner {
+        padding: 180px 0 250px;
+    }
+
+    .badge {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
     .heading {
-        font-size: 65px;
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+
+    .desc {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .serviceBanner {
+        padding: 170px 0 170px;
+    }
+
+    .badge {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .heading {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .serviceBanner {
+        padding: 150px 0 150px;
+    }
+
+    .badge {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 991px) {
     .serviceBanner {
-        padding-top: 180px;
-        min-height: 700px;
-        border-radius: 0 0 50px 50px;
-        margin-bottom: -50px;
+        padding: 130px 0 120px;
     }
-    
+
+    .badge {
+        font-size: 14px;
+    }
+
     .heading {
-        font-size: 55px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceBanner {
+        padding: 110px 0 120px;
+    }
+
+    .heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .desc {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 575px) {
-    .heading {
-        font-size: 38px;
+    .serviceBanner {
+        padding: 110px 0 100px;
     }
-    
-    .desc {
-        font-size: 16px;
+
+    .heading {
+        font-size: 25px;
+        line-height: 35px;
     }
 }

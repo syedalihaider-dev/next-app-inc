@@ -1,0 +1,377 @@
+.serviceSection {
+    padding: 150px 0 100px;
+    position: relative;
+    background: linear-gradient(269deg, #FFFFFF 18%, #D7FCFF 83%);
+    z-index: 20;
+    overflow: hidden;
+    border-radius: 180px 180px 0 0;
+    margin-top: -165px;
+}
+
+.heading {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.purpleText {
+    color: var(--primary-color);
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.checkIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.statsRow {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    max-width: 600px;
+}
+
+.statValue {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.vLine {
+    width: 2px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.statLabel {
+    font-size: 22px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.btnRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phoneBtn {
+    padding: 15px 35px;
+    border: 1px solid #1a1a1a;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: .3s linear;
+}
+
+.phoneBtn:hover {
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mockupWrapper {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.mockupBg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(180deg, #6243FA 0%, #B2FF00 100%);
+    filter: blur(120px);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.3;
+    right: 0;
+    bottom: 10%;
+}
+
+.mockupImg {
+    z-index: 2;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    object-position: right bottom;
+}
+
+@media (max-width: 1600px) {
+    .serviceSection {
+        padding: 80px 0 80px;
+        border-radius: 100px 100px 0 0;
+        margin-top: -135px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: unset;
+        margin-bottom: 30px;
+        max-width: 650px;
+    }
+
+    .features {
+        gap: 10px;
+        margin: 0 0 30px;
+    }
+
+    .features li {
+        font-size: 16px;
+    }
+
+    .checkIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .statsRow {
+        gap: 25px;
+        max-width: 100%;
+        margin-bottom: 25px;
+        padding: 25px 0;
+    }
+
+    .statValue {
+        font-size: 70px;
+    }
+
+    .statLabel {
+        font-size: 20px;
+    }
+
+    .mockupWrapper {
+        right: 40px;
+        width: 45%;
+    }
+
+    .mockupBg {
+        width: 550px;
+        height: 550px;
+    }
+
+    .mockupImg {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .serviceSection {
+        padding: 60px 0 60px;
+        border-radius: 80px 80px 0 0;
+        margin-top: -80px;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .features {
+        gap: 10px;
+        margin: 0 0 20px;
+    }
+
+    .features li {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .checkIcon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .statsRow {
+        gap: 25px;
+        margin-bottom: 25px;
+        padding: 10px 0;
+    }
+
+    .statValue {
+        font-size: 60px;
+    }
+
+    .statLabel {
+        font-size: 18px;
+    }
+
+    .mockupWrapper {
+        right: 50px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .serviceSection {
+        padding: 40px 0 40px;
+        border-radius: 60px 60px 0 0;
+        margin-top: -60px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        gap: 10px;
+        margin: 0 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .features li {
+        width: 48%;
+        gap: 15px;
+    }
+
+    .statsRow {
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+
+    .statValue {
+        font-size: 50px;
+    }
+
+    .statLabel {
+        font-size: 16px;
+    }
+
+    .phoneBtn {
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+
+    .mockupWrapper {
+        right: 40px;
+        width: 45%;
+    }
+
+    .mockupBg {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .serviceSection {
+        padding: 40px 0 0;
+    }
+
+    .features {
+        gap: 10px;
+        margin: 0 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .features li {
+        width: 48%;
+        gap: 15px;
+    }
+
+    .statValue {
+        font-size: 40px;
+    }
+
+    .phoneBtn {
+        padding: 14px 25px;
+    }
+
+    .mockupWrapper {
+        width: 300px;
+        position: unset;
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
+    .mockupBg {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .statValue {
+        font-size: 35px;
+    }
+
+    .phoneBtn {
+        padding: 13px 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .serviceSection {
+        border-radius: 40px 40px 0 0;
+        margin-top: -40px;
+    }
+
+    .statValue {
+        font-size: 25px;
+    }
+
+    .statLabel {
+        font-size: 14px;
+    }
+
+    .phoneBtn {
+        padding: 13px 25px;
+    }
+
+    .features li {
+        width: 100%;
+    }
+
+    .btnRow {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}

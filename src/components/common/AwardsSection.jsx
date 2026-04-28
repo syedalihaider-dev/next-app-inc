@@ -54,7 +54,7 @@ const AwardsSection = () => {
                         <div className={styles.awardsGrid}>
                             <div className="row g-4">
                                 {awards.map((award, index) => (
-                                    <div className="col-md-3 col-6" key={index}>
+                                    <div className="col-12 col-sm-6 col-md-3" key={index}>
                                         <div className={styles.awardCard}>
                                             <div className={styles.iconBox}>
                                                 <Image

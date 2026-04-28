@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './IOSAppSection.module.css'; // Reusing the same styling
+import styles from './ServicesSection.module.css'; // Reusing the same styling
 import MyButton from '@/components/layout/MyButton';
 import { SITE_CONFIG } from '@/configs/site-config';
 
@@ -13,7 +13,7 @@ const ServiceSection = ({
     mockupAlt = "Mockup"
 }) => {
     return (
-        <section className={styles.iosAppSection}>
+        <section className={styles.serviceSection}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
