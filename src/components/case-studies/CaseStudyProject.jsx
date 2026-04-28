@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './CaseStudyProject.module.css';
+import MyButton from '@/components/layout/MyButton';
 
 const CaseStudyProject = () => {
     return (
@@ -54,6 +55,9 @@ const CaseStudyProject = () => {
                                     Congue Faucibus Morbi Tristique Felis. Integ Er Diam Ornare Diam
                                     Adipiscing Congue Nunc Porttitor Donec.
                                 </p>
+                            </div>
+                            <div className={styles.btnWrapper}>
+                                <MyButton text="Get Started" className="btn_black" />
                             </div>
                         </div>
                     </div>

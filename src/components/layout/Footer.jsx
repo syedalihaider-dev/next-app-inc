@@ -45,6 +45,15 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
                         <div className={styles.footerCol}>
+                            <h4 className={styles.footerTitle}>Industries</h4>
+                            <ul className={styles.footerLinks}>
+                                <li><Link href="/industries/ecommerce-app-development">eCOMMERCE APP DEVELOPMENT</Link></li>
+                                <li><Link href="/industries/education-app-development">EDUCATION APP DEVELOPMENT</Link></li>
+                                <li><Link href="/industries/finance-app-development">FINANCE APP DEVELOPMENT</Link></li>
+                                <li><Link href="/industries/healthcare-app-development">HEALTHCARE APP DEVELOPMENT</Link></li>
+                            </ul>
+                        </div>
+                        {/* <div className={styles.footerCol}>
                             <h4 className={styles.footerTitle}>Contact Us</h4>
                             <div className={styles.contactInfo}>
                                 <p className={styles.infoLabel}>EMAIL US:</p>
@@ -54,7 +63,7 @@ const Footer = () => {
                                 <p className={styles.infoLabel}>PHONE:</p>
                                 <p><a href={`tel:${SITE_CONFIG.contact.phone.replace(/[^0-9+]/g, '')}`}>{SITE_CONFIG.contact.phone}</a></p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <div className={styles.footerCol}>

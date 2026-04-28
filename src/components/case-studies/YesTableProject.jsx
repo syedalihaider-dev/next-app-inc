@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './YesTableProject.module.css';
+import MyButton from '@/components/layout/MyButton';
 
 const YesTableProject = () => {
     return (
@@ -17,7 +18,6 @@ const YesTableProject = () => {
 
             <div className="container">
                 <div className="row align-items-center">
-                    {/* Left Column: Mockups */}
                     <div className="col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
                         <div className={styles.mockupWrapper}>
                             <Image
@@ -31,7 +31,6 @@ const YesTableProject = () => {
                         </div>
                     </div>
 
-                    {/* Right Column: Project Info */}
                     <div className="col-lg-6 order-1 order-lg-2">
                         <div className={styles.infoCol}>
                             <div className={styles.clientLogo}>
@@ -45,7 +44,6 @@ const YesTableProject = () => {
                                     />
                                 </div>
                             </div>
-
                             <div className={styles.textContent}>
                                 <p>
                                     Lorem Ipsum Dolor Sit Amet Consectetur. Donec Mattis Habitant Frin
@@ -58,6 +56,9 @@ const YesTableProject = () => {
                                     Congue Faucibus Morbi Tristique Felis. Integ Er Diam Ornare Diam
                                     Adipiscing Congue Nunc Porttitor Donec.
                                 </p>
+                            </div>
+                            <div className={styles.btnWrapper}>
+                                <MyButton text="Get Started" className="btn_black" />
                             </div>
                         </div>
                     </div>

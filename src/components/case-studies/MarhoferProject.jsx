@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './MarhoferProject.module.css';
+import MyButton from '@/components/layout/MyButton';
 
 const MarhoferProject = () => {
     return (
@@ -45,6 +46,9 @@ const MarhoferProject = () => {
                                     Congue Faucibus Morbi Tristique Felis. Integ Er Diam Ornare Diam
                                     Adipiscing Congue Nunc Porttitor Donec.
                                 </p>
+                            </div>
+                            <div className={styles.btnWrapper}>
+                                <MyButton text="Get Started" className="btn_black" />
                             </div>
                         </div>
                     </div>
