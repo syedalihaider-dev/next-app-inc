@@ -44,16 +44,10 @@ const CaseStudyProject = () => {
 
                             <div className={styles.textContent}>
                                 <p>
-                                    Lorem Ipsum Dolor Sit Amet Consectetur. Donec Mattis Habitant Frin
-                                    Gilla Interdum Lectus Nisi Sit Vestibulum Eleifend. Etiam Enim Phar
-                                    Etra Arcu Auctor Commodo Varius Miibulum Eleifend. Etiam Enim Phar
-                                    Etra Arcu Auctor Commodo Varius Mi Est Im St Imperdiet. <strong>Phasellus
-                                        Ut Ac Aliquam Sed Ullamcorper Maecenas Diam. Sapien Sit Pulvinar
-                                        Nunc Nunc Faucibus Facilisi Facilisi Imperdiet.</strong>
-                                </p>
-                                <p>
-                                    Congue Faucibus Morbi Tristique Felis. Integ Er Diam Ornare Diam
-                                    Adipiscing Congue Nunc Porttitor Donec.
+                                    A hybrid social and event platform designed to combine event ticketing with community engagement features. <br /><br />
+                                    The platform allows users to sell tickets for events while also providing a social layer where users can post, interact, and engage around events and community activities.
+                                    It functions both as a ticketing system and a social platform, enabling event organizers to promote events while building a community presence around them.
+                                    The system is designed to increase event visibility, encourage participation, and create a continuous engagement loop between organizers and users.
                                 </p>
                             </div>
                             <div className={styles.btnWrapper}>

@@ -46,15 +46,9 @@ const YesTableProject = () => {
                             </div>
                             <div className={styles.textContent}>
                                 <p>
-                                    Lorem Ipsum Dolor Sit Amet Consectetur. Donec Mattis Habitant Frin
-                                    Gilla Interdum Lectus Nisi Sit Vestibulum Eleifend. Etiam Enim Phar
-                                    Etra Arcu Auctor Commodo Varius Mi Est Imperdiet. <strong>Phasellus
-                                        Ut Ac Aliquam Sed Ullamcorper Maecenas Diam. Sapien Sit Pulvinar
-                                        Nunc Nunc Faucibus Facilisi Facilisi Imperdiet.</strong>
-                                </p>
-                                <p>
-                                    Congue Faucibus Morbi Tristique Felis. Integ Er Diam Ornare Diam
-                                    Adipiscing Congue Nunc Porttitor Donec.
+                                    An event management and guest intelligence platform designed to help hosts understand, manage, and personalize guest experiences for events. <br /><br />
+                                    The system allows hosts to capture detailed guest preferences, including dietary restrictions, allergies, mood indicators, and general preferences for a specific event. This information is then used to align event experiences with individual guest profiles.
+                                    It also functions as an event management system by tracking events, managing guest lists, and sending invitations. Guests can be invited to events, and their engagement and attendance can be tracked within the system.
                                 </p>
                             </div>
                             <div className={styles.btnWrapper}>

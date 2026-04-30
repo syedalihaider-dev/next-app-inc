@@ -35,16 +35,9 @@ const MarhoferProject = () => {
 
                             <div className={styles.textContent}>
                                 <p>
-                                    Lorem Ipsum Dolor Sit Amet Consectetur. Donec Mattis Habitant Frin
-                                    Gilla Interdum Lectus Nisi Sit Vestibulum Eleifend. Etiam Enim Phar
-                                    Etra Arcu Auctor Commodo Varius Miibulum Eleifend. Etiam Enim Phar
-                                    Etra Arcu Auctor Commodo Varius Mi Est Im St Imperdiet. <strong>Phasellus
-                                        Ut Ac Aliquam Sed Ullamcorper Maecenas Diam. Sapien Sit Pulvinar
-                                        Nunc Nunc Faucibus Facilisi Facilisi Imperdiet.</strong>
-                                </p>
-                                <p>
-                                    Congue Faucibus Morbi Tristique Felis. Integ Er Diam Ornare Diam
-                                    Adipiscing Congue Nunc Porttitor Donec.
+                                    This platform is a multi-role enterprise operational system designed for renewable energy project management and execution. <br /><br />
+                                    The platform supports four primary user roles: field technicians, managers, clients, and super administrators. Each role has defined responsibilities within the system, ensuring structured workflow execution across the organization.
+                                    The system enables project tracking with detailed reporting, allowing managers and stakeholders to monitor progress in real time. It includes check-in and check-out functionality for field technicians, which is directly used for timesheet tracking and payroll processing.
                                 </p>
                             </div>
                             <div className={styles.btnWrapper}>
