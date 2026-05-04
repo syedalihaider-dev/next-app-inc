@@ -27,9 +27,7 @@ const CaseStudyBanner = () => {
                                 <span className={styles.greenText}>Quality Work.</span>
                             </h1>
                             <p className={styles.desc}>
-                                Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod
-                                nulla quis venenatis tellus. Nulla viverra amet suspendisse luctus ele
-                                mentum nam morbi sit. Risus tempus nisl nec faucibus.
+                                NextAppInc empowers businesses with innovative digital solutions designed for growth and success. We combine creativity, technology, and strategy to build future-ready brands.
                             </p>
                             <div className={styles.btnWrapper}>
                                 <MyButton text="Get Started" className="btn_white" />

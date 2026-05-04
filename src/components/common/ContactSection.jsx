@@ -239,9 +239,10 @@ const ContactSection = ({ isNewDesign = false }) => {
                                             </label>
                                             <select name="budget" value={formData.budget} onChange={handleChange}>
                                                 <option value="" disabled>Select Budget</option>
-                                                <option value="$200k">$200k</option>
-                                                <option value="$500k">$500k</option>
-                                                <option value="$1M+">$1M+</option>
+                                                <option value="$3000 to $5000">$3000 to $5000</option>
+                                                <option value="$5000 to $10000">$5000 to $10000</option>
+                                                <option value="$10000 to $25000">$10000 to $25000</option>
+                                                <option value="$25000 to $50000">$25000 to $50000</option>
                                             </select>
                                         </div>
                                     </div>

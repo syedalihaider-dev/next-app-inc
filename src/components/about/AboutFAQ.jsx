@@ -6,28 +6,44 @@ import MyButton from '@/components/layout/MyButton';
 
 const FAQ_DATA = [
     {
-        question: "How do I choose the best tech solution for my business?",
-        answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque. Vitae A Volutpat Sed Enim. Nulla Consectetur."
+        question: "What is Next App?",
+        answer: "Next App is a US-based digital product studio specializing in mobile app development, web development, game development, e-commerce platforms, and custom software solutions. We partner with businesses that want more than average. We create powerful, scalable, and user-focused digital products designed to deliver real results."
     },
     {
-        question: "Can Next App handle custom app development?",
-        answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque."
+        question: "What services does Next App offer?",
+        answer: "We offer end-to-end digital product development, including mobile apps (iOS &amp; Android), web applications, e-commerce platforms, custom software, games, blockchain solutions, and AR/VR experiences. From initial strategy and design to development, testing, and post-launch support, we handle every stage of the product lifecycle."
     },
     {
-        question: "What is the typical timeline for a development project?",
-        answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque."
+        question: "What makes Next App different from other app development companies?",
+        answer: "We start every project by deeply understanding the real business problem. Our single unified team works across all disciplines with complete transparency; no handoffs, no hidden processes. We build for real users and design products that are scalable and built to last beyond launch."
     },
     {
-        question: "Do you offer post-launch support and maintenance?",
-        answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque."
+        question: "What is Next App’s mission?",
+        answer: "Our mission is to design and develop powerful mobile and web applications that solve genuine business challenges. We create reliable, scalable, and performance-driven solutions that improve efficiency, enhance user experience, and support long-term business growth."
     },
     {
-        question: "How secure is my data with your cloud solutions?",
-        answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque."
+        question: "What industries does Next App work with?",
+        answer: "We work with businesses across multiple industries including healthcare, finance, retail, education, logistics, entertainment, and e-commerce. Our experience allows us to deliver tailored solutions regardless of industry or business size."
     },
     {
-        question: "What platforms do you specialize in for mobile apps?",
-        answer: "Lorem Ipsum Dolor Sit Amet Consectetur. Nec In Turpis Vivamus Duis At A Vitae Hac Auc Tor. Vel Euismod Diam Nunc Nisl Eu Facilisis Integer Amet Eget. Suspendisse Orci Faucibus Gravida Scelerisque."
+        question: "How transparent is the development process at Next App?",
+        answer: "We practice 100% transparency. Clients get real-time access to milestone reviews, sprint updates, testing reports, and deployment plans. You’ll always know exactly where your project stands."
+    },
+    {
+        question: "What is Next App’s vision?",
+        answer: "Our vision is to become a globally trusted technology partner known for delivering innovative, high-quality digital products. We aim to help businesses of all sizes transform their ideas into impactful solutions that drive measurable success and long-term value."
+    },
+    {
+        question: "What are Next App’s core values?",
+        answer: "Our core values are transparency, accountability, quality, innovation, and teamwork. We believe in honest communication, attention to detail, continuous improvement, and building solutions that are not only great today but ready for tomorrow."
+    },
+    {
+        question: "Do you only build apps or also provide strategic guidance?",
+        answer: "We go far beyond just coding. We act as a true product partner helping with product strategy, user research, market analysis, technical architecture, and long-term roadmap planning. Many clients engage us for CTO-level advisory alongside development."
+    },
+    {
+        question: "Why should I choose Next App for my project?",
+        answer: "You should choose Next App if you want a partner that truly cares about outcomes, not just deliverables. We focus on understanding your goals, building for real users, delivering exceptional quality, and creating products that scale and grow with your business for years to come."
     }
 ];
 
