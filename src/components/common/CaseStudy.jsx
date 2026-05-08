@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -50,14 +50,18 @@ const CaseStudy = () => {
             </div>
             <div className={`${styles.sliderWrapper}`}>
                 <Swiper
-                    modules={[Navigation, Pagination]}
+                    modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={30}
                     slidesPerView={1}
                     loop={false}
+                    autoplay={{
+                        delay: 1000,
+                        disableOnInteraction: false,
+                    }}
                     breakpoints={{
                         768: { slidesPerView: 1 },
                         991: { slidesPerView: 2 },
-                        1600: { slidesPerView: 3 },
+                        1601: { slidesPerView: 3 },
                     }}
                     className={styles.casesSwiper}
                 >

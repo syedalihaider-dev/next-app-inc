@@ -1,0 +1,109 @@
+.thankYouContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.backgroundGlow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(254, 36, 0, 0.15) 0%, rgba(254, 36, 0, 0) 70%);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.gridBg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.iconWrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkIcon {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #FE2400 0%, #FF5E3A 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(254, 36, 0, 0.3);
+    animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.actionArea {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+}

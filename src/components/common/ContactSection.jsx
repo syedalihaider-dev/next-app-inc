@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './ContactSection.module.css';
 import MyButton from '@/components/layout/MyButton';
 import { SITE_CONFIG } from '@/configs/site-config';
 
 const ContactSection = ({ isNewDesign = false }) => {
-    const [selectedServices, setSelectedServices] = useState(['Unity Game Development']);
+    const router = useRouter();
+    const [selectedServices, setSelectedServices] = useState([]);
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -22,6 +24,12 @@ const ContactSection = ({ isNewDesign = false }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (selectedServices.length === 0) {
+            setStatus({ loading: false, success: false, error: 'Please select at least one service.' });
+            return;
+        }
+
         setStatus({ loading: true, success: false, error: null });
 
         try {
@@ -40,9 +48,9 @@ const ContactSection = ({ isNewDesign = false }) => {
             if (response.ok) {
                 setStatus({ loading: false, success: true, error: null });
                 setFormData({ name: '', phone: '', email: '', budget: '', msg: '' });
-                setSelectedServices(['Unity Game Development']);
+                setSelectedServices([]);
                 // Redirect user to thank you page
-                window.location.href = 'https://www.nextappsinc.com';
+                router.push('/thank-you');
             } else {
                 setStatus({ loading: false, success: false, error: result.error || 'Failed to submit form' });
             }
@@ -102,7 +110,7 @@ const ContactSection = ({ isNewDesign = false }) => {
                 </svg>
             </div>
             <div className={styles.gridBg}>
-                <Image src="/services-bg.webp" alt="Grid Background" layout="fill" objectFit="cover" />
+                <Image src="/services-bg.webp" alt="Grid Background" fill style={{ objectFit: 'cover' }} />
             </div>
 
             <div className="container">
@@ -148,18 +156,18 @@ const ContactSection = ({ isNewDesign = false }) => {
                                 </>
                             ) : (
                                 <>
-                                    <div className={styles.contactItem}>
+                                    <a href={`mailto:${SITE_CONFIG.contact.email}`} className={`${styles.contactItem} ${styles.contactLink}`}>
                                         <div className={styles.iconBox}>
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         </div>
                                         <span className={styles.contactText}>{SITE_CONFIG.contact.email}</span>
-                                    </div>
-                                    <div className={styles.contactItem}>
+                                    </a>
+                                    <a href={`tel:${SITE_CONFIG.contact.phone.replace(/[^0-9+]/g, '')}`} className={`${styles.contactItem} ${styles.contactLink}`}>
                                         <div className={styles.iconBox}>
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FE2400" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.5 19.5 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                         </div>
                                         <span className={styles.contactText}>{SITE_CONFIG.contact.phone}</span>
-                                    </div>
+                                    </a>
                                 </>
                             )}
 
@@ -184,7 +192,7 @@ const ContactSection = ({ isNewDesign = false }) => {
 
                     <div className="col-lg-7">
                         <div className={styles.formCol}>
-                            <h3 className={styles.servicesTitle}>Services</h3>
+                            <h3 className={styles.servicesTitle}>Services*</h3>
                             <div className={styles.servicesPills}>
                                 {services.map((service) => (
                                     <div
@@ -237,7 +245,7 @@ const ContactSection = ({ isNewDesign = false }) => {
                                                     </>
                                                 )}
                                             </label>
-                                            <select name="budget" value={formData.budget} onChange={handleChange}>
+                                            <select name="budget" value={formData.budget} onChange={handleChange} required>
                                                 <option value="" disabled>Select Budget</option>
                                                 <option value="$3000 to $5000">$3000 to $5000</option>
                                                 <option value="$5000 to $10000">$5000 to $10000</option>
@@ -250,9 +258,9 @@ const ContactSection = ({ isNewDesign = false }) => {
                                         <div className={styles.inputGroup}>
                                             <label>
                                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                                Project Details
+                                                Project Details*
                                             </label>
-                                            <textarea name="msg" placeholder="Write a message" value={formData.msg} onChange={handleChange}></textarea>
+                                            <textarea name="msg" placeholder="Write a message" value={formData.msg} onChange={handleChange} required></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +272,6 @@ const ContactSection = ({ isNewDesign = false }) => {
                                         className="btn_black"
                                         type="submit"
                                         disabled={status.loading}
-                                        hasArrow={!status.loading && isNewDesign}
                                     />
                                 </div>
                             </form>
