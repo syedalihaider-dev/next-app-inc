@@ -119,7 +119,7 @@ const HealthcareAppPage = () => {
     
 
             <IndustryBanner 
-                industryLabel="Insurance Industry"
+                industryLabel="Agencies Industry"
                 mainTitle={<> Your <span style={{ color: 'var(--primary-color)' }}>Agency Does</span> Great Work. Your<span style={{ color: 'var(--primary-color)' }}> Software Should </span> Too.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="From marketing agencies and creative studios to staffing firms and consultancies, we build the client portals, project platforms, white-label tools, and internal systems that let you scale your agency without scaling your overhead."
