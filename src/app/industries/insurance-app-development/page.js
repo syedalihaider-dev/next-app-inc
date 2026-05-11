@@ -131,8 +131,8 @@ const HealthcareAppPage = () => {
             />
 
             <IndustryConsultationSection 
-                title={<>Insurance Technology That<span style={{ color: 'var(--primary-color)' }}>Earns Policyholder</span> Trust and Keeps It</>}
-                // subLabel="Healthcare is too important for generic software."
+                title={<>Insurance Technology That <span style={{ color: 'var(--primary-color)' }}>Earns Policyholder</span> Trust and Keeps It</>}
+                subLabel="Healthcare is too important for generic software."             
                 description="Insurance customers do not forgive bad digital experiences — they switch carriers. Every platform we build is engineered for the regulatory complexity, data security requirements, and the kind of seamless user experience that keeps policyholders from comparing alternatives."
             />
 
