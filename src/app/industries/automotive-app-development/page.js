@@ -13,40 +13,40 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Insurance App Development | Next App",
-    description: "Next App builds powerful insurance digital solutions from mobile apps and web platforms to custom software and policy management systems. Serving businesses globally.",
+    title: "Automotive App Development | Next Apps",
+    description: "Next Apps develops automotive digital solutions, from dealer management and fleet platforms to EV charging and connected vehicle software, serving global businesses.",
 };
 
 const HealthcareAppPage = () => {
     const services = [
         {
-            title: ' Policy Management & <br/> Quoting Platforms',
-            description: 'End-to-end digital policy administration with online quoting engines, instant coverage binding, renewal automation, and multi-line policy management for brokers and direct carriers.',
+            title: ' Dealer Management  <br/> System (DMS) Apps',
+            description: 'Custom dealer management platforms with inventory management, CRM, F&I tools, service scheduling, and real-time reporting for single-point and dealer group operations.',
             active: false
         },
         {
-            title: ' Claims Processing &  <br/>Automation Apps',
-            description: 'Digital first notice of loss (FNOL) systems, claims intake apps, automated fraud detection, and claims status portals that reduce processing time and improve customer satisfaction.',
+            title: ' Fleet Management & <br/> Telematics Platforms',
+            description: 'End-to-end fleet management apps with GPS tracking, driver behaviour monitoring, maintenance scheduling, fuel analytics, and route optimization for commercial vehicle operators.',
             active: false
         },
         {
-            title: 'Agent & <br/>Broker Portals',
-            description: 'Custom producer portals with real-time commission tracking, pipeline management, policy issuance tools, and integrated CRM functionality for independent agents and captive brokers.',
+            title: 'Connected Vehicle  <br/>& IoT Applications',
+            description: 'Over-the-air update systems, vehicle health monitoring apps, and connected car platforms that turn vehicle data into actionable insights for both drivers and service teams.',
             active: false
         },
         {
-            title: 'Customer Self-Service <br/> Apps & Portals',
-            description: 'Mobile and web apps that let policyholders view coverage, make payments, submit claims, request certificates, and communicate with their agent — 24/7, without a phone call.',
+            title: 'EV Charging Network  <br/> Management',
+            description: 'Charge point operator platforms with network management, session billing, reservation systems, and driver-facing mobile apps for electric vehicle infrastructure operators.',
             active: false
         },
         {
-            title: 'InsurTech & Embedded <br/> Insurance Platforms',
-            description: 'Next-generation embedded insurance solutions, parametric insurance apps, and usage-based insurance platforms powered by IoT, telematics, and real-time data feeds.',
+            title: 'Mobility-as-a-Service  <br/> (MaaS) Platforms',
+            description: 'Ride-sharing, car subscription, and multi-modal mobility platforms with dynamic pricing, driver matching, trip management, and integrated payment processing.',
             active: false
         },
         {
-            title: 'Regulatory Compliance & <br/> Reporting Tools',
-            description: 'Automated compliance monitoring, regulatory filing systems, audit trail dashboards, and state-specific compliance workflows built for insurers operating across multiple jurisdictions..',
+            title: 'Automotive E-Commerce <br/> & Parts Platforms',
+            description: 'Online parts catalogues, service booking systems, and automotive e-commerce platforms built to handle complex fitment data, bulk ordering, and nationwide delivery logistics.',
             active: false
         }
     ];
@@ -54,33 +54,33 @@ const HealthcareAppPage = () => {
     const tabs = [
         {
             id: 'telehealth',
-            title: 'Real-Time Policy & Coverage Data',
-            contentTitle: 'Real-Time Policy & Coverage Data',
-            contentDesc: 'Instant access to live policy data, coverage limits, endorsements, and document retrieval — for agents, adjusters, and policyholders simultaneously.',
+            title: 'Real-Time Vehicle & Asset Tracking',
+            contentTitle: 'Real-Time Vehicle & Asset Tracking',
+            contentDesc: 'Live GPS tracking with geofencing, trip history, idle time alerts, and asset utilization reporting — across any fleet size, any vehicle type.',
             icon: '/industries/healthcare-app-development/tab-icon-01.webp',
             image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         },
         {
             id: 'patient-monitoring',
-            title: 'Automated Claims Workflows',
-            contentTitle: 'Automated Claims Workflows',
-            contentDesc: 'Intelligent claims routing, automated adjudication for qualifying claims, and escalation rules that keep complex cases moving without manual bottlenecks.',
+            title: 'Predictive Maintenance Scheduling',
+            contentTitle: 'Predictive Maintenance Scheduling',
+            contentDesc: 'AI-driven maintenance forecasting that uses mileage, engine data, and service history to predict failures before they happen and schedule service proactively.',
             icon: '/industries/healthcare-app-development/tab-icon-01.webp',
             image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         },
         {
             id: 'billing',
-            title: 'Secure Document Management',
-            contentTitle: 'Secure Document Management',
-            contentDesc: 'Encrypted document storage, e-signature integration, and automated document generation for policies, certificates, endorsements, and claims correspondence.',
+            title: 'Digital Retailing & Online Deal Tools',
+            contentTitle: 'Digital Retailing & Online Deal Tools',
+            contentDesc: 'Customer-facing digital retailing tools that let buyers build their deal, estimate trade-in value, apply for financing, and reserve a vehicle — all before setting foot in the dealership.',
             icon: '/industries/healthcare-app-development/tab-icon-01.webp',
             image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         },
         {
             id: 'analytics',
-            title: 'Multi-State Compliance Engine',
-            contentTitle: 'Multi-State Compliance Engine',
-            contentDesc: 'Rule-based compliance frameworks that adapt policy language, coverage requirements, and disclosure standards to each state or jurisdiction automatically.',
+            title: 'Driver Behaviour & Safety Monitoring',
+            contentTitle: 'Driver Behaviour & Safety Monitoring',
+            contentDesc: 'Telematics-based driver scoring with harsh braking, speeding, and distraction detection — reducing accident risk and insurance premiums for commercial fleet operators..',
             icon: '/industries/healthcare-app-development/tab-icon-01.webp',
             image: '/industries/healthcare-app-development/tab-mockup-01.webp'
         }
@@ -113,31 +113,34 @@ const HealthcareAppPage = () => {
     //     }
     // ];
 
+    
+
+
     return (
         <main>
             <IndustryBanner 
                 industryLabel="Insurance Industry"
-                mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Insurance Industry</span> Is Changing. Your<span style={{ color: 'var(--primary-color)' }}> Digital Platform </span> Should Lead the Way.</>}
+                mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Automotive Industry</span> Is Going Digital.<span style={{ color: 'var(--primary-color)' }}> We Build the </span> Software That Drives It.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
-                description="From InsurTech startups to established carriers, we build secure, scalable, and compliance-ready digital platforms that modernize how policies are sold, claims are processed, and customers are served — all without replacing what already works."
+                description="From dealerships and fleet operators to OEMs and mobility startups, we build automotive platforms that connect vehicles, teams, and customers in ways that legacy systems never could. Your digital transformation starts with the right development partner."
                 bgImage="/industries/healthcare-app-development/banner-bg.webp" 
             />
             
             <IndustryServicesSection 
-                title="<span style='color: var(--primary-color)'>Insurance App Development</span> Solutions <br/> Built for Real Compliance, <span style='color: var(--primary-color)'>Speed,</span> and Customer <span style='color: var(--primary-color)'>Trust</span> "
-                description="Insurance is one of the most complex industries to digitize and one of the most rewarding when done right. We build policy management systems, claims automation platforms, agent portals, and customer-facing apps that handle real-world insurance complexity without hiding it behind bad UX."
+                title="<span style='color: var(--primary-color)'>Automotive App Development</span> Solutions <br/> Built for the <span style='color: var(--primary-color)'> Road </span> <span style='color: var(--primary-color)'>Ahead</span> "
+                description="The automotive industry is increasingly complex and full of digital innovation opportunities. We develop dealer management systems, fleet tracking, EV charging networks, connected vehicle apps, and mobility solutions that convert digital investments into operational efficiency."
                 servicesData={services}
                 mockupImage="/industries/healthcare-app-development/services-mockup.webp" // Placeholder
             />
 
             <IndustryConsultationSection 
-                title={<>Insurance Technology That <span style={{ color: 'var(--primary-color)' }}>Earns Policyholder</span> Trust and Keeps It</>}
-                subLabel="Insurance customers do not forgive bad digital experiences —"             
-                description=" they switch carriers. Every platform we build is engineered for the regulatory complexity, data security requirements, and the kind of seamless user experience that keeps policyholders from comparing alternatives."
+                title={<>Automotive Technology That <span style={{ color: 'var(--primary-color)' }}> Keeps Operations Moving</span> and Customers Coming Back</>}
+                subLabel="The automotive industry runs on precision, timing, and trust."             
+                description=" A dealer whose DMS goes down loses deals. A fleet operator with a broken tracking system loses visibility. We build automotive software with the reliability, real-time performance, and user experience that modern automotive businesses require."
             />
 
             <IndustryTabsSection 
-                title={<><span style={{ color: 'var(--primary-color)' }}>Insurance App</span> Features That Protect <br/> Policyholders, Accelerate <span style={{ color: 'var(--primary-color)' }}>Claims,</span> and <span style={{ color: 'var(--primary-color)' }}>Simplify Operations</span></>}
+                title={<><span style={{ color: 'var(--primary-color)' }}>Insurance App</span> Features That Optimize  <br/> Operations, Protect Assets, and <span style={{ color: 'var(--primary-color)' }}>Delight Drivers</span><span style={{ color: 'var(--primary-color)' }}></span></>}
                 description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results."
                 tabsData={tabs}
             />
@@ -148,7 +151,7 @@ const HealthcareAppPage = () => {
             />
 
             <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Insurance App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Medicine</span></span> Needs</>}
+                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Automotive App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Medicine</span></span> Needs</>}
                 // solutionsData={solutions}
             />
 
