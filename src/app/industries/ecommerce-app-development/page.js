@@ -138,7 +138,7 @@ const EcommerceAppPage = () => {
 
             <IndustryTabsSection 
                 title={<><span style={{ color: 'var(--primary-color)' }}>E-Commerce</span> Features That Drive <span style={{ color: 'var(--primary-color)' }}>Sales</span>, <span style={{ color: 'var(--primary-color)' }}>Reduce Drop-Off</span>, and <span style={{ color: 'var(--primary-color)' }}>Grow Revenue</span></>}
-                description="We build robust, scalable solutions backed by years of experience serving businesses in Healthcare, Finance, E-Commerce, and Education — with technology that drives real results.."
+                description="We build robust, scalable solutions backed by years of experience serving businesses in Healthcare, Finance, E-Commerce, and Education — with technology that drives real results."
                 tabsData={tabs}
             />
 
