@@ -96,20 +96,18 @@ const Footer = () => {
 
                 <div className={styles.bottomBar}>
                     <div className="row align-items-center">
-                        <div className="col-lg-12 text-center">
+                        <div className="col-lg-6">
                             <p className={styles.copyright}>
                                 &copy; COPYRIGHT 2026 | Next App | ALL RIGHTS RESERVED
                             </p>
                         </div>
-                        {/* <div className="col-lg-6 text-md-end">
+                        <div className="col-lg-6 text-lg-end">
                             <ul className={styles.bottomLinks}>
-                                <li><Link href="#">PRIVACY POLICY</Link></li>
+                                <li><Link href="/terms-and-conditions">TERMS & CONDITIONS</Link></li>
                                 <li><span className={styles.separator}>|</span></li>
-                                <li><Link href="#">TERMS & CONDITIONS</Link></li>
-                                <li><span className={styles.separator}>|</span></li>
-                                <li><Link href="#">FAQ</Link></li>
+                                <li><Link href="/privacy-policy">PRIVACY POLICY</Link></li>
                             </ul>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

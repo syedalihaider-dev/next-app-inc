@@ -29,8 +29,9 @@ const ContactBanner = () => {
                             </h1>
 
                             <p className={styles.description}>
-                                Lorem ipsum dolor sit amet consectetur. Tempus sem nulla euismod nulla quis venenatis
-                                tellus. Nulla viverra amet suspendisse luctus ele mentum nam morbi sit.
+                                Next Apps is a full-service digital product studio that goes beyond writing code. We design, build, and deploy
+                                high-performance mobile applications and custom software solutions that solve real business problems. Partner with
+                                our global team across the USA and Pakistan to transform your vision into a powerful digital reality.
                             </p>
 
                             <div className={styles.contactLinks}>
