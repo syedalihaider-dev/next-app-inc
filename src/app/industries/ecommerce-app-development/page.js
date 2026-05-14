@@ -142,16 +142,8 @@ const EcommerceAppPage = () => {
                 tabsData={tabs}
             />
 
-            <IndustryFeaturesSection 
-                title={<>Ecommerce <span style={{ color: 'var(--primary-color)' }}>Mobile App </span> Features to Build Successful <span style={{ color: 'var(--primary-color)' }}>Retail Platforms</span></>}
-                description="We deliver mission-critical retail projects successfully with our expert team of ecommerce developers."
-            />
-
-            <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Ecommerce App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Retailers</span></span> Needs</>}
-                solutionsData={solutions}
-            />
-
+           <IndustryFeaturesSection />
+            <IndustrySolutionsSlider />
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />

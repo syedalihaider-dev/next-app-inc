@@ -57,64 +57,34 @@ const HealthcareAppPage = () => {
             title: 'Real-Time Vehicle & Asset Tracking',
             contentTitle: 'Real-Time Vehicle & Asset Tracking',
             contentDesc: 'Live GPS tracking with geofencing, trip history, idle time alerts, and asset utilization reporting — across any fleet size, any vehicle type.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/automotive-app-development/tab-icon-01.png',
+            image: '/industries/automotive-app-development/tab-icon-01.png'
         },
         {
             id: 'patient-monitoring',
             title: 'Predictive Maintenance Scheduling',
             contentTitle: 'Predictive Maintenance Scheduling',
             contentDesc: 'AI-driven maintenance forecasting that uses mileage, engine data, and service history to predict failures before they happen and schedule service proactively.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/automotive-app-development/tab-icon-02.png',
+            image: '/industries/automotive-app-development/tab-icon-02.png'
         },
         {
             id: 'billing',
             title: 'Digital Retailing & Online Deal Tools',
             contentTitle: 'Digital Retailing & Online Deal Tools',
             contentDesc: 'Customer-facing digital retailing tools that let buyers build their deal, estimate trade-in value, apply for financing, and reserve a vehicle — all before setting foot in the dealership.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/automotive-app-development/tab-icon-03.png',
+            image: '/industries/automotive-app-development/tab-icon-03.png'
         },
         {
             id: 'analytics',
             title: 'Driver Behaviour & Safety Monitoring',
             contentTitle: 'Driver Behaviour & Safety Monitoring',
             contentDesc: 'Telematics-based driver scoring with harsh braking, speeding, and distraction detection — reducing accident risk and insurance premiums for commercial fleet operators..',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/automotive-app-development/tab-icon-04.png',
+            image: '/industries/automotive-app-development/tab-icon-04.png'
         }
     ];
-
-    // const solutions = [
-    //     {
-    //         title: 'Doctor Consultation Apps',
-    //         description: 'Custom apps that allow patients to book appointments, consult with specialists, and receive care from the comfort of their homes.',
-    //         image: '/industries/solution-1.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Health Tracking Wearables',
-    //         description: 'Integrate mobile apps with IoT-enabled medical devices for real-time health monitoring and emergency alert systems.',
-    //         image: '/industries/solution-2.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Medical Training Apps',
-    //         description: 'Interactive VR/AR and mobile learning platforms for medical students and professionals to enhance their clinical skills.',
-    //         image: '/industries/solution-3.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Wellness & Nutrition',
-    //         description: 'Engaging apps that provide personalized meal plans, exercise routines, and wellness coaching for a healthier lifestyle.',
-    //         image: '/industries/solution-4.webp',
-    //         active: false
-    //     }
-    // ];
-
-    
-
 
     return (
         <main>
@@ -123,14 +93,14 @@ const HealthcareAppPage = () => {
                 mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Automotive Industry</span> Is Going Digital.<span style={{ color: 'var(--primary-color)' }}> We Build the </span> Software That Drives It.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="From dealerships and fleet operators to OEMs and mobility startups, we build automotive platforms that connect vehicles, teams, and customers in ways that legacy systems never could. Your digital transformation starts with the right development partner."
-                bgImage="/industries/healthcare-app-development/banner-bg.webp" 
+                bgImage="/industries/automotive-app-development/banner-bg.png" 
             />
             
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>Automotive App Development</span> Solutions <br/> Built for the <span style='color: var(--primary-color)'> Road </span> <span style='color: var(--primary-color)'>Ahead</span> "
                 description="The automotive industry is increasingly complex and full of digital innovation opportunities. We develop dealer management systems, fleet tracking, EV charging networks, connected vehicle apps, and mobility solutions that convert digital investments into operational efficiency."
                 servicesData={services}
-                mockupImage="/industries/healthcare-app-development/services-mockup.webp" // Placeholder
+                mockupImage="/industries/automotive-app-development/services-mockup.png" // Placeholder
             />
 
             <IndustryConsultationSection 
@@ -145,16 +115,8 @@ const HealthcareAppPage = () => {
                 tabsData={tabs}
             />
 
-            <IndustryFeaturesSection 
-                title={<>Healthcare <span style={{ color: 'var(--primary-color)' }}>Mobile App </span> Features to Build Successful <span style={{ color: 'var(--primary-color)' }}>Medical Platforms</span></>}
-                description="We deliver mission-critical medical projects successfully with our expert team of healthcare tech specialists."
-            />
-
-            <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Automotive App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Medicine</span></span> Needs</>}
-                // solutionsData={solutions}
-            />
-
+            <IndustryFeaturesSection />
+            <IndustrySolutionsSlider/>
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />

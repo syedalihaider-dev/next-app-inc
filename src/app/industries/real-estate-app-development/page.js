@@ -57,61 +57,34 @@ const HealthcareAppPage = () => {
             title: 'MLS/IDX Integration & Live Listings',
             contentTitle: 'MLS/IDX Integration & Live Listings',
             contentDesc: 'Real-time MLS and IDX data feed integration that keeps property listings accurate, up-to-date, and compliant with board data rules across any geographic market.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/real-estate-app-development/tab-icon-01.png',
+            image: '/industries/real-estate-app-development/tab-icon-01.png'
         },
         {
             id: 'patient-monitoring',
             title: 'Smart Search & Geospatial Discovery',
             contentTitle: 'Smart Search & Geospatial Discovery',
             contentDesc: 'AI-powered property search with polygon drawing, commute time filters, school district overlays, and neighbourhood data integration — helping buyers find the right property, not just any property.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/real-estate-app-development/tab-icon-02.png',
+            image: '/industries/real-estate-app-development/tab-icon-02.png'
         },
         {
             id: 'billing',
             title: 'Digital Transaction & e-Signature Workflows',
             contentTitle: 'Digital Transaction & e-Signature Workflows',
             contentDesc: 'Paperless transaction management with e-signature integration, offer submission workflows, document management, and compliance checklists that reduce deal timelines and errors.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/real-estate-app-development/tab-icon-03.png',
+            image: '/industries/real-estate-app-development/tab-icon-03.png'
         },
         {
             id: 'analytics',
             title: 'Tenant & Maintenance Management',
             contentTitle: 'Tenant & Maintenance Management',
             contentDesc: 'Self-service tenant portals for rent payment, maintenance requests, lease renewal, and communication — reducing property manager workload while improving tenant satisfaction and retention.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/real-estate-app-development/tab-icon-04.png',
+            image: '/industries/real-estate-app-development/tab-icon-04.png'
         }
     ];
-
-    // const solutions = [
-    //     {
-    //         title: 'Doctor Consultation Apps',
-    //         description: 'Custom apps that allow patients to book appointments, consult with specialists, and receive care from the comfort of their homes.',
-    //         image: '/industries/solution-1.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Health Tracking Wearables',
-    //         description: 'Integrate mobile apps with IoT-enabled medical devices for real-time health monitoring and emergency alert systems.',
-    //         image: '/industries/solution-2.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Medical Training Apps',
-    //         description: 'Interactive VR/AR and mobile learning platforms for medical students and professionals to enhance their clinical skills.',
-    //         image: '/industries/solution-3.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Wellness & Nutrition',
-    //         description: 'Engaging apps that provide personalized meal plans, exercise routines, and wellness coaching for a healthier lifestyle.',
-    //         image: '/industries/solution-4.webp',
-    //         active: false
-    //     }
-    // ];
 
     return (
         <main>
@@ -120,14 +93,14 @@ const HealthcareAppPage = () => {
                 mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Real Estate Moves Fast.</span> Build the Platform<span style={{ color: 'var(--primary-color)' }}> that Moves </span> With It.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="From property portals and brokerage platforms to PropTech startups and property managers, we build digital solutions that help buyers find homes faster, agents close deals smarter, and landlords manage portfolios with less friction."
-                bgImage="/industries/healthcare-app-development/banner-bg.webp" 
+                bgImage="/industries/real-estate-app-development/banner-bg.png" 
             />
 
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>Real Estate App Development</span> Solutions <br/> Built for Agents, <span style='color: var(--primary-color)'>Buyers,</span> and Property <span style='color: var(--primary-color)'>Managers</span> "
                 description="Real estate transactions are the highest-stakes purchases most people make. Digital tools in this process must earn trust at each step. We create property search platforms, agent CRM, transaction management tools, virtual tour apps, and property management systems designed for the real estate industry’s complexity in residential, commercial, and rental markets."
                 servicesData={services}
-                mockupImage="/industries/healthcare-app-development/services-mockup.webp" // Placeholder
+                mockupImage="/industries/real-estate-app-development/services-mockup.png" // Placeholder
             />
    
             <IndustryConsultationSection 
@@ -142,16 +115,8 @@ const HealthcareAppPage = () => {
                 tabsData={tabs}
             />
 
-            <IndustryFeaturesSection 
-                title={<>Healthcare <span style={{ color: 'var(--primary-color)' }}>Mobile App </span> Features to Build Successful <span style={{ color: 'var(--primary-color)' }}>Medical Platforms</span></>}
-                description="We deliver mission-critical medical projects successfully with our expert team of healthcare tech specialists."
-            />
-
-            <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Real Estate App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Medicine</span></span> Needs</>}
-                // solutionsData={solutions}
-            />
-
+            <IndustryFeaturesSection />
+            <IndustrySolutionsSlider/>
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />

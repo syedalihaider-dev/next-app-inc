@@ -86,33 +86,6 @@ const EducationAppPage = () => {
         }
     ];
 
-    // const solutions = [
-    //     {
-    //         title: 'Skill Boosting Apps',
-    //         description: 'Interactive platforms that provide professional development courses, certification training, and skill-based learning for career growth.',
-    //         image: '/industries/solution-1.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Early Childhood Learning',
-    //         description: 'Engaging and colorful apps designed for young children to develop foundational skills in reading, math, and creative arts.',
-    //         image: '/industries/solution-2.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'STEM Education Apps',
-    //         description: 'Specialized apps that provide interactive simulations, experiments, and lessons in Science, Technology, Engineering, and Math.',
-    //         image: '/industries/solution-3.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Test Prep Platforms',
-    //         description: 'Comprehensive platforms that offer practice exams, study materials, and personalized study plans for standardized tests and certifications.',
-    //         image: '/industries/solution-4.webp',
-    //         active: false
-    //     }
-    // ];
-
     return (
         <main>
             <IndustryBanner 
@@ -143,16 +116,8 @@ const EducationAppPage = () => {
                 tabsData={tabs}
             />
 
-            <IndustryFeaturesSection 
-                title={<>EdTech <span style={{ color: 'var(--primary-color)' }}>Mobile App </span> Features to Build Successful <span style={{ color: 'var(--primary-color)' }}>Learning Platforms</span></>}
-                description="We deliver mission-critical educational projects successfully with our expert team of EdTech developers."
-            />
-
-            <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Education App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Learners</span></span> Needs</>}
-                // solutionsData={solutions}
-            />
-
+            <IndustryFeaturesSection />
+            <IndustrySolutionsSlider/>
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />

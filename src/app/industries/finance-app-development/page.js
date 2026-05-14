@@ -86,33 +86,6 @@ const FinanceAppPage = () => {
         }
     ];
 
-    // const solutions = [
-    //     {
-    //         title: 'Personal Finance Manager',
-    //         description: 'Engaging apps that help users manage their personal wealth, set saving goals, and track expenses across multiple accounts.',
-    //         image: '/industries/solution-1.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Corporate Expense Tools',
-    //         description: 'Custom platforms for businesses to manage employee expenses, corporate credit cards, and real-time financial reporting.',
-    //         image: '/industries/solution-2.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Insurance Tech (InsurTech)',
-    //         description: 'Digital solutions for insurance companies to automate policy management, claim processing, and customer support.',
-    //         image: '/industries/solution-3.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Crowdfunding Platforms',
-    //         description: 'Secure, scalable platforms that connect startups with investors, featuring transparent fund tracking and legal compliance.',
-    //         image: '/industries/solution-4.webp',
-    //         active: false
-    //     }
-    // ];
-
     return (
         <main>
             <IndustryBanner 
@@ -142,16 +115,8 @@ const FinanceAppPage = () => {
                 tabsData={tabs}
             />
 
-            <IndustryFeaturesSection 
-                title={<>Fintech <span style={{ color: 'var(--primary-color)' }}>Mobile App </span> Features to Build Successful <span style={{ color: 'var(--primary-color)' }}>Digital Platforms</span></>}
-                description="We deliver mission-critical financial projects successfully with our expert team of fintech developers."
-            />
-
-            <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Fintech App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Finance</span></span> Needs</>}
-                // solutionsData={solutions}
-            />
-
+            <IndustryFeaturesSection />
+            <IndustrySolutionsSlider/>\
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />

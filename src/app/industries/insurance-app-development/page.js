@@ -57,61 +57,35 @@ const HealthcareAppPage = () => {
             title: 'Real-Time Policy & Coverage Data',
             contentTitle: 'Real-Time Policy & Coverage Data',
             contentDesc: 'Instant access to live policy data, coverage limits, endorsements, and document retrieval — for agents, adjusters, and policyholders simultaneously.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/insurance-app-development/tab-icon-01.png',
+            image: '/industries/insurance-app-development/tab-icon-01.png',
         },
         {
             id: 'patient-monitoring',
             title: 'Automated Claims Workflows',
             contentTitle: 'Automated Claims Workflows',
             contentDesc: 'Intelligent claims routing, automated adjudication for qualifying claims, and escalation rules that keep complex cases moving without manual bottlenecks.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/insurance-app-development/tab-icon-02.png',
+            image: '/industries/insurance-app-development/tab-icon-02.png',
         },
         {
             id: 'billing',
             title: 'Secure Document Management',
             contentTitle: 'Secure Document Management',
             contentDesc: 'Encrypted document storage, e-signature integration, and automated document generation for policies, certificates, endorsements, and claims correspondence.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/insurance-app-development/tab-icon-03.png',
+            image: '/industries/insurance-app-development/tab-icon-03.png',
         },
         {
             id: 'analytics',
             title: 'Multi-State Compliance Engine',
             contentTitle: 'Multi-State Compliance Engine',
             contentDesc: 'Rule-based compliance frameworks that adapt policy language, coverage requirements, and disclosure standards to each state or jurisdiction automatically.',
-            icon: '/industries/healthcare-app-development/tab-icon-01.webp',
-            image: '/industries/healthcare-app-development/tab-mockup-01.webp'
+            icon: '/industries/insurance-app-development/tab-icon-04.png',
+            image: '/industries/insurance-app-development/tab-icon-04.png',
         }
     ];
 
-    // const solutions = [
-    //     {
-    //         title: 'Doctor Consultation Apps',
-    //         description: 'Custom apps that allow patients to book appointments, consult with specialists, and receive care from the comfort of their homes.',
-    //         image: '/industries/solution-1.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Health Tracking Wearables',
-    //         description: 'Integrate mobile apps with IoT-enabled medical devices for real-time health monitoring and emergency alert systems.',
-    //         image: '/industries/solution-2.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Medical Training Apps',
-    //         description: 'Interactive VR/AR and mobile learning platforms for medical students and professionals to enhance their clinical skills.',
-    //         image: '/industries/solution-3.webp',
-    //         active: false
-    //     },
-    //     {
-    //         title: 'Wellness & Nutrition',
-    //         description: 'Engaging apps that provide personalized meal plans, exercise routines, and wellness coaching for a healthier lifestyle.',
-    //         image: '/industries/solution-4.webp',
-    //         active: false
-    //     }
-    // ];
 
     return (
         <main>
@@ -120,14 +94,14 @@ const HealthcareAppPage = () => {
                 mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Insurance Industry</span> Is Changing. Your<span style={{ color: 'var(--primary-color)' }}> Digital Platform </span> Should Lead the Way.</>}
                 // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
                 description="From InsurTech startups to established carriers, we build secure, scalable, and compliance-ready digital platforms that modernize how policies are sold, claims are processed, and customers are served — all without replacing what already works."
-                bgImage="/industries/healthcare-app-development/banner-bg.webp" 
+                bgImage="/industries/insurance-app-development/banner-bg.png" 
             />
             
             <IndustryServicesSection 
                 title="<span style='color: var(--primary-color)'>Insurance App Development</span> Solutions <br/> Built for Real Compliance, <span style='color: var(--primary-color)'>Speed,</span> and Customer <span style='color: var(--primary-color)'>Trust</span> "
                 description="Insurance is one of the most complex industries to digitize and one of the most rewarding when done right. We build policy management systems, claims automation platforms, agent portals, and customer-facing apps that handle real-world insurance complexity without hiding it behind bad UX."
                 servicesData={services}
-                mockupImage="/industries/healthcare-app-development/services-mockup.webp" // Placeholder
+                mockupImage="/industries/insurance-app-development/services-mockup.png" // Placeholder
             />
 
             <IndustryConsultationSection 
@@ -142,16 +116,8 @@ const HealthcareAppPage = () => {
                 tabsData={tabs}
             />
 
-            <IndustryFeaturesSection 
-                title={<>Healthcare <span style={{ color: 'var(--primary-color)' }}>Mobile App </span> Features to Build Successful <span style={{ color: 'var(--primary-color)' }}>Medical Platforms</span></>}
-                description="We deliver mission-critical medical projects successfully with our expert team of healthcare tech specialists."
-            />
-
-            <IndustrySolutionsSlider 
-                title={<>Next-Gen <span style={{ color: 'var(--primary-color)' }}>Insurance App</span> Solutions <br /> For <span className="highlightWrapper"><span className="highlightText">Modern Medicine</span></span> Needs</>}
-                // solutionsData={solutions}
-            />
-
+            <IndustryFeaturesSection />
+            <IndustrySolutionsSlider/>
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />
