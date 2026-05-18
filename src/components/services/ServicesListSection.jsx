@@ -62,7 +62,7 @@ const ServicesListSection = () => {
                     </h2>
 
                     <p className={styles.headerDesc}>
-                        From mobile apps and web platforms to e-commerce stores, games, blockchain, and AR/VR — we solve real business problems with the right technology.
+                        From mobile apps and web platforms to e-commerce stores, games, blockchain, and AR/VR  we solve real business problems with the right technology.
                     </p>
                 </div>
 

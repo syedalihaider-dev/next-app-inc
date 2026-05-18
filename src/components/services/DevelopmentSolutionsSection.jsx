@@ -5,7 +5,7 @@ import MyButton from '@/components/layout/MyButton';
 
 const features = [
     'Custom designs that reflect your brand identity across every digital touchpoint',
-    'Cross-platform and multi-service delivery — web, app, e-commerce, game, and software',
+    'Cross-platform and multi-service delivery web, app, e-commerce, game, and software',
     'Smooth integration with your existing tools, APIs, and business systems',
     'Thorough QA and testing to ensure a perfect, bug-free launch every time',
     'Ongoing post-launch support for hassle-free updates and growth'
@@ -53,7 +53,7 @@ const DevelopmentSolutionsSection = () => {
                                 GET STARTED
                             </div>
                             <h2 className={styles.heading}>
-                                More Than an App Agency — Your <span className={styles.purpleText}>Full-Stack Digital Partner</span>
+                                More Than an App Agency Your <span className={styles.purpleText}>Full-Stack Digital Partner</span>
                             </h2>
 
                             <ul className={styles.featureList}>

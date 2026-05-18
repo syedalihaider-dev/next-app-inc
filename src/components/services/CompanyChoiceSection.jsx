@@ -6,23 +6,23 @@ import MyButton from '@/components/layout/MyButton';
 const CompanyChoiceSection = () => {
     const cards = [
         {
-            title: ' Real-Time Health & Biometric Monitoring',
-            description: 'Live heart rate, SpO2, blood glucose, stress, and sleep data surfaces through your wearable interface with threshold-based alerts and trend visualization delivered directly on the wrist.',
+            title: ' Discovery & Strategy',
+            description: 'We get under the hood of your business understanding your goals, users, and competition before a single line of code is written.',
             icon: '/services/icon-discovery-and-strategy.webp'
         },
         {
-            title: 'Offline & Background Sync',
-            description: "Wearable apps must function without constant phone connection. We build offline-capable data storage, background sync, and conflict resolution into every wearable product from the first sprint.",
+            title: 'UX/UI Design',
+            description: "Our designers craft intuitive, beautiful interfaces that guide users naturally and reflect your brand's personality at every touchpoint.",
             icon: '/services/icon-ux-ui-design.webp'
         },
         {
-            title: 'Custom Complications & Watch Faces',
-            description: 'Native Apple Watch complications and Wear OS tiles that surface your most important data steps, metrics, task counts, alerts — directly on the watch face without opening the full app.',
+            title: 'Development',
+            description: 'Our engineers build clean, scalable code using modern frameworks delivering both performance and flexibility for future growth.',
             icon: '/services/icon-development.webp'
         },
         {
-            title: 'Push Notifications & Haptic Feedback',
-            description: 'Context-aware push notifications and custom haptic patterns that deliver information at the right moment without interrupting the user experience on the primary phone.',
+            title: 'Launch & Deployment',
+            description: 'We handle app store submissions, server deployments, and go-live checklists so your launch is smooth and stress-free.',
             icon: '/services/icon-launch-and-deployment.webp'
         }
     ];
@@ -34,8 +34,8 @@ const CompanyChoiceSection = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className={styles.contentCol}>
-                            <h2 className={styles.heading}>
-                                Wearable App <span className={styles.purpleText}>Features That</span>Keep Users Connected,<span className={styles.purpleText}></span>Informed, <span className={styles.purpleText}>and Healthy</span>
+                            <h2 className={styles.heading}>      
+                                A Process <span className={styles.purpleText}>Built for</span> Clarity,<span className={styles.purpleText}></span> Speed, and <span className={styles.purpleText}> Zero Surprises</span>
                             </h2>
                             <p className={styles.description}>
                                 We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results.
