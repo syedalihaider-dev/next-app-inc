@@ -6,23 +6,23 @@ import MyButton from '@/components/layout/MyButton';
 const CompanyChoiceSection = () => {
     const cards = [
         {
-            title: 'Discovery & Strategy',
-            description: 'We get under the hood of your business — understanding your goals, users, and competition before a single line of code is written.',
+            title: ' Real-Time Health & Biometric Monitoring',
+            description: 'Live heart rate, SpO2, blood glucose, stress, and sleep data surfaces through your wearable interface with threshold-based alerts and trend visualization delivered directly on the wrist.',
             icon: '/services/icon-discovery-and-strategy.webp'
         },
         {
-            title: 'UX/UI Design',
-            description: "Our designers craft intuitive, beautiful interfaces that guide users naturally and reflect your brand's personality at every touchpoint.",
+            title: 'Offline & Background Sync',
+            description: "Wearable apps must function without constant phone connection. We build offline-capable data storage, background sync, and conflict resolution into every wearable product from the first sprint.",
             icon: '/services/icon-ux-ui-design.webp'
         },
         {
-            title: 'Development',
-            description: 'Our engineers build clean, scalable code using modern frameworks — delivering both performance and flexibility for future growth.',
+            title: 'Custom Complications & Watch Faces',
+            description: 'Native Apple Watch complications and Wear OS tiles that surface your most important data steps, metrics, task counts, alerts — directly on the watch face without opening the full app.',
             icon: '/services/icon-development.webp'
         },
         {
-            title: 'Launch & Deployment',
-            description: 'We handle app store submissions, server deployments, and go-live checklists so your launch is smooth and stress-free.',
+            title: 'Push Notifications & Haptic Feedback',
+            description: 'Context-aware push notifications and custom haptic patterns that deliver information at the right moment without interrupting the user experience on the primary phone.',
             icon: '/services/icon-launch-and-deployment.webp'
         }
     ];
@@ -35,10 +35,10 @@ const CompanyChoiceSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.contentCol}>
                             <h2 className={styles.heading}>
-                                A Process Built for <span className={styles.purpleText}>Clarity</span>, <span className={styles.purpleText}>Speed</span>, and <span className={styles.purpleText}>Zero Surprises</span>
+                                Wearable App <span className={styles.purpleText}>Features That</span>Keep Users Connected,<span className={styles.purpleText}></span>Informed, <span className={styles.purpleText}>and Healthy</span>
                             </h2>
                             <p className={styles.description}>
-                                From initial planning to final launch and beyond, our app development process is designed to keep you informed, in control, and confident every step of the way.
+                                We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results.
                             </p>
                             <div className={styles.btnRow}>
                                 <MyButton text="Get Started" className="btn_black" />

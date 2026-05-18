@@ -47,7 +47,7 @@ const AwardsSection = () => {
                                 <span className={styles.purpleText}>Louder</span> Than <span className={styles.purpleText}>Promises</span>
                             </h2>
                             <p className={styles.desc}>
-                                We've earned recognition for our quality-first approach and successful delivery of complex digital projects across mobile, web, e-commerce, game, and software domains — with skilled developers, designers, and project managers working as one team.
+                                We've earned recognition for our quality-first approach and successful delivery of complex digital projects across mobile, web, e-commerce, game, and software domains.
                             </p>
                         </div>
 

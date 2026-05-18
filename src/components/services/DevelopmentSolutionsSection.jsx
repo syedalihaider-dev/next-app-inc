@@ -6,7 +6,7 @@ import MyButton from '@/components/layout/MyButton';
 const features = [
     'Custom designs that reflect your brand identity across every digital touchpoint',
     'Cross-platform and multi-service delivery — web, app, e-commerce, game, and software',
-    'Smooth integration with your existing tools, APIs, and business systemsSmooth Integration With Your Existing Systems',
+    'Smooth integration with your existing tools, APIs, and business systems',
     'Thorough QA and testing to ensure a perfect, bug-free launch every time',
     'Ongoing post-launch support for hassle-free updates and growth'
 ];
