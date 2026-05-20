@@ -15,8 +15,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "React Native App Development | Next App",
-    description: "Next App offers expert React Native development for cross-platform iOS and Android apps with native UI, supported by Meta, trusted by Discord, Shopify, and Microsoft.",
+    title: "App Store Optimization  | Next App",
+    description: "Next App delivers expert App Store Optimization (ASO) services, from keyword research and listing copy to screenshot design and review management. Increase organic downloads today.",
 };
 
 const tabs = [
@@ -24,63 +24,63 @@ const tabs = [
         id: 'planning',
         label: 'Project Planning',
         title: 'Project Planning',
-        description: "We map your product requirements against React Native's capabilities, define the feature set, allocate resources, and set delivery milestones so both sides start aligned and stay that way.",
+        description: 'We audit your current store listing, benchmark against top competitors in your category, and define an ASO strategy that targets the keywords, creatives, and rating triggers most likely to move your rankings',
         image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
-        description: "We sketch every screen and user path in wireframe form before writing code. This keeps design decisions fast, cheap, and free from the assumptions that cause costly revisions later.",
+        description: "We design screenshot sequences, preview video storyboards, and feature graphic layouts that communicate your app's value in under three seconds, which is all the attention most store visitors give before they decide.",
         image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
-        description: 'We build a working prototype on the actual React Native stack so you can test interactions on a real device, validate the concept with stakeholders, and sign off before full development begins.',
+        description: 'Before rolling out changes to your live listing, we test creative variants with store page experiments to measure which title, icon, and screenshots drive the highest conversion rate against real search traffic',
         image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
-        description: 'Our engineers use the latest React Native, clean architecture, reusable hooks, and native modules for performance, resulting in a native-feeling app.',
+        description: 'We implement the full optimized listing, writing keyword-rich titles and descriptions, uploading conversion-tested creatives, and configuring localized metadata for every target market you want to rank in.',
         image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
-        description: 'We test on real iOS and Android devices across multiple OS versions, checking for performance regressions, layout issues, and API integration stability before anything goes to production.',
+        description: "Every listing change is tracked for impact on impressions, conversion rate, and organic installs. We review performance data weekly and iterate rapidly to keep your ranking moving in the right direction.",
         image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
-        description: 'We prepare your builds for both App Store and Play Store, handle submission requirements, and stay with you through the review process until your app is live.',
+        description: 'ASO is ongoing, not a one-time setup. We monitor algorithm changes, seasonal keyword shifts, and competitor moves to keep your listing optimized and your install volume growing month over month.',
         image: '/services/deployment-and-launch.webp'
     }
 ];
 
-const ReactNativeAppDevelopmentPage = () => {
+const AppStoreOptimizationPage = () => {
     return (
         <main>
             <ServiceInnerBanner 
-                badge="React Native App Development"
+                badge="App Store Optimization"
                 title={
                     <>
-                    JavaScript Power. <span className={styles.purpleText}>Native Feel.</span> Both <span className={styles.purpleText}>Platforms.</span> <span className={styles.purpleText}></span><span className={styles.purpleText}></span>
+                    You  <span className={styles.purpleText}>Built the App. </span> We Make <span className={styles.purpleText}>Sure  </span> People <span className={styles.purpleText}> Find It.</span><span className={styles.purpleText}></span>
                     </>
                 }
-                description="React Native is Meta's open-source framework that renders native UI components, not web views, on iOS and Android from a shared JavaScript codebase. It powers apps like Discord, Shopify, Microsoft Office, and Walmart. We build apps that feel native and scale by sharing one codebase."
+                description="70% of App Store visitors find apps via search. Without App Store Optimization, even top products remain unseen. We use keyword strategy, conversion-focused listing design, and review management to boost organic installs without raising your paid acquisition budget."
                 bgImage="/services/android-banner-bg.webp"
             />
-            <ServiceSection  
-                heading="JavaScript Efficiency With "
-                purpleText="Native App Quality"
-                description="React Native development combines the productivity of JavaScript with the performance of native components. Our React Native engineers bring full-stack mobile expertise, from architecture through App Store submission, to every engagement."
+            <ServiceSection     
+                heading="App Store Optimization  "
+                purpleText="Built for Continuous Growth"
+                description="ASO is not a one-time task. It is an ongoing optimization discipline that compounds over time. Here is how our ASO team improves your organic visibility and conversion rate across both the App Store and Google Play."
                 features={[
                     "Certified Developers",
                     "Custom Design",
@@ -94,7 +94,7 @@ const ReactNativeAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading={<>Our <span className={styles.purpleText}>React Native App </span> Development <span className={styles.purpleText}> Approach Makes</span> It Simple,<span className={styles.purpleText}> Easy, </span> & <span className={styles.purpleText}>Efficient</span></>}
+                heading={<>Our <span className={styles.purpleText}>App Store Optimization</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />
@@ -108,4 +108,4 @@ const ReactNativeAppDevelopmentPage = () => {
     );
 };
 
-export default ReactNativeAppDevelopmentPage;
+export default AppStoreOptimizationPage;

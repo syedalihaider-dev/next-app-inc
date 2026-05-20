@@ -64,7 +64,7 @@ const tabs = [
     }
 ];
 
-const WearableAppDevelopmentPage = () => {
+const FlutterAppDevelopmentPage = () => {
     return (
         <main>
             <ServiceInnerBanner 
@@ -94,7 +94,7 @@ const WearableAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading={<>Our <span className={styles.purpleText}>Wearable App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
+                heading={<>Our <span className={styles.purpleText}>Flutter App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />
@@ -108,4 +108,4 @@ const WearableAppDevelopmentPage = () => {
     );
 };
 
-export default WearableAppDevelopmentPage;
+export default FlutterAppDevelopmentPage    ;
