@@ -24,42 +24,42 @@ const tabs = [
         id: 'planning',
         label: 'Project Planning',
         title: 'Project Planning',
-        description: 'Our business analysts sit down with you to turn your Android app idea into a concrete project scope. We map out features, allocate the right development resources, provide accurate timelines and cost estimates, and identify opportunities to optimize delivery without cutting corners.',
+        description: 'Our analysts help turn your Android app idea into a clear project scope, outlining features, resources, timelines, costs, and optimization opportunities without sacrificing quality.',
         image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
         label: 'Wireframes',
         title: 'Wireframes',
-        description: "With the plan locked in, we move into wireframing, creating a detailed visual blueprint of your Android app's screens and user flows. This phase ensures every interaction is intuitive and that the interface is designed for real Android users before a single line of code is written.",
+        description: "Before coding, we sketch all screens and user journeys. Wireframes outline structure, navigation, and interactions for review and refinement before development.",
         image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
         label: 'Prototype Demo',
         title: 'Prototype Demo',
-        description: 'Before committing to full development, we build a clickable Android prototype. You get to experience the actual flow, tap through the key journeys, and give feedback early, saving time, money, and misalignment down the line.',
+        description: 'A working prototype lets stakeholders interact with the app before it is built. We demo it, collect feedback, and lock in decisions early so the development phase moves without detours.',
         image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
         label: 'Development',
         title: 'Development',
-        description: 'Our Android engineers bring the approved design to life using Kotlin, Java, and the latest Android SDK best practices. We follow an agile process with sprint-based delivery, frequent builds for your review, and the flexibility to adapt as requirements evolve.',
+        description: 'Our Android engineers develop in Kotlin and Java with clean architecture. Each feature is optimized for performance across all Android devices, from budget to flagship models.',
         image: '/services/development.webp'
     },
     {
         id: 'quality',
         label: 'Quality Control',
         title: 'Quality Control',
-        description: 'Every build goes through rigorous QA — tested across a wide range of Android devices, screen sizes, and OS versions. We run functional, performance, and security audits to ensure your app launches without bugs and holds up under real-world usage.',
+        description: 'We test on hundreds of device profiles, screen sizes, and Android versions. Our QA checks for crashes, performance issues, accessibility problems, and Play Store compliance before shipping.',
         image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
         label: 'Deployment and Launch',
         title: 'Deployment and Launch',
-        description: 'We manage the entire Google Play Store submission process, from preparing your store listing and assets to passing review and going live. Once launched, we monitor performance and are on hand to address anything that needs attention post-release.',
+        description: 'From Play Store listing setup to staged rollout and post-launch monitoring, we manage every step of the release so your launch lands exactly as planned.',
         image: '/services/deployment-and-launch.webp'
     }
 ];
@@ -80,7 +80,7 @@ const AndroidAppDevelopmentPage = () => {
             <ServiceSection 
                 heading="Why Android Development Is More "
                 purpleText="Than Just Writing Code"
-                description="A great Android app requires deep knowledge of the platform, an eye for UX, and the engineering discipline to build something that scales. At Next App, our Android developers have shipped dozens of apps across retail, healthcare, fintech, and logistics. "
+                description="A great Android app requires deep knowledge of the platform, an eye for UX, and the engineering discipline to build something that scales. At Next App, our Android developers have shipped dozens of apps across retail, healthcare, fintech, and logistics, each one built for the full range of Android devices and user expectations."
                 features={[
                     "Certified Developers",
                     "Custom Design",

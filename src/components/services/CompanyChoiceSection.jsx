@@ -17,7 +17,7 @@ const CompanyChoiceSection = () => {
         },
         {
             title: 'Development',
-            description: 'Our engineers build clean, scalable code using modern frameworks delivering both performance and flexibility for future growth.',
+            description: 'Our engineers build clean, scalable code using modern frameworks, delivering both performance and the flexibility your product needs to grow.',
             icon: '/services/icon-development.webp'
         },
         {
@@ -38,7 +38,7 @@ const CompanyChoiceSection = () => {
                                 A Process <span className={styles.purpleText}>Built for</span> Clarity,<span className={styles.purpleText}></span> Speed, and <span className={styles.purpleText}> Zero Surprises</span>
                             </h2>
                             <p className={styles.description}>
-                                We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results.
+                               We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education, powered by technology that drives real results. And it is not just apps. 
                             </p>
                             <div className={styles.btnRow}>
                                 <MyButton text="Get Started" className="btn_black" />

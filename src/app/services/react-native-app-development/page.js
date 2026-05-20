@@ -22,44 +22,44 @@ export const metadata = {
 const tabs = [
     {
         id: 'planning',
-        label: 'Device & Platform Discovery',
-        title: 'Device & Platform Discovery',
-        description: 'We evaluate your wearable ecosystem Apple Watch, Wear OS, Samsung Galaxy Watch, or a custom IoT device and outline the companion app architecture that links your wearable experience to the broader product.',
+        label: 'Project Planning',
+        title: 'Project Planning',
+        description: "We map your product requirements against React Native's capabilities, define the feature set, allocate resources, and set delivery milestones so both sides start aligned and stay that way.",
         image: '/services/project-planning.webp'
     },
     {
         id: 'wireframes',
-        label: 'Interaction & Complication Design',
-        title: 'Interaction & Complication Design',
-        description: "Wearable UX must adhere to strict constraints. Our designers create glanceable interfaces, tappable complications, and voice-command flows that work within the wearable screen's limits while providing full product value.",
+        label: 'Wireframes',
+        title: 'Wireframes',
+        description: "We sketch every screen and user path in wireframe form before writing code. This keeps design decisions fast, cheap, and free from the assumptions that cause costly revisions later.",
         image: '/services/wireframes.webp'
     },
     {
         id: 'prototype',
-        label: 'Sensor Integration & Health Data Access',
-        title: 'Sensor Integration & Health Data Access',
-        description: 'We integrate with Apple HealthKit, Google Fit, and device-native sensor APIs — heart rate, SpO2, accelerometer, GPS, sleep tracking, and activity data — connecting wearable hardware capabilities to your apps logic.',
+        label: 'Prototype Demo',
+        title: 'Prototype Demo',
+        description: 'We build a working prototype on the actual React Native stack so you can test interactions on a real device, validate the concept with stakeholders, and sign off before full development begins.',
         image: '/services/prototype-demo.webp'
     },
     {
         id: 'development',
-        label: 'Companion App Development',
-        title: 'Companion App Development',
-        description: 'Most wearable experiences require a companion iOS or Android app for configuration, data visualization, and cloud sync. We build the full companion experience alongside the wearable app as a unified product.',
+        label: 'Development',
+        title: 'Development',
+        description: 'Our engineers use the latest React Native, clean architecture, reusable hooks, and native modules for performance, resulting in a native-feeling app.',
         image: '/services/development.webp'
     },
     {
         id: 'quality',
-        label: 'Battery & Performance Optimization',
-        title: 'Battery & Performance Optimization',
-        description: 'Wearable apps run under strict power constraints. We optimize every data sync cycle, background task, and sensor polling interval to maximize battery life without compromising the responsiveness your users expect.',
+        label: 'Quality Control',
+        title: 'Quality Control',
+        description: 'We test on real iOS and Android devices across multiple OS versions, checking for performance regressions, layout issues, and API integration stability before anything goes to production.',
         image: '/services/quality-control.webp'
     },
     {
         id: 'deployment',
-        label: 'Testing & Certification',
-        title: 'Testing & Certification',
-        description: 'We test across physical devices and simulators, validate against Apple Watch OS and Wear OS certification requirements, and conduct end-to-end testing of the wearable-to-companion data pipeline before submission.',
+        label: 'Deployment and Launch',
+        title: 'Deployment and Launch',
+        description: 'We prepare your builds for both App Store and Play Store, handle submission requirements, and stay with you through the review process until your app is live.',
         image: '/services/deployment-and-launch.webp'
     }
 ];
@@ -94,7 +94,7 @@ const WearableAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading={<>Our <span className={styles.purpleText}>Wearable App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
+                heading={<>Our <span className={styles.purpleText}>React Native App </span> Development <span className={styles.purpleText}> Approach Makes</span> It Simple,<span className={styles.purpleText}> Easy, </span> & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />
