@@ -75,7 +75,7 @@ const MobileGameDevelopmentPage = () => {
                     </>
                 }
                 description="Engaging mechanics, beautiful art, smooth performance, our game development team builds mobile games that players love and publishers trust. From casual titles to full immersive experiences."
-                bgImage="/services/mobile-game-banner-bg.webp"
+                bgImage="/services/mobile-game-banner-bg.png"
             />
             <ServiceSection 
                 heading="What It Takes to Build a Mobile Game That "
@@ -87,7 +87,7 @@ const MobileGameDevelopmentPage = () => {
                     "Monetization Strategy",
                     "Cross-Platform Gameplay"
                 ]}
-                mockupImage="/services/ios-hand-mockup.webp"
+                mockupImage="/services/mobile-game-hand-mockup.png"
             />
             <AwardsSection />
             <ServicesListSection />
