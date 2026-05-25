@@ -67,7 +67,7 @@
 
 @media (max-width: 1600px) {
     .serviceBanner {
-        padding: 180px 0 250px;
+        padding: 180px 0;
     }
 
     .badge {
@@ -110,7 +110,7 @@
 
 @media (max-width: 1199px) {
     .serviceBanner {
-        padding: 150px 0 150px;
+        padding: 150px 0 120px;
     }
 
     .badge {
@@ -146,7 +146,7 @@
 
 @media (max-width: 767px) {
     .serviceBanner {
-        padding: 110px 0 120px;
+        padding: 110px 0 40px;
     }
 
     .heading {
@@ -161,7 +161,7 @@
 
 @media (max-width: 575px) {
     .serviceBanner {
-        padding: 110px 0 100px;
+        padding: 110px 0 40px;
     }
 
     .heading {

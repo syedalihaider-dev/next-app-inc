@@ -1,11 +1,15 @@
 .serviceSection {
-    padding: 150px 0 100px;
     position: relative;
-    background: linear-gradient(269deg, #FFFFFF 18%, #D7FCFF 83%);
+    /* background: linear-gradient(269deg, #FFFFFF 18%, #D7FCFF 83%); */
+    background: linear-gradient(217deg, #FFF 14.69%, #FFEFEB 44.91%);
     z-index: 20;
     overflow: hidden;
     border-radius: 180px 180px 0 0;
     margin-top: -165px;
+}
+
+.contentCol {
+    padding: 150px 0 80px;
 }
 
 .heading {
@@ -30,7 +34,7 @@
     padding: 0;
     margin: 0 0 50px 0;
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .features li {
@@ -98,16 +102,22 @@
     text-decoration: none;
 }
 
-.mockupWrapper {
+/* .mockupWrapper {
     position: absolute;
     right: 100px;
     bottom: 0;
-    width: 50%;
-    height: 100%;
+    width: 544px;
+    height: 930px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     pointer-events: none;
+    z-index: 1;
+} */
+
+.mockupWrapper {
+    width: 544px;
+    height: 930px;
     z-index: 1;
 }
 
@@ -116,28 +126,29 @@
     width: 600px;
     height: 600px;
     background: linear-gradient(180deg, #6243FA 0%, #B2FF00 100%);
-    filter: blur(120px);
+    filter: blur(80px);
     border-radius: 50%;
-    z-index: 0;
+    z-index: -1;
     opacity: 0.3;
-    right: 0;
+    right: 200px;
     bottom: 10%;
 }
 
 .mockupImg {
     z-index: 2;
     width: 100%;
-    max-width: 900px;
-    height: auto;
+    height: 100%;
     object-fit: contain;
-    object-position: right bottom;
 }
 
 @media (max-width: 1600px) {
     .serviceSection {
-        padding: 80px 0 80px;
         border-radius: 100px 100px 0 0;
-        margin-top: -135px;
+        margin-top: -100px;
+    }
+
+    .contentCol {
+        padding: 120px 0 60px;
     }
 
     .heading {
@@ -181,26 +192,20 @@
     }
 
     .mockupWrapper {
-        right: 40px;
-        width: 45%;
-    }
-
-    .mockupBg {
-        width: 550px;
-        height: 550px;
-    }
-
-    .mockupImg {
-        width: 100%;
-        max-width: 100%;
+        width: 410px;
+        height: 700px;
+        margin: auto;
     }
 }
 
 @media (max-width: 1399px) {
     .serviceSection {
-        padding: 60px 0 60px;
         border-radius: 80px 80px 0 0;
         margin-top: -80px;
+    }
+
+    .contentCol {
+        padding: 80px 0 50px;
     }
 
     .heading {
@@ -243,16 +248,19 @@
     }
 
     .mockupWrapper {
-        right: 50px;
-        width: 45%;
+        width: 334px;
+        height: 560px;
     }
 }
 
 @media (max-width: 1199px) {
     .serviceSection {
-        padding: 40px 0 40px;
         border-radius: 60px 60px 0 0;
         margin-top: -60px;
+    }
+
+    .contentCol {
+        padding: 60px 0 40px;
     }
 
     .description {
@@ -291,19 +299,14 @@
     }
 
     .mockupWrapper {
-        right: 40px;
-        width: 45%;
-    }
-
-    .mockupBg {
-        width: 500px;
+        width: 295px;
         height: 500px;
     }
 }
 
 @media (max-width: 991px) {
-    .serviceSection {
-        padding: 40px 0 0;
+    .contentCol {
+        padding: 40px 0 40px;
     }
 
     .features {
@@ -326,15 +329,8 @@
     }
 
     .mockupWrapper {
-        width: 300px;
-        position: unset;
-        margin-top: 30px;
-        margin-left: auto;
-    }
-
-    .mockupBg {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 340px;
     }
 }
 
@@ -350,8 +346,8 @@
 
 @media (max-width: 575px) {
     .serviceSection {
-        border-radius: 40px 40px 0 0;
-        margin-top: -40px;
+        border-radius: 0;
+        margin-top: 0;
     }
 
     .statValue {

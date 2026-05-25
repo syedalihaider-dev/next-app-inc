@@ -146,7 +146,7 @@ h1 {
 }
 
 h2 {
-  font-size: 65px;
+  font-size: 60px;
   letter-spacing: -3.1px;
   font-weight: var(--font-800);
 }
@@ -306,7 +306,7 @@ p {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: -1px;
   }
 

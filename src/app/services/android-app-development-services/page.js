@@ -15,7 +15,7 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Android App Development | Next App",
+    title: "Android App Development Services | Next App",
     description: "Next App delivers expert android app development alongside web development, e-commerce, game development, and custom software. Get a free consultation today.",
 };
 
@@ -68,14 +68,14 @@ const AndroidAppDevelopmentPage = () => {
     return (
         <main>
             <ServiceInnerBanner 
-                badge="Android App Development"
+                badge="Android App Development Services"
                 title={
                     <>
                     Turn Your <span className={styles.purpleText}>Idea</span> Into an <span className={styles.purpleText}>Android</span> App That <span className={styles.purpleText}>Users</span> Can't Put <span className={styles.purpleText}>Down</span>
                     </>
                 }
                 description="From concept to the Play Store, we build Android apps that perform beautifully, scale effortlessly, and solve real problems for real people, across every device, every screen size."
-                bgImage="/services/android-banner-bg.webp"
+                bgImage="/services/android-banner-bg.png"
             />
             <ServiceSection 
                 heading="Why Android Development Is More "
@@ -87,7 +87,7 @@ const AndroidAppDevelopmentPage = () => {
                     "Scalable Systems",
                     "Smooth Integration"
                 ]}
-                mockupImage="/services/ios-hand-mockup.webp"
+                mockupImage="/services/android-hand-mockup.png"
             />
             <AwardsSection />
             <ServicesListSection />

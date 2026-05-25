@@ -15,7 +15,7 @@ const ServiceSection = ({
     return (
         <section className={styles.serviceSection}>
             <div className="container">
-                <div className="row">
+                <div className="row align-items-end">
                     <div className="col-lg-7">
                         <div className={styles.contentCol}>
                             <h2 className={styles.heading}>
@@ -51,19 +51,31 @@ const ServiceSection = ({
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-5">
+                        <div className={styles.mockupWrapper}>
+                            {/* <div className={styles.mockupBg}></div> */}
+                            <Image
+                                src={mockupImage}
+                                alt={mockupAlt}
+                                width={544}
+                                height={930}
+                                className={styles.mockupImg}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div className={styles.mockupWrapper}>
+            {/* <div className={styles.mockupWrapper}>
                 <div className={styles.mockupBg}></div>
                 <Image
                     src={mockupImage}
                     alt={mockupAlt}
-                    width={800}
-                    height={800}
+                    width={544}
+                    height={930}
                     className={styles.mockupImg}
                 />
-            </div>
+            </div> */}
         </section>
     );
 };

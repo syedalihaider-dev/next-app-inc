@@ -23,8 +23,6 @@ const Footer = () => {
                                 <li><Link href="/">HOME</Link></li>
                                 <li><Link href="/about-us">ABOUT US</Link></li>
                                 <li><Link href="/case-studies">CASE STUDIES</Link></li>
-                                {/* <li><Link href="/services/android-app-development">OUR SERVICES</Link></li> */}
-                                {/* <li><Link href="/industries/ecommerce-app-development">INDUSTRIES</Link></li> */}
                                 <li><Link href="/contact-us">CONTACT US</Link></li>
                             </ul>
                         </div>
@@ -33,7 +31,7 @@ const Footer = () => {
                         <div className={styles.footerCol}>
                             <h4 className={styles.footerTitle}>Services</h4>
                             <ul className={styles.footerLinks}>
-                                <li><Link href="/services/android-app-development">ANDROID APP DEVELOPMENT</Link></li>
+                                <li><Link href="/services/android-app-development-services">ANDROID APP DEVELOPMENT</Link></li>
                                 <li><Link href="/services/ar-vr-app-development">AR/VR APP DEVELOPMENT</Link></li>
                                 <li><Link href="/services/blockchain-mobile-app-development">BLOCKCHAIN MOBILE APP DEVELOPMENT</Link></li>
                                 <li><Link href="/services/cross-platform-app-development">CROSS PLATFORM APP DEVELOPMENT</Link></li>

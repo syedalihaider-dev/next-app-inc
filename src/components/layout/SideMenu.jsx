@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './SideMenu.module.css';
 
 const services = [
-    { name: 'ANDROID APP DEVELOPMENT', href: '/services/android-app-development' },
+    { name: 'ANDROID APP DEVELOPMENT', href: '/services/android-app-development-services' },
     { name: 'AR/VR APP DEVELOPMENT', href: '/services/ar-vr-app-development' },
     { name: 'BLOCKCHAIN MOBILE APP DEVELOPMENT', href: '/services/blockchain-mobile-app-development' },
     { name: 'CROSS PLATFORM APP DEVELOPMENT', href: '/services/cross-platform-app-development' },
