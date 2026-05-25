@@ -75,7 +75,7 @@ const MobileWebAppDevelopmentPage = () => {
                     </>
                 }
                 description="Progressive web apps blur the line between browser and native experience. We build mobile web apps that load instantly, work offline, and behave like the real thing, no App Store required."
-                bgImage="/services/mobile-web-banner-bg.webp"
+                bgImage="/services/mobile-web-banner-bg.png"
             />
             <ServiceSection 
                 heading="Why Progressive Web Apps Are the Smart "
@@ -87,7 +87,7 @@ const MobileWebAppDevelopmentPage = () => {
                     "High-Speed Performance",
                     "SEO Optimized Solutions"
                 ]}
-                mockupImage="/services/ios-hand-mockup.webp"
+                mockupImage="/services/mobile-web-hand-mockup.png"
             />
             <AwardsSection />
             <ServicesListSection />
