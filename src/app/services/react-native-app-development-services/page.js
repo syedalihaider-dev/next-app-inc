@@ -75,7 +75,7 @@ const ReactNativeAppDevelopmentPage = () => {
                     </>
                 }
                 description="React Native is Meta's open-source framework that renders native UI components, not web views, on iOS and Android from a shared JavaScript codebase. It powers apps like Discord, Shopify, Microsoft Office, and Walmart. We build apps that feel native and scale by sharing one codebase."
-                bgImage="/services/android-banner-bg.webp"
+                bgImage="/services/react-native-banner-bg.png"
             />
             <ServiceSection  
                 heading="JavaScript Efficiency With "
@@ -87,7 +87,7 @@ const ReactNativeAppDevelopmentPage = () => {
                     "Scalable Systems",
                     "Smooth Integration"
                 ]}
-                mockupImage="/services/ios-hand-mockup.webp"
+                mockupImage="/services/react-native-hand-mockup.png"
             />
             <AwardsSection />
             <ServicesListSection />
