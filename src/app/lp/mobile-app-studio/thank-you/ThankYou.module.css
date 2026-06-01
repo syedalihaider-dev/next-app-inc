@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #1128E6;
+    background: #1A1A1A;
     text-align: center;
     color: #fff;
     font-family: var(--font-montserrat);
@@ -24,7 +24,7 @@
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #E3F91D;
+    color: #FE2400;
 }
 
 .desc {
@@ -37,8 +37,8 @@
 }
 
 .backBtn {
-    background: #fff;
-    color: #1128E6;
+    background: #FE2400;
+    color: #fff;
     padding: 15px 40px;
     border-radius: 50px;
     font-weight: 600;
@@ -48,7 +48,8 @@
 }
 
 .backBtn:hover {
-    background: #E3F91D;
+    text-decoration: none;
+    background: #fff;
     color: #000;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
