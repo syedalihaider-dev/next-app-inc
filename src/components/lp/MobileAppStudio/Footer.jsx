@@ -40,16 +40,16 @@ const Footer = () => {
                         <div className={styles.legalLinks}>
                             {/* <a href="/user-agreement">User Agreement</a> */}
                             {/* <span> | </span> */}
-                            <a href="/term-and-condition">Terms of Use</a>
+                            <a href="https://www.nextappinc.com/terms-and-conditions">Terms of Use</a>
                             <span> | </span>
-                            <a href="/privacy-policy">Privacy Policy</a>
+                            <a href="https://www.nextappinc.com/privacy-policy">Privacy Policy</a>
                         </div>
-                        <p className={styles.copy}>Appsters.io © 2026 All rights reserved.</p>
+                        <p className={styles.copy}>NextAppInc © 2026 All rights reserved.</p>
                     </div>
 
                     {/* Final Logo */}
                     <div className={styles.logoWrapper}>
-                        <Image src="/lp/mobile-app-studio/ft-logo.png" alt="logo" width={66} height={66} />
+                        <Image src="/lp/mobile-app-studio/footer-logo.png" alt="logo" width={66} height={66} />
                     </div>
                 </div>
             </div>

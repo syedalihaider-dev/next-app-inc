@@ -23,7 +23,7 @@ export const metadata = {
     title: 'Top Mobile App Studio - Custom App Development Services',
     description: 'We are a leading mobile app studio providing end-to-end development services for iOS and Android. Transform your ideas into high-performing mobile applications.',
     url: '/lp/mobile-app-studio',
-    siteName: 'Appsters',
+    siteName: 'NextAppInc',
     locale: 'en_US',
     type: 'website',
   },

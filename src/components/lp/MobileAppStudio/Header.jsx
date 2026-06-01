@@ -34,7 +34,7 @@ const Header = () => {
           <div className={styles.logoCol}>
             <Link href="/lp/mobile-app-studio" className={styles.logo}>
               <Image
-                src="/lp/mobile-app-studio/logo.png"
+                src="/lp/mobile-app-studio/dark-logo.png"
                 alt="Logo"
                 width={82}
                 height={82}

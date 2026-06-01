@@ -51,7 +51,7 @@ const ToolsMaster = () => {
                         <div className="col-lg-7">
                             <h2 className={styles.title}>
                                 Dynamics & Stacks For <span className={styles.highlight}>Performance.
-                                    <Image src="/lp/mobile-app-studio/spring-vector.png" width={424} height={22} alt="Spring Vector" className={styles.springVector} />
+                                    <Image src="/lp/mobile-app-studio/red-spring-vector.png" width={424} height={22} alt="Spring Vector" className={styles.springVector} />
                                 </span>
                             </h2>
 

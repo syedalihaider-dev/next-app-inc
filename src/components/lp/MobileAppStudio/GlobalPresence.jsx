@@ -2,6 +2,10 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
+import { SITE_CONFIG } from '@/configs/site-config';
+
+const EMAIL_ADDRESS = SITE_CONFIG.contact.email;
+const PHONE_NUMBER = SITE_CONFIG.contact.phone;
 import styles from './GlobalPresence.module.css';
 
 // Import Swiper styles
@@ -90,14 +94,14 @@ const GlobalPresence = () => {
                                                 <Image src="/images/mobile-app-studio/phone.png" alt="phone" width={21} height={28} className={styles.icon} />
                                                 <div className={styles.details}>
                                                     <span className={styles.label}>Contact Us</span>
-                                                    <a href="tel:+18334422711" className={styles.text}>tel: +1 (833) 442 2711</a>
+                                                    <a href={`tel:${PHONE_NUMBER}`} className={styles.text}>{PHONE_NUMBER}</a>
                                                 </div>
                                             </div>
                                             <div className={styles.infoRow}>
                                                 <Image src="/images/mobile-app-studio/email.png" alt="email" width={20} height={16} className={styles.icon} />
                                                 <div className={styles.details}>
                                                     <span className={styles.label}>Email Us</span>
-                                                    <a href="mailto:support@appsters.io" className={styles.text}>support@appsters.io</a>
+                                                    <a href={`mailto:${EMAIL_ADDRESS}`} className={styles.text}>{EMAIL_ADDRESS}</a>
                                                 </div>
                                             </div>
                                         </div>

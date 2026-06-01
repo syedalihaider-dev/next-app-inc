@@ -86,7 +86,7 @@ const Banner = () => {
 
     return (
         <section id='banner' className={styles.banner}>
-            <Image src="/lp/mobile-app-studio/banner.png" alt="banner-bg" priority fill className={styles.bannerBg} />
+            <Image src="/lp/mobile-app-studio/banner-bg.png" alt="banner-bg" priority fill className={styles.bannerBg} />
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-7">
@@ -96,12 +96,12 @@ const Banner = () => {
                                 <span className={styles.highlightBling}> Digital
                                     <Image src="/lp/mobile-app-studio/highlight-bling.png" alt="spring vector" width={57} height={55} className={styles.highlightBlingAfter} />
                                 </span> Ecosystems That Scale With Your <span className={styles.specialist}>Growth.
-                                    <Image src="/lp/mobile-app-studio/spring-vector.png" alt="underline" width={423} height={22} className={styles.springVector} />
+                                    <Image src="/lp/mobile-app-studio/red-spring-vector.png" alt="underline" width={423} height={22} className={styles.springVector} />
                                 </span>
                             </h1>
                             <p className={styles.desc}>
                                 Engineered for results. Obsessed over by users. Architected for the AI era.
-                                Appsters builds the mobile apps and digital ecosystems that dominate today’s
+                                Next App Inc builds the mobile apps and digital ecosystems that dominate today’s
                                 market and define tomorrow’s.
                             </p>
                             <a href="#contact" className={styles.ctaBtn}>Get Started</a>
@@ -116,7 +116,7 @@ const Banner = () => {
                     <div className="col-lg-5">
                         <div className={styles.formCard}>
                             <div className={styles.star}>
-                                <Image src="/lp/mobile-app-studio/star.png" alt="star" width={67} height={74} className={styles.starImg} />
+                                <Image src="/lp/mobile-app-studio/red-star.png" alt="star" width={67} height={74} className={styles.starImg} />
                             </div>
                             <h3>Let’s turn ideas into impact.</h3>
                             <p>Talk to our experts for a free consultation.</p>

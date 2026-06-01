@@ -1,6 +1,6 @@
 .engagementSection {
     padding: 60px 0;
-    background: #1128E6;
+    background: #1a1a1a;
     overflow: hidden;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .highlight {
-    color: #E3F91D;
+    color: #fe2400;
     position: relative;
     display: inline-block;
     z-index: 1;
@@ -28,7 +28,7 @@
 
 .tableCard {
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(42px);
     padding: 30px;
     position: relative;
@@ -74,7 +74,7 @@
 
 /* Background for rows */
 .cell:nth-of-type(odd) {
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .headerCell {
@@ -109,7 +109,7 @@
 /* Hover & Active Effect Styles */
 .column:hover,
 .column.isActive {
-    background: #E3F91D !important;
+    background: #fe2400 !important;
     z-index: 10;
     margin-top: -10px;
     height: calc(100% + 20px);
@@ -120,9 +120,10 @@
 .column:hover .headerCell,
 .column.isActive .cell,
 .column.isActive .headerCell {
-    color: #000 !important;
+    color: #fff !important;
     background: transparent !important;
     border-bottom: 1px solid transparent !important;
+    cursor: pointer;
     /* Remove row border on hover/active */
 }
 
@@ -159,6 +160,13 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.letsTalk:hover {
+    font-weight: 600;
+    text-decoration: none;
+    background: #fff;
+    color: #000;
 }
 
 @media (max-width: 1600px) {
@@ -268,6 +276,7 @@
         padding: 20px 0;
         border-radius: 12px;
     }
+
     .attributeCol {
         flex: 1.2;
     }
@@ -293,8 +302,8 @@
     }
 
     .modelsGrid {
-        min-width: 850px; 
-        padding-bottom: 20px; 
+        min-width: 850px;
+        padding-bottom: 20px;
     }
 
     .headerCell {

@@ -21,7 +21,7 @@
 }
 
 .highlight {
-    color: #E1F81C;
+    color: #fe2400;
     position: relative;
     display: inline-block;
 }
@@ -121,9 +121,9 @@
 }
 
 .learnBtn {
-    background: #E1F81C;
-    border: 1px solid #E1F81C;
-    color: #000;
+    background: #fe2400;
+    border: 1px solid #fe2400;
+    color: #fff;
     padding: 15px 40px;
     border-radius: 60px;
     font-family: var(--font-montserrat);
@@ -131,10 +131,10 @@
     font-size: 16px;
     margin-left: 60px;
     transition: 0.3s;
-    /* background: rgba(66, 89, 239, 0.1); */
 }
 
 .learnBtn:hover {
+    text-decoration: none;
     background: #fff;
     border: 1px solid #fff;
     color: #000;

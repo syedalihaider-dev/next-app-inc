@@ -16,8 +16,8 @@ const ContactForm = () => {
                 <div className={styles.headerRow}>
                     <div className={styles.leftTitle}>
                         <h2 className={styles.title}>
-                            Connect With Our <span className={styles.highlight}> ‘Appsters’.
-                                <Image src="/lp/mobile-app-studio/spring-vector.png" alt="line" width={150} height={15} className={styles.spring} />
+                            Connect With Our <span className={styles.highlight}> ‘NextAppInc’.
+                                <Image src="/lp/mobile-app-studio/dark-spring-vector-2.png" alt="line" width={150} height={15} className={styles.spring} />
                             </span>
                         </h2>
                         <p className={styles.subtitle}>

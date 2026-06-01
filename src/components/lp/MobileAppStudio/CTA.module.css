@@ -25,7 +25,7 @@
 }
 
 .highlight {
-    color: #D2FF28;
+    color: #fe2400;
     position: relative;
     display: inline-block;
 }
@@ -62,24 +62,25 @@
 }
 
 .callBtn {
-    background: rgba(255, 255, 255, 0.1);
+    background: #fe2400;
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #fe2400;
     backdrop-filter: blur(10px);
 }
 
 .chatBtn {
-    background: rgba(255, 255, 255, 0.1);
+    background: #fe2400;
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #fe2400;
     backdrop-filter: blur(10px);
 }
 
 .callBtn:hover,
 .chatBtn:hover {
-    background: #D2FF28;
+    text-decoration: none;
+    background: #ffff;
     color: #000;
-    border-color: #D2FF28;
+    border-color: #fff;
 }
 
 .mockupBox {

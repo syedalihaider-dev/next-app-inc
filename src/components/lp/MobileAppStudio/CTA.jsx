@@ -9,7 +9,7 @@ const CTA = () => {
     return (
         <section className={styles.ctaSection}>
             <Image
-                src="/lp/mobile-app-studio/cta-bg.png"
+                src="/lp/mobile-app-studio/dark-cta-bg.png"
                 alt="bg"
                 fill
                 className={styles.bgImg}
@@ -23,7 +23,7 @@ const CTA = () => {
                                 Ready To Start Your <br />
                                 Mobile App <span className={styles.highlight}>Journey?
                                     <Image
-                                        src="/lp/mobile-app-studio/spring-vector.png"
+                                        src="/lp/mobile-app-studio/dark-spring-vector-2.png"
                                         alt="spring"
                                         width={250}
                                         height={20}
@@ -35,7 +35,7 @@ const CTA = () => {
                                 Your business deserves apps that create impact from day one. Let’s turn your
                                 idea base into a solution that’s fast, secure, and ready to scale. Get started with a
                                 free consultation today and take the first step toward building your next
-                                breakthrough with Appsters.
+                                breakthrough with Next App Inc.
                             </p>
                             <div className={styles.btnGroup}>
                                 <a href={`tel:${PHONE_NUMBER}`} className={`${styles.ctaBtn} ${styles.callBtn}`}>CALL NOW</a>

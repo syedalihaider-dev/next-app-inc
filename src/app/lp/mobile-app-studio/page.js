@@ -6,11 +6,11 @@ import Banner from '@/components/lp/MobileAppStudio/Banner'
 import LeadingPartner from '@/components/lp/MobileAppStudio/LeadingPartner'
 import AwardsSlider from '@/components/lp/MobileAppStudio/AwardsSlider'
 import Services from '@/components/lp/MobileAppStudio/Services'
-import Portfolio from '@/components/lp/MobileAppStudio/Portfolio'
+// import Portfolio from '@/components/lp/MobileAppStudio/Portfolio'
 import CTA from '@/components/lp/MobileAppStudio/CTA'
 import Process from '@/components/lp/MobileAppStudio/Process'
 import ToolsMaster from '@/components/lp/MobileAppStudio/ToolsMaster'
-import Testimonials from '@/components/lp/MobileAppStudio/Testimonials'
+// import Testimonials from '@/components/lp/MobileAppStudio/Testimonials'
 import Industries from '@/components/lp/MobileAppStudio/Industries'
 import EngagementModels from '@/components/lp/MobileAppStudio/EngagementModels'
 import FAQs from '@/components/lp/MobileAppStudio/FAQs'
@@ -43,13 +43,13 @@ const Page = () => {
             <LeadingPartner />
             <AwardsSlider />
             <Services />
-            <Portfolio />
+            {/* <Portfolio /> */}
             <CTA />
             <Process />
             <div className={styles.cover}>
-                <Image src="/lp/mobile-app-studio/cover-bg.png" alt="cover" fill className={styles.coverImg} />
+                <Image src="/lp/mobile-app-studio/dark-cover-bg.png" alt="cover" fill className={styles.coverImg} />
                 <ToolsMaster />
-                <Testimonials />
+                {/* <Testimonials /> */}
             </div>
             <Industries />
             <EngagementModels />

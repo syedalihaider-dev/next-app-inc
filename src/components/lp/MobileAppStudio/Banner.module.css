@@ -33,7 +33,7 @@
 }
 
 .specialist {
-    color: #E1F81C;
+    color: #fe2400;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -56,9 +56,9 @@
 }
 
 .ctaBtn {
-    background: #E1F81C;
-    color: #000;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #fe2400;
+    color: #fff;
+    border: 1px solid #fe2400;
     padding: 15px 40px;
     text-align: center;
     font-family: var(--font-montserrat);
@@ -71,8 +71,8 @@
 }
 
 .ctaBtn:hover {
-    background: #fff;
-    color: #150E60;
+    background: #1a1a1a;
+    text-decoration: none;
 }
 
 .awards {
@@ -172,7 +172,7 @@
 
 .inputGroup input:focus,
 .inputGroup textarea:focus {
-    outline: 2px solid #4A78EF;
+    outline: 2px solid #fe2400;
 }
 
 .inputGroup input:-webkit-autofill,
@@ -186,9 +186,9 @@
 
 .submitBtn {
     width: 264px;
-    background: #000;
+    background: #1a1a1a;
+    border: 1px solid #1a1a1a;
     color: #fff;
-    border: none;
     padding: 15px;
     border-radius: 50px;
     font-family: var(--font-montserrat);
@@ -199,7 +199,9 @@
 }
 
 .submitBtn:hover {
-    background: #101FC4;
+    background: #fe2400;
+    border-color: #fe2400;
+    color: #fff;
     transform: translateY(-2px);
 }
 

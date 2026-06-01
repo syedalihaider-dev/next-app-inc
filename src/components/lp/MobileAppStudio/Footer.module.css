@@ -47,9 +47,9 @@
 }
 
 .socialIcon:hover {
-    background: #E3F91D;
-    color: #000;
-    border-color: #E3F91D;
+    background: #fe2400;
+    color: #fff;
+    border-color: #fe2400;
     transform: scale(1.1);
 }
 
@@ -74,7 +74,7 @@
 
 .legalLinks a:hover {
     opacity: 1;
-    color: #E3F91D;
+    color: #fe2400;
 }
 
 .legalLinks span {
@@ -89,7 +89,7 @@
 }
 
 .logoWrapper:hover {
-    border-color: #E3F91D;
+    border-color: #fe2400;
     transform: rotate(15deg);
 }
 

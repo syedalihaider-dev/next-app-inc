@@ -40,7 +40,7 @@ const EngagementModels = () => {
             <div className="container">
                 <h2 className={styles.title}>
                     Great apps don’t wait <br /> <span className={styles.highlight}> Neither should you
-                        <Image src="/lp/mobile-app-studio/spring-vector.png" alt="line" width={529} height={30} className={styles.spring} />
+                        <Image src="/lp/mobile-app-studio/red-spring-vector.png" alt="line" width={529} height={30} className={styles.spring} />
                     </span>
                 </h2>
 

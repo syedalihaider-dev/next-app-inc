@@ -31,7 +31,7 @@
 }
 
 .highlight {
-    color: #D2FF28;
+    color: #fe2400;
     position: relative;
     z-index: 1;
 }
@@ -75,9 +75,11 @@
 }
 
 .activeTab {
-    background: #E3F91D;
-    color: #000;
-    border-color: #E3F91D;
+    background: #fe2400;
+    color: #fff;
+    border-color: #fe2400;
+    border: 1px solid #fe2400;
+    box-shadow: inset -1px -1px 1px 0px #fe2400;
 }
 
 .desc {
@@ -110,9 +112,10 @@
 }
 
 .ctaBtn:hover {
-    background: #D2FF28;
-    color: #000;
-    border-color: #D2FF28;
+    text-decoration: none;
+    background: #fe2400;
+    color: #fff;
+    border-color: #fe2400;
 }
 
 .callBtn{

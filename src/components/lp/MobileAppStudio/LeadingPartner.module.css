@@ -45,7 +45,7 @@
 
 .discoverBtn {
     background: #000;
-    border: none;
+    border: 1px solid #000;
     padding: 15px 40px;
     border-radius: 60px;
     font-family: var(--font-montserrat);
@@ -57,8 +57,10 @@
 }
 
 .discoverBtn:hover {
-    background: #E1F81C;
-    color: #000;
+    text-decoration: none;
+    background: #fe2400;
+    color: #fff;
+    border-color: #fe2400;
 }
 
 .statsRow {

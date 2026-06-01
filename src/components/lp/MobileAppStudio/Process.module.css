@@ -57,7 +57,7 @@
 }
 
 .readMoreBtn {
-    background: #1128E6;
+    background: #fe2400;
     color: #fff;
     border: none;
     padding: 15px 50px;
@@ -70,8 +70,9 @@
 }
 
 .readMoreBtn:hover {
-    background: #D2FF28;
-    color: #000;
+    text-decoration: none;
+    background: #1a1a1a;
+    color: #fff;
 }
 
 .rightCol {
@@ -103,7 +104,7 @@
     top: 0;
     bottom: 0;
     width: 6px;
-    background: #1128E6;
+    background: #1a1a1a;
     border-radius: 10px;
 }
 
@@ -112,7 +113,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #D2FF28;
+    background: #fe2400;
     border-radius: 10px;
     transition: height 0.3s ease;
 }
