@@ -41,6 +41,20 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
 
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-8CMYG23XJM`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8CMYG23XJM');
+          `}
+        </Script>
+
         {/* Start of Chat Script */}
         <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4338bf84-3cf8-46ef-9cd1-996399dc7b9d" strategy="afterInteractive" />
         <Script id="zopim-init" strategy="afterInteractive">
