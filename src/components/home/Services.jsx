@@ -1,6 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -14,29 +15,52 @@ const Services = () => {
 
     const servicesData = [
         {
-            icon: "/services-icon-01.webp",
-            title: "Mobile <br /> Application",
-            description: "We design and build mobile apps for iOS and Android that people actually want to open. From consumer apps to enterprise tools, every build is performance-first, brand-consistent, and built to retain users past the first session."
+            icon: "/services/service-icon-android.png",
+            title: "Android App <br />Development",
+            description: "We build Android apps designed for speed, usability, and long-term performance. From consumer apps to enterprise tools, every build is optimized for Android devices, user behavior, and scalable business growth.",
+            link: "/services/android-app-development-services"
         },
         {
-            icon: "/services-icon-02.webp",
-            title: "E-commerce <br /> Development",
-            description: "We build online stores and marketplaces that convert browsers into buyers. Custom storefronts, seamless checkout flows, integrated payment gateways, and backend architecture to handle real traffic from launch day through peak season."
+            icon: "/services/service-icon-app-store.png",
+            title: "App Store <br />Optimization",
+            description: "We help apps get found, clicked, and downloaded through strategic App Store Optimization. From keyword planning to metadata, visuals, and conversion-focused improvements, we position your app for stronger visibility and better organic growth.",
+            link: "/services/app-store-optimization-services"
         },
         {
-            icon: "/service-icon-03.webp",
-            title: "Game <br /> Development",
-            description: "We develop mobile games, Unity experiences, and interactive entertainment products that keep players engaged. From hyper-casual to mid-core, our game teams handle concept, development, art, and live-ops strategy."
+            icon: "/services/service-icon-ar-vr.png",
+            title: "AR/VR App <br />Development",
+            description: "We create immersive AR and VR app experiences that bring ideas closer to users. From interactive product demos to training tools and entertainment concepts, our teams build experiences that feel smooth, engaging, and purposeful.",
+            link: "/services/ar-vr-app-development-services"
         },
         {
-            icon: "/service-icon-fullstack.webp",
-            title: "Web <br /> Development",
-            description: "We build web platforms, SaaS dashboards, and full-stack solutions that perform under pressure. Our engineering teams work across the modern stack to deliver products that are fast, secure, and built to grow with your business."
+            icon: "/services/service-icon-flutter.png",
+            title: "Flutter App <br />Development",
+            description: "We develop Flutter apps that deliver a consistent experience across iOS and Android. With clean interfaces, efficient code, and reliable performance, we help businesses launch faster without sacrificing quality, flexibility, or user experience.",
+            link: "/services/flutter-app-development-services"
         },
         {
-            icon: "/service-icon-fullstack.webp",
-            title: "Software <br/> Solutions",
-            description: "When off-the-shelf tools do not fit, we build the thing that does. Custom software, internal tools, workflow automation, and system integrations that reduce friction and give your team the infrastructure to operate at its best."
+            icon: "/services/service-icon-ios.png",
+            title: "iOS App <br />Development",
+            description: "We design and develop iOS apps built for Apple users and Apple standards. From intuitive interfaces to secure functionality, every app is crafted for performance, polish, and a smooth experience across iPhone and iPad.",
+            link: "/services/ios-app-development-services"
+        },
+        {
+            icon: "/services/service-icon-mobile-game.png",
+            title: "Mobile Game <br />Development",
+            description: "We build mobile games that are fun to play, easy to navigate, and designed to keep users engaged. From concept and mechanics to visuals and launch support, we help turn game ideas into playable products.",
+            link: "/services/mobile-game-development-services"
+        },
+        {
+            icon: "/services/service-icon-react-native.png",
+            title: "React Native <br />Development",
+            description: "We build React Native apps for businesses that need speed, flexibility, and cross-platform reach. Our teams create smooth mobile experiences with shared codebases, helping you reduce development time while maintaining strong app performance.",
+            link: "/services/react-native-app-development-services"
+        },
+        {
+            icon: "/services/service-icon-wearable.png",
+            title: "Wearable App <br />Development",
+            description: "We develop wearable apps that connect technology with everyday movement, health, fitness, and convenience. From smartwatches to connected devices, we build lightweight, responsive solutions that keep users engaged without slowing them down.",
+            link: "/services/wearable-app-development-services"
         }
     ];
 
@@ -93,13 +117,15 @@ const Services = () => {
                         >
                             {servicesData.map((service, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className={styles.serviceCard}>
-                                        <div className={styles.iconBox}>
-                                            <Image src={service.icon} alt={service.title} width={45} height={45} />
+                                    <Link href={service.link} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                                        <div className={styles.serviceCard}>
+                                            <div className={styles.iconBox}>
+                                                <Image src={service.icon} alt={service.title} width={45} height={45} />
+                                            </div>
+                                            <h4 className={styles.cardTitle} dangerouslySetInnerHTML={{ __html: service.title }}></h4>
+                                            <p className={`${styles.cardDescription} scroll_block`}>{service.description}</p>
                                         </div>
-                                        <h4 className={styles.cardTitle} dangerouslySetInnerHTML={{ __html: service.title }}></h4>
-                                        <p className={`${styles.cardDescription} scroll_block`}>{service.description}</p>
-                                    </div>
+                                    </Link>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

@@ -157,3 +157,24 @@
         margin-top: 40px;
     }
 }
+
+.btnWrapper :global(.chat) {
+    background-color: var(--dark-color, #000) !important;
+    color: var(--light-color, #fff) !important;
+}
+
+.btnWrapper :global(.chat) span {
+    color: var(--light-color, #fff) !important;
+}
+
+.btnWrapper :global(.chat) > div:last-child {
+    background-color: var(--light-color, #fff) !important;
+}
+
+.btnWrapper :global(.chat) img {
+    filter: brightness(0) !important;
+}
+
+.btnWrapper :global(.chat):hover {
+    border-color: var(--primary-color) !important;
+}

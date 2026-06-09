@@ -60,12 +60,13 @@ const ContactSection = ({ isNewDesign = false }) => {
     };
 
     const services = [
-        { id: 'unity', name: 'Unity Game Development', icon: '/service-icon-unity.webp' },
-        { id: 'react', name: 'React Native Development', icon: '/service-icon-react.webp' },
-        { id: 'flutter', name: 'Flutter Development', icon: '/service-icon-flutter.webp' },
-        { id: 'fullstack', name: 'Full Stack Development', icon: '/service-icon-fullstack.webp' },
-        { id: 'marketing', name: 'Mobile App Marketing', icon: '/service-icon-marketing.webp' },
-        { id: 'ecommerce', name: 'Any Ecommerce', icon: '/service-icon-ecommerce.webp' },
+        { id: 'android', name: 'Andriod App Development', icon: '/services-icon-01.webp' },
+        { id: 'ar_vr', name: 'AR/VR App Development', icon: '/service-icon-ar-vr.png' },
+        { id: 'flutter', name: 'Flutter App Development', icon: '/service-icon-flutter.webp' },
+        { id: 'ios', name: 'iOS App Development', icon: '/service-icon-ios.png' },
+        { id: 'mobile', name: 'Mobile App Development', icon: '/service-icon-mobile.png' },
+        { id: 'react_native', name: 'React Native Development', icon: '/service-icon-react.webp' },
+        { id: 'wearable', name: 'Wearable App Development', icon: '/service-icon-wearable-app.png' },
     ];
 
     const toggleService = (name) => {

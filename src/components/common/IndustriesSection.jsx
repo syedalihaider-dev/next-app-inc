@@ -82,20 +82,22 @@ const IndustriesSection = () => {
                 >
                     {industries.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className={styles.industryCard}>
-                                <div className={styles.imageBox}>
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        fill
-                                        className={styles.industryImg}
-                                    />
+                            <Link href={item.link} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                                <div className={styles.industryCard}>
+                                    <div className={styles.imageBox}>
+                                        <Image
+                                            src={item.image}
+                                            alt={item.title}
+                                            fill
+                                            className={styles.industryImg}
+                                        />
+                                    </div>
+                                    <div className={styles.overlay}>
+                                        <h4 className={styles.cardTitle}>{item.title}</h4>
+                                        <p className={styles.cardDesc}>{item.description}</p>
+                                    </div>
                                 </div>
-                                <div className={styles.overlay}>
-                                    <h4 className={styles.cardTitle}>{item.title}</h4>
-                                    <p className={styles.cardDesc}>{item.description}</p>
-                                </div>
-                            </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>
