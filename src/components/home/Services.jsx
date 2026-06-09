@@ -58,7 +58,7 @@ const Services = () => {
         },
         {
             icon: "/services/service-icon-wearable.png",
-            title: "Wearable App <br />Developmentt",
+            title: "Wearable App <br />Development",
             description: "We develop wearable apps that connect technology with everyday movement, health, fitness, and convenience. From smartwatches to connected devices, we build lightweight, responsive solutions that keep users engaged without slowing them down.",
             link: "/services/wearable-app-development-services"
         }
