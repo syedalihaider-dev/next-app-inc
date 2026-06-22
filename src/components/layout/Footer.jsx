@@ -8,7 +8,7 @@ import { SITE_CONFIG } from '@/configs/site-config';
 
 const Footer = () => {
     const pathname = usePathname();
-    
+
     if (pathname?.startsWith('/lp')) return null;
 
     return (
@@ -29,6 +29,7 @@ const Footer = () => {
                                 <li><Link href="/">HOME</Link></li>
                                 <li><Link href="/about-us">ABOUT US</Link></li>
                                 <li><Link href="/case-studies">CASE STUDIES</Link></li>
+                                <li><Link target='_blank' href="https://blog.nextappinc.com/">BLOG</Link></li>
                                 <li><Link href="/contact-us">CONTACT US</Link></li>
                             </ul>
                         </div>
