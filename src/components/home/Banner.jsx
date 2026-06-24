@@ -2,6 +2,7 @@ import styles from './Banner.module.css';
 import Image from 'next/image';
 // import VerticalSlider from '@/components/home/VerticalSlider';
 import MyButton from '@/components/layout/MyButton';
+import BannerForm from './BannerForm';
 
 const Banner = () => {
     const slider1 = ['/banner-slider/01.webp', '/banner-slider/02.webp', '/banner-slider/03.webp', '/banner-slider/04.webp'];
@@ -37,7 +38,7 @@ const Banner = () => {
             </div> */}
 
             <div className="container">
-                <div className="row">
+                <div className="row align-items-center">
                     <div className="col-lg-7 col-md-12">
                         <div className={styles.contentWrapper}>
                             <h1 className={styles.heading}>
@@ -51,6 +52,9 @@ const Banner = () => {
                                 <MyButton text="Live Chat" className="chat btn_white" />
                             </div>
                         </div>
+                    </div>
+                    <div className="col-lg-5 col-md-12">
+                        <BannerForm />
                     </div>
                 </div>
             </div>
