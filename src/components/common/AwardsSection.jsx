@@ -44,7 +44,7 @@ const AwardsSection = () => {
                         <div className={styles.contentHeader}>  
                             <h2 className={styles.heading}>
                                 Results Built on <br />
-                                <span className={styles.purpleText}>Proven</span><span className={styles.purpleText}>Execution</span>
+                                <span className={styles.purpleText}>Proven</span> <span className={styles.purpleText}>Execution</span>
                             </h2>
                             <p className={styles.desc}>
                                 Your project deserves results not promises. Our awards reflect the quality of our engineering,
