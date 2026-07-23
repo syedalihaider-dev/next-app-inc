@@ -6,7 +6,7 @@ import MyButton from '@/components/layout/MyButton';
 const CompanyChoiceSection = () => {
     const cards = [
         {
-            title: 'Strategy &amp; Product Discovery',
+            title: 'Strategy & Product Discovery',
             description: 'We start by understanding your users, business goals, and technical requirements, turning ideas into a clear product roadmap before development begins.',
             icon: '/services/icon-discovery-and-strategy.webp'
         },
@@ -16,12 +16,12 @@ const CompanyChoiceSection = () => {
             icon: '/services/icon-ux-ui-design.webp'
         },
         {
-            title: 'Engineering &amp; Integration',
+            title: 'Engineering & Integration',
             description: 'Develop native wearable apps, companion mobile experiences, and backend systems that work together seamlessly across devices.',
             icon: '/services/icon-development.webp'
         },
         {
-            title: 'Testing, Launch &amp; Growth',
+            title: 'Testing, Launch & Growth',
             description: 'Validate performance, prepare for App Store and Google Play submission, and continue supporting your product as wearable platforms evolve.',
             icon: '/services/icon-launch-and-deployment.webp'
         }
