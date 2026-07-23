@@ -137,7 +137,7 @@ const ContactSection = ({ isNewDesign = false }) => {
                 <div className="row align-items-center mt-5">
                     <div className="col-lg-5">
                         <div className={styles.infoCol}>
-                            <h3 className={styles.subHeading}>Contact Us</h3>
+                            <h3 className={styles.subHeading}>Contact Uss</h3>
 
                             {isNewDesign ? (
                                 <>
