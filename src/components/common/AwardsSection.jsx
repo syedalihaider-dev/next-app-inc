@@ -41,13 +41,14 @@ const AwardsSection = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10">
-                        <div className={styles.contentHeader}>
+                        <div className={styles.contentHeader}>  
                             <h2 className={styles.heading}>
-                                Results That Speak <br />
-                                <span className={styles.purpleText}>Louder</span> Than <span className={styles.purpleText}>Promises</span>
+                                Results Built on <br />
+                                <span className={styles.purpleText}>Proven</span><span className={styles.purpleText}>Execution</span>
                             </h2>
                             <p className={styles.desc}>
-                                We've earned recognition for our quality-first approach and successful delivery of complex digital projects across mobile, web, e-commerce, game, and software domains  with skilled developers, designers, and project managers working as one team.
+                                Your project deserves results not promises. Our awards reflect the quality of our engineering,
+                                the strength of our process, and the trust businesses place in us to bring ambitious ideas to life.
                             </p>
                         </div>
 

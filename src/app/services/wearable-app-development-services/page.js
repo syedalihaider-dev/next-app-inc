@@ -21,45 +21,45 @@ export const metadata = {
 
 const tabs = [
     {
-        id: 'planning',
-        label: 'Project Planning',
-        title: 'Project Planning',
-        description: 'We define which wearable platforms your product targets, what sensor data it needs, how it communicates with the companion mobile app, and what the battery impact budget looks like, all before development begins.',
+        id: 'Healthcare',
+        label: 'Healthcare',
+        title: 'Healthcare',
+        description: 'Enable remote patient monitoring, medication reminders, and connected care with secure wearable solutions that deliver real-time health data to patients, caregivers and providers.',
         image: '/services/project-planning.webp'
     },
     {
-        id: 'wireframes',
-        label: 'Wireframes',
-        title: 'Wireframes',
-        description: "Wearable wireframes are miniaturized and touch-first. We design for glanceability, one-tap interactions, and micro-content layouts that work on screens measured in millimetres, not inches.",
+        id: 'Finance',
+        label: 'Finance',
+        title: 'Finance',
+        description: "Strengthen authentication, streamline approvals and deliver secure notifications with wearable experiences designed for financial services and digital banking.",
         image: '/services/wireframes.webp'
     },
     {
-        id: 'prototype',
-        label: 'Prototype Demo',
-        title: 'Prototype Demo',
-        description: 'We build a working prototype on the target wearable hardware so you can experience the app on wrist before it is built in full. Physical testing at the prototype stage saves significant rework during development.',
+        id: 'Insurance',
+        label: 'Insurance',
+        title: 'Insurance',
+        description: 'Support wellness programs, claims, and usage-based insurance with wearable integrations that securely capture health and activity data while maintaining user trust.',
         image: '/services/prototype-demo.webp'
     },
     {
-        id: 'development',
-        label: 'Development',
-        title: 'Development',
-        description: 'Our engineers build companion apps alongside wearable counterparts, managing data sync, background refresh, notification scheduling, and health sensor integration across watchOS and Wear OS with clean, battery-conscious code.',
+        id: 'Ecommerce',
+        label: 'Ecommerce',
+        title: 'Ecommerce',
+        description: 'Create connected shopping experiences with wearable notifications, loyalty features, order updates and personalized recommendations that keep customers engaged beyond the smartphone.',
         image: '/services/development.webp'
     },
     {
-        id: 'quality',
-        label: 'Quality Control',
-        title: 'Quality Control',
-        description: 'We test on physical wearable hardware across multiple watch sizes and OS versions, validating real-time sync, notification delivery, sensor accuracy, and background process behaviour under realistic usage conditions.',
+        id: 'Education',
+        label: 'Education',
+        title: 'Education',
+        description: 'Build wearable learning experiences that support attendance, training, notifications and real-time engagement for students, educators, and enterprise training programs.',
         image: '/services/quality-control.webp'
     },
     {
-        id: 'deployment',
-        label: 'Deployment and Launch',
-        title: 'Deployment and Launch',
-        description: 'We manage App Store and Play Store submission for both the companion app and the wearable extension, handle review communication, and monitor post-launch performance across paired device combinations.git',
+        id: 'Agencies',
+        label: 'Agencies',
+        title: 'Agencies',
+        description: 'Give teams instant access to project updates, approvals, client notifications and collaboration tools through companion wearable experiences that keep work moving anywhere.',
         image: '/services/deployment-and-launch.webp'
     }
 ];
@@ -68,19 +68,24 @@ const WearableAppDevelopmentPage = () => {
     return (
         <main>
             <ServiceInnerBanner 
-                badge="Wearable App Development"
+                badge="Wearable App Development Company"
                 title={
                     <>
-                    Your <span className={styles.purpleText}>Wrist.</span> Your <span className={styles.purpleText}>Data.</span> <span className={styles.purpleText}>Your </span> App. <span className={styles.purpleText}></span>
+                    Your <span className={styles.purpleText}> App </span> on <span className={styles.purpleText}> Every</span> <span className={styles.purpleText}> </span> Wrist <span className={styles.purpleText}></span>
                     </>
                 }
-                description="Wearable technology is no longer a novelty, it is a primary data channel for healthcare, fitness, enterprise, and consumer brands. We build native and companion wearable apps for Apple Watch, Wear OS, Fitbit, and custom IoT devices that connect seamlessly with your iOS and Android ecosystem.."
+                description="Every second counts on the wrist. Your wearable app should feel fast, intuitive, and reliable
+                from the very first interaction. We build applications that turn ambitious ideas into wearable
+                experiences people can rely on."
                 bgImage="/services/wearable-app-banner-bg.png"
             />
             <ServiceSection 
-                heading="Built for the Wrist, Designed  "
-                purpleText="for Real-Time Use"
-                description="Building for wearables requires a different discipline than building for phones. Every interaction must be faster, every screen more focused, and every data exchange more efficient. Here is how we approach every wearable development engagement."
+                heading="Experiences Designed   "
+                purpleText="for Life in Motion"
+                description="Our designs move with people, not slow them down.
+                    We design and develop wearable experiences that bring real-time intelligence to the wrist,
+                    transforming complex data into simple, actionable insights. From native watchOS and Wear OS
+                    apps to connected IoT ecosystems, we build technology that feels effortless."
                 features={[
                     "Certified Developers",
                     "Custom Design",
@@ -94,7 +99,7 @@ const WearableAppDevelopmentPage = () => {
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
             <ProcessTabs 
-                heading={<>Our <span className={styles.purpleText}>Wearable App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
+                heading={<>Wearable <span className={styles.purpleText}> Solutions</span> <span className={styles.purpleText}> Across</span>, <span className={styles.purpleText}></span> Industries<span className={styles.purpleText}></span></>}
                 tabs={tabs}
             />
             <WhyChooseAppSection />

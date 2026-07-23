@@ -43,9 +43,10 @@ const CaseStudy = () => {
                     <span className={styles.badge}>CASE STUDY</span>
                     <h2 className={styles.heading}>
                         <span className={styles.underlinedText}>
-                            Problems We've
+                            Problems We Have
                         </span> <span className="secondarytxt">Solved</span>
                     </h2>
+                    <p>Turning Ideas Into Market-Ready Products.</p>
                 </div>
             </div>
             <div className={`${styles.sliderWrapper}`}>

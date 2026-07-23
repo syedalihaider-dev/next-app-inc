@@ -100,8 +100,8 @@ const TechStackSection = () => {
             <div className="container">
                 <div className={styles.headerArea}>
                     <h2 className={styles.heading}>
-                        Our Tech Stack For <br />
-                        <span className={styles.purpleText}>Mobile App Development</span>
+                        We Build on  <br />
+                        <span className={styles.purpleText}>Technologies You Can Trust</span>
                     </h2>
                 </div>
 

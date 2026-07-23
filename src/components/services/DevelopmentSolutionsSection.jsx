@@ -4,11 +4,11 @@ import styles from './DevelopmentSolutionsSection.module.css';
 import MyButton from '@/components/layout/MyButton';
 
 const features = [
-    'Custom designs that reflect your brand identity across every digital touchpoint',
-    'Cross-platform and multi-service delivery web, app, e-commerce, game, and software',
-    'Smooth integration with your existing tools, APIs, and business systems',
-    'Thorough QA and testing to ensure a perfect, bug-free launch every time',
-    'Ongoing post-launch support for hassle-free updates and growth'
+    'Battery-first engineering',
+    'Companion-first architecture',
+    'Direct access to US-based experts',
+    'Built with compliance in mind',
+    'Support beyond launch'
 ];
 
 const DevelopmentSolutionsSection = () => {
@@ -50,10 +50,10 @@ const DevelopmentSolutionsSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.contentCol}>
                             <div className={styles.badge}>
-                                GET STARTED
+                               Built Differently. Delivered Better.
                             </div>
-                            <h2 className={styles.heading}>
-                                More Than an App Agency Your <span className={styles.purpleText}>Full-Stack Digital Partner</span>
+                            <h2 className={styles.heading}>  
+                                Why Wearable Leaders <span className={styles.purpleText}>Choose Next App</span>
                             </h2>
 
                             <ul className={styles.featureList}>

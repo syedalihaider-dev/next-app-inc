@@ -56,7 +56,7 @@ const ServicesListSection = () => {
             </div>
 
             <div className="container">
-                <div className={styles.header}>
+                <div className={styles.header}> 
                     <h2 className={styles.heading}>
                         <span className={styles.neonGreen}>Everything</span> Your <span className={styles.neonGreen}>Business</span> <br /> Needs is <span className={styles.neonGreen}>Under One Roof!</span>
                     </h2>

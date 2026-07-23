@@ -119,9 +119,9 @@ const ContactSection = ({ isNewDesign = false }) => {
                     {!isNewDesign ? (
                         <>
                             <span className={styles.badge}>CONTACT US</span>
-                            <h2 className={styles.heading}>
-                                Ready to <span className={styles.highlight}>Build a Strategy </span><br />
-                                That Works in the <span className={styles.highlight}>Real World.</span>
+                            <h2 className={styles.heading}>   
+                                Partner With a Team <span className={styles.highlight}>That Builds </span><br />
+                                Wearables <span className={styles.highlight}>Right.</span>
                             </h2>
                         </>
                     ) : (

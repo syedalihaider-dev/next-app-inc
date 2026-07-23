@@ -10,14 +10,14 @@ const WhyChooseAppSection = ({
     mockupImage = "/services/why-choose-mockup.webp",
     underlineImage = "/blue-vector.webp"
 }) => {
-    const defaultTitle = (
+    const defaultTitle = ( 
         <>
-            Why Choose <span className={styles.purpleText}>Next <br /> App</span> Mobile Apps
+            Security &amp; Compliance, Built <span className={styles.purpleText}> Into Every <br /> App</span>   Wearable App 
         </>
     );
 
-    const defaultDesc1 = "We're Trusted By Businesses Worldwide, Turning Their Ideas Into Realities For All To See. Your App Idea Could Be Next.";
-    const defaultDesc2 = "At Next App, We Help Startups, Growing Businesses, And Enterprises Transform Ideas Into Engaging, Scalable Mobile Experiences. From Strategy To Launch, Our Team Delivers High-Performance Apps Tailored To Your Market And Goals.";
+    const defaultDesc1 = "Wearable apps handle sensitive data, from heart rate and sleep to location and glucose.";
+    const defaultDesc2 = "Every solution we build includes encrypted data, GDPR-compliant privacy controls, role-based access, and secure Bluetooth Low Energy (BLE) connections to help protect users at every touchpoint";
 
     return (
         <section className={styles.whyChooseSection}>

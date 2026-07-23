@@ -6,23 +6,23 @@ import MyButton from '@/components/layout/MyButton';
 const CompanyChoiceSection = () => {
     const cards = [
         {
-            title: ' Discovery & Strategy',
-            description: 'We get under the hood of your business understanding your goals, users, and competition before a single line of code is written.',
+            title: 'Strategy &amp; Product Discovery',
+            description: 'We start by understanding your users, business goals, and technical requirements, turning ideas into a clear product roadmap before development begins.',
             icon: '/services/icon-discovery-and-strategy.webp'
         },
         {
-            title: 'UX/UI Design',
-            description: "Our designers craft intuitive, beautiful interfaces that guide users naturally and reflect your brand's personality at every touchpoint.",
+            title: 'Wearable UX/UI Design',
+            description: "Design interfaces built for the wrist, where every interaction is intuitive, glanceable, and optimized for real-world use.",
             icon: '/services/icon-ux-ui-design.webp'
         },
         {
-            title: 'Development',
-            description: 'Our engineers build clean, scalable code using modern frameworks, delivering both performance and the flexibility your product needs to grow.',
+            title: 'Engineering &amp; Integration',
+            description: 'Develop native wearable apps, companion mobile experiences, and backend systems that work together seamlessly across devices.',
             icon: '/services/icon-development.webp'
         },
         {
-            title: 'Launch & Deployment',
-            description: 'We handle app store submissions, server deployments, and go-live checklists so your launch is smooth and stress-free.',
+            title: 'Testing, Launch &amp; Growth',
+            description: 'Validate performance, prepare for App Store and Google Play submission, and continue supporting your product as wearable platforms evolve.',
             icon: '/services/icon-launch-and-deployment.webp'
         }
     ];
@@ -35,10 +35,10 @@ const CompanyChoiceSection = () => {
                     <div className="col-lg-6">
                         <div className={styles.contentCol}>
                             <h2 className={styles.heading}>      
-                                A Process <span className={styles.purpleText}>Built for</span> Clarity,<span className={styles.purpleText}></span> Speed, and <span className={styles.purpleText}> Zero Surprises</span>
+                                A Process  <span className={styles.purpleText}>Built Around</span> Your <span className={styles.purpleText}></span> Product<span className={styles.purpleText}></span>
                             </h2>
                             <p className={styles.description}>
-                               We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education, powered by technology that drives real results. And it is not just apps. 
+                               Every wearable product has different goals, but successful launches follow the same disciplined process. From validating your idea to deployment and long-term support, we keep every stage focused, collaborative and transparent.
                             </p>
                             <div className={styles.btnRow}>
                                 <MyButton text="Get Started" className="btn_black" />

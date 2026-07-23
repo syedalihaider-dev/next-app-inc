@@ -53,9 +53,9 @@ const IndustriesSection = () => {
 
             <div className="container position-relative z-2">
                 <div className={styles.headerArea}>
-                    <h2 className={styles.heading}>Industries We Have Served</h2>
+                    <h2 className={styles.heading}>The Business Value of Wearable Technology</h2>
                     <p className={styles.description}>
-                        We Specialize In Developing Industry-Specific Applications For Our Clients.
+                        Turning real-time data into real-world business value.
                     </p>
                 </div>
             </div>
