@@ -41,12 +41,9 @@ export async function POST(req) {
                 'sales@nextappinc.com',
                 'noman@canvasdigital.net',
                 'manzar.inam@canvasdigital.org',
-                'faran.tanveer@canvasdigital.org',                
-                'hafiz.oumama@canvasdigital.org',
+                'faran.tanveer@canvasdigital.org',
                 'hassan.ak@canvasdigital.org',
                 'moiz.ali@canvasdigital.org',
-                'muhammad.hingoro@canvasdigital.org',
-                'ali.haider@canvasdigital.org'
             ],
             subject: 'Lead | Next App Inc Main Brand',
             html: internalMessage,
