@@ -71,7 +71,7 @@ const AppStoreOptimizationServices = () => {
     return (
         <main>
             <ServiceInnerBanner
-                badge="App Proto Typing Services"
+                badge="App Store Optimization Services"
                 title={
                     <>
                         <span className={styles.purpleText}> Get Found. </span>  Get Downloaded.   <span className={styles.purpleText}> Get </span> <span className={styles.purpleText}> Results. </span><span className={styles.purpleText}></span>

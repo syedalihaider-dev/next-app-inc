@@ -67,17 +67,17 @@ const tabs = [
 const MobileWebAppDevelopmentPage = () => {
     return (
         <main>
-            <ServiceInnerBanner 
+            <ServiceInnerBanner
                 badge="Mobile Web App Development"
                 title={
                     <>
-                    Your <span className={styles.purpleText}>Website</span> Shouldn't <span className={styles.purpleText}>Feel Like</span> a Website. It Should Feel Like an <span className={styles.purpleText}>App.</span>
+                        Your <span className={styles.purpleText}>Website</span> Shouldn't <span className={styles.purpleText}>Feel Like</span> a Website. It Should Feel Like an <span className={styles.purpleText}>App.</span>
                     </>
                 }
                 description="Progressive web apps blur the line between browser and native experience. We build mobile web apps that load instantly, work offline, and behave like the real thing, no App Store required."
                 bgImage="/services/mobile-web-banner-bg.png"
             />
-            <ServiceSection 
+            <ServiceSection
                 heading="Why Progressive Web Apps Are the Smart "
                 purpleText="Choice for Growing Businesses"
                 description="Not every product needs to be in the App Store. Progressive web apps (PWAs) give your users an app-like experience directly from their browser, with offline access, push notifications, and home screen installation. They're faster to build, easier to update, and more accessible than native apps. "
@@ -93,7 +93,7 @@ const MobileWebAppDevelopmentPage = () => {
             <ServicesListSection />
             <DevelopmentSolutionsSection />
             <CompanyChoiceSection />
-            <ProcessTabs 
+            <ProcessTabs
                 heading={<>Our <span className={styles.purpleText}>Mobile Web App Development</span> Approach Makes It <span className={styles.purpleText}>Simple</span>, <span className={styles.purpleText}>Easy</span>, & <span className={styles.purpleText}>Efficient</span></>}
                 tabs={tabs}
             />

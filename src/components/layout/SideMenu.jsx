@@ -13,7 +13,7 @@ const services = [
     { name: 'FLUTTER APP DEVELOPMENT', href: '/services/flutter-app-development-services' },
     { name: 'IOS APP DEVELOPMENT', href: '/services/ios-app-development-services' },
     { name: 'MOBILE GAME DEVELOPMENT', href: '/services/mobile-game-development-services' },
-    { name: 'MOBILE WEB APP DEVELOPMENT', href: '/services/mobile-web-app-development-services' },
+    { name: 'WEB APPLICATION DEVELOPMENT SERVICES', href: '/services/web-application-development-services' },
     { name: 'REACT NATIVE APP DEVELOPMENT', href: '/services/react-native-app-development-services' },
     { name: 'WEARABLE APP DEVELOPMENT', href: '/services/wearable-app-development-services' },
     { name: '2D GAME DEVELOPMENT', href: '/services/2d-game-development-company' },
