@@ -11,7 +11,7 @@ const WhyChooseAppSection = ({
     underlineImage = "/blue-vector.webp"
 }) => {
     const defaultTitle = ( 
-        <>
+        <> 
             Security &amp; Compliance, Built <span className={styles.purpleText}> Into Every <br /> App</span>   Wearable App 
         </>
     );
@@ -39,12 +39,16 @@ const WhyChooseAppSection = ({
                             </h2>
 
                             <div className={styles.description}>
-                                <p>
-                                    {desc1 || defaultDesc1}
-                                </p>
-                                <p>
-                                    {desc2 || defaultDesc2}
-                                </p>
+                                {(desc1 !== undefined ? desc1 : defaultDesc1) && (
+                                    <p>
+                                        {desc1 !== undefined ? desc1 : defaultDesc1}
+                                    </p>
+                                )}
+                                {(desc2 !== undefined ? desc2 : defaultDesc2) && (
+                                    <p>
+                                        {desc2 !== undefined ? desc2 : defaultDesc2}
+                                    </p>
+                                )}
                             </div>
 
                             <div className={styles.btnRow}>

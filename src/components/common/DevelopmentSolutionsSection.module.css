@@ -1,0 +1,166 @@
+.solutionsSection {
+    position: relative;
+    background-color: #ffeae7;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.contentCol {
+    padding: 120px 30px 120px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: 1px solid #A7A7A7;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.heading {
+    color: var(--dark-color);
+    margin-bottom: 25px;
+}
+
+.purpleText {
+    color: var(--primary-color);
+}
+
+.featureList {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.iconWrapper {
+    flex-shrink: 0;
+}
+
+.featureText {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.4;
+}
+
+.btnRow {
+    display: flex;
+}
+
+.mockupCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mockupImg {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 50px rgba(106, 85, 255, 0.2));
+}
+
+@media (max-width: 1600px) {
+    .contentCol {
+        padding: 60px 0 60px 0;
+    }
+
+    .badge {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    .featureList {
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .featureItem {
+        gap: 10px;
+    }
+
+    .featureText {
+        font-size: 16px;
+    }
+
+    .mockupCol {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .contentCol {
+        padding: 40px 0 40px 0;
+    }
+
+    .badge {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .featureList {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .featureText {
+        font-size: 14px;
+    }
+
+    .mockupCol {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .badge {
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+    }
+
+    .featureList {
+        margin-bottom: 20px;
+    }
+
+    .mockupCol {
+        width: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        line-height: unset;
+    }
+    .mockupCol {
+        width: 300px;
+        margin-left: auto;
+    }
+}

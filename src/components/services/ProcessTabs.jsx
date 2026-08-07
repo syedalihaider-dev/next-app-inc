@@ -15,7 +15,7 @@ const ProcessTabs = ({ heading, purpleText, tabs }) => {
                     <div className="col-lg-10">
                         <div className={styles.headerArea}>
                             <h2 className={styles.heading}>
-                                {heading} <span className={styles.purpleText}>{purpleText}</span>
+                                {heading}
                             </h2>
                         </div>
                     </div>

@@ -41,7 +41,7 @@ const AwardsSection = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10">
-                        <div className={styles.contentHeader}>  
+                        <div className={styles.contentHeader}>
                             <h2 className={styles.heading}>
                                 Results Built on <br />
                                 <span className={styles.purpleText}>Proven</span> <span className={styles.purpleText}>Execution</span>

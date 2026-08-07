@@ -29,7 +29,7 @@ const services = [
     {
         id: '05',
         title: 'Mobile Game Development',
-        description: 'Engaging 2D/3D games built for iOS, Android, and cross-platform — from casual games to fully immersive experiences.'
+        description: 'Engaging 2D/3D games built for iOS, Android, and cross-platform, from casual games to fully immersive experiences.'
     },
     {
         id: '06',

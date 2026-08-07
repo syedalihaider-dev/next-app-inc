@@ -1,0 +1,153 @@
+.whyChooseSection {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.bgBlobs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.blobImg {
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.heading {
+    color: var(--dark-color);
+    margin-bottom: 25px;
+}
+
+.purpleText {
+    color: var(--primary-color);
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+.description p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btnRow {
+    display: flex;
+}
+
+.mockupWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 45%;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.mockupImg {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1600px) {
+    .whyChooseSection {
+        padding: 80px 0;
+    }
+
+    .description p {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .mockupWrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .whyChooseSection {
+        padding: 60px 0;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .mockupWrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .whyChooseSection {
+        padding: 40px 0;
+    }
+
+    .description p {
+        font-size: 14px;
+    }
+
+    .mockupWrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .description p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .mockupWrapper {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .description p {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .mockupWrapper {
+        width: 40%;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 575px) {
+.whyChooseSection {
+        padding: 40px 0 0;
+    }
+
+    .description p {
+        width: 100%;
+    }
+
+    .mockupWrapper {
+        margin-top: 30px;
+        position: unset;
+        width: 100%;
+        z-index: -1;
+    }
+}

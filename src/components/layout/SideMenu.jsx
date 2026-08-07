@@ -16,6 +16,7 @@ const services = [
     { name: 'MOBILE WEB APP DEVELOPMENT', href: '/services/mobile-web-app-development-services' },
     { name: 'REACT NATIVE APP DEVELOPMENT', href: '/services/react-native-app-development-services' },
     { name: 'WEARABLE APP DEVELOPMENT', href: '/services/wearable-app-development-services' },
+    { name: '2D GAME DEVELOPMENT', href: '/services/2d-game-development-company' },
 ];
 
 const industries = [
