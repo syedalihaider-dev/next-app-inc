@@ -17,6 +17,9 @@ const services = [
     { name: 'REACT NATIVE APP DEVELOPMENT', href: '/services/react-native-app-development-services' },
     { name: 'WEARABLE APP DEVELOPMENT', href: '/services/wearable-app-development-services' },
     { name: '2D GAME DEVELOPMENT', href: '/services/2d-game-development-company' },
+    { name: 'KIOSK SOFTWARE DEVELOPMENT', href: '/services/kiosk-software-devlopment-sevices' },
+    { name: 'LOCKER MANAGEMENT SOFTWARE', href: '/services/locker-management-software-services' },
+    { name: 'VENDING MACHINE MANAGEMENT SOFTWARE', href: '/services/vending-machine-management-services' }
 ];
 
 const industries = [
@@ -29,6 +32,7 @@ const industries = [
     { name: 'REAL ESTATE APP DEVELOPMENT', href: '/industries/real-estate-app-development' },
     { name: 'AUTOMATIVE APP DEVELOPMENT', href: '/industries/automotive-app-development' },
     { name: 'TRAVEL APP DEVELOPMENT', href: '/industries/travel-app-development' },
+   
 ];
 
 import { SITE_CONFIG } from '@/configs/site-config';
