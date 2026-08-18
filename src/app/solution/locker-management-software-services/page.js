@@ -20,10 +20,6 @@ export const metadata = {
     title: "Locker Management Software | NextApp",
     description: "NextApp builds smart locker management software for workplaces, campuses, and enterprises. Secure access control, real-time monitoring, and full fleet visibility.",
 
-    robots: {
-        index: false,
-        follow: false,
-    },
 
 };
 

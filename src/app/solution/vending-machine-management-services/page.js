@@ -19,10 +19,7 @@ import ContactSection from "@/components/common/ContactSection";
 export const metadata = {
     title: "Vending Machine Management Software | NextApp",
     description: "NextApp builds custom vending machine management software with real-time inventory tracking, route optimization, and smart vending fleet control for operators.",
-    robots: {
-        index: false,
-        follow: false,
-    },
+
 };
 
 const tabs = [

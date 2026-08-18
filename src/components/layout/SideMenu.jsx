@@ -16,10 +16,7 @@ const services = [
     { name: 'WEB APPLICATION DEVELOPMENT SERVICES', href: '/services/web-application-development-services' },
     { name: 'REACT NATIVE APP DEVELOPMENT', href: '/services/react-native-app-development-services' },
     { name: 'WEARABLE APP DEVELOPMENT', href: '/services/wearable-app-development-services' },
-    { name: '2D GAME DEVELOPMENT', href: '/services/2d-game-development-company' },
-    { name: 'KIOSK SOFTWARE DEVELOPMENT', href: '/services/kiosk-software-devlopment-sevices' },
-    { name: 'LOCKER MANAGEMENT SOFTWARE', href: '/services/locker-management-software-services' },
-    { name: 'VENDING MACHINE MANAGEMENT SOFTWARE', href: '/services/vending-machine-management-services' }
+    { name: '2D GAME DEVELOPMENT', href: '/services/2d-game-development-company' }
 ];
 
 const industries = [

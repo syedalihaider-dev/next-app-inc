@@ -20,10 +20,7 @@ export const metadata = {
     title: "Kiosk Software Development Company | NextApp",
     description: "NextApp delivers custom kiosk software development for self-service, digital, and payment kiosks. Secure, scalable software built for 24/7 public environments.",
 
-    robots: {
-        index: false,
-        follow: false,
-    },
+
 
 };
 
