@@ -1,6 +1,7 @@
 import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
 import styles from '@/components/services/ServiceInnerBanner.module.css';
 import ServiceSection from '@/components/services/ServiceSection';
+import '@/styles/service-page-overrides.css';
 import AwardsSection from '@/components/common/AwardsSection';
 import ServicesListSection from '@/components/services/ServicesListSection';
 import DevelopmentSolutionsSection from '@/components/common/DevelopmentSolutionsSection';
@@ -20,9 +21,9 @@ export const metadata = {
     description: "NextApp delivers custom kiosk software development for self-service, digital, and payment kiosks. Secure, scalable software built for 24/7 public environments.",
 
     robots: {
-    index: false,
-    follow: false,
-  },
+        index: false,
+        follow: false,
+    },
 
 };
 
@@ -75,16 +76,16 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 
 const KioskSoftwareDevelopmentServices = () => {
     return (
-        <main>
+        <main className="kiosk-software-page">
             <ServiceInnerBanner
-                badge="Kiosk Software Development Company "     
+                badge="Kiosk Software Development Company "
                 title={
                     <>
                         <span className={styles.purpleText}> Kiosk Software </span> That Works as <span className={styles.purpleText}> </span>  Hard as the  <span className={styles.purpleText}>  </span> Environment It <span className={styles.purpleText}> Runs In</span>
-                    </> 
+                    </>
                 }
                 description="NextApp delivers custom kiosk software development for self-service, digital, and payment kiosks. Secure, scalable software built for 24/7 public environments."
-                bgImage="/services/react-native-banner-bg.png"
+                bgImage="/services/kiosk-banner.png"
             />
             <ServiceSection
                 heading="Why Kiosk Software Development   "
@@ -96,7 +97,7 @@ const KioskSoftwareDevelopmentServices = () => {
                     "Multi-Language & Accessibility Support",
                     "Real-Time Fleet Monitoring & Reporting"
                 ]}
-                mockupImage="/services/react-native-hand-mockup.png"
+                mockupImage="/services/kiosk-sec-1.png"
             />
             <AwardsSection />
             <ServicesListSection />

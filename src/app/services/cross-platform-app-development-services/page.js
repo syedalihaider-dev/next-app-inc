@@ -1,6 +1,7 @@
 import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
 import styles from '@/components/services/ServiceInnerBanner.module.css';
 import ServiceSection from '@/components/services/ServiceSection';
+import '@/styles/service-page-overrides.css';
 import AwardsSection from '@/components/common/AwardsSection';
 import ServicesListSection from '@/components/services/ServicesListSection';
 import DevelopmentSolutionsSection from '@/components/common/DevelopmentSolutionsSection';
@@ -69,7 +70,7 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 
 const CrossPlatformAppDevelopmentServices = () => {
     return (
-        <main>
+        <main className="cross-platform-page">
             <ServiceInnerBanner
                 badge="Cross Platform App Development Company"
                 title={

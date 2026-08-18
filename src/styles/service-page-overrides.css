@@ -1,0 +1,125 @@
+/* ============================================================
+   SERVICE PAGES - Per-Page CSS Overrides
+   ============================================================
+   Each page has a unique class on <main> for scoping.
+   Add your custom overrides under the relevant page section.
+   
+   Available target classes (plain classes on ServiceSection elements):
+   .mockupWrapper, .serviceSection (add more as needed in ServiceSection.jsx)
+   ============================================================ */
+
+
+/* ── Vending Machine Management ─────────────────────────────── */
+.vending-machine-page .mockupWrapper {
+    width: 700px !important;
+    height: 692px !important;
+}
+
+.locker-management-page .mockupWrapper {
+    width: 700px !important;
+    height: 692px !important;
+}
+
+.kiosk-software-page .mockupWrapper {
+    width: 700px !important;
+    height: 692px !important;
+}
+
+
+
+
+
+/* ── Kiosk Software Development ─────────────────────────────── */
+/* .kiosk-software-page .mockupWrapper {
+    
+} */
+
+
+/* ── Locker Management Software ─────────────────────────────── */
+/* .locker-management-page .mockupWrapper {
+    
+} */
+
+
+/* ── iOS App Development ────────────────────────────────────── */
+/* .ios-app-page .mockupWrapper {
+    
+} */
+
+
+/* ── Android App Development ────────────────────────────────── */
+/* .android-app-page .mockupWrapper {
+    
+} */
+
+
+/* ── Flutter App Development ────────────────────────────────── */
+/* .flutter-app-page .mockupWrapper {
+    
+} */
+
+
+/* ── React Native App Development ───────────────────────────── */
+/* .react-native-page .mockupWrapper {
+    
+} */
+
+
+/* ── Cross Platform App Development ─────────────────────────── */
+/* .cross-platform-page .mockupWrapper {
+    
+} */
+
+
+/* ── Web Application Development ────────────────────────────── */
+/* .web-app-page .mockupWrapper {
+    
+} */
+
+
+/* ── Mobile Web App Development ─────────────────────────────── */
+/* .mobile-web-page .mockupWrapper {
+    
+} */
+
+
+/* ── Mobile Game Development ────────────────────────────────── */
+/* .mobile-game-page .mockupWrapper {
+    
+} */
+
+
+/* ── 2D Game Development ────────────────────────────────────── */
+/* .game-2d-page .mockupWrapper {
+    
+} */
+
+
+/* ── AR/VR App Development ──────────────────────────────────── */
+/* .ar-vr-page .mockupWrapper {
+    
+} */
+
+
+/* ── Blockchain App Development ─────────────────────────────── */
+/* .blockchain-page .mockupWrapper {
+    
+} */
+
+
+/* ── Wearable App Development ───────────────────────────────── */
+/* .wearable-page .mockupWrapper {
+    
+} */
+
+
+/* ── App Prototyping ────────────────────────────────────────── */
+/* .app-prototyping-page .mockupWrapper {
+    
+} */
+
+
+/* ── App Store Optimization ─────────────────────────────────── */
+/* .app-store-page .mockupWrapper {
+    
+} */

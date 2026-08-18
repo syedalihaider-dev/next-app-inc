@@ -52,7 +52,7 @@ const ServiceSection = ({
                         </div>
                     </div>
                     <div className="col-lg-5">
-                        <div className={styles.mockupWrapper}>
+                        <div className={`${styles.mockupWrapper} ${styles.solutionWrapper} mockupWrapper`}>
                             {/* <div className={styles.mockupBg}></div> */}
                             <Image
                                 src={mockupImage}

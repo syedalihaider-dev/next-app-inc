@@ -32,7 +32,13 @@ const industries = [
     { name: 'REAL ESTATE APP DEVELOPMENT', href: '/industries/real-estate-app-development' },
     { name: 'AUTOMATIVE APP DEVELOPMENT', href: '/industries/automotive-app-development' },
     { name: 'TRAVEL APP DEVELOPMENT', href: '/industries/travel-app-development' },
-   
+
+];
+
+const solutions = [
+    { name: 'VENDING MACHINE MANAGEMENT SOFTWARE', href: '/solution/vending-machine-management-services' },
+    { name: 'KIOSK SOFTWARE DEVELOPMENT', href: '/solution/kiosk-software-devlopment-sevices' },
+    { name: 'LOCKER MANAGEMENT SOFTWARE', href: '/solution/locker-management-software-services' },
 ];
 
 import { SITE_CONFIG } from '@/configs/site-config';
@@ -103,6 +109,26 @@ const SideMenu = ({ isOpen, onClose }) => {
                                     <li key={index} className={styles.submenuItem}>
                                         <Link href={industry.href} className={styles.submenuLink} onClick={onClose}>
                                             {industry.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </li>
+                        <li className={styles.navItem}>
+                            <button
+                                className={styles.navLink}
+                                onClick={() => toggleDropdown('solutions')}
+                            >
+                                SOLUTIONS
+                                <span className={`${styles.dropdownIcon} ${openDropdown === 'solutions' ? styles.active : ''}`}>
+                                    ▼
+                                </span>
+                            </button>
+                            <ul className={`${styles.submenu} ${openDropdown === 'solutions' ? styles.open : ''}`}>
+                                {solutions.map((solution, index) => (
+                                    <li key={index} className={styles.submenuItem}>
+                                        <Link href={solution.href} className={styles.submenuLink} onClick={onClose}>
+                                            {solution.name}
                                         </Link>
                                     </li>
                                 ))}

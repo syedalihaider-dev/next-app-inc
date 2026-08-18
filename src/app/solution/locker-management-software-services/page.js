@@ -1,6 +1,7 @@
 import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
 import styles from '@/components/services/ServiceInnerBanner.module.css';
 import ServiceSection from '@/components/services/ServiceSection';
+import '@/styles/service-page-overrides.css';
 import AwardsSection from '@/components/common/AwardsSection';
 import ServicesListSection from '@/components/services/ServicesListSection';
 import DevelopmentSolutionsSection from '@/components/common/DevelopmentSolutionsSection';
@@ -20,10 +21,10 @@ export const metadata = {
     description: "NextApp builds smart locker management software for workplaces, campuses, and enterprises. Secure access control, real-time monitoring, and full fleet visibility.",
 
     robots: {
-    index: false,
-    follow: false,
-  },
-  
+        index: false,
+        follow: false,
+    },
+
 };
 
 const tabs = [
@@ -73,18 +74,18 @@ const tabs = [
 
 import appointmentStyles from '@/components/common/Appointment.module.css';
 
-const KioskSoftwareDevelopmentServices = () => {
+const LockerManagementServices = () => {
     return (
-        <main>
+        <main className="locker-management-page">
             <ServiceInnerBanner
-                badge="Kiosk Software Development Company "     
+                badge="Kiosk Software Development Company "
                 title={
-                    <>   
+                    <>
                         <span className={styles.purpleText}> Locker Software </span> That Works as <span className={styles.purpleText}> </span>  That Gives Facility  <span className={styles.purpleText}>  </span>  Managers <span className={styles.purpleText}> Real Control</span>
-                    </> 
+                    </>
                 }
                 description="NextApp builds smart locker management software for workplaces, campuses, and enterprises. Secure access control, real-time monitoring, and full fleet visibility."
-                bgImage="/services/react-native-banner-bg.png"
+                bgImage="/services/locker-banner.png"
             />
             <ServiceSection
                 heading="Why Locker Management Software "
@@ -96,7 +97,7 @@ const KioskSoftwareDevelopmentServices = () => {
                     "Real-Time Occupancy & Status Monitoring",
                     "Full Audit Trail & Access Logging"
                 ]}
-                mockupImage="/services/react-native-hand-mockup.png"
+                mockupImage="/services/locker-sec-1.png"
             />
             <AwardsSection />
             <ServicesListSection />
@@ -175,4 +176,4 @@ const KioskSoftwareDevelopmentServices = () => {
     );
 };
 
-export default KioskSoftwareDevelopmentServices;
+export default LockerManagementServices;

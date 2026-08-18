@@ -1,6 +1,7 @@
 import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
 import styles from '@/components/services/ServiceInnerBanner.module.css';
 import ServiceSection from '@/components/services/ServiceSection';
+import '@/styles/service-page-overrides.css';
 import AwardsSection from '@/components/common/AwardsSection';
 import ServicesListSection from '@/components/services/ServicesListSection';
 import DevelopmentSolutionsSection from '@/components/common/DevelopmentSolutionsSection';
@@ -19,9 +20,9 @@ export const metadata = {
     title: "Vending Machine Management Software | NextApp",
     description: "NextApp builds custom vending machine management software with real-time inventory tracking, route optimization, and smart vending fleet control for operators.",
     robots: {
-    index: false,
-    follow: false,
-  },
+        index: false,
+        follow: false,
+    },
 };
 
 const tabs = [
@@ -73,16 +74,16 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 
 const KioskSoftwareDevelopmentServices = () => {
     return (
-        <main>
+        <main className="vending-machine-page">
             <ServiceInnerBanner
-                badge="Kiosk Software Development Company "     
-                title={    
-                    <>   
+                badge="Kiosk Software Development Company "
+                title={
+                    <>
                         <span className={styles.purpleText}> Stop Running </span> Your Vending <span className={styles.purpleText}> </span>  Operation  <span className={styles.purpleText}>  </span>   <span className={styles.purpleText}> Blind</span>
-                    </> 
+                    </>
                 }
                 description="NextApp builds custom vending machine management software with real-time inventory tracking, route optimization, and smart vending fleet control for operators."
-                bgImage="/services/react-native-banner-bg.png"
+                bgImage="/services/vending-banner.png"
             />
             <ServiceSection
                 heading="Why Vending Machine Software"
@@ -94,7 +95,7 @@ const KioskSoftwareDevelopmentServices = () => {
                     "Sales Data & Revenue Reporting",
                     "Route Optimization & Restocking Alerts"
                 ]}
-                mockupImage="/services/react-native-hand-mockup.png"
+                mockupImage="/services/vending-sec-1.png"
             />
             <AwardsSection />
             <ServicesListSection />
