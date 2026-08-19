@@ -252,6 +252,13 @@
         width: 334px;
         height: 560px;
     }
+
+    .vending-machine-page .mockupWrapper,
+    .locker-management-page .mockupWrapper,
+    .kiosk-software-page .mockupWrapper {
+        width: 482px !important;
+        height: 482px !important;
+    }
 }
 
 @media (max-width: 1199px) {

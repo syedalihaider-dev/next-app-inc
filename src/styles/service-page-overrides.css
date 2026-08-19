@@ -27,6 +27,46 @@
 
 
 
+@media (max-width: 1600px) {
+
+    .vending-machine-page .mockupWrapper,
+    .locker-management-page .mockupWrapper,
+    .kiosk-software-page .mockupWrapper {
+        width: 580px !important;
+        height: 572px !important;
+    }
+}
+
+
+
+@media (max-width: 1399px) {
+
+
+    .vending-machine-page .mockupWrapper,
+    .locker-management-page .mockupWrapper,
+    .kiosk-software-page .mockupWrapper {
+        width: 500px !important;
+        height: 492px !important;
+    }
+}
+
+
+
+/* @media (max-width: 991px) {
+
+    .vending-machine-page .mockupWrapper,
+    .locker-management-page .mockupWrapper,
+    .kiosk-software-page .mockupWrapper {
+        width: 400px !important;
+        height: 392px !important;
+    }
+
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {} */
+
 
 
 /* ── Kiosk Software Development ─────────────────────────────── */
