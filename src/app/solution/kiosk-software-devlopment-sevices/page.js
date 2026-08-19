@@ -75,7 +75,7 @@ const KioskSoftwareDevelopmentServices = () => {
     return (
         <main className="kiosk-software-page">
             <ServiceInnerBanner
-                badge="kiiosk Software Development Company "
+                badge="Kiosk Software Development Company "
                 title={
                     <>
                         <span className={styles.purpleText}> Kiosk Software </span> That Works as <span className={styles.purpleText}> </span>  Hard as the  <span className={styles.purpleText}>  </span> Environment It <span className={styles.purpleText}> Runs In</span>
