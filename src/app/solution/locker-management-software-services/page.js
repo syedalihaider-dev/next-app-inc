@@ -74,7 +74,7 @@ const LockerManagementServices = () => {
     return (
         <main className="locker-management-page">
             <ServiceInnerBanner
-                badge="Kiosk Software Development Company "
+                badge="Locker Management Software Company "
                 title={
                     <>
                         <span className={styles.purpleText}> Locker Software </span> That Works as <span className={styles.purpleText}> </span>  That Gives Facility  <span className={styles.purpleText}>  </span>  Managers <span className={styles.purpleText}> Real Control</span>

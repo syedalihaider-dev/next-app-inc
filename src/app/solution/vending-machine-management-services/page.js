@@ -73,7 +73,7 @@ const KioskSoftwareDevelopmentServices = () => {
     return (
         <main className="vending-machine-page">
             <ServiceInnerBanner
-                badge="Kiosk Software Development Company "
+                badge="Vending Machine Management Software Company "
                 title={
                     <>
                         <span className={styles.purpleText}> Stop Running </span> Your Vending <span className={styles.purpleText}> </span>  Operation  <span className={styles.purpleText}>  </span>   <span className={styles.purpleText}> Blind</span>
