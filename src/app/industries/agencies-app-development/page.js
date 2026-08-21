@@ -1,3 +1,22 @@
+import IndustryBanner from '@/components/industries/IndustryBanner';
+import IndustryServicesSection from '@/components/industries/IndustryServicesSection';
+import IndustryConsultationSection from '@/components/industries/IndustryConsultationSection';
+import IndustryTabsSection from '@/components/industries/IndustryTabsSection';
+import IndustryFeaturesSection from '@/components/industries/IndustryFeaturesSection';
+import WhyChooseAppSection from '@/components/common/WhyChooseAppSection';
+import IndustrySolutionsSlider from '@/components/common/IndustrySolutionsSlider';
+import CaseStudy from "@/components/common/CaseStudy";
+import TechStackSection from '@/components/common/TechStackSection';
+import IndustriesSection from '@/components/common/IndustriesSection';
+import Appointment from "@/components/common/Appointment";
+import Testimonials from "@/components/common/Testimonials";
+import ContactSection from "@/components/common/ContactSection";
+
+export const metadata = {
+    title: "Agencies App Development | Next Apps",
+    description: "Next Apps develops custom mobile and web applications for marketing agencies, providing them with the tools they need to deliver exceptional digital experiences to their clients.",
+};
+
 const AgenciesAppDevelopment = () => {
     const services = [
         {
