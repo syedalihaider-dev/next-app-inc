@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App is a leading AR VR app development company delivering immersive AR VR app development services for mobile and enterprise applications. Contact us.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "AR/VR App Development Services",
+    "description": "Next App Inc. creates immersive AR and VR apps for gaming, training, retail, education, and interactive digital experiences.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1352"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -71,16 +87,25 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 const ArVrDevelopmentServices = () => {
     return (
         <main className="ar-vr-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="AR VR App Development Company"
                 title={
                     <>
-                        <span className={styles.purpleText}> Build Experiences </span>  That Go Beyond <span className={styles.purpleText}>  </span> <span className={styles.purpleText}> the Screen </span><span className={styles.purpleText}></span>
+                        <span className={styles.purpleText}> Build Experiences </span> That Go Beyond <span className={styles.purpleText}> </span> <span className={styles.purpleText}> the Screen </span><span className={styles.purpleText}></span>
                     </>
                 }
                 description="Augmented and virtual reality are reshaping how users interact with products, spaces, and brands. As a dedicated AR/VR app development company, we build immersive experiences that captivate users, differentiate your product, and deliver measurable business value."
                 bgImage="/services/app-store-optimization-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why Immersive Technology  "
                 purpleText="Requires the Right Partner"
@@ -93,21 +118,24 @@ const ArVrDevelopmentServices = () => {
                 ]}
                 mockupImage="/services/app-store-optimization-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Innovators Choose "
                 purpleText="Next App for AR/VR"
                 description="Our AR/VR app development team combines creative 3D design with robust engineering to produce experiences that feel real, even on mobile hardware."
                 features={[
-
                     "Platform-agnostic XR expertise (iOS, Android, Meta, HoloLens)",
                     "Direct access to US-based experts",
                     "Specialized in real-time 3D rendering and spatial UX",
                     "Support beyond launch"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -137,34 +165,48 @@ const ArVrDevelopmentServices = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our AR/VR  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our AR/VR <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}> </span> Simple, Easy,<span className={styles.purpleText}> And </span> <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
+                        Security & Compliance, <span className={styles.purpleText}> Built Into Every App</span>
                     </>
                 }
                 desc1="With AR/VR app development, our AR/VR apps often access device cameras, spatial data, and user environments. Every solution we build includes privacy-first data handling, GDPR-compliant controls, and platform-specific compliance measures to protect your users at every touchpoint."
                 desc2=""
             />
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
                     <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        Your Next Big Idea <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
                     </>
                 }
                 description="Whether you’re building a first AR experience or a full VR application, our team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building and who it’s for."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
+
         </main>
     );
 };

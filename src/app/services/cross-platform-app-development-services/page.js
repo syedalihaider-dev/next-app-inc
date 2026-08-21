@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App offers expert cross-platform app development services for iOS and Android. Ship faster with a single codebase without sacrificing performance.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Cross Platform App Development Services",
+    "description": "Next App Inc. builds high-performance cross-platform apps with consistent experiences across Android, iOS, and multiple devices.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1476"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -71,6 +87,14 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 const CrossPlatformAppDevelopmentServices = () => {
     return (
         <main className="cross-platform-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="Cross Platform App Development Company"
                 title={
@@ -81,6 +105,7 @@ const CrossPlatformAppDevelopmentServices = () => {
                 description="Why build twice when you can build once? Our cross-platform app development services let you ship a high-performance app on both iOS and Android, from a single, well-maintained codebase, without sacrificing the quality your users expect."
                 bgImage="/services/cross-platform-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why Cross-Platform Is the Right  "
                 purpleText="Strategy for Many Businesses"
@@ -93,21 +118,24 @@ const CrossPlatformAppDevelopmentServices = () => {
                 ]}
                 mockupImage="/services/cross-platform-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Teams Choose   "
                 purpleText="Next App for Cross-Platform"
                 description="Our cross-platform mobile app development service combines the speed of a shared codebase with the polish of a native app, giving your users an experience they can’t tell apart from a platform-specific build."
                 features={[
-
                     "Deep expertise in Flutter and React Native",
                     "Direct access to US-based engineers",
                     "Full Android and iOS cross-platform app development capability",
                     "Support beyond launch"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -137,10 +165,16 @@ const CrossPlatformAppDevelopmentServices = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our Cross-Platform App  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our Cross-Platform App  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
@@ -150,9 +184,13 @@ const CrossPlatformAppDevelopmentServices = () => {
                 desc1="Our cross-platform app development services include encrypted data handling, platform-specific permission management, GDPR-compliant controls, and secure API integration to protect your users on both iOS and Android."
                 desc2=""
             />
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
@@ -162,9 +200,13 @@ const CrossPlatformAppDevelopmentServices = () => {
                 }
                 description="Whether you’re launching a first cross-platform product or migrating from separate native codebases, our team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building and who it’s for."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
+
         </main>
     );
 };

@@ -1,23 +1,4 @@
-import IndustryBanner from '@/components/industries/IndustryBanner';
-import IndustryServicesSection from '@/components/industries/IndustryServicesSection';
-import IndustryConsultationSection from '@/components/industries/IndustryConsultationSection';
-import IndustryTabsSection from '@/components/industries/IndustryTabsSection';
-import IndustryFeaturesSection from '@/components/industries/IndustryFeaturesSection';
-import WhyChooseAppSection from '@/components/common/WhyChooseAppSection';
-import IndustrySolutionsSlider from '@/components/common/IndustrySolutionsSlider';
-import CaseStudy from "@/components/common/CaseStudy";
-import TechStackSection from '@/components/common/TechStackSection';
-import IndustriesSection from '@/components/common/IndustriesSection';
-import Appointment from "@/components/common/Appointment";
-import Testimonials from "@/components/common/Testimonials";
-import ContactSection from "@/components/common/ContactSection";
-
-export const metadata = {
-    title: "Agency App Development | Next Apps",
-    description: "Next Apps develops digital solutions for agencies, including client portals, project management, white-label apps, and automated reporting, serving businesses worldwide.",
-};
-
-const HealthcareAppPage = () => {
+const AgenciesAppDevelopment = () => {
     const services = [
         {
             title: ' Client Portal &  <br/> Reporting Platforms',
@@ -88,6 +69,29 @@ const HealthcareAppPage = () => {
 
     return (
         <main>
+
+            {/* Product Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Agencies App Development Services",
+                        "description": "Next App Inc. builds custom agency apps to manage clients, projects, teams, communication, workflows, and daily operations.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "ratingCount": "1098"
+                        }
+                    })
+                }}
+            />
+
             <IndustryBanner 
                 industryLabel="Agencies Industry"
                 mainTitle={<> Your <span style={{ color: 'var(--primary-color)' }}>Agency Does</span> Great Work. Your<span style={{ color: 'var(--primary-color)' }}> Software Should </span> Too.</>}
@@ -128,4 +132,4 @@ const HealthcareAppPage = () => {
     );
 };
 
-export default HealthcareAppPage;
+export default AgenciesAppDevelopment;

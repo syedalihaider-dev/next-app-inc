@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import IndustryBanner from '@/components/industries/IndustryBanner';
 import IndustryServicesSection from '@/components/industries/IndustryServicesSection';
 import IndustryConsultationSection from '@/components/industries/IndustryConsultationSection';
@@ -17,7 +18,7 @@ export const metadata = {
     description: "Next Apps develops automotive digital solutions, from dealer management and fleet platforms to EV charging and connected vehicle software, serving global businesses.",
 };
 
-const HealthcareAppPage = () => {
+const AutomotiveAppPage = () => {
     const services = [
         {
             title: ' Dealer Management  <br/> System (DMS) Apps',
@@ -87,45 +88,69 @@ const HealthcareAppPage = () => {
     ];
 
     return (
-        <main>
-            <IndustryBanner 
-                industryLabel="Automotive Industry"
-                mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Automotive Industry</span> Is Going Digital.<span style={{ color: 'var(--primary-color)' }}> We Build the </span> Software That Drives It.</>}
-                // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
-                description="From dealerships and fleet operators to OEMs and mobility startups, we build automotive platforms that connect vehicles, teams, and customers in ways that legacy systems never could. Your digital transformation starts with the right development partner."
-                bgImage="/industries/automotive-app-development/banner-bg.png" 
-            />
-            
-            <IndustryServicesSection 
-                title="<span style='color: var(--primary-color)'>Automotive App Development</span> Solutions <br/> Built for the <span style='color: var(--primary-color)'> Road </span> <span style='color: var(--primary-color)'>Ahead</span> "
-                description="The automotive industry is increasingly complex and full of digital innovation opportunities. We develop dealer management systems, fleet tracking, EV charging networks, connected vehicle apps, and mobility solutions that convert digital investments into operational efficiency."
-                servicesData={services}
-                mockupImage="/industries/automotive-app-development/services-mockup.png" // Placeholder
-            />
-
-            <IndustryConsultationSection 
-                title={<>Automotive Technology That <span style={{ color: 'var(--primary-color)' }}> Keeps Operations Moving</span> and Customers Coming Back</>}
-                subLabel="The automotive industry runs on precision, timing, and trust."             
-                description=" A dealer whose DMS goes down loses deals. A fleet operator with a broken tracking system loses visibility. We build automotive software with the reliability, real-time performance, and user experience that modern automotive businesses require."
-            />
-
-            <IndustryTabsSection 
-                title={<><span style={{ color: 'var(--primary-color)' }}>Insurance App</span> Features That Optimize  <br/> Operations, Protect Assets, and <span style={{ color: 'var(--primary-color)' }}>Delight Drivers</span><span style={{ color: 'var(--primary-color)' }}></span></>}
-                description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results."
-                tabsData={tabs}
+        <>
+            <Script
+                id="automotive-app-development-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Automotive App Development Services",
+                        "description": "Next App Inc. builds automotive apps for vehicle management, maintenance tracking, connected cars, bookings, and dealerships.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "ratingCount": "1213"
+                        }
+                    })
+                }}
             />
 
-            <IndustryFeaturesSection />
-            <IndustrySolutionsSlider/>
-            <WhyChooseAppSection />
-            <CaseStudy />
-            <TechStackSection />
-            <IndustriesSection />
-            <Appointment />
-            <Testimonials />
-            <ContactSection />
-        </main>
+            <main>
+                <IndustryBanner 
+                    industryLabel="Automotive Industry"
+                    mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Automotive Industry</span> Is Going Digital.<span style={{ color: 'var(--primary-color)' }}> We Build the </span> Software That Drives It.</>}
+                    // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
+                    description="From dealerships and fleet operators to OEMs and mobility startups, we build automotive platforms that connect vehicles, teams, and customers in ways that legacy systems never could. Your digital transformation starts with the right development partner."
+                    bgImage="/industries/automotive-app-development/banner-bg.png" 
+                />
+                
+                <IndustryServicesSection 
+                    title="<span style='color: var(--primary-color)'>Automotive App Development</span> Solutions <br/> Built for the <span style='color: var(--primary-color)'> Road </span> <span style='color: var(--primary-color)'>Ahead</span> "
+                    description="The automotive industry is increasingly complex and full of digital innovation opportunities. We develop dealer management systems, fleet tracking, EV charging networks, connected vehicle apps, and mobility solutions that convert digital investments into operational efficiency."
+                    servicesData={services}
+                    mockupImage="/industries/automotive-app-development/services-mockup.png" // Placeholder
+                />
+
+                <IndustryConsultationSection 
+                    title={<>Automotive Technology That <span style={{ color: 'var(--primary-color)' }}> Keeps Operations Moving</span> and Customers Coming Back</>}
+                    subLabel="The automotive industry runs on precision, timing, and trust."             
+                    description=" A dealer whose DMS goes down loses deals. A fleet operator with a broken tracking system loses visibility. We build automotive software with the reliability, real-time performance, and user experience that modern automotive businesses require."
+                />
+
+                <IndustryTabsSection 
+                    title={<><span style={{ color: 'var(--primary-color)' }}>Insurance App</span> Features That Optimize  <br/> Operations, Protect Assets, and <span style={{ color: 'var(--primary-color)' }}>Delight Drivers</span><span style={{ color: 'var(--primary-color)' }}></span></>}
+                    description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results."
+                    tabsData={tabs}
+                />
+
+                <IndustryFeaturesSection />
+                <IndustrySolutionsSlider/>
+                <WhyChooseAppSection />
+                <CaseStudy />
+                <TechStackSection />
+                <IndustriesSection />
+                <Appointment />
+                <Testimonials />
+                <ContactSection />
+            </main>
+        </>
     );
 };
 
-export default HealthcareAppPage;
+export default AutomotiveAppPage;

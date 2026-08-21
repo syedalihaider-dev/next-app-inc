@@ -68,9 +68,32 @@ const tabs = [
 
 import appointmentStyles from '@/components/common/Appointment.module.css';
 
-const CrossPlatformAppDevelopmentServices = () => {
+const iosAppDevelopmentServices = () => {
     return (
         <main className="ios-app-page">
+
+            {/* Product Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "iOS App Development Services",
+                        "description": "Next App Inc. develops secure, high-performance iOS apps with intuitive interfaces for seamless iPhone and iPad experiences.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1624"
+                        }
+                    })
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="Custom iOS App Development"
                 title={
@@ -81,6 +104,7 @@ const CrossPlatformAppDevelopmentServices = () => {
                 description="We craft iOS app development services that feel at home on every Apple device, from the first tap to the hundredth session. Your users deserve a premium experience, and that’s exactly what we deliver."
                 bgImage="/services/ios-banner-bg.png"
             />
+
             <ServiceSection
                 heading="What Sets an Exceptional   "
                 purpleText="iOS App Apart From the Rest"
@@ -93,21 +117,24 @@ const CrossPlatformAppDevelopmentServices = () => {
                 ]}
                 mockupImage="/services/ios-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Leaders    "
                 purpleText="Choose Next App"
                 description="As a trusted iOS mobile app development company, we combine deep Apple platform expertise with a design-first philosophy that puts users at the center of every decision."
                 features={[
-
                     "Apple-certified development team",
                     "Direct access to US-based experts",
                     "Built with compliance and App Store guidelines in mind",
                     "Ongoing support beyond launch"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -137,10 +164,16 @@ const CrossPlatformAppDevelopmentServices = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our Custom iOS  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our Custom iOS  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
@@ -150,9 +183,13 @@ const CrossPlatformAppDevelopmentServices = () => {
                 desc1="iOS apps handle sensitive data, from payment credentials to personal health records. Every solution we build includes encrypted data storage, GDPR-compliant privacy controls, role-based access management, and strict adherence to Apple’s app review guidelines to help protect users at every touchpoint."
                 desc2=""
             />
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
@@ -162,11 +199,15 @@ const CrossPlatformAppDevelopmentServices = () => {
                 }
                 description="Whether you’re launching a first iOS product or modernizing one that’s already live, our iOS app developers can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building and who it’s for."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
+
         </main>
     );
 };
 
-export default CrossPlatformAppDevelopmentServices;
+export default iosAppDevelopmentServices;

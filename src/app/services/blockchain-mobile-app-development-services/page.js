@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App is a trusted blockchain app development company in the USA, delivering enterprise blockchain app development and secure mobile blockchain solutions.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Blockchain Mobile App Development Services",
+    "description": "Next App Inc. develops secure blockchain mobile apps with smart contracts, decentralized features, and transparent transactions.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1089"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -71,16 +87,25 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 const BlockchainMobileAppDevelopmentPage = () => {
     return (
         <main className="blockchain-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="Blockchain Mobile App Development Services"
                 title={
                     <>
-                        <span className={styles.purpleText}> Build the </span>  Future on<span className={styles.purpleText}>  </span> <span className={styles.purpleText}>  Blockchain </span><span className={styles.purpleText}></span>
+                        <span className={styles.purpleText}> Build the </span> Future on<span className={styles.purpleText}> </span> <span className={styles.purpleText}> Blockchain </span><span className={styles.purpleText}></span>
                     </>
                 }
                 description="Decentralized. Secure. Unstoppable. Our blockchain app development services help businesses harness the power of distributed ledger technology, from crypto wallets and smart contracts to NFT platforms and DeFi applications."
                 bgImage="/services/app-store-optimization-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why Blockchain Development  "
                 purpleText="Requires a Specialized Partner"
@@ -93,21 +118,24 @@ const BlockchainMobileAppDevelopmentPage = () => {
                 ]}
                 mockupImage="/services/app-store-optimization-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Businesses Choose  "
                 purpleText="Next App for Blockchain"
                 description="Our AR/VR app development team combines creative 3D design with robust engineering to produce experiences that feel real, even on mobile hardware."
                 features={[
-
                     "Multi-chain development expertise",
                     "Direct access to US-based blockchain engineers",
                     "Security-first architecture",
                     "Support beyond launch"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -137,34 +165,48 @@ const BlockchainMobileAppDevelopmentPage = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our Blockchain App  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our Blockchain App <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}> </span> Simple, Easy,<span className={styles.purpleText}> And </span> <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
+                        Security & Compliance, <span className={styles.purpleText}> Built Into Every App</span>
                     </>
                 }
                 desc1="Blockchain apps handle real assets and financial transactions. Every solution we build includes rigorous smart contract audits, multi-signature wallet support, encrypted data layers, and compliance-aware architecture to protect your users and your business."
                 desc2=""
             />
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
                     <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        Your Next Big Idea <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
                     </>
                 }
                 description="Whether you’re launching a first Web3 product or integrating blockchain into an existing platform, our team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
+
         </main>
     );
 };

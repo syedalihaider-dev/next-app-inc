@@ -9,7 +9,7 @@ import CompanyChoiceSection from '@/components/common/CompanyChoiceSection';
 import ProcessTabs from '@/components/services/ProcessTabs';
 import WhyChooseAppSection from '@/components/common/WhyChooseAppSection';
 import CaseStudy from "@/components/common/CaseStudy";
-import TechStackSection from '@/components/common/TechStackSection';
+import TechStackSection from '@/components/services/TechStackSection';
 import IndustriesSection from '@/components/common/IndustriesSection';
 import Appointment from "@/components/common/Appointment";
 import Testimonials from "@/components/common/Testimonials";
@@ -19,6 +19,22 @@ import ContactSection from "@/components/common/ContactSection";
 export const metadata = {
     title: "App Prototyping Services | Next App",
     description: "Next App offers expert app prototyping services and mobile app prototyping solutions to validate your concept before full development. Start with clarity.",
+};
+
+const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "App Prototyping Services",
+    "description": "Next App Inc. creates interactive app prototypes to validate features, user flows, design concepts, and functionality before development.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1047"
+    }
 };
 
 const tabs = [
@@ -71,6 +87,14 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 const AppProtoTypingServices = () => {
     return (
         <main className="app-prototyping-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="App Proto Typing Services"
                 title={
@@ -81,6 +105,7 @@ const AppProtoTypingServices = () => {
                 description="The best apps start with clarity. Our app prototyping services help you visualize, test, and refine your concept before a single line of production code is written, saving time, money, and missteps."
                 bgImage="/services/app-prototyping-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why Prototyping Is the  "
                 purpleText=" Smartest Investment You Can Make"
@@ -93,8 +118,11 @@ const AppProtoTypingServices = () => {
                 ]}
                 mockupImage="/services/app-prototyping-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Teams Choose  "
@@ -107,6 +135,7 @@ const AppProtoTypingServices = () => {
                     "Support from prototype through production"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -136,10 +165,16 @@ const AppProtoTypingServices = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our App Prototyping <span className={styles.purpleText}> Approach Makes</span> <span className={styles.purpleText}> It </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our App Prototyping <span className={styles.purpleText}> Approach Makes</span> <span className={styles.purpleText}> It </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
@@ -149,9 +184,13 @@ const AppProtoTypingServices = () => {
                 desc1="Even at the prototype stage, we build with the end in mind. Every prototype is designed with privacy, accessibility, and platform compliance in mind to ensure a smooth transition into production."
                 desc2=""
             />
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
@@ -161,9 +200,13 @@ const AppProtoTypingServices = () => {
                 }
                 description="Whether you’re validating a first concept or pressure-testing an existing product, our prototyping team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building and who it’s for."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
+
         </main>
     );
 };

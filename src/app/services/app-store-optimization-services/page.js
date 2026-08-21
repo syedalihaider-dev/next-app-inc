@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App is a top app store optimization company offering advanced ASO strategies for iPhone, Google Play, and Android apps. Boost visibility and downloads.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "App Store Optimization Services",
+    "description": "Next App Inc. improves app visibility, rankings, downloads, and conversions through effective ASO strategies and keyword research.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1196"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -71,16 +87,25 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 const AppStoreOptimizationServices = () => {
     return (
         <main className="app-store-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="App Store Optimization Services"
                 title={
                     <>
-                        <span className={styles.purpleText}> Get Found. </span>  Get Downloaded.   <span className={styles.purpleText}> Get </span> <span className={styles.purpleText}> Results. </span><span className={styles.purpleText}></span>
+                        <span className={styles.purpleText}> Get Found. </span> Get Downloaded. <span className={styles.purpleText}> Get </span> <span className={styles.purpleText}> Results. </span><span className={styles.purpleText}></span>
                     </>
                 }
                 description="Building a great app is only half the battle. Our expert app store optimization services ensure your app ranks higher, reaches the right users, and converts browsers into loyal downloaders, on both iOS and Android."
                 bgImage="/services/app-store-optimization-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why ASO Is the ROI-Multiplier  "
                 purpleText="Your App Is Missing"
@@ -93,21 +118,24 @@ const AppStoreOptimizationServices = () => {
                 ]}
                 mockupImage="/services/app-store-optimization-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Brands Choose"
                 purpleText="Next App for ASO"
                 description="Our team functions as a full-service app store optimization agency, combining technical ASO expertise with creative strategy to improve rankings, drive installs, and maximize your store’s performance."
                 features={[
-
                     "Data-driven keyword targeting",
                     "Direct access to US-based ASO experts",
                     "Ongoing monitoring and iteration",
                     "Support from strategy through execution"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -137,34 +165,50 @@ const AppStoreOptimizationServices = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our App Store <span className={styles.purpleText}> Optimization Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our App Store <span className={styles.purpleText}> Optimization Approach </span> Makes It <span className={styles.purpleText}> </span> Simple, Easy,<span className={styles.purpleText}> And </span> <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
-            {/* <WhyChooseAppSection
+
+            {/*
+            <WhyChooseAppSection
                 title={
                     <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
+                        Security & Compliance, <span className={styles.purpleText}> Built Into Every App</span>
                     </>
                 }
                 desc1="Even at the prototype stage, we build with the end in mind. Every prototype is designed with privacy, accessibility, and platform compliance in mind to ensure a smooth transition into production."
                 desc2=""
-            /> */}
+            />
+            */}
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
                     <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        Your Next Big Idea <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
                     </>
                 }
                 description="Whether you’re launching a new app or reviving one that’s underperforming, our ASO team can scope a strategy in a 10-minute call. No boardroom pitch, just a conversation about your app and who you’re trying to reach."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
+
         </main>
     );
 };

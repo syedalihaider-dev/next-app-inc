@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App is a top react native app development company. Hire react native app developers to build high-performance iOS and Android apps from one codebase.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "React Native App Development Services",
+    "description": "Next App Inc. develops scalable React Native apps with native-like performance and one codebase for Android and iOS.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1519"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -70,102 +86,111 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 
 const ReactNativeAppDevelopmentServices = () => {
     return (
-        <main className="react-native-page">
-            <ServiceInnerBanner
-                badge="React Native App Development Company"
-                title={
-                    <>
-                        <span className={styles.purpleText}> React Native </span> Apps. <span className={styles.purpleText}>  </span> Native Performance. <span className={styles.purpleText}>  </span> Shared<span className={styles.purpleText}> Efficiency.</span>
-                    </>
-                }
-                description="React Native is the technology of choice for teams that want real native performance without the overhead of two separate codebases. As a leading react native app development company, we build apps that feel truly native on both iOS and Android, faster, smarter, and more efficiently than most teams think possible."
-                bgImage="/services/react-native-banner-bg.png"
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema)
+                }}
             />
-            <ServiceSection
-                heading="Why React Native Is the  "
-                purpleText="Right Choice for Your Product"
-                description="React Native’s architecture bridges the gap between JavaScript speed and native performance, making it the preferred framework for startups and enterprises alike. Our custom react native app development services cover everything from initial architecture to App Store launch, giving your team a reliable technology foundation with a faster time-to-market than native development alone."
-                features={[
-                    "Native-Performance React Native Apps",
-                    "Shared Codebase for iOS & Android",
-                    "Custom Component Development",
-                    "Third-Party API Integration"
-                ]}
-                mockupImage="/services/react-native-hand-mockup.png"
-            />
-            <AwardsSection />
-            <ServicesListSection />
-            <DevelopmentSolutionsSection
-                badge="Built Differently. Delivered Better."
-                headingText="Why Teams Choose     "
-                purpleText="Next App for React Native"
-                description="Our react native app development agency team brings deep JavaScript and native bridging expertise, so your app performs like it was built natively, even though it wasn’t."
-                features={[
 
-                    "Certified React Native engineers",
-                    "Direct access to US-based experts",
-                    "Flexible engagement: hire react native app developers or engage a full team",
-                    "Support beyond launch"
-                ]}
-            />
-            <CompanyChoiceSection
-                headingText="A Process "
-                purpleText="Built Around"
-                headingText2=" Your "
-                purpleText2="Product"
-                description="Whether you need to outsource react native app development services or build in-house with our support, we keep every stage focused, collaborative, and transparent."
-                cards={[
-                    {
-                        title: 'Strategy & Architecture Planning',
-                        description: 'We evaluate your product requirements and design a React Native architecture that balances shared code with platform-specific customization. Teams that hire react native app development agency experts from Next App get a scalable foundation built for long-term growth.',
-                        icon: '/services/icon-discovery-and-strategy.webp'
-                    },
-                    {
-                        title: 'UX/UI Design',
-                        description: "Design platform-consistent interfaces that feel at home on both iOS and Android while maintaining a unified brand identity.",
-                        icon: '/services/icon-ux-ui-design.webp'
-                    },
-                    {
-                        title: 'Engineering & Integration',
-                        description: 'Build your app using mobile app development with react native best practices, integrating native modules, APIs, and backend systems as required.',
-                        icon: '/services/icon-development.webp'
-                    },
-                    {
-                        title: 'Testing, Launch & Growth',
-                        description: 'Test on real devices across both platforms, prepare for dual store submission, and support your product through post-launch updates.',
-                        icon: '/services/icon-launch-and-deployment.webp'
+            <main className="react-native-page">
+                <ServiceInnerBanner
+                    badge="React Native App Development Company"
+                    title={
+                        <>
+                            <span className={styles.purpleText}> React Native </span> Apps. <span className={styles.purpleText}>  </span> Native Performance. <span className={styles.purpleText}>  </span> Shared<span className={styles.purpleText}> Efficiency.</span>
+                        </>
                     }
-                ]}
-            />
-            <ProcessTabs
-                heading={<>Our React Native  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
-                tabs={tabs}
-            />
-            <WhyChooseAppSection
-                title={
-                    <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
-                    </>
-                }
-                desc1="Every React Native app we build includes encrypted data handling, platform-specific permission management, GDPR-compliant controls, and secure API integration, protecting your users on both platforms."
-                desc2=""
-            />
-            <CaseStudy />
-            <TechStackSection />
-            <IndustriesSection />
-            <Appointment
-                badge="Book An Appointment"
-                heading={
-                    <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
-                    </>
-                }
-                description="Whether you’re launching a first React Native app or migrating from a native codebase, our team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building."
-            />
-            <Testimonials />
-            <AboutFAQ />
-            <ContactSection />
-        </main>
+                    description="React Native is the technology of choice for teams that want real native performance without the overhead of two separate codebases. As a leading react native app development company, we build apps that feel truly native on both iOS and Android, faster, smarter, and more efficiently than most teams think possible."
+                    bgImage="/services/react-native-banner-bg.png"
+                />
+                <ServiceSection
+                    heading="Why React Native Is the  "
+                    purpleText="Right Choice for Your Product"
+                    description="React Native’s architecture bridges the gap between JavaScript speed and native performance, making it the preferred framework for startups and enterprises alike. Our custom react native app development services cover everything from initial architecture to App Store launch, giving your team a reliable technology foundation with a faster time-to-market than native development alone."
+                    features={[
+                        "Native-Performance React Native Apps",
+                        "Shared Codebase for iOS & Android",
+                        "Custom Component Development",
+                        "Third-Party API Integration"
+                    ]}
+                    mockupImage="/services/react-native-hand-mockup.png"
+                />
+                <AwardsSection />
+                <ServicesListSection />
+                <DevelopmentSolutionsSection
+                    badge="Built Differently. Delivered Better."
+                    headingText="Why Teams Choose     "
+                    purpleText="Next App for React Native"
+                    description="Our react native app development agency team brings deep JavaScript and native bridging expertise, so your app performs like it was built natively, even though it wasn’t."
+                    features={[
+
+                        "Certified React Native engineers",
+                        "Direct access to US-based experts",
+                        "Flexible engagement: hire react native app developers or engage a full team",
+                        "Support beyond launch"
+                    ]}
+                />
+                <CompanyChoiceSection
+                    headingText="A Process "
+                    purpleText="Built Around"
+                    headingText2=" Your "
+                    purpleText2="Product"
+                    description="Whether you need to outsource react native app development services or build in-house with our support, we keep every stage focused, collaborative, and transparent."
+                    cards={[
+                        {
+                            title: 'Strategy & Architecture Planning',
+                            description: 'We evaluate your product requirements and design a React Native architecture that balances shared code with platform-specific customization. Teams that hire react native app development agency experts from Next App get a scalable foundation built for long-term growth.',
+                            icon: '/services/icon-discovery-and-strategy.webp'
+                        },
+                        {
+                            title: 'UX/UI Design',
+                            description: "Design platform-consistent interfaces that feel at home on both iOS and Android while maintaining a unified brand identity.",
+                            icon: '/services/icon-ux-ui-design.webp'
+                        },
+                        {
+                            title: 'Engineering & Integration',
+                            description: 'Build your app using mobile app development with react native best practices, integrating native modules, APIs, and backend systems as required.',
+                            icon: '/services/icon-development.webp'
+                        },
+                        {
+                            title: 'Testing, Launch & Growth',
+                            description: 'Test on real devices across both platforms, prepare for dual store submission, and support your product through post-launch updates.',
+                            icon: '/services/icon-launch-and-deployment.webp'
+                        }
+                    ]}
+                />
+                <ProcessTabs
+                    heading={<>Our React Native  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                    tabs={tabs}
+                />
+                <WhyChooseAppSection
+                    title={
+                        <>
+                            Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
+                        </>
+                    }
+                    desc1="Every React Native app we build includes encrypted data handling, platform-specific permission management, GDPR-compliant controls, and secure API integration, protecting your users on both platforms."
+                    desc2=""
+                />
+                <CaseStudy />
+                <TechStackSection />
+                <IndustriesSection />
+                <Appointment
+                    badge="Book An Appointment"
+                    heading={
+                        <>
+                            Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        </>
+                    }
+                    description="Whether you’re launching a first React Native app or migrating from a native codebase, our team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building."
+                />
+                <Testimonials />
+                <AboutFAQ />
+                <ContactSection />
+            </main>
+        </>
     );
 };
 

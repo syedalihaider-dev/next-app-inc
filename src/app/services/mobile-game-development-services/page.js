@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App is a leading mobile game development company offering iOS and Android game development services for engaging, high-performance gaming experiences.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Mobile Game Development Services",
+    "description": "Next App Inc. creates engaging mobile games with immersive gameplay, stunning graphics, smooth controls, and scalable features.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1317"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -68,105 +84,114 @@ const tabs = [
 
 import appointmentStyles from '@/components/common/Appointment.module.css';
 
-const CrossPlatformAppDevelopmentServices = () => {
+const MobileGameDevelopmentServices = () => {
     return (
-        <main className="mobile-game-page">
-            <ServiceInnerBanner
-                badge="Mobile Game Development Services"
-                title={
-                    <>
-                        <span className={styles.purpleText}> Build Games </span> Players <span className={styles.purpleText}> Can’t Stop </span>  <span className={styles.purpleText}>  </span> Playing<span className={styles.purpleText}></span>
-                    </>
-                }
-                description="From concept to launch, we build games that captivate, retain, and grow. As a dedicated mobile game development company, we turn your creative vision into a market-ready product, whether it’s a casual puzzle game or a fully immersive multiplayer experience."
-                bgImage="/services/mobile-game-banner-bg.png"
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema)
+                }}
             />
-            <ServiceSection
-                heading="Why Game Development  "
-                purpleText="Requires More Than Just Code"
-                description="A great mobile game requires the right blend of creative design, solid engineering, and platform expertise. Our team at Next App has shipped games across iOS, Android, and cross-platform environments, serving as both an iOS game development company and a premier Android game development company. We build every title to perform beautifully, monetize effectively, and deliver the kind of experience that earns five-star ratings."
-                features={[
-                    "2D/3D Game Design",
-                    "Cross-Platform Development",
-                    "Monetization Strategy",
-                    "Live Operations Support"
-                ]}
-                mockupImage="/services/mobile-game-hand-mockup.png"
-            />
-            <AwardsSection />
-            <ServicesListSection />
-            <DevelopmentSolutionsSection
-                badge="Built Differently. Delivered Better."
-                headingText="Why Studios and Startups     "
-                purpleText="Choose Next App"
-                description="Our Android game development services and iOS game development services are delivered by a team that understands gaming, not just technology."
-                features={[
 
-                    "Genre-fluent game designers",
-                    "Direct access to US-based experts",
-                    "Built for performance across all device tiers",
-                    "Support beyond launch"
-                ]}
-            />
-            <CompanyChoiceSection
-                headingText="A Process "
-                purpleText="Built Around"
-                headingText2=" Your "
-                purpleText2="Game"
-                description="Every title has different goals, but successful launches follow the same disciplined process. As a recognized game app development company, we keep every stage focused, collaborative, and transparent."
-                cards={[
-                    {
-                        title: 'Strategy & Concept Discovery',
-                        description: 'We start by understanding your target audience, genre mechanics, monetization model, and platform requirements, turning your idea into a clear game design document.',
-                        icon: '/services/icon-discovery-and-strategy.webp'
-                    },
-                    {
-                        title: 'Art & Game Design',
-                        description: "Design visuals, animations, and level structures that bring your game world to life.",
-                        icon: '/services/icon-ux-ui-design.webp'
-                    },
-                    {
-                        title: 'Engineering & Integration',
-                        description: 'Build your game with optimized rendering, physics, and backend systems. Our Android game development and iOS engineering teams work in parallel to ensure feature parity across platforms.',
-                        icon: '/services/icon-development.webp'
-                    },
-                    {
-                        title: 'Testing, Launch & Growth',
-                        description: 'Validate performance with rigorous QA, prepare for App Store and Play Store submission, and provide custom mobile game development services for live ops, updates, and post-launch support.',
-                        icon: '/services/icon-launch-and-deployment.webp'
+            <main className="mobile-game-page">
+                <ServiceInnerBanner
+                    badge="Mobile Game Development Services"
+                    title={
+                        <>
+                            <span className={styles.purpleText}> Build Games </span> Players <span className={styles.purpleText}> Can’t Stop </span>  <span className={styles.purpleText}>  </span> Playing<span className={styles.purpleText}></span>
+                        </>
                     }
-                ]}
-            />
-            <ProcessTabs
-                heading={<>Our Mobile Game  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
-                tabs={tabs}
-            />
-            <WhyChooseAppSection
-                title={
-                    <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every Game</span>
-                    </>
-                }
-                desc1="Mobile games often handle in-app purchases, user accounts, and personal data. Every solution we build includes encrypted transactions, GDPR-compliant data handling, and platform-specific compliance measures to protect players at every touchpoint."
-                desc2=""
-            />
-            <CaseStudy />
-            <TechStackSection />
-            <IndustriesSection />
-            <Appointment
-                badge="Book An Appointment"
-                heading={
-                    <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
-                    </>
-                }
-                description="Whether you’re building a first mobile title or scaling a live game, our team can scope it in a 10-minute call. Looking to hire mobile game development company experts? We’re ready. No boardroom pitch, just a conversation about what you’re building and who plays it."
-            />
-            <Testimonials />
-            <AboutFAQ />
-            <ContactSection />
-        </main>
+                    description="From concept to launch, we build games that captivate, retain, and grow. As a dedicated mobile game development company, we turn your creative vision into a market-ready product, whether it’s a casual puzzle game or a fully immersive multiplayer experience."
+                    bgImage="/services/mobile-game-banner-bg.png"
+                />
+                <ServiceSection
+                    heading="Why Game Development  "
+                    purpleText="Requires More Than Just Code"
+                    description="A great mobile game requires the right blend of creative design, solid engineering, and platform expertise. Our team at Next App has shipped games across iOS, Android, and cross-platform environments, serving as both an iOS game development company and a premier Android game development company. We build every title to perform beautifully, monetize effectively, and deliver the kind of experience that earns five-star ratings."
+                    features={[
+                        "2D/3D Game Design",
+                        "Cross-Platform Development",
+                        "Monetization Strategy",
+                        "Live Operations Support"
+                    ]}
+                    mockupImage="/services/mobile-game-hand-mockup.png"
+                />
+                <AwardsSection />
+                <ServicesListSection />
+                <DevelopmentSolutionsSection
+                    badge="Built Differently. Delivered Better."
+                    headingText="Why Studios and Startups     "
+                    purpleText="Choose Next App"
+                    description="Our Android game development services and iOS game development services are delivered by a team that understands gaming, not just technology."
+                    features={[
+
+                        "Genre-fluent game designers",
+                        "Direct access to US-based experts",
+                        "Built for performance across all device tiers",
+                        "Support beyond launch"
+                    ]}
+                />
+                <CompanyChoiceSection
+                    headingText="A Process "
+                    purpleText="Built Around"
+                    headingText2=" Your "
+                    purpleText2="Game"
+                    description="Every title has different goals, but successful launches follow the same disciplined process. As a recognized game app development company, we keep every stage focused, collaborative, and transparent."
+                    cards={[
+                        {
+                            title: 'Strategy & Concept Discovery',
+                            description: 'We start by understanding your target audience, genre mechanics, monetization model, and platform requirements, turning your idea into a clear game design document.',
+                            icon: '/services/icon-discovery-and-strategy.webp'
+                        },
+                        {
+                            title: 'Art & Game Design',
+                            description: "Design visuals, animations, and level structures that bring your game world to life.",
+                            icon: '/services/icon-ux-ui-design.webp'
+                        },
+                        {
+                            title: 'Engineering & Integration',
+                            description: 'Build your game with optimized rendering, physics, and backend systems. Our Android game development and iOS engineering teams work in parallel to ensure feature parity across platforms.',
+                            icon: '/services/icon-development.webp'
+                        },
+                        {
+                            title: 'Testing, Launch & Growth',
+                            description: 'Validate performance with rigorous QA, prepare for App Store and Play Store submission, and provide custom mobile game development services for live ops, updates, and post-launch support.',
+                            icon: '/services/icon-launch-and-deployment.webp'
+                        }
+                    ]}
+                />
+                <ProcessTabs
+                    heading={<>Our Mobile Game  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                    tabs={tabs}
+                />
+                <WhyChooseAppSection
+                    title={
+                        <>
+                            Security & Compliance,  <span className={styles.purpleText}> Built Into Every Game</span>
+                        </>
+                    }
+                    desc1="Mobile games often handle in-app purchases, user accounts, and personal data. Every solution we build includes encrypted transactions, GDPR-compliant data handling, and platform-specific compliance measures to protect players at every touchpoint."
+                    desc2=""
+                />
+                <CaseStudy />
+                <TechStackSection />
+                <IndustriesSection />
+                <Appointment
+                    badge="Book An Appointment"
+                    heading={
+                        <>
+                            Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        </>
+                    }
+                    description="Whether you’re building a first mobile title or scaling a live game, our team can scope it in a 10-minute call. Looking to hire mobile game development company experts? We’re ready. No boardroom pitch, just a conversation about what you’re building and who plays it."
+                />
+                <Testimonials />
+                <AboutFAQ />
+                <ContactSection />
+            </main>
+        </>
     );
 };
 
-export default CrossPlatformAppDevelopmentServices;
+export default MobileGameDevelopmentServices;

@@ -88,6 +88,29 @@ const FinanceAppPage = () => {
 
     return (
         <main>
+
+            {/* Finance App Development Product Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Finance App Development Services",
+                        "description": "Next App Inc. builds secure finance apps with payment solutions, account management, analytics, and transaction tracking features.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1438"
+                        }
+                    })
+                }}
+            />
+
             <IndustryBanner 
                 industryLabel="Finance Industry"
                 mainTitle={<>The Future of Finance Is <span style={{ color: 'var(--primary-color)' }}>Digital</span>. We'll <span style={{ color: 'var(--primary-color)' }}>Help</span> You Lead <span style={{ color: 'var(--primary-color)' }}>It.</span></>}
@@ -116,7 +139,7 @@ const FinanceAppPage = () => {
             />
 
             <IndustryFeaturesSection />
-            <IndustrySolutionsSlider/>\
+            <IndustrySolutionsSlider/>
             <WhyChooseAppSection />
             <CaseStudy />
             <TechStackSection />

@@ -21,6 +21,22 @@ export const metadata = {
     description: "Partner with a leading Android app development agency in the USA. We offer custom Android app development services built to scale, perform, and deliver results.",
 };
 
+const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Android App Development Services",
+    "description": "Next App Inc. builds secure, scalable, and user-friendly Android apps tailored to your business needs for smartphones, tablets, and devices.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1284"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -71,16 +87,25 @@ import appointmentStyles from '@/components/common/Appointment.module.css';
 const TwoDGameDevelopmentPage = () => {
     return (
         <main className="android-app-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(productSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="Android App Development Services"
                 title={
                     <>
-                        Turn Your Idea <span className={styles.purpleText}> Into an Android </span>  App That Users <span className={styles.purpleText}> Can’t Put</span> <span className={styles.purpleText}> Down </span><span className={styles.purpleText}></span>
+                        Turn Your Idea <span className={styles.purpleText}> Into an Android </span> App That Users <span className={styles.purpleText}> Can’t Put</span> <span className={styles.purpleText}> Down </span><span className={styles.purpleText}></span>
                     </>
                 }
                 description="From concept to the Play Store, we build Android apps that perform beautifully, scale effortlessly, and solve real problems for real people, across every device, every screen size. As a trusted Android app development agency, we bring the expertise your project deserves."
                 bgImage="/services/android-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why Android Development  Is  "
                 purpleText=" More Than Just Writing Code"
@@ -93,8 +118,11 @@ const TwoDGameDevelopmentPage = () => {
                 ]}
                 mockupImage="/services/android-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Businesses "
@@ -107,6 +135,7 @@ const TwoDGameDevelopmentPage = () => {
                     "Support beyond launch"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -136,34 +165,44 @@ const TwoDGameDevelopmentPage = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
-                heading={<>Our Android App Development <span className={styles.purpleText}> Approach Makes</span> <span className={styles.purpleText}> It </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                heading={
+                    <>
+                        Our Android App Development <span className={styles.purpleText}> Approach Makes</span> <span className={styles.purpleText}> It </span> Simple, Easy,<span className={styles.purpleText}> And </span> <span className={styles.purpleText}> Efficient.</span>
+                    </>
+                }
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
+                        Security & Compliance, <span className={styles.purpleText}> Built Into Every App</span>
                     </>
                 }
                 desc1="Android apps often handle sensitive user data. Every solution we build includes encrypted data storage, GDPR-compliant privacy controls, role-based access management, and secure API connections to help protect users at every touchpoint."
                 desc2=""
             />
+
             <CaseStudy />
             <TechStackSection />
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
                     <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        Your Next Big Idea <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
                     </>
                 }
                 description="Whether you’re launching a first mobile product or scaling one that’s already live, our team at this Android app development agency can scope your project in a 10-minute call. No boardroom pitch, just a conversation about what you’re building and who it’s for."
             />
+
             <Testimonials />
             <AboutFAQ />
             <ContactSection />
+
         </main>
     );
 };

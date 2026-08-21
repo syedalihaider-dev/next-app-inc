@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import IndustryBanner from '@/components/industries/IndustryBanner';
 import IndustryServicesSection from '@/components/industries/IndustryServicesSection';
 import IndustryConsultationSection from '@/components/industries/IndustryConsultationSection';
@@ -17,7 +18,7 @@ export const metadata = {
     description: "Next App offers comprehensive travel digital solutions, including booking platforms, OTAs, hotel management systems, tour apps, and traveler tools, serving businesses worldwide.",
 };
 
-const HealthcareAppPage = () => {
+const TravelAppDevelopmentPage = () => {
     const services = [
         {
             title: 'Travel Booking <br/>App Development',
@@ -87,46 +88,70 @@ const HealthcareAppPage = () => {
     ];
 
     return (
-        <main>
-            <IndustryBanner 
-                industryLabel="Travel Industry"
-                mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Travel Is Back.</span> Build the Platform That Brings<span style={{ color: 'var(--primary-color)' }}> Travellers </span> to You.</>}
-                // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
-                description="We build travel tech, online agencies, hotels, airlines, making bookings seamless, experiences memorable, and operations efficient. Next App delivers mobile apps, web platforms, and custom software for businesses of all sizes."
-                bgImage="/industries/travel-app-development/banner-bg.png" 
+        <>
+            <Script
+                id="travel-app-development-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Travel App Development Services",
+                        "description": "Next App Inc. develops travel apps for trip planning, bookings, itineraries, maps, recommendations, and seamless travel experiences.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1379"
+                        }
+                    })
+                }}
             />
 
-            <IndustryServicesSection 
-                title="<span style='color: var(--primary-color)'>Travel App Development</span> Solutions Built for Booking Volume, <span style='color: var(--primary-color)'>Experience Quality,</span> and <span style='color: var(--primary-color)'>Operational Scale</span> "
-                description="Travel app development is highly competitive. Friction points in booking lose customers. Our services focus on key metrics: conversion, booking completion, repeat visits, and supplier efficiency."
-                servicesData={services}
-                mockupImage="/industries/travel-app-development/services-mockup.png" // Placeholder
-            />
+            <main>
+                <IndustryBanner 
+                    industryLabel="Travel Industry"
+                    mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Travel Is Back.</span> Build the Platform That Brings<span style={{ color: 'var(--primary-color)' }}> Travellers </span> to You.</>}
+                    // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
+                    description="We build travel tech, online agencies, hotels, airlines, making bookings seamless, experiences memorable, and operations efficient. Next App delivers mobile apps, web platforms, and custom software for businesses of all sizes."
+                    bgImage="/industries/travel-app-development/banner-bg.png" 
+                />
+
+                <IndustryServicesSection 
+                    title="<span style='color: var(--primary-color)'>Travel App Development</span> Solutions Built for Booking Volume, <span style='color: var(--primary-color)'>Experience Quality,</span> and <span style='color: var(--primary-color)'>Operational Scale</span> "
+                    description="Travel app development is highly competitive. Friction points in booking lose customers. Our services focus on key metrics: conversion, booking completion, repeat visits, and supplier efficiency."
+                    servicesData={services}
+                    mockupImage="/industries/travel-app-development/services-mockup.png" // Placeholder
+                />
    
-            <IndustryConsultationSection 
-                title={<>
-                Travel App Company <span style={{ color: 'var(--primary-color)' }}>Turns One Trip</span> into Lifelong Bookings</>}
-                subLabel="Travelers have more options and less patience for inconvenience."             
-                description="We develop apps that turn first bookings into repeat visits with seamless UX, personalized suggestions, and reliable performance during peak seasons. Our US and Pakistan teams create travel mobile apps that make your platform memorable and encourage repeat use."
-            />
+                <IndustryConsultationSection 
+                    title={<>
+                    Travel App Company <span style={{ color: 'var(--primary-color)' }}>Turns One Trip</span> into Lifelong Bookings</>}
+                    subLabel="Travelers have more options and less patience for inconvenience."             
+                    description="We develop apps that turn first bookings into repeat visits with seamless UX, personalized suggestions, and reliable performance during peak seasons. Our US and Pakistan teams create travel mobile apps that make your platform memorable and encourage repeat use."
+                />
 
-            <IndustryTabsSection 
-                title={<><span style={{ color: 'var(--primary-color)' }}>Travel App</span> Features That Find <br/> Features That Drive <span style={{ color: 'var(--primary-color)' }}>Bookings, Reduce Drop-Off, </span> and Improve <span style={{ color: 'var(--primary-color)' }}>Traveller Experience</span></>}
-                description="We build scalable solutions with years of experience in Healthcare, Finance, E-Commerce, and Education, backed by technology that delivers results."
-                tabsData={tabs}
-            />
+                <IndustryTabsSection 
+                    title={<><span style={{ color: 'var(--primary-color)' }}>Travel App</span> Features That Find <br/> Features That Drive <span style={{ color: 'var(--primary-color)' }}>Bookings, Reduce Drop-Off, </span> and Improve <span style={{ color: 'var(--primary-color)' }}>Traveller Experience</span></>}
+                    description="We build scalable solutions with years of experience in Healthcare, Finance, E-Commerce, and Education, backed by technology that delivers results."
+                    tabsData={tabs}
+                />
 
-            <IndustryFeaturesSection />
-            <IndustrySolutionsSlider/>
-            <WhyChooseAppSection />
-            <CaseStudy />
-            <TechStackSection />
-            <IndustriesSection />
-            <Appointment />
-            <Testimonials />
-            <ContactSection />
-        </main>
+                <IndustryFeaturesSection />
+                <IndustrySolutionsSlider/>
+                <WhyChooseAppSection />
+                <CaseStudy />
+                <TechStackSection />
+                <IndustriesSection />
+                <Appointment />
+                <Testimonials />
+                <ContactSection />
+            </main>
+        </>
     );
 };
 
-export default HealthcareAppPage;
+export default TravelAppDevelopmentPage;

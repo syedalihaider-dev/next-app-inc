@@ -89,6 +89,28 @@ const HealthcareAppPage = () => {
     
     return (
         <main>
+            {/* Healthcare App Development Product Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Healthcare App Development Services",
+                        "description": "Next App Inc. creates healthcare apps for appointments, telemedicine, patient management, health tracking, and communication.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1587"
+                        }
+                    })
+                }}
+            />
+
             <IndustryBanner 
                 industryLabel="Healthcare Industry"
                 mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Technology</span> That Helps <span style={{ color: 'var(--primary-color)' }}>People</span></>}
@@ -101,7 +123,7 @@ const HealthcareAppPage = () => {
                 title="<span style='color: var(--primary-color)'>Healthcare App Development</span> Solutions <br/> Built for Real <span style='color: var(--primary-color)'>Clinical Environments</span>"
                 description="We don't just build healthcare apps — we build tools that clinicians trust, patients rely on, and administrators can actually manage. From telemedicine platforms to EHR integrations, our healthcare solutions are designed with compliance, security, and user experience as non-negotiable foundations. Whether it's a mobile app, web platform, or custom software solution, Next App delivers complete digital products for the modern healthcare organization."
                 servicesData={services}
-                mockupImage="/industries/healthcare-app-development/services-mockup.webp" // Placeholder
+                mockupImage="/industries/healthcare-app-development/services-mockup.webp"
             />
 
             <IndustryConsultationSection 

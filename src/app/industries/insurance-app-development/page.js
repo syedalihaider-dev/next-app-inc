@@ -89,6 +89,29 @@ const HealthcareAppPage = () => {
 
     return (
         <main>
+
+            {/* Insurance App Development Product Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Insurance App Development Services",
+                        "description": "Next App Inc. develops insurance apps for policy management, claims processing, payments, customer support, and secure access.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "ratingCount": "1174"
+                        }
+                    })
+                }}
+            />
+
             <IndustryBanner 
                 industryLabel="Insurance Industry"
                 mainTitle={<> The <span style={{ color: 'var(--primary-color)' }}>Insurance Industry</span> Is Changing. Your<span style={{ color: 'var(--primary-color)' }}> Digital Platform </span> Should Lead the Way.</>}
@@ -101,7 +124,7 @@ const HealthcareAppPage = () => {
                 title="<span style='color: var(--primary-color)'>Insurance App Development</span> Solutions <br/> Built for Real Compliance, <span style='color: var(--primary-color)'>Speed,</span> and Customer <span style='color: var(--primary-color)'>Trust</span> "
                 description="Insurance is one of the most complex industries to digitize and one of the most rewarding when done right. We build policy management systems, claims automation platforms, agent portals, and customer-facing apps that handle real-world insurance complexity without hiding it behind bad UX."
                 servicesData={services}
-                mockupImage="/industries/insurance-app-development/services-mockup.png" // Placeholder
+                mockupImage="/industries/insurance-app-development/services-mockup.png"
             />
 
             <IndustryConsultationSection 

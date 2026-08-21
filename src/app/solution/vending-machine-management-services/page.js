@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
 import styles from '@/components/services/ServiceInnerBanner.module.css';
 import ServiceSection from '@/components/services/ServiceSection';
@@ -19,7 +20,6 @@ import ContactSection from "@/components/common/ContactSection";
 export const metadata = {
     title: "Vending Machine Management Software | NextApp",
     description: "NextApp builds custom vending machine management software with real-time inventory tracking, route optimization, and smart vending fleet control for operators.",
-
 };
 
 const tabs = [
@@ -69,106 +69,138 @@ const tabs = [
 
 import appointmentStyles from '@/components/common/Appointment.module.css';
 
-const KioskSoftwareDevelopmentServices = () => {
+const VendingMachineManagementServices = () => {
     return (
-        <main className="vending-machine-page">
-            <ServiceInnerBanner
-                badge="Vending Machine Management Software Company "
-                title={
-                    <>
-                        <span className={styles.purpleText}> Stop Running </span> Your Vending <span className={styles.purpleText}> </span>  Operation  <span className={styles.purpleText}>  </span>   <span className={styles.purpleText}> Blind</span>
-                    </>
-                }
-                description="NextApp builds custom vending machine management software with real-time inventory tracking, route optimization, and smart vending fleet control for operators."
-                bgImage="/services/vending-banner.png"
+        <>
+            <Script
+                id="vending-machine-management-software-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Product",
+                        "name": "Vending Machine Management Software Services",
+                        "description": "Next App Inc. builds vending management software for inventory, sales tracking, remote monitoring, payments, alerts, and control.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.7",
+                            "ratingCount": "1031"
+                        }
+                    })
+                }}
             />
-            <ServiceSection
-                heading="Why Vending Machine Software"
-                purpleText=" Needs to Be Built for the Job"
-                description="Running a vending machine business is useless without the proper software backing it up. NextApp builds advanced vending machine software that connects all aspects of a vending machine into a singular place. That includes: live inventory data, machine health alerts, sales analytics, and more. "
-                features={[
-                    "Real-Time Machine Monitoring",
-                    "Remote Inventory & Stock Control",
-                    "Sales Data & Revenue Reporting",
-                    "Route Optimization & Restocking Alerts"
-                ]}
-                mockupImage="/services/vending-sec-1.png"
-            />
-            <AwardsSection />
-            <ServicesListSection />
-            <DevelopmentSolutionsSection
-                badge="Built Differently. Delivered Better."
-                headingText="Why Operators "
-                purpleText="Choose NextApp"
-                description="We build vending machine software programs that work the way your operation works, not a generic dashboard packed with features your team will never use, but a purpose-built tool your route drivers, warehouse staff, and managers will actually rely on every single day. Unlike off-the-shelf solutions, our software is engineered around your machine types, stocking patterns, and reporting requirements. We understand what operators actually need: to know what’s in every coil of every machine before the truck leaves the depot, to get alerted the moment a machine jams or goes offline, and to close the week knowing exactly where every dollar went."
-                features={[
 
-                    "Built around real vending operation workflows",
-                    "Direct access to US-based project leads",
-                    "Scalable from small fleets to enterprise networks",
-                    "Works with mixed fleets and existing telemetry providers",
-                    "Support beyond launch"
-                ]}
-            />
-            <CompanyChoiceSection
-                headingText="A Process "
-                purpleText="Built Around"
-                headingText2=" Your "
-                purpleText2="Product"
-                description="Every facility has a different configuration, a different set of users, and a different set of compliance requirements. Our locker management software development process adapts to all of it while keeping every stage disciplined, transparent, and on schedule."
-                cards={[
-                    {
-                        title: 'Strategy & Product Discovery',
-                        description: 'Our approach to vending machine inventory software begins by understanding your entire operation before we design a single screen. ',
-                        icon: '/services/icon-discovery-and-strategy.webp'
-                    },
-                    {
-                        title: 'UX/UI Design',
-                        description: "Once we have all core requirements understood, we design the dashboards and field interfaces that put the right information in front of the right person at the right time. ",
-                        icon: '/services/icon-ux-ui-design.webp'
-                    },
-                    {
-                        title: 'Engineering & Integration',
-                        description: 'We then proceed with building the vending machine inventory management software with live telemetry connections, cashless payment processor integrations, and more.',
-                        icon: '/services/icon-development.webp'
-                    },
-                    {
-                        title: 'Testing, Launch & Growth',
-                        description: 'It’s crucial that no hitches come forward after deployment, so the software is tested under conditions that reflect how your machines and your people actually behave in the field.',
-                        icon: '/services/icon-launch-and-deployment.webp'
+            <main className="vending-machine-page">
+                <ServiceInnerBanner
+                    badge="Vending Machine Management Software Company "
+                    title={
+                        <>
+                            <span className={styles.purpleText}> Stop Running </span> Your Vending <span className={styles.purpleText}> </span>  Operation  <span className={styles.purpleText}>  </span>   <span className={styles.purpleText}> Blind</span>
+                        </>
                     }
-                ]}
-            />
-            <ProcessTabs
-                heading={<>Our Vending <span className={styles.purpleText}> Machine Software Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
-                tabs={tabs}
-            />
-            <WhyChooseAppSection
-                title={
-                    <>
-                        Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
-                    </>
-                }
-                desc1="Vending machine software handles payment data, cash reconciliation records, and sensitive operational data. Every solution we build includes encrypted data pipelines, PCI-compliant payment handling, role-based access controls for drivers, managers, and admins, and secure API integrations to protect your business and your customers at every point in the workflow."
-                desc2=""
-            />
-            <CaseStudy />
-            <TechStackSection />
-            <IndustriesSection />
-            <Appointment
-                badge="Book An Appointment"
-                heading={
-                    <>
-                        Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
-                    </>
-                }
-                description="Whether you are managing a small local network or scaling a national fleet, our team can scope a custom vending machine management software solution in a 10-minute call. No boardroom pitch. Just a conversation about how your operation runs and what you need it to do better."
-            />
-            <Testimonials />
-            <AboutFAQ />
-            <ContactSection />
-        </main>
+                    description="NextApp builds custom vending machine management software with real-time inventory tracking, route optimization, and smart vending fleet control for operators."
+                    bgImage="/services/vending-banner.png"
+                />
+
+                <ServiceSection
+                    heading="Why Vending Machine Software"
+                    purpleText=" Needs to Be Built for the Job"
+                    description="Running a vending machine business is useless without the proper software backing it up. NextApp builds advanced vending machine software that connects all aspects of a vending machine into a singular place. That includes: live inventory data, machine health alerts, sales analytics, and more. "
+                    features={[
+                        "Real-Time Machine Monitoring",
+                        "Remote Inventory & Stock Control",
+                        "Sales Data & Revenue Reporting",
+                        "Route Optimization & Restocking Alerts"
+                    ]}
+                    mockupImage="/services/vending-sec-1.png"
+                />
+
+                <AwardsSection />
+                <ServicesListSection />
+
+                <DevelopmentSolutionsSection
+                    badge="Built Differently. Delivered Better."
+                    headingText="Why Operators "
+                    purpleText="Choose NextApp"
+                    description="We build vending machine software programs that work the way your operation works, not a generic dashboard packed with features your team will never use, but a purpose-built tool your route drivers, warehouse staff, and managers will actually rely on every single day. Unlike off-the-shelf solutions, our software is engineered around your machine types, stocking patterns, and reporting requirements. We understand what operators actually need: to know what’s in every coil of every machine before the truck leaves the depot, to get alerted the moment a machine jams or goes offline, and to close the week knowing exactly where every dollar went."
+                    features={[
+                        "Built around real vending operation workflows",
+                        "Direct access to US-based project leads",
+                        "Scalable from small fleets to enterprise networks",
+                        "Works with mixed fleets and existing telemetry providers",
+                        "Support beyond launch"
+                    ]}
+                />
+
+                <CompanyChoiceSection
+                    headingText="A Process "
+                    purpleText="Built Around"
+                    headingText2=" Your "
+                    purpleText2="Product"
+                    description="Every facility has a different configuration, a different set of users, and a different set of compliance requirements. Our locker management software development process adapts to all of it while keeping every stage disciplined, transparent, and on schedule."
+                    cards={[
+                        {
+                            title: 'Strategy & Product Discovery',
+                            description: 'Our approach to vending machine inventory software begins by understanding your entire operation before we design a single screen. ',
+                            icon: '/services/icon-discovery-and-strategy.webp'
+                        },
+                        {
+                            title: 'UX/UI Design',
+                            description: "Once we have all core requirements understood, we design the dashboards and field interfaces that put the right information in front of the right person at the right time. ",
+                            icon: '/services/icon-ux-ui-design.webp'
+                        },
+                        {
+                            title: 'Engineering & Integration',
+                            description: 'We then proceed with building the vending machine inventory management software with live telemetry connections, cashless payment processor integrations, and more.',
+                            icon: '/services/icon-development.webp'
+                        },
+                        {
+                            title: 'Testing, Launch & Growth',
+                            description: 'It’s crucial that no hitches come forward after deployment, so the software is tested under conditions that reflect how your machines and your people actually behave in the field.',
+                            icon: '/services/icon-launch-and-deployment.webp'
+                        }
+                    ]}
+                />
+
+                <ProcessTabs
+                    heading={<>Our Vending <span className={styles.purpleText}> Machine Software Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
+                    tabs={tabs}
+                />
+
+                <WhyChooseAppSection
+                    title={
+                        <>
+                            Security & Compliance,  <span className={styles.purpleText}> Built Into Every App</span>
+                        </>
+                    }
+                    desc1="Vending machine software handles payment data, cash reconciliation records, and sensitive operational data. Every solution we build includes encrypted data pipelines, PCI-compliant payment handling, role-based access controls for drivers, managers, and admins, and secure API integrations to protect your business and your customers at every point in the workflow."
+                    desc2=""
+                />
+
+                <CaseStudy />
+                <TechStackSection />
+                <IndustriesSection />
+
+                <Appointment
+                    badge="Book An Appointment"
+                    heading={
+                        <>
+                            Your Next Big Idea  <span className={appointmentStyles.highlight}> Starts Here.</span> <br /> <span className={appointmentStyles.highlight}> </span>
+                        </>
+                    }
+                    description="Whether you are managing a small local network or scaling a national fleet, our team can scope a custom vending machine management software solution in a 10-minute call. No boardroom pitch. Just a conversation about how your operation runs and what you need it to do better."
+                />
+
+                <Testimonials />
+                <AboutFAQ />
+                <ContactSection />
+            </main>
+        </>
     );
 };
 
-export default KioskSoftwareDevelopmentServices;
+export default VendingMachineManagementServices;

@@ -21,6 +21,22 @@ export const metadata = {
     description: "Next App is a top Flutter app development company in the USA offering expert Flutter app development services for iOS, Android, and web. Get a free quote today.",
 };
 
+const flutterSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Flutter App Development Services",
+    "description": "Next App Inc. creates fast, scalable Flutter apps with a single codebase for smooth performance across Android and iOS.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Next App Inc."
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1568"
+    }
+};
+
 const tabs = [
     {
         id: 'Project Planning',
@@ -68,9 +84,17 @@ const tabs = [
 
 import appointmentStyles from '@/components/common/Appointment.module.css';
 
-const CrossPlatformAppDevelopmentServices = () => {
+const FlutterAppDevelopment = () => {
     return (
         <main className="flutter-app-page">
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(flutterSchema),
+                }}
+            />
+
             <ServiceInnerBanner
                 badge="Flutter App Development Company"
                 title={
@@ -81,6 +105,7 @@ const CrossPlatformAppDevelopmentServices = () => {
                 description="Flutter is the future of cross-platform development, and we’re fluent in it. Our Flutter app development services deliver pixel-perfect, high-performance applications on iOS, Android, web, and desktop from a single codebase."
                 bgImage="/services/flutter-banner-bg.png"
             />
+
             <ServiceSection
                 heading="Why Flutter Is the Smart  "
                 purpleText="Choice for Modern App Development"
@@ -93,8 +118,11 @@ const CrossPlatformAppDevelopmentServices = () => {
                 ]}
                 mockupImage="/services/flutter-hand-mockup.png"
             />
+
             <AwardsSection />
+
             <ServicesListSection />
+
             <DevelopmentSolutionsSection
                 badge="Built Differently. Delivered Better."
                 headingText="Why Teams Choose    "
@@ -107,6 +135,7 @@ const CrossPlatformAppDevelopmentServices = () => {
                     "Support beyond launch"
                 ]}
             />
+
             <CompanyChoiceSection
                 headingText="A Process "
                 purpleText="Built Around"
@@ -136,10 +165,12 @@ const CrossPlatformAppDevelopmentServices = () => {
                     }
                 ]}
             />
+
             <ProcessTabs
                 heading={<>Our Flutter App  <span className={styles.purpleText}>Development Approach </span> Makes It <span className={styles.purpleText}>  </span> Simple, Easy,<span className={styles.purpleText}> And </span>  <span className={styles.purpleText}> Efficient.</span></>}
                 tabs={tabs}
             />
+
             <WhyChooseAppSection
                 title={
                     <>
@@ -149,9 +180,13 @@ const CrossPlatformAppDevelopmentServices = () => {
                 desc1="Every Flutter app we build includes encrypted data handling, platform-specific permission management, GDPR-compliant controls, and secure API integration, protecting your users on every platform."
                 desc2=""
             />
+
             <CaseStudy />
+
             <TechStackSection />
+
             <IndustriesSection />
+
             <Appointment
                 badge="Book An Appointment"
                 heading={
@@ -161,11 +196,14 @@ const CrossPlatformAppDevelopmentServices = () => {
                 }
                 description="Whether you’re launching a first Flutter app or migrating an existing product, our team can scope it in a 10-minute call. No boardroom pitch, just a conversation about what you’re building."
             />
+
             <Testimonials />
+
             <AboutFAQ />
+
             <ContactSection />
         </main>
     );
 };
 
-export default CrossPlatformAppDevelopmentServices;
+export default FlutterAppDevelopment;

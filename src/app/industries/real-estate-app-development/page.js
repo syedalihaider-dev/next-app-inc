@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import IndustryBanner from '@/components/industries/IndustryBanner';
 import IndustryServicesSection from '@/components/industries/IndustryServicesSection';
 import IndustryConsultationSection from '@/components/industries/IndustryConsultationSection';
@@ -17,7 +18,7 @@ export const metadata = {
     description: "Next Apps builds powerful real estate digital solutions — from property search apps and agent CRMs to listing platforms, virtual tour tools, and property management software. Serving businesses globally.",
 };
 
-const HealthcareAppPage = () => {
+const RealEstateAppPage = () => {
     const services = [
         {
             title: ' Property Search  & <br/> Listing Platforms',
@@ -87,45 +88,69 @@ const HealthcareAppPage = () => {
     ];
 
     return (
-        <main>
-            <IndustryBanner 
-                industryLabel="Realestate Industry"
-                mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Real Estate Moves Fast.</span> Build the Platform<span style={{ color: 'var(--primary-color)' }}> that Moves </span> With It.</>}
-                // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
-                description="From property portals and brokerage platforms to PropTech startups and property managers, we build digital solutions that help buyers find homes faster, agents close deals smarter, and landlords manage portfolios with less friction."
-                bgImage="/industries/real-estate-app-development/banner-bg.png" 
+        <>
+            <Script
+                id="real-estate-app-development-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        "name": "Real Estate App Development Services",
+                        "description": "Next App Inc. creates real estate apps with property listings, advanced search, maps, virtual tours, and lead management.",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Next App Inc."
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "ratingCount": "1461"
+                        }
+                    })
+                }}
             />
 
-            <IndustryServicesSection 
-                title="<span style='color: var(--primary-color)'>Real Estate App Development</span> Solutions <br/> Built for Agents, <span style='color: var(--primary-color)'>Buyers,</span> and Property <span style='color: var(--primary-color)'>Managers</span> "
-                description="Real estate transactions are the highest-stakes purchases most people make. Digital tools in this process must earn trust at each step. We create property search platforms, agent CRM, transaction management tools, virtual tour apps, and property management systems designed for the real estate industry’s complexity in residential, commercial, and rental markets."
-                servicesData={services}
-                mockupImage="/industries/real-estate-app-development/services-mockup.png" // Placeholder
-            />
-   
-            <IndustryConsultationSection 
-                title={<>Real Estate Technology That <span style={{ color: 'var(--primary-color)' }}>Closes More Deals and</span> Builds Better Relationships</>}
-                subLabel="The best agents and property businesses succeed "             
-                description=" not just on price but on experience—benefiting buyers, renters, and investors. Our platforms are designed for that: intuitive search, reliable data, seamless transactions that foster referrals. We build for both ends of the deal. "
-            />
+            <main>
+                <IndustryBanner 
+                    industryLabel="Realestate Industry"
+                    mainTitle={<><span style={{ color: 'var(--primary-color)' }}>Real Estate Moves Fast.</span> Build the Platform<span style={{ color: 'var(--primary-color)' }}> that Moves </span> With It.</>}
+                    // highlightedPart={<> <span style={{ color: 'var(--primary-color)' }}>Get Better</span> <span style={{ color: '#fff' }}>and</span> <span style={{ color: 'var(--primary-color)' }}>Stay That Way.</span></>}
+                    description="From property portals and brokerage platforms to PropTech startups and property managers, we build digital solutions that help buyers find homes faster, agents close deals smarter, and landlords manage portfolios with less friction."
+                    bgImage="/industries/real-estate-app-development/banner-bg.png" 
+                />
 
-            <IndustryTabsSection 
-                title={<><span style={{ color: 'var(--primary-color)' }}>Real Estate</span> Features That Find <br/> Buyers Faster, <span style={{ color: 'var(--primary-color)' }}>Close Deals Smarter, </span> and Manage <span style={{ color: 'var(--primary-color)' }}>Properties Better</span></>}
-                description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results."
-                tabsData={tabs}
-            />
+                <IndustryServicesSection 
+                    title="<span style='color: var(--primary-color)'>Real Estate App Development</span> Solutions <br/> Built for Agents, <span style='color: var(--primary-color)'>Buyers,</span> and Property <span style='color: var(--primary-color)'>Managers</span> "
+                    description="Real estate transactions are the highest-stakes purchases most people make. Digital tools in this process must earn trust at each step. We create property search platforms, agent CRM, transaction management tools, virtual tour apps, and property management systems designed for the real estate industry’s complexity in residential, commercial, and rental markets."
+                    servicesData={services}
+                    mockupImage="/industries/real-estate-app-development/services-mockup.png" // Placeholder
+                />
 
-            <IndustryFeaturesSection />
-            <IndustrySolutionsSlider/>
-            <WhyChooseAppSection />
-            <CaseStudy />
-            <TechStackSection />
-            <IndustriesSection />
-            <Appointment />
-            <Testimonials />
-            <ContactSection />
-        </main>
+                <IndustryConsultationSection 
+                    title={<>Real Estate Technology That <span style={{ color: 'var(--primary-color)' }}>Closes More Deals and</span> Builds Better Relationships</>}
+                    subLabel="The best agents and property businesses succeed "             
+                    description=" not just on price but on experience—benefiting buyers, renters, and investors. Our platforms are designed for that: intuitive search, reliable data, seamless transactions that foster referrals. We build for both ends of the deal. "
+                />
+
+                <IndustryTabsSection 
+                    title={<><span style={{ color: 'var(--primary-color)' }}>Real Estate</span> Features That Find <br/> Buyers Faster, <span style={{ color: 'var(--primary-color)' }}>Close Deals Smarter, </span> and Manage <span style={{ color: 'var(--primary-color)' }}>Properties Better</span></>}
+                    description="We build robust, scalable solutions backed by years of experience serving businesses across Healthcare, Finance, E-Commerce, and Education — powered by technology that drives real results."
+                    tabsData={tabs}
+                />
+
+                <IndustryFeaturesSection />
+                <IndustrySolutionsSlider/>
+                <WhyChooseAppSection />
+                <CaseStudy />
+                <TechStackSection />
+                <IndustriesSection />
+                <Appointment />
+                <Testimonials />
+                <ContactSection />
+            </main>
+        </>
     );
 };
 
-export default HealthcareAppPage;
+export default RealEstateAppPage;
