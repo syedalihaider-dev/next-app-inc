@@ -1,7 +1,5 @@
 import ServiceInnerBanner from '@/components/services/ServiceInnerBanner';
-import styles from '@/components/services/ServiceInnerBanner.module.css';
 import ServiceSection from '@/components/services/ServiceSection';
-import '@/styles/service-page-overrides.css';
 import AwardsSection from '@/components/common/AwardsSection';
 import ServicesListSection from '@/components/services/ServicesListSection';
 import DevelopmentSolutionsSection from '@/components/common/DevelopmentSolutionsSection';
@@ -9,12 +7,15 @@ import CompanyChoiceSection from '@/components/common/CompanyChoiceSection';
 import ProcessTabs from '@/components/services/ProcessTabs';
 import WhyChooseAppSection from '@/components/common/WhyChooseAppSection';
 import CaseStudy from "@/components/common/CaseStudy";
-import TechStackSection from '@/components/services/TechStackSection';
+import TechStackSection from '@/components/common/TechStackSection';
 import IndustriesSection from '@/components/common/IndustriesSection';
 import Appointment from "@/components/common/Appointment";
 import Testimonials from "@/components/common/Testimonials";
 import AboutFAQ from "@/components/about/AboutFAQ";
 import ContactSection from "@/components/common/ContactSection";
+
+import styles from '@/components/services/ServiceInnerBanner.module.css';
+import '@/styles/service-page-overrides.css';
 
 export const metadata = {
     title: "App Prototyping Services | Next App",
