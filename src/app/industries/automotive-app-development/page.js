@@ -14,8 +14,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Automotive App Development | Next Apps",
-    description: "Next Apps develops automotive digital solutions, from dealer management and fleet platforms to EV charging and connected vehicle software, serving global businesses.",
+    title: "Automotive App Development | Next App",
+    description: "Next App develops automotive digital solutions, from dealer management and fleet platforms to EV charging and connected vehicle software, serving global businesses.",
 };
 
 const AutomotiveAppPage = () => {

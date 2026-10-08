@@ -14,8 +14,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: " Real Estate App Development | Next Apps",
-    description: "Next Apps builds powerful real estate digital solutions — from property search apps and agent CRMs to listing platforms, virtual tour tools, and property management software. Serving businesses globally.",
+    title: " Real Estate App Development | Next App",
+    description: "Next App builds powerful real estate digital solutions — from property search apps and agent CRMs to listing platforms, virtual tour tools, and property management software. Serving businesses globally.",
 };
 
 const RealEstateAppPage = () => {

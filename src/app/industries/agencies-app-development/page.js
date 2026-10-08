@@ -13,8 +13,8 @@ import Testimonials from "@/components/common/Testimonials";
 import ContactSection from "@/components/common/ContactSection";
 
 export const metadata = {
-    title: "Agencies App Development | Next Apps",
-    description: "Next Apps develops custom mobile and web applications for marketing agencies, providing them with the tools they need to deliver exceptional digital experiences to their clients.",
+    title: "Agencies App Development | Next App",
+    description: "Next App develops custom mobile and web applications for marketing agencies, providing them with the tools they need to deliver exceptional digital experiences to their clients.",
 };
 
 const AgenciesAppDevelopment = () => {

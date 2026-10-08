@@ -3,8 +3,8 @@ import styles from './privacy.module.css';
 import { SITE_CONFIG } from '@/configs/site-config';
 
 export const metadata = {
-    title: 'Privacy Policy | Next Apps',
-    description: 'Next Apps is committed to protecting the privacy of everyone who visits our website or uses our services.',
+    title: 'Privacy Policy | Next App',
+    description: 'Next App is committed to protecting the privacy of everyone who visits our website or uses our services.',
 };
 
 const PrivacyPolicyPage = () => {
@@ -19,24 +19,24 @@ const PrivacyPolicyPage = () => {
             <div className={styles.contentWrapper}>
                 <section className={styles.section}>
                     <p>
-                        Next Apps is committed to protecting the privacy of everyone who visits our website, contacts us about our services, or engages us as a client. This Privacy Policy explains what personal data we collect, how we use it, how we protect it, and what your rights are in relation to it. By using our website or services, you consent to the practices described in this Policy.
+                        Next App is committed to protecting the privacy of everyone who visits our website, contacts us about our services, or engages us as a client. This Privacy Policy explains what personal data we collect, how we use it, how we protect it, and what your rights are in relation to it. By using our website or services, you consent to the practices described in this Policy.
                     </p>
                 </section>
 
                 <section className={styles.section}>
                     <h2><span>1</span> Who We Are</h2>
                     <p>
-                        Next Apps is a digital product studio headquartered in the United States with development operations in Pakistan. We provide mobile app development, web development, game development, e-commerce development, blockchain development, AR/VR development, and custom software development services to clients globally.
+                        Next App is a digital product studio headquartered in the United States with development operations in Pakistan. We provide mobile app development, web development, game development, e-commerce development, blockchain development, AR/VR development, and custom software development services to clients globally.
                     </p>
                     <p>
-                        For the purposes of applicable data protection law, Next Apps is the data controller for personal information collected through our website and direct client relationships. Our contact details for data-related enquiries are provided at the end of this Policy.
+                        For the purposes of applicable data protection law, Next App is the data controller for personal information collected through our website and direct client relationships. Our contact details for data-related enquiries are provided at the end of this Policy.
                     </p>
                 </section>
 
                 <section className={styles.section}>
                     <h2><span>2</span> Information We Collect</h2>
                     <h3>2.1 Information You Provide to Us</h3>
-                    <p>We collect personal information that you voluntarily provide when you interact with Next Apps, including:</p>
+                    <p>We collect personal information that you voluntarily provide when you interact with Next App, including:</p>
                     <ul>
                         <li>Contact form submissions — name, email address, phone number, and project details</li>
                         <li>Email correspondence — any personal information contained in emails you send to us</li>
@@ -61,7 +61,7 @@ const PrivacyPolicyPage = () => {
 
                 <section className={styles.section}>
                     <h2><span>3</span> How We Use Your Information</h2>
-                    <p>Next Apps uses the personal information we collect for the following purposes:</p>
+                    <p>Next App uses the personal information we collect for the following purposes:</p>
                     <h3>3.1 Responding to Enquiries and Delivering Services</h3>
                     <p>
                         We use your contact details and project information to respond to your enquiries, provide proposals, onboard you as a client, and deliver the digital services you have engaged us to provide. This is our primary reason for collecting personal data and is necessary to perform the contract between us.
@@ -72,7 +72,7 @@ const PrivacyPolicyPage = () => {
                     </p>
                     <h3>3.3 Marketing and Business Development</h3>
                     <p>
-                        With your consent, we may send you information about Next Apps services, case studies, insights, and industry updates that we believe may be relevant to your business. You may opt out of marketing communications at any time by clicking the unsubscribe link in any email or by contacting us directly. Opting out of marketing does not affect communications related to an active project engagement.
+                        With your consent, we may send you information about Next App services, case studies, insights, and industry updates that we believe may be relevant to your business. You may opt out of marketing communications at any time by clicking the unsubscribe link in any email or by contacting us directly. Opting out of marketing does not affect communications related to an active project engagement.
                     </p>
                     <h3>3.4 Website Improvement and Analytics</h3>
                     <p>
@@ -98,18 +98,18 @@ const PrivacyPolicyPage = () => {
 
                 <section className={styles.section}>
                     <h2><span>5</span> How We Share Your Information</h2>
-                    <p>Next Apps does not sell, rent, or trade your personal information to third parties. We share personal data only in the following limited circumstances:</p>
+                    <p>Next App does not sell, rent, or trade your personal information to third parties. We share personal data only in the following limited circumstances:</p>
                     <h3>5.1 Service Providers</h3>
                     <p>
                         We use trusted third-party service providers to help us operate our business and deliver our services. These may include cloud hosting providers (such as AWS or Google Cloud), project management tools, email and communication platforms, payment processors, and analytics services. These providers are contractually required to process your data only as instructed by us and in accordance with applicable data protection law.
                     </p>
                     <h3>5.2 Our Development Teams</h3>
                     <p>
-                        Next Apps operates development teams in both the United States and Pakistan. Personal data relevant to delivering your project may be accessed by team members in both locations. All team members are subject to confidentiality obligations and data handling policies consistent with this Privacy Policy.
+                        Next App operates development teams in both the United States and Pakistan. Personal data relevant to delivering your project may be accessed by team members in both locations. All team members are subject to confidentiality obligations and data handling policies consistent with this Privacy Policy.
                     </p>
                     <h3>5.3 Legal Requirements</h3>
                     <p>
-                        We may disclose your personal information if required to do so by law, court order, or regulatory authority, or if we believe in good faith that such disclosure is necessary to protect the rights, property, or safety of Next Apps, our clients, or the public.
+                        We may disclose your personal information if required to do so by law, court order, or regulatory authority, or if we believe in good faith that such disclosure is necessary to protect the rights, property, or safety of Next App, our clients, or the public.
                     </p>
                     <h3>5.4 Business Transfers</h3>
                     <p>
@@ -120,7 +120,7 @@ const PrivacyPolicyPage = () => {
                 <section className={styles.section}>
                     <h2><span>6</span> Cookies and Tracking Technologies</h2>
                     <p>
-                        Next Apps uses cookies and similar technologies on our website to improve the browsing experience, analyse traffic, and support our marketing activities. Cookies are small text files placed on your device when you visit our website.
+                        Next App uses cookies and similar technologies on our website to improve the browsing experience, analyse traffic, and support our marketing activities. Cookies are small text files placed on your device when you visit our website.
                     </p>
                     <h3>6.1 Types of Cookies We Use</h3>
                     <ul>
@@ -149,7 +149,7 @@ const PrivacyPolicyPage = () => {
                 <section className={styles.section}>
                     <h2><span>8</span> Data Security</h2>
                     <p>
-                        Next Apps takes the security of your personal data seriously. We implement appropriate technical and organisational measures to protect personal information against unauthorised access, alteration, disclosure, or destruction. These measures include encrypted data transmission (HTTPS), access controls limiting data access to authorised personnel only, secure cloud infrastructure with industry-standard security configurations, and regular security reviews of our internal systems and processes.
+                        Next App takes the security of your personal data seriously. We implement appropriate technical and organisational measures to protect personal information against unauthorised access, alteration, disclosure, or destruction. These measures include encrypted data transmission (HTTPS), access controls limiting data access to authorised personnel only, secure cloud infrastructure with industry-standard security configurations, and regular security reviews of our internal systems and processes.
                     </p>
                     <p>
                         While we take all reasonable steps to protect your data, no method of internet transmission or electronic storage is completely secure. We cannot guarantee absolute security, but we will notify you and relevant authorities promptly in the event of a data breach as required by applicable law.
@@ -159,7 +159,7 @@ const PrivacyPolicyPage = () => {
                 <section className={styles.section}>
                     <h2><span>9</span> International Data Transfers</h2>
                     <p>
-                        As a company operating across the United States and Pakistan, personal data collected by Next Apps may be transferred to, processed in, and stored in countries outside your country of residence. Pakistan is not currently designated as a country providing adequate data protection under GDPR. Where we transfer personal data internationally, we implement appropriate safeguards, including contractual protections with our Pakistan-based team, to ensure your data is protected to the standard required by applicable law.
+                        As a company operating across the United States and Pakistan, personal data collected by Next App may be transferred to, processed in, and stored in countries outside your country of residence. Pakistan is not currently designated as a country providing adequate data protection under GDPR. Where we transfer personal data internationally, we implement appropriate safeguards, including contractual protections with our Pakistan-based team, to ensure your data is protected to the standard required by applicable law.
                     </p>
                     <p>
                         By using our services, you acknowledge and consent to the transfer of your personal data to our operating locations as described in this Policy.
@@ -185,20 +185,20 @@ const PrivacyPolicyPage = () => {
                 <section className={styles.section}>
                     <h2><span>11</span> Children’s Privacy</h2>
                     <p>
-                        Next Apps services are intended for business clients and individuals aged 18 and over. We do not knowingly collect personal data from children under the age of 13. If we become aware that we have collected personal data from a child under 13, we will take immediate steps to delete that information.
+                        Next App services are intended for business clients and individuals aged 18 and over. We do not knowingly collect personal data from children under the age of 13. If we become aware that we have collected personal data from a child under 13, we will take immediate steps to delete that information.
                     </p>
                 </section>
 
                 <section className={styles.section}>
                     <h2><span>12</span> Changes to This Privacy Policy</h2>
                     <p>
-                        Next Apps may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or the services we offer. We will post the updated Policy on our website with a revised effective date. For material changes, we will notify existing clients via email.
+                        Next App may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or the services we offer. We will post the updated Policy on our website with a revised effective date. For material changes, we will notify existing clients via email.
                     </p>
                 </section>
 
                 <section className={styles.contactInfo}>
                     <h2>Contact Us</h2>
-                    <p>If you have questions, concerns, or requests regarding this Privacy Policy or the way Next Apps handles your personal data, please contact us:</p>
+                    <p>If you have questions, concerns, or requests regarding this Privacy Policy or the way Next App handles your personal data, please contact us:</p>
                     <div className={styles.contactList}>
                         <div className={styles.contactItem}>
                             <h4>Email</h4>
@@ -210,7 +210,7 @@ const PrivacyPolicyPage = () => {
                         </div>
                         <div className={styles.contactItem}>
                             <h4>Website</h4>
-                            <a href="https://nextappsinc.com/" target="_blank" rel="noopener noreferrer">www.nextappsinc.com</a>
+                            <a href="https://nextappinc.com/" target="_blank" rel="noopener noreferrer">www.nextappinc.com</a>
                         </div>
                     </div>
                 </section>
