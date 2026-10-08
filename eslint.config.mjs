@@ -10,6 +10,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Separate blog app with its own config.
+    "nextapp-blog-upload/**",
   ]),
 ]);
 

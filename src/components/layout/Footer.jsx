@@ -29,7 +29,7 @@ const Footer = () => {
                                 <li><Link href="/">HOME</Link></li>
                                 <li><Link href="/about-us">ABOUT US</Link></li>
                                 <li><Link href="/case-studies">CASE STUDIES</Link></li>
-                                <li><Link target='_blank' href="https://blog.nextappinc.com/">BLOG</Link></li>
+                                <li><a href="/blog">BLOG</a></li>
                                 <li><Link href="/contact-us">CONTACT US</Link></li>
                             </ul>
                         </div>

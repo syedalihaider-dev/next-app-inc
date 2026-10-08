@@ -137,9 +137,9 @@ const SideMenu = ({ isOpen, onClose }) => {
                             </Link>
                         </li>
                         <li className={styles.navItem}>
-                            <Link target='_blank' href="https://blog.nextappinc.com/" className={styles.navLink} onClick={onClose}>
+                            <a href="/blog" className={styles.navLink} onClick={onClose}>
                                 BLOG
-                            </Link>
+                            </a>
                         </li>
                         <li className={styles.navItem}>
                             <Link href="/contact-us" className={styles.navLink} onClick={onClose}>

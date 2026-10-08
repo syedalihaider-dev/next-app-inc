@@ -1,7 +1,19 @@
+// The blog is a separate Next.js app (its own repository and Vercel project) with basePath '/blog'.
+// It is served at www.nextappinc.com/blog by proxying to it. BLOG_ORIGIN overrides where it runs.
+const BLOG_ORIGIN = (
+  process.env.BLOG_ORIGIN || (process.env.NODE_ENV === 'production' ? 'https://nextapp-blog-pink.vercel.app' : 'http://localhost:3001')
+).replace(/\/+$/, '');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /* config options here */
   // reactCompiler: true,
+  async rewrites() {
+    return [
+      { source: '/blog', destination: `${BLOG_ORIGIN}/blog` },
+      { source: '/blog/:path*', destination: `${BLOG_ORIGIN}/blog/:path*` },
+    ];
+  },
   async redirects() {
     return [
       // Main Pages

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Blog backups contain the database
+/nextapp-blog-backup-*.zip
+# Old local copy of the blog; the blog now lives in its own repository
+/nextapp-blog-upload/
