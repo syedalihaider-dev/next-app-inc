@@ -60,7 +60,7 @@ const ContactSection = ({ isNewDesign = false }) => {
     };
 
     const services = [
-        { id: 'android', name: 'Andriod App Development', icon: '/services-icon-01.webp' },
+        { id: 'android', name: 'Android App Development', icon: '/services-icon-01.webp' },
         { id: 'ar_vr', name: 'AR/VR App Development', icon: '/service-icon-ar-vr.png' },
         { id: 'flutter', name: 'Flutter App Development', icon: '/service-icon-flutter.webp' },
         { id: 'ios', name: 'iOS App Development', icon: '/service-icon-ios.png' },
