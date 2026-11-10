@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ContactScrollHandler from "@/components/common/ContactScrollHandler";
 import Script from "next/script";
 
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${bricolageGrotesque.className} antialiased`}>
+        <ContactScrollHandler />
         <Header />
         {children}
         <Footer />
